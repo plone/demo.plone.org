@@ -8,3 +8,8 @@
  *   Footer,
  * };
  */
+
+import SystemBlockView from './Blocks/System/View';
+import SystemBlockEdit from './Blocks/System/Edit';
+
+export { SystemBlockView, SystemBlockEdit };
