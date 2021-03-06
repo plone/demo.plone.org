@@ -18,6 +18,7 @@ lighthouse-report.html
 .vscode/
 .#*
 *~
+ansible/.vagrant
 
 # Python
 /api/eggs/

@@ -28,6 +28,13 @@ build-backend:  ## Build Plone 5.2
 	(cd api && bin/pip install -r requirements.txt)
 	(cd api && bin/buildout)
 
+.PHONY: Build Plone 5.2 with port
+build-backend-withport:  ## Build Plone 5.2 with port
+	(cd api && python3 -m venv .)
+	(cd api && bin/pip install --upgrade pip)
+	(cd api && bin/pip install -r requirements.txt)
+	(cd api && bin/buildout instance:http-address=$(INSTANCE_PORT))
+
 dist:
 	yarn
 	yarn build
