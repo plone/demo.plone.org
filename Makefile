@@ -4,6 +4,7 @@ RED=`tput setaf 1`
 GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
+PIPENV := $(shell command -v pipenv)
 
 all: build
 
@@ -22,11 +23,16 @@ build-frontend:
 
 .PHONY: Build Plone 5.2
 build-backend:  ## Build Plone 5.2
-	(cd api && python3 -m venv .)
-	(cd api && bin/pip install --upgrade pip)
-	(cd api && bin/pip install --upgrade wheel)
-	(cd api && bin/pip install -r requirements.txt)
-	(cd api && bin/buildout)
+	@if [ -x "$(PIPENV)" ]; then \
+		(cd api && pipenv install); \
+		(cd api && pipenv run buildout); \
+	else \
+		(cd api && python3 -m venv .); \
+		(cd api && bin/pip install --upgrade pip); \
+		(cd api && bin/pip install --upgrade wheel); \
+		(cd api && bin/pip install -r requirements.txt); \
+		(cd api && bin/buildout); \
+	fi
 
 .PHONY: Build Plone 5.2 with port
 build-backend-withport:  ## Build Plone 5.2 with port
