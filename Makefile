@@ -22,7 +22,7 @@ build-frontend:
 
 .PHONY: Build Plone 5.2
 build-backend:  ## Build Plone 5.2
-	(cd api && python3 -m venv .) || (cd api && pipenv install)
+	(cd api && python3 -m venv .)
 	(cd api && bin/pip install --upgrade pip)
 	(cd api && bin/pip install --upgrade wheel)
 	(cd api && bin/pip install -r requirements.txt)
@@ -31,7 +31,7 @@ build-backend:  ## Build Plone 5.2
 .PHONY: Build Plone 5.2 with port
 build-backend-withport:  ## Build Plone 5.2 with port
 	(cd api && pipenv install)
-	(cd api && bin/buildout instance:http-address=$(INSTANCE_PORT))
+	(cd api && pipenv run buildout instance:http-address=$(INSTANCE_PORT))
 
 dist:
 	yarn
