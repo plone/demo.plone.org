@@ -11,12 +11,13 @@ const SystemView = (props) => {
 
   React.useEffect(() => {
     dispatch(getSystemInformation());
+    /* eslint-disable react-hooks/exhaustive-deps */
   }, []);
 
   return (
-    <>
+    <div className="block system">
       <VersionOverview {...systemInfo} />
-    </>
+    </div>
   );
 };
 
