@@ -1,0 +1,21 @@
+---
+  - name: Install pm2 globally
+    npm:
+      name: pm2
+      global: yes
+      state: present
+
+  - name: Create pm2 directories
+    file: path={{ item }} state=directory mode=0755
+    with_items:
+      - /etc/pm2
+      # the local directory is /home/plone/.pm2 (because it's spawned using plone user)
+
+  - name: installing pm2 startup script
+    command: pm2 startup -u plone --hp /home/plone --service-name pm2
+
+  - name: Start pm2
+    service:
+      name: pm2
+      state: started
+    become: yes

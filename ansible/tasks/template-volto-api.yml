@@ -1,0 +1,81 @@
+---
+# Volto + Plone API template:
+# service_path: the server directory
+# api_port: The api port in the server
+# volto_port: Volto port in the server
+# service_name: The PM2 file name in the server (no extensions)
+# service_api_instances: Array or string of instance names
+# htpassword_name: The password for protect the site. Leave in blank for no password
+# server_canonical_name: The server DNS
+
+  - name: Install deps
+    shell: yarn chdir={{ service_path }}
+
+  - name: Build volto
+    shell: PORT={{ volto_port }} RAZZLE_API_PATH=https://{{ server_canonical_name }}/api yarn run build chdir={{ service_path }}
+    tags: volto-build
+
+  - name: stop and delete (existing) pm2 process with this service name
+    command: pm2 delete /etc/pm2/{{ service_name }}.config.js
+    ignore_errors: yes
+
+  - name: Build Plone API
+    shell: make build-backend-withport INSTANCE_PORT={{ api_port }} chdir={{ service_path }}
+    tags: build-backend
+
+  - name: Register pyenv interpreter
+    shell: pipenv --venv chdir={{ service_path }}/api
+    register: pipenv_interpreter
+    tags: update-pm2-config
+    become_user: plone
+    become: yes
+
+  - name: Add or update pm2 configuration
+    template:
+      src: etc/pm2/default-volto.config.js
+      dest: /etc/pm2/{{ service_name }}.config.js
+      owner: root
+      group: root
+      mode: 0755
+    become_user: root
+    become: yes
+    tags: update-pm2-config
+
+  - name: (re)Add and start pm2 process
+    command: pm2 start /etc/pm2/{{ service_name }}.config.js
+
+  - name: save global state for pm2
+    command: pm2 save
+
+  - htpasswd:
+      path: '{{ service_path }}/.htpasswd'
+      name: '{{ htpassword_name }}'
+      password: preview
+      owner: root
+      group: www-data
+      mode: 0640
+    when: htpassword_name is defined
+    become_user: root
+    become: yes
+
+  - name: Setup Nginx config sites-available
+    template:
+      src: etc/nginx/template-volto-api-dev.conf
+      dest: /etc/nginx/sites-available/{{ server_canonical_name }}
+      owner: root
+      group: root
+      mode: 0755
+    vars:
+      password_protected: '{{ htpassword_name is defined }}'
+    notify: restart nginx
+    become_user: root
+    become: yes
+
+  - name: Setup Nginx sites-enabled link
+    file:
+      path: /etc/nginx/sites-enabled/{{ server_canonical_name }}
+      state: link
+      src: /etc/nginx/sites-available/{{ server_canonical_name }}
+    notify: restart nginx
+    become_user: root
+    become: yes

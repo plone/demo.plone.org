@@ -1,0 +1,91 @@
+---
+- hosts: all
+  remote_user: sneridagh
+  become: true
+  gather_facts: true
+  vars:
+    pm2_volto_port: 11001
+    api_volto_port: 9001
+
+  tasks:
+    - name: Add user plone
+      user:
+        name: plone
+        group: sudo
+        shell: /bin/bash
+        generate_ssh_key: yes
+        ssh_key_bits: 4096
+        ssh_key_file: .ssh/id_rsa
+
+    # The deployed directory is in /srv so we set that up
+    - name: change owner of /srv directory
+      file: dest=/srv owner=plone group=sudo mode=755 state=directory
+      become: yes
+
+    - import_tasks: tasks/nodejs14.yml
+      become: yes
+      tags: nodejs
+
+    - import_tasks: tasks/pm2.yml
+      become: yes
+      tags: nodejs
+
+    - name: demo repo git checkout
+      git: repo=https://github.com/sneridagh/plone6-demo.plone.org.git
+          dest=/srv/6.demo.plone.org
+          version=main
+          accept_hostkey=yes
+          update=yes
+          force=yes
+      become: yes
+      become_user: plone
+      notify: restart plone6demo-api
+      tags:
+        - 6.demo.plone.org-build
+        - build-backend
+
+    - import_tasks: tasks/template-volto-api.yml
+      vars:
+        service_path: /srv/6.demo.plone.org
+        volto_port: '{{ pm2_volto_port }}'
+        api_port: '{{ api_volto_port }}'
+        service_name: plone6demo
+        service_api_instances:
+          - instance
+        server_canonical_name: 6.demo.plone.org
+      become: yes
+      become_user: plone
+      tags: 6.demo.plone.org-build
+
+    - name: reset_instance script
+      copy:
+        dest: /srv/6.demo.plone.org/reset_instance.sh
+        content: |
+          #!/bin/bash
+          pm2 stop plone6demo-api && rm -rf /srv/6.demo.plone.org/api/var /srv/6.demo.plone.org/api/parts/instance /srv/6.demo.plone.org/api/.installed.cfg && cd /srv/6.demo.plone.org/api && /usr/local/bin/pipenv run buildout instance:http-address=9001 && pm2 start plone6demo-api
+        owner: plone
+        mode: 0755
+      tags: 6.demo.plone.org-build
+
+    - name: Set cron for reset volto API instance daily
+      cron:
+        name: "Reboot and reset volto API instance daily"
+        job: '/srv/6.demo.plone.org/reset_instance.sh'
+        hour: 0
+        minute: 0
+        state: present
+        user: plone
+      tags: 6.demo.plone.org-build-script
+
+  handlers:
+
+    - name: restart plone6demo-api
+      shell: pm2 restart plone6demo-api
+      become_user: plone
+      become: yes
+
+    - name: restart nginx
+      service:
+        name: nginx
+        state: reloaded
+      become: yes
