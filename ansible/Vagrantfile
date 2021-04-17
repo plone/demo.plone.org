@@ -29,7 +29,7 @@ Vagrant.configure(2) do |config|
   #   v.cpus = 2
   # end
 
-  # This is needed for change port configs
+  # This is needed to change port configs
   # config.ssh.insert_key = true
   # config.ssh.guest_port = 2223
 
@@ -47,7 +47,7 @@ Vagrant.configure(2) do |config|
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
 
-  # Create a public network, which generally matched to bridged network.
+  # Create a public network, which generally matches to a bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
   # config.vm.network "public_network"

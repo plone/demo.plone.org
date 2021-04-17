@@ -1,12 +1,12 @@
 ---
 # Volto + Plone API template:
 # service_path: the server directory
-# api_port: The api port in the server
-# volto_port: Volto port in the server
-# service_name: The PM2 file name in the server (no extensions)
+# api_port: The API port on the server
+# volto_port: Volto port on the server
+# service_name: The PM2 file name on the server (no extensions)
 # service_api_instances: Array or string of instance names
-# htpassword_name: The password for protect the site. Leave in blank for no password
-# server_canonical_name: The server DNS
+# htpassword_name: The password to protect the site. Leave blank for no password.
+# server_canonical_name: The server's name in the DNS entry.
 
   - name: Install deps
     shell: yarn chdir={{ service_path }}
