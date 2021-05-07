@@ -3,7 +3,11 @@ module.exports = {
     script: '{{ service_path }}/build/server.js',
     name: '{{ service_name }}-volto',
     cwd: '{{ service_path }}',
-    namespace: '{{ volto_port }}'
+    namespace: '{{ volto_port }}',
+    env: {
+      PORT: '{{ volto_port }}',
+      NODE_ENV: 'production'
+    }
   },
   {% if service_api_instances|length == 1 and no_api is not defined %}
   {
