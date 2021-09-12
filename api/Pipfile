@@ -11,6 +11,7 @@ verify_ssl = true
 # https://github.com/pypa/pipenv/issues/2364
 # Force install with pipenv install "setuptools==50.3.0"
 setuptools = "==50.3.0"
+requests = "latest"
 
 [requires]
 python_version = "3.8"
