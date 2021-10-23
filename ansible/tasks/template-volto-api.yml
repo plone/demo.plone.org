@@ -12,7 +12,7 @@
     shell: yarn chdir={{ service_path }}
 
   - name: Build volto
-    shell: PORT={{ volto_port }} RAZZLE_API_PATH=https://{{ server_canonical_name }}/api yarn run build chdir={{ service_path }}
+    shell: PORT={{ volto_port }} yarn run build chdir={{ service_path }}
     tags: volto-build
 
   - name: stop and delete (existing) pm2 process with this service name
