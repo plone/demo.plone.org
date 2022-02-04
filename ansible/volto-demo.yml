@@ -31,7 +31,7 @@
       tags: nodejs
 
     - name: demo repo git checkout
-      git: repo=https://github.com/sneridagh/plone6-demo.plone.org.git
+      git: repo=https://github.com/plone/6.demo.plone.org.git
           dest=/srv/6.demo.plone.org
           version=main
           accept_hostkey=yes
