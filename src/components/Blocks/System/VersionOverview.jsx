@@ -4,9 +4,17 @@
  */
 
 import React from 'react';
-import { List } from 'semantic-ui-react';
+import { isEmpty } from 'lodash';
+import { version as voltoVersion } from '@plone/volto/../package.json';
+import { addonsInfo } from 'load-volto-addons';
+import { defineMessages, useIntl } from 'react-intl';
 
-import packageJSON from '@plone/volto/../package.json';
+const messages = defineMessages({
+  no_addons: {
+    id: 'No addons found',
+    defaultMessage: 'No addons found',
+  },
+});
 
 const VersionOverview = ({
   cmf_version,
@@ -16,20 +24,34 @@ const VersionOverview = ({
   plone_restapi_version,
   zope_version,
 }) => {
-  const voltoVersion = packageJSON.version;
+  const intl = useIntl();
 
   return (
     <>
-      <List bulleted size="large">
-        {voltoVersion && (
-          <List.Item key="volto">Volto {voltoVersion}</List.Item>
-        )}
-        <List.Item key="volto">Plone {plone_version}</List.Item>
-        <List.Item key="volto">plone.restapi {plone_restapi_version}</List.Item>
-        <List.Item key="volto">Zope {zope_version}</List.Item>
-        <List.Item key="volto">Python {python_version}</List.Item>
-        <List.Item key="volto">PIL {pil_version}</List.Item>
-      </List>
+      <ul
+        style={{
+          fontSize: '16px',
+          fontFamily: 'Monospace',
+        }}
+      >
+        {voltoVersion && <li>Volto {voltoVersion}</li>}
+        <li>Plone {plone_version}</li>
+        <li>plone.restapi {plone_restapi_version}</li>
+        <li>CMF {cmf_version}</li>
+        <li>Zope {zope_version}</li>
+        <li>Python {python_version}</li>
+        <li>PIL {pil_version}</li>
+      </ul>
+      <h3>Add-ons</h3>
+      {isEmpty(addonsInfo) ? (
+        <p>{intl.formatMessage(messages.no_addons)}</p>
+      ) : (
+        <ul style={{ fontSize: '16px', fontFamily: 'Monospace' }}>
+          {Object.keys(addonsInfo).map((addon) => (
+            <li>{`${addon} ${addonsInfo[addon].version || ''}`}</li>
+          ))}
+        </ul>
+      )}
     </>
   );
 };
