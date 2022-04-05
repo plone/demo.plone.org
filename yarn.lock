@@ -1838,10 +1838,10 @@
     pofile "1.0.10"
     razzle "3.4.5"
 
-"@plone/volto@15.0.0":
-  version "15.0.0"
-  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-15.0.0.tgz#618946adba0ffa2b28bab2cb8fcbdd69736bd646"
-  integrity sha512-xYxqr1R/6UZWM8HJUQOoXrpBVI3aGHI7a37bbgM5tw4SBQ3QkNi5GP++FsozZgNaU27wvVjykt1XR6UKA09xMA==
+"@plone/volto@15.3.0":
+  version "15.3.0"
+  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-15.3.0.tgz#f868c1a0ef0a8212a9d087dd81f0270915bcaf92"
+  integrity sha512-6Bzmto544xM5haY49BGvL+Mlx/4XbEv94E30iOJKKwMTdxDM4XQpixuYv0NGPZj/Eo/2JGs2BOrN5OlFhsp01g==
   dependencies:
     "@babel/plugin-proposal-export-default-from" "7.10.4"
     "@babel/plugin-proposal-export-namespace-from" "7.10.4"
@@ -1877,6 +1877,7 @@
     cypress-axe "0.12.2"
     cypress-file-upload "5.0.7"
     debug "4.3.2"
+    deep-freeze "0.0.1"
     dependency-graph "0.10.0"
     detect-browser "5.1.0"
     diff "3.5.0"
@@ -1997,7 +1998,7 @@
     tlds "1.203.1"
     undoo "0.5.0"
     universal-cookie-express "4.0.3"
-    use-deep-compare-effect "1.6.1"
+    use-deep-compare-effect "1.8.1"
     xmlrpc "1.3.2"
     yarn-deduplicate "3.1.0"
     yarnhook "0.5.1"
@@ -2448,14 +2449,6 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
-
-"@types/react@^17.0.0":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
-  integrity sha512-Xt40xQsrkdvjn1EyWe1Bc0dJLcil/9x2vAuW7ya+PuQip4UYUaXyhzWmAbwRsdMgwOFHpfp7/FFZebDU6Y8VHA==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^3.0.2"
 
 "@types/responselike@*", "@types/responselike@^1.0.0":
   version "1.0.0"
@@ -5374,6 +5367,11 @@ deep-extend@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
   integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
+
+deep-freeze@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/deep-freeze/-/deep-freeze-0.0.1.tgz#3a0b0005de18672819dfd38cd31f91179c893e84"
+  integrity sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
 
 deep-is@~0.1.3:
   version "0.1.3"
@@ -15984,13 +15982,12 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-deep-compare-effect@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/use-deep-compare-effect/-/use-deep-compare-effect-1.6.1.tgz#061a0ac5400aa0461e33dddfaa2a98bca873182a"
-  integrity sha512-VB3b+7tFI81dHm8buGyrpxi8yBhzYZdyMX9iBJra7SMFMZ4ci4FJ1vFc1nvChiB1iLv4GfjqaYfvbNEpTT1rFQ==
+use-deep-compare-effect@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/use-deep-compare-effect/-/use-deep-compare-effect-1.8.1.tgz#ef0ce3b3271edb801da1ec23bf0754ef4189d0c6"
+  integrity sha512-kbeNVZ9Zkc0RFGpfMN3MNfaKNvcLNyxOAAd9O4CBZ+kCBXXscn9s/4I+8ytUER4RDpEYs5+O6Rs4PqiZ+rHr5Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@types/react" "^17.0.0"
     dequal "^2.0.2"
 
 use-memo-one@^1.1.1:

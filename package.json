@@ -104,7 +104,7 @@
     "node": "^12 || ^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "15.0.0",
+    "@plone/volto": "15.3.0",
     "@kitconcept/volto-blocks-grid": "2.4.1",
     "volto-slate": "*"
   },
