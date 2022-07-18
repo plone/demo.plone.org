@@ -101,11 +101,11 @@
     "not dead"
   ],
   "engines": {
-    "node": "^12 || ^14 || ^16"
+    "node": "^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "15.5.0",
-    "@kitconcept/volto-blocks-grid": "2.4.1",
+    "@plone/volto": "16.0.0-alpha.13",
+    "@kitconcept/volto-blocks-grid": "4.1.0",
     "volto-slate": "*"
   },
   "devDependencies": {
