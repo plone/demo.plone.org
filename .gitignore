@@ -20,6 +20,9 @@ lighthouse-report.html
 .#*
 *~
 ansible/.vagrant
+ansible/bin/
+ansible/lib/
+ansible/pyvenv.cfg
 
 # Python
 /api/eggs/

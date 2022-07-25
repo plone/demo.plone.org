@@ -6,8 +6,8 @@
 import React from 'react';
 import { isEmpty } from 'lodash';
 import { version as voltoVersion } from '@plone/volto/../package.json';
-import { addonsInfo } from 'load-volto-addons';
 import { defineMessages, useIntl } from 'react-intl';
+import config from '@plone/volto/registry';
 
 const messages = defineMessages({
   no_addons: {
@@ -25,6 +25,7 @@ const VersionOverview = ({
   zope_version,
 }) => {
   const intl = useIntl();
+  const { addonsInfo } = config.settings;
 
   return (
     <>
@@ -47,8 +48,8 @@ const VersionOverview = ({
         <p>{intl.formatMessage(messages.no_addons)}</p>
       ) : (
         <ul style={{ fontSize: '16px', fontFamily: 'Monospace' }}>
-          {Object.keys(addonsInfo).map((addon) => (
-            <li>{`${addon} ${addonsInfo[addon].version || ''}`}</li>
+          {addonsInfo.map((addon) => (
+            <li key={addon.name}>{`${addon.name} ${addon.version || ''}`}</li>
           ))}
         </ul>
       )}

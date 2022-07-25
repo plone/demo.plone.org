@@ -17,7 +17,6 @@
   "private": false,
   "workspaces": [],
   "addons": [
-    "volto-slate:minimalDefault,simpleLink,tableButton",
     "@kitconcept/volto-blocks-grid"
   ],
   "jest": {
@@ -104,9 +103,8 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "16.0.0-alpha.13",
-    "@kitconcept/volto-blocks-grid": "4.1.0",
-    "volto-slate": "*"
+    "@plone/volto": "16.0.0-alpha.15",
+    "@kitconcept/volto-blocks-grid": "4.1.0"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "3.1.3",
