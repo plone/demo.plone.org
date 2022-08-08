@@ -19,26 +19,19 @@ import systemSVG from '@plone/volto/icons/computer.svg';
 import '@plone/volto/config';
 
 export default function applyConfig(config) {
-  // Add here your project's configuration here by modifying `config` accordingly
-  config.blocks = {
-    ...config.blocks,
-    blocksConfig: {
-      ...config.blocks.blocksConfig,
-      system: {
-        id: 'system',
-        title: 'System',
-        icon: systemSVG,
-        group: 'common',
-        view: SystemBlockView,
-        edit: SystemBlockEdit,
-        restricted: false,
-        mostUsed: true,
-        sidebarTab: 1,
-        security: {
-          addPermission: [],
-          view: [],
-        },
-      },
+  config.blocks.blocksConfig.system = {
+    id: 'system',
+    title: 'System',
+    icon: systemSVG,
+    group: 'common',
+    view: SystemBlockView,
+    edit: SystemBlockEdit,
+    restricted: false,
+    mostUsed: true,
+    sidebarTab: 1,
+    security: {
+      addPermission: [],
+      view: [],
     },
   };
 

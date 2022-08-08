@@ -1616,10 +1616,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@kitconcept/volto-blocks-grid@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-4.1.0.tgz#6bfd736bdaf77fcea71f8ecc4983d161d1e2b0d2"
-  integrity sha512-ZoLA0Pne0LamDALqgqxKPa6lvK2VJQ8GhtW6lQdiys2W9xAF3gsKTgVLjKG3O4XUHmSSYyzSZFGE5dL+YhAVOA==
+"@kitconcept/volto-blocks-grid@4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-4.2.0.tgz#6f1611285773e195b6f39bd4804af6367add1010"
+  integrity sha512-duaVrrzCgAHHI7wPemRRm2zCZ05fRJyMFCY8z13nHHz9OJemjripLZZv6sUddgge/+EyZc07+zJGcgP7gZodOA==
   dependencies:
     "@plone/scripts" "*"
 
