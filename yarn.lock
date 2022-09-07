@@ -1616,10 +1616,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@kitconcept/volto-blocks-grid@4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-4.2.0.tgz#6f1611285773e195b6f39bd4804af6367add1010"
-  integrity sha512-duaVrrzCgAHHI7wPemRRm2zCZ05fRJyMFCY8z13nHHz9OJemjripLZZv6sUddgge/+EyZc07+zJGcgP7gZodOA==
+"@kitconcept/volto-blocks-grid@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@kitconcept/volto-blocks-grid/-/volto-blocks-grid-5.0.0.tgz#e0bbb7d9dd17fcbb1b6fcc66834a69ca686cb3c7"
+  integrity sha512-1DxzfptO8560efiT0EPa1prKGicVJt+3a6sve61BrCOGuwAHwrK6xu/eOQWgM5NRKb3bLRU9N2as26pftLbMlw==
   dependencies:
     "@plone/scripts" "*"
 
@@ -1727,10 +1727,10 @@
     razzle "3.4.5"
     simple-git "3.5.0"
 
-"@plone/volto@16.0.0-alpha.27":
-  version "16.0.0-alpha.27"
-  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.27.tgz#cde8761ebd5f7e7250bea4c2ceb0d6609ec42c96"
-  integrity sha512-XIaZpOAbt+C8AnkghocGXduOF8p8sM7UVtcYnIeTJRj9eZm/dIxmrhC9POBFuGHbIFhc6T01PBGwyDaEbSrvtw==
+"@plone/volto@16.0.0-alpha.30":
+  version "16.0.0-alpha.30"
+  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.30.tgz#6c991ff988920e3dac707d5bd752d16dc6743fbc"
+  integrity sha512-kUOhHOBdUziU6pkiCWwa0ri2XuxYdRJc+CfIQZU/sU6WMSTleUCcbZ3dT7YQHR3h8RDR+7m4NsN7oXGFHOiPfg==
   dependencies:
     "@babel/plugin-proposal-export-default-from" "7.10.4"
     "@babel/plugin-proposal-export-namespace-from" "7.10.4"

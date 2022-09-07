@@ -103,8 +103,8 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "16.0.0-alpha.27",
-    "@kitconcept/volto-blocks-grid": "4.2.0"
+    "@plone/volto": "16.0.0-alpha.30",
+    "@kitconcept/volto-blocks-grid": "5.0.0"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "3.1.3",
