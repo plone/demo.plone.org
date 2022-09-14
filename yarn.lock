@@ -1727,10 +1727,10 @@
     razzle "3.4.5"
     simple-git "3.5.0"
 
-"@plone/volto@16.0.0-alpha.30":
-  version "16.0.0-alpha.30"
-  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.30.tgz#6c991ff988920e3dac707d5bd752d16dc6743fbc"
-  integrity sha512-kUOhHOBdUziU6pkiCWwa0ri2XuxYdRJc+CfIQZU/sU6WMSTleUCcbZ3dT7YQHR3h8RDR+7m4NsN7oXGFHOiPfg==
+"@plone/volto@16.0.0-alpha.32":
+  version "16.0.0-alpha.32"
+  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.32.tgz#1e11e8f9ff58cd200623731fe1dcba0a155deea0"
+  integrity sha512-K7ja3Px6fZbhF+LlG0lgTWhWvJOCpNygdSGwoHL55i0263Ix9RgVETzimZSr+bMP+vNwtmq7FDShtmaoTcRQlA==
   dependencies:
     "@babel/plugin-proposal-export-default-from" "7.10.4"
     "@babel/plugin-proposal-export-namespace-from" "7.10.4"
