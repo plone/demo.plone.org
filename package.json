@@ -103,7 +103,7 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@plone/volto": "16.0.0-alpha.32",
+    "@plone/volto": "16.0.0-alpha.40",
     "@kitconcept/volto-blocks-grid": "5.0.0"
   },
   "devDependencies": {
