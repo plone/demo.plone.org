@@ -104,7 +104,7 @@
   },
   "dependencies": {
     "@plone/volto": "16.0.0-alpha.40",
-    "@kitconcept/volto-blocks-grid": "5.0.0"
+    "@kitconcept/volto-blocks-grid": "5.1.1"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "3.1.3",
