@@ -1923,10 +1923,10 @@
     pofile "1.0.10"
     simple-git "3.5.0"
 
-"@plone/volto@16.0.0-alpha.40":
-  version "16.0.0-alpha.40"
-  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.40.tgz#f07003a709545133dddf39a4a442260391d3c702"
-  integrity sha512-/nz7tSXovWg/DYlmF/jPmZToa3usTeNNNwTQNdEW5mD6azGM1V5FfSLAFpBAEPJQ1SYfhNfkQjgg0yqdRjB5gQ==
+"@plone/volto@16.0.0-alpha.41":
+  version "16.0.0-alpha.41"
+  resolved "https://registry.yarnpkg.com/@plone/volto/-/volto-16.0.0-alpha.41.tgz#4278bc51e2a317099a167072656418dee42f5464"
+  integrity sha512-Cxze4lh39bMor6nM6rv+ur04lWX5UK9vrbql6BWtnOjE4yvJUZ3+0czgKHwqFXw9FkXpSPrae2DB1xT6aXpvyw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-export-default-from" "7.18.9"
