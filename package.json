@@ -99,7 +99,7 @@
   },
   "dependencies": {
     "@kitconcept/volto-blocks-grid": "5.2.0",
-    "@plone/volto": "16.0.0-rc.2"
+    "@plone/volto": "16.0.0"
   },
   "devDependencies": {
     "@plone/scripts": "^2.1.2",
