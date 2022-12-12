@@ -124,31 +124,3 @@ start-stack:  ## Start local stack
 stop-stack:  ## Stop local stack
 	@echo "Stop local Docker stack"
 	@docker-compose -f devops/stacks/docker-compose-local.yml down
-
-## Acceptance
-.PHONY: build-acceptance-servers
-build-acceptance-servers: ## Build Acceptance Servers
-	@echo "Build acceptance backend"
-	@docker build backend -t collective/plone-6-demo-site-backend:acceptance -f backend/Dockerfile.acceptance
-	@echo "Build acceptance frontend"
-	@docker build frontend -t collective/plone-6-demo-site-frontend:acceptance -f frontend/Dockerfile
-
-.PHONY: start-acceptance-servers
-start-acceptance-servers: build-acceptance-servers ## Start Acceptance Servers
-	@echo "Start acceptance backend"
-	@docker run --rm -p 55001:55001 --name plone-6-demo-site-backend-acceptance -d collective/plone-6-demo-site-backend:acceptance
-	@echo "Start acceptance frontend"
-	@docker run --rm -p 3000:3000 --name plone-6-demo-site-frontend-acceptance --link plone-6-demo-site-backend-acceptance:backend -e RAZZLE_API_PATH=http://localhost:55001/plone -e RAZZLE_INTERNAL_API_PATH=http://backend:55001/plone -d collective/plone-6-demo-site-frontend:acceptance
-
-.PHONY: stop-acceptance-servers
-stop-acceptance-servers: ## Stop Acceptance Servers
-	@echo "Stop acceptance containers"
-	@docker stop plone-6-demo-site-frontend-acceptance
-	@docker stop plone-6-demo-site-backend-acceptance
-
-.PHONY: run-acceptance-tests
-run-acceptance-tests: ## Run Acceptance tests
-	$(MAKE) start-acceptance-servers
-	npx wait-on --httpTimeout 20000 http-get://localhost:55001/plone http://localhost:3000
-	$(MAKE) -C "./frontend/" test-acceptance-headless
-	$(MAKE) stop-acceptance-servers

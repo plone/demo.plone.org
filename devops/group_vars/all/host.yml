@@ -1,3 +1,0 @@
----
-hostname: 'plone-6-demo-site'
-fqdn: '{{ hostname }}.localhost'

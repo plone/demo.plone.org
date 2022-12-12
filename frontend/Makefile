@@ -7,7 +7,7 @@ SHELL:=bash
 .DELETE_ON_ERROR:
 MAKEFLAGS+=--warn-undefined-variables
 MAKEFLAGS+=--no-builtin-rules
-IMAGE_NAME=collective/plone-6-demo-site-frontend
+IMAGE_NAME=ghcr.io/plone/demo-frontend
 IMAGE_TAG=latest
 
 NODEBIN = ./node_modules/.bin

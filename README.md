@@ -11,7 +11,7 @@ A new project using Plone 6.
 
 ### Development Setup
 
-- Python 3.9
+- Python 3.11
 - Node 16
 - yarn
 - Docker

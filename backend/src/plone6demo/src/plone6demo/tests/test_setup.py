@@ -1,8 +1,8 @@
 """Setup tests for this package."""
 from plone import api
+from plone6demo.testing import PLONE6DEMO_INTEGRATION_TESTING  # noqa: E501
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
-from plone6demo.testing import PLONE6DEMO_INTEGRATION_TESTING  # noqa: E501
 from Products.CMFPlone.utils import get_installer
 
 import unittest
@@ -25,8 +25,8 @@ class TestSetup(unittest.TestCase):
 
     def test_browserlayer(self):
         """Test that IPLONE6DEMOLayer is registered."""
-        from plone.browserlayer import utils
         from plone6demo.interfaces import IPLONE6DEMOLayer
+        from plone.browserlayer import utils
 
         self.assertIn(IPLONE6DEMOLayer, utils.registered_layers())
 
@@ -56,7 +56,7 @@ class TestUninstall(unittest.TestCase):
 
     def test_browserlayer_removed(self):
         """Test that IPLONE6DEMOLayer is removed."""
-        from plone.browserlayer import utils
         from plone6demo.interfaces import IPLONE6DEMOLayer
+        from plone.browserlayer import utils
 
         self.assertNotIn(IPLONE6DEMOLayer, utils.registered_layers())

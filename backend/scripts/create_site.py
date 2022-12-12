@@ -45,11 +45,7 @@ site_id = "Plone"
 payload = {
     "title": "Plone 6 Demo Site",
     "profile_id": _DEFAULT_PROFILE,
-    "extension_ids": [
-        "plone6demo:default",
-        "plone6demo:initial",
-        "plone.volto:demo"
-    ],
+    "extension_ids": ["plone6demo:default", "plone6demo:initial", "plone.volto:demo"],
     "setup_content": False,
     "default_language": "en",
     "portal_timezone": "America/Sao_Paulo",

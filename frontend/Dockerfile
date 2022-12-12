@@ -11,21 +11,26 @@ RUN corepack enable
 
 USER node
 WORKDIR /build
-RUN yarn install --network-timeout 1000000 \
-    && yarn build
+
+RUN <<EOT
+    make install
+    yarn build
+EOT
 
 FROM base
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-      org.label-schema.name="plone-6-demo-site-frontend" \
+      org.label-schema.name="demo-frontend" \
       org.label-schema.description="Plone 6 Demo Site frontend image." \
       org.label-schema.vendor="Plone Foundation"
 
-RUN apt-get update \
-    && buildDeps="busybox" \
-    && apt-get install -y --no-install-recommends $buildDeps \
-    && busybox --install -s \
-    && rm -rf /var/lib/apt/lists/*
+RUN <<EOT
+    apt-get update
+    buildDeps="busybox"
+    apt-get install -y --no-install-recommends $buildDeps
+    busybox --install -s
+    rm -rf /var/lib/apt/lists/*
+EOT
 
 USER node
 COPY --from=builder /build/ /app/
