@@ -1,0 +1,6 @@
+graft src/plone6demo
+graft docs
+include *.rst
+include *.md
+include *.cfg
+global-exclude *.pyc
