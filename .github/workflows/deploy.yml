@@ -3,14 +3,12 @@ name: Deploy demo.plone.org
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '5 22 * * *'
+    - cron:  '15 22 * * *'
 
 jobs:
 
   deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
-    needs:
-      - release
+
     runs-on: ubuntu-latest
     environment: demo.plone.org
     steps:
