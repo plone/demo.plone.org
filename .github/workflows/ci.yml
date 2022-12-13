@@ -9,7 +9,7 @@ on:
       - ".github/workflows/ci.yml"
 
   schedule:
-    - cron:  '0 20 * * *'
+    - cron:  '0 */2 * * *'
 
 env:
   node-version: 16.x
@@ -207,7 +207,6 @@ jobs:
           images: |
             ghcr.io/plone/demo-${{ matrix.image }}
           tags: |
-            type=ref,event=branch
             type=sha
             type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
 
