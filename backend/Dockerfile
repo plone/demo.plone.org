@@ -1,4 +1,5 @@
 # syntax=docker/dockerfile:1
+ARG SEED=1000
 ARG PLONE_VERSION=6.0.0
 FROM plone/plone-backend:${PLONE_VERSION}
 
@@ -22,6 +23,7 @@ EOT
 
 # Create a new site with content
 RUN <<EOT
+    SEED=${SEED}
     ADDITIONAL_PROFILES=plone6demo:initial
     ./docker-entrypoint.sh create-site
 EOT

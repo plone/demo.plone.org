@@ -7,6 +7,9 @@ on:
       - "frontend/**"
       - ".github/workflows/ci.yml"
 
+  schedule:
+    - cron:  '0 20 * * *'
+
 env:
   node-version: 16.x
   python: "3.11"
@@ -229,3 +232,4 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: SEED=$GITHUB_RUN_ID
