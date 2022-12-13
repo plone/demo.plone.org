@@ -25,6 +25,6 @@ jobs:
           remote_port: ${{ secrets.DEPLOY_PORT }}
           remote_user: ${{ secrets.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
-          stack_file: "devops/stacks/plone.org.yml"
+          stack_file: "devops/stacks/demo.plone.org.yml"
           stack_name: "demoploneorg"
           deploy_timeout: 480
