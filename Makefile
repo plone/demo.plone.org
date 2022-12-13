@@ -1,11 +1,24 @@
+### Defensive settings for make:
+#     https://tech.davis-hansson.com/p/make/
+SHELL:=bash
+.ONESHELL:
+.SHELLFLAGS:=-xeu -o pipefail -O inherit_errexit -c
+.SILENT:
+.DELETE_ON_ERROR:
+MAKEFLAGS+=--warn-undefined-variables
+MAKEFLAGS+=--no-builtin-rules
+
+CURRENT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
+
 # We like colors
 # From: https://coderwall.com/p/izxssa/colored-makefile-for-golang-projects
 RED=`tput setaf 1`
 GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
-PIPENV := $(shell command -v pipenv)
 
+.PHONY: all
 all: build
 
 # Add the following 'help' target to your Makefile
@@ -14,97 +27,100 @@ all: build
 help: ## This help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-build:
-	make build-backend
-	make build-frontend
+.PHONY: install-frontend
+install-frontend:  ## Install React Frontend
+	$(MAKE) -C "./frontend/" install
 
-build-frontend:
-	yarn && RAZZLE_API_PATH=http://localhost:55001/plone yarn build
+.PHONY: build-frontend
+build-frontend:  ## Build React Frontend
+	$(MAKE) -C "./frontend/" build
 
-.PHONY: Build Plone 5.2
-build-backend:  ## Build Plone 5.2
-	@if [ -x "$(PIPENV)" ]; then \
-		(cd api && pipenv install); \
-		(cd api && pipenv run buildout); \
-	else \
-		(cd api && python3 -m venv .); \
-		(cd api && bin/pip install --upgrade pip); \
-		(cd api && bin/pip install --upgrade wheel); \
-		(cd api && bin/pip install -r requirements.txt); \
-		(cd api && bin/buildout); \
-	fi
+.PHONY: start-frontend
+start-frontend:  ## Start React Frontend
+	$(MAKE) -C "./frontend/" start
 
-.PHONY: Build Plone 5.2 with port
-build-backend-withport:  ## Build Plone 5.2 with port
-	(cd api && pipenv install)
-	(cd api && pipenv run buildout instance:http-address=$(INSTANCE_PORT))
+.PHONY: install-backend
+install-backend:  ## Create virtualenv and install Plone
+	$(MAKE) -C "./backend/" build-dev
+	$(MAKE) create-site
 
-dist:
-	yarn
-	yarn build
+.PHONY: build-backend
+build-backend:  ## Build Backend
+	$(MAKE) -C "./backend/" build-dev
 
-test:
-	(cd api && bin/test)
-
-start-frontend: dist
-	yarn start:prod
-
-start-backend-docker:
-	docker run -it --rm --name=plone -p 8080:8080 -e SITE=Plone -e ADDONS="kitconcept.volto" -e ZCML="kitconcept.volto.cors" -e PROFILES="kitconcept.volto:default-homepage" plone
-
-test-acceptance-server:
-	docker run -i --rm -e ZSERVER_HOST=0.0.0.0 -e ZSERVER_PORT=55001 -p 55001:55001 -e SITE=plone -e APPLY_PROFILES=plone.app.contenttypes:plone-content,plone.restapi:default,kitconcept.volto:default-homepage -e CONFIGURE_PACKAGES=plone.app.contenttypes,plone.restapi,kitconcept.volto,kitconcept.volto.cors -e ADDONS='plone.app.robotframework plone.app.contenttypes plone.restapi kitconcept.volto' plone ./bin/robot-server plone.app.robotframework.testing.PLONE_ROBOT_TESTING
-
-clean:
-	(cd api && rm -rf bin eggs develop-eggs include lib parts .installed.cfg .mr.developer.cfg)
-	rm -rf node_modules
+.PHONY: create-site
+create-site: ## Create a Plone site with default content
+	$(MAKE) -C "./backend/" create-site
 
 .PHONY: start-backend
 start-backend: ## Start Plone Backend
-	@echo "$(GREEN)==> Start Plone Backend$(RESET)"
-	(cd api && PYTHONWARNINGS=ignore bin/instance fg)
-
-.PHONY: start-test-backend
-start-test-backend: ## Start Test Plone Backend
-	@echo "$(GREEN)==> Start Test Plone Backend$(RESET)"
-	ZSERVER_PORT=55001 CONFIGURE_PACKAGES=plone.app.contenttypes,plone.restapi,kitconcept.volto,kitconcept.volto.cors APPLY_PROFILES=plone.app.contenttypes:plone-content,plone.restapi:default,kitconcept.volto:default-homepage ./api/bin/robot-server plone.app.robotframework.testing.PLONE_ROBOT_TESTING
-
-.PHONY: start-test-frontend
-start-test-frontend: ## Start Test Volto Frontend
-	@echo "$(GREEN)==> Start Test Volto Frontend$(RESET)"
-	RAZZLE_API_PATH=http://localhost:55001/plone yarn build && NODE_ENV=production node build/server.js
-
-.PHONY: start-test
-start-test: ## Start Test
-	@echo "$(GREEN)==> Start Test$(RESET)"
-	yarn cypress:open
-
-.PHONY: start-test-all
-start-test-all: ## Start Test
-	@echo "$(GREEN)==> Start Test$(RESET)"
-	yarn ci:cypress:run
+	$(MAKE) -C "./backend/" start
 
 .PHONY: install
-install: ## Install the frontend
-	@echo "Install frontend"
-	$(MAKE) omelette
-	$(MAKE) preinstall
-	yarn install
+install:  ## Install
+	@echo "Install Backend & Frontend"
+	$(MAKE) install-backend
+	$(MAKE) install-frontend
 
-.PHONY: preinstall
-preinstall: ## Preinstall task, checks if missdev (mrs-developer) is present and runs it
-	if [ -f $$(pwd)/mrs.developer.json ]; then make develop; fi
+# TODO production build
 
-.PHONY: develop
-develop: ## Runs missdev in the local project (mrs.developer.json should be present)
-	npx -p mrs-developer missdev --config=jsconfig.json --output=addons --fetch-https
+.PHONY: build
+build:  ## Build in development mode
+	@echo "Build"
+	$(MAKE) build-backend
+	$(MAKE) install-frontend
 
-.PHONY: omelette
-omelette: ## Creates the omelette folder that contains a link to the installed version of Volto (a softlink pointing to node_modules/@plone/volto)
-	if [ ! -d omelette ]; then ln -sf node_modules/@plone/volto omelette; fi
 
-.PHONY: patches
-patches:
-	/bin/bash patches/patchit.sh > /dev/null 2>&1 ||true
+.PHONY: start
+start:  ## Start
+	@echo "Starting application"
+	$(MAKE) start-backend
+	$(MAKE) start-frontend
 
-.PHONY: all start test-acceptance
+.PHONY: clean
+clean:  ## Clean installation
+	@echo "Clean installation"
+	$(MAKE) -C "./backend/" clean
+	$(MAKE) -C "./frontend/" clean
+
+.PHONY: format
+format:  ## Format codebase
+	@echo "Format codebase"
+	$(MAKE) -C "./backend/" format
+	$(MAKE) -C "./frontend/" format
+
+.PHONY: i18n
+i18n:  ## Update locales
+	@echo "Update locales"
+	$(MAKE) -C "./backend/" i18n
+	$(MAKE) -C "./frontend/" i18n
+
+.PHONY: test-backend
+test-backend:  ## Test backend codebase
+	@echo "Test backend"
+	$(MAKE) -C "./backend/" test
+
+.PHONY: test-frontend
+test-frontend:  ## Test frontend codebase
+	@echo "Test frontend"
+	$(MAKE) -C "./frontend/" test
+
+.PHONY: test
+test:  test-backend test-frontend ## Test codebase
+
+.PHONY: build-images
+build-images:  ## Build docker images
+	@echo "Build"
+	$(MAKE) -C "./backend/" build-image
+	$(MAKE) -C "./frontend/" build-image
+
+## Docker stack
+.PHONY: start-stack
+start-stack:  ## Start local stack
+	@echo "Start local Docker stack"
+	@docker-compose -f devops/stacks/docker-compose-local.yml up -d --build
+
+.PHONY: stop-stack
+stop-stack:  ## Stop local stack
+	@echo "Stop local Docker stack"
+	@docker-compose -f devops/stacks/docker-compose-local.yml down

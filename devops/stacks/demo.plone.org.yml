@@ -1,0 +1,59 @@
+version: '3.3'
+
+services:
+
+  frontend:
+    image: ghcr.io/plone/demo-frontend:latest
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
+    depends_on:
+      - backend
+    networks:
+      - public
+      - demoplone
+    deploy:
+      replicas: 2
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-frontend.loadbalancer.server.port=3000
+        # Router
+        - traefik.http.routers.demo-frontend.rule=Host(`demo.plone.org`)
+        - traefik.http.routers.demo-frontend.entrypoints=https
+        - traefik.http.routers.demo-frontend.tls=true
+        - traefik.http.routers.demo-frontend.tls.certresolver=le
+        - traefik.http.routers.demo-frontend.service=demo-frontend
+        - traefik.http.routers.demo-frontend.middlewares=gzip
+
+  backend:
+    image: ghcr.io/plone/demo-backend:latest
+    networks:
+      - public
+      - demoplone
+    deploy:
+      # Just one, as we do not have a shared database
+      replicas: 1
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-backend.loadbalancer.server.port=8080
+        # Middleware
+        - "traefik.http.middlewares.demo-backend-vhm.replacepathregex.regex=^/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.demo-backend-vhm.replacepathregex.replacement=/VirtualHostBase/https/demo.plone.org/Plone/++api++/VirtualHostRoot/$$1"
+        # Router
+        - traefik.http.routers.demo-backend.rule=Host(`demo.plone.org`) && (PathPrefix(`/++api++`))
+        - traefik.http.routers.demo-backend.entrypoints=https
+        - traefik.http.routers.demo-backend.tls=true
+        - traefik.http.routers.demo-backend.service=demo-backend
+        - traefik.http.routers.demo-backend.middlewares=gzip,demo-backend-vhm
+
+networks:
+  public:
+    external: true
+    driver: overlay
+  demoplone:
+    driver: overlay

@@ -1,64 +1,79 @@
-# Repo used for the demo site 6.demo.plone.org
+# Plone 6 Demo Site
 
-This is the repository used in Plone 6 demo in 6.demo.plone.org.
+[![Built with Cookiecutter Plone Starter](https://img.shields.io/badge/built%20with-Cookiecutter%20Plone%20Starter-0083be.svg?logo=cookiecutter)](https://github.com/collective/cookiecutter-plone-starter/)
+[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Backend Tests](https://github.com/collective/plone-6-demo-site/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/plone-6-demo-site/actions/workflows/backend.yml)
+[![Frontend Tests](https://github.com/collective/plone-6-demo-site/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/plone-6-demo-site/actions/workflows/frontend.yml)
 
-You can find the backend in the `/api` folder, and the frontend in the root of the repo.
-You can find also convenience scripts in the supplied `Makefile`.
+A new project using Plone 6.
 
-For convenience the deployment Ansible playbooks are included in the `ansible` folder.
- They install the entire required dependencies and infrastructure as well as the services.
+## Quick start
 
-For any questions, please contact the @plone/ai-team
+### Development Setup
 
-## Ansible Usage
+- Python 3.11
+- Node 16
+- yarn
+- Docker
 
-Checkout and work with this repository.
-
-```shell
-git clone https://github.com/plone/6.demo.plone.org.git
-cd 6.demo.plone.org.git
-# git checkout ansible # for testing this branch only
-```
-
-Create a Python virtual environment, upgrade its package management tools, and install Ansible into it.
+### Install
 
 ```shell
-python3 -m venv env
-env/bin/pip install --upgrade pip setuptools
-env/bin/pip install ansible
+git clone git@github.com:collective/plone-6-demo-site.git
+cd plone-6-demo-site
+make install
 ```
 
-Create or reuse an existing SSH key to deploy into a virtual machine in the next step.
+### Start
+
+Start the Backend (http://localhost:8080/)
 
 ```shell
-ssh-keygen
+make start-backend
 ```
 
-Create a remote virtual machine for production deployment, such as a Digital Ocean droplet or AWS EC2 instance.
-
-
-[//]: # (I created a DO droplet of 1GB RAM, and I expect it to fail.)
-[//]: # (The droplet might need to be resized.)
-
-This playbook has been tested on Ubuntu 20.04 LTS only.
-The minimum requirements for the virtual machine include ___GB memory.
-Obtain the hostname of your virtual machine.
-This process is left to the provider to document.
-
-Update the Ansible configuration file at `ansible/vbox_host.cfg` with your hostname, replacing the value of `<name_of_your_host>`.
-
-Run the playbook.
+Start the Frontend (http://localhost:3000/)
 
 ```shell
-env/bin/ansible-playbook -i ansible/vbox_host.cfg ansible/volto-demo.yml
-
-PLAY [all] *************************************************************************************************************
-
-TASK [Gathering Facts] *************************************************************************************************
-fatal: [143.198.238.54]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 127.0.0.1 port 2222: Connection refused", "unreachable": true}
-
-PLAY RECAP *************************************************************************************************************
-143.198.238.54             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0
+make start-frontend
 ```
 
-*sad trombone*
+## Structure
+
+This monorepo is composed by two distinct codebases: api and frontend.
+
+- **backend**: API (Backend) Plone installation using pip (not buildout). Includes a policy package named plone_6_demo_site
+- **frontend**: React (Volto) package named frontend
+
+### Reasoning
+
+- Repo contains all codebase needed to run the site (excluding existing addons for Plone and React).
+- Github Workflows are triggered based on changes on each codebase (see .github/workflows)
+- Easier to create Docker images for each codebase
+- Showcase Plone installation/setup without buildout
+
+## Linters and Formatting
+
+There are some hooks to run lint checks on the code. If you want to automatically format them, you can run
+
+`make format`
+
+in the root folder or especifically in each backend or frontend folders.
+
+Linters commands are available in each backend and frontend folder.
+
+## Acceptance tests
+
+There are `Makefile` commands in place:
+
+`build-test-acceptance-server`: Build Acceptance Backend Server Docker image that it's being used afterwards. Must be run before running the tests, if the backend code has changed.
+
+`start-test-acceptance-server`: Start server fixture in docker (previous build required)
+
+`start-test-acceptance-frontend`: Start the Core Acceptance Frontend Fixture in dev mode
+
+`test-acceptance`: Start Core Cypress Acceptance Tests in dev mode
+
+## Credits
+
+**This was generated by [cookiecutter-plone-starter](https://github.com/collective/cookiecutter-plone-starter) on 2022-12-12 18:14:07**
