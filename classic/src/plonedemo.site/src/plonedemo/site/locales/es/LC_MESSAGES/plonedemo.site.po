@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-12-13 11:18+0000\n"
+"PO-Revision-Date: 2017-06-21 16:59+0200\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: ../browser/templates/frontpage_viewlet.pt:35
+msgid "About Plone"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:19
+msgid "About this site"
+msgstr "Sobre este sitio"
+
+#: ../browser/templates/frontpage_viewlet.pt:39
+msgid "Add-ons for Plone"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:36
+msgid "Documentation"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:53
+msgid "Editor"
+msgstr "Editor"
+
+#: ../browser/templates/frontpage_viewlet.pt:51
+msgid "Editor-in-chief"
+msgstr "Editor-en-jefe"
+
+#: ../browser/templates/frontpage_viewlet.pt:38
+msgid "Forum"
+msgstr ""
+
+#: ../configure.zcml:20
+msgid "Installs the plonedemo.site add-on."
+msgstr "Installs the plonedemo.site add-on."
+
+#: ../browser/templates/frontpage_viewlet.pt:44
+msgid "Log in now!"
+msgstr "¡Entra ahora!"
+
+#: ../browser/templates/frontpage_viewlet.pt:46
+msgid "Log out"
+msgstr "Salir"
+
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:40
+msgid "Login as Editor"
+msgstr "Entrar como Editor"
+
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:35
+msgid "Login as Editor-in-chief"
+msgstr "Entrar como Editor-en-jefe"
+
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:30
+msgid "Login as Manager"
+msgstr "Entrar como Administrador"
+
+#: ../browser/templates/frontpage_viewlet.pt:49
+msgid "Manager"
+msgstr "Administrador"
+
+#: ../browser/templates/frontpage_viewlet.pt:22
+msgid "More demo sites"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:15
+msgid "Plone &mdash; The ultimate Open Source Enterprise CMS"
+msgstr "Plone &mdash; El Sistema de Gestión de Contenido de Fuentes Abiertas"
+
+#: ../browser/templates/frontpage_viewlet.pt:26
+msgid "Plone 5.2"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:24
+msgid "Plone 6"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:25
+msgid "Plone 6 Classic UI"
+msgstr ""
+
+#: ../browser/templates/versions_viewlet.pt:12
+msgid "Technical Details:"
+msgstr "Detalles técnicos:"
+
+#: ../setuphandlers.py:23
+msgid "The ultimate Open Source Enterprise CMS"
+msgstr "El Sistema de Gestión de Contenido de Fuentes Abiertas"
+
+#: ../browser/templates/frontpage_viewlet.pt:21
+msgid "This is a demo-site where you can test Plone ${plone_version}. The site will be reset every ${reset_hours} hours."
+msgstr "Esta es una página de demostración donde puedes probar Plone ${plone_version}. La página se restaurará cada ${reset_hours} horas."
+
+#: ../browser/templates/frontpage_viewlet.pt:41
+msgid "This site is provided by the Plone Community. If you have suggestions or encounter problems please <a href=\"https://github.com/collective/demo.plone.de/issues\">submit a issue</a> on github."
+msgstr "Esta es una página preparada por la Comunidad Plone. Si tienes sugerencias o problemas <a href=\"https://github.com/collective/demo.plone.de/issues\">envíanoslas</a> a través de github."
+
+#: ../browser/templates/versions_viewlet.pt:18
+msgid "This site was last reset on:"
+msgstr "Última vez en la que se restableció este sitio:"
+
+#: ../browser/templates/frontpage_viewlet.pt:37
+msgid "Training"
+msgstr ""
+
+#: ../configure.zcml:29
+msgid "Uninstalls the plonedemo.site add-on."
+msgstr "<a href=\"https://github.com/collective/demo.plone.de/issues\">submit a issue</a> on github."
+
+#: ../browser/templates/frontpage_viewlet.pt:33
+msgid "Want to know more?"
+msgstr "¿Quieres saber más?"
+
+#: ../setuphandlers.py:22
+msgid "Welcome to Plone"
+msgstr "Bienvenido a Plone"
+
+#. Default: "Create, edit and submit content."
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:42
+#: ../browser/templates/frontpage_viewlet.pt:54
+msgid "description_editor"
+msgstr "Crear, modificar y enviar contenido para su publicación"
+
+#. Default: "Create, edit and publish content."
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:37
+#: ../browser/templates/frontpage_viewlet.pt:52
+msgid "description_editor_in_chief"
+msgstr "Crear, modificar y publicar contenido"
+
+#. Default: "Manage content, users, addons and settings."
+#: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:32
+#: ../browser/templates/frontpage_viewlet.pt:50
+msgid "description_manager"
+msgstr "Gestionar contenido, usuarios, complementos y configuración"
+
+#: ../configure.zcml:20
+msgid "plonedemo.site"
+msgstr "plonedemo.site"
+
+#: ../configure.zcml:29
+msgid "plonedemo.site - uninstall"
+msgstr "plonedemo.site - uninstall"
+
+#. Default: "<p>Edit this site and test Plone now!</p>"
+#: ../browser/templates/frontpage.pt:10
+msgid "plonedemo_frontpage"
+msgstr "<p>¡Edita esta página y prueba Plone ahora!</p>"

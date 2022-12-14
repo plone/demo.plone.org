@@ -61,6 +61,7 @@ install:  ## Install
 	@echo "Install Backend & Frontend"
 	$(MAKE) install-backend
 	$(MAKE) install-frontend
+	$(MAKE) install-classic
 
 # TODO production build
 
@@ -69,6 +70,7 @@ build:  ## Build in development mode
 	@echo "Build"
 	$(MAKE) build-backend
 	$(MAKE) install-frontend
+	$(MAKE) build-classic
 
 
 .PHONY: start
@@ -113,6 +115,26 @@ build-images:  ## Build docker images
 	@echo "Build"
 	$(MAKE) -C "./backend/" build-image
 	$(MAKE) -C "./frontend/" build-image
+	$(MAKE) -C "./classic/" build-image
+
+## Classic
+
+.PHONY: install-classic
+install-classic:  ## Create virtualenv and install Plone
+	$(MAKE) -C "./classic/" build-dev
+	$(MAKE) create-site-classic
+
+.PHONY: build-classic
+build-classic:  ## Build classic
+	$(MAKE) -C "./classic/" build-dev
+
+.PHONY: create-site-classic
+create-site-classic: ## Create a Plone site with default content
+	$(MAKE) -C "./classic/" create-site
+
+.PHONY: start-classic
+start-classic: ## Start Plone Backend
+	$(MAKE) -C "./classic/" start
 
 ## Docker stack
 .PHONY: start-stack

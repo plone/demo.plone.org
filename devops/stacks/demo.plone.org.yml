@@ -51,6 +51,29 @@ services:
         - traefik.http.routers.demo-backend.service=demo-backend
         - traefik.http.routers.demo-backend.middlewares=gzip,demo-backend-vhm
 
+  classic:
+    image: ghcr.io/plone/demo-classic:latest
+    networks:
+      - public
+    deploy:
+      # Just one, as we do not have a shared database
+      replicas: 1
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-classic.loadbalancer.server.port=8080
+        # Middleware
+        - "traefik.http.middlewares.demo-classic-vhm.replacepathregex.regex=^/(.*)"
+        - "traefik.http.middlewares.demo-classic-vhm.replacepathregex.replacement=/VirtualHostBase/https/classic.demo.plone.org/Plone/VirtualHostRoot/$$1"
+        # Router
+        - traefik.http.routers.demo-classic.rule=Host(`classic.demo.plone.org`)
+        - traefik.http.routers.demo-classic.entrypoints=https
+        - traefik.http.routers.demo-classic.tls=true
+        - traefik.http.routers.demo-classic.service=demo-classic
+        - traefik.http.routers.demo-classic.middlewares=gzip,demo-classic-vhm
+
 networks:
   public:
     external: true

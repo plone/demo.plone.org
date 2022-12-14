@@ -92,6 +92,54 @@ jobs:
         run: |
           PYTHONWARNINGS=ignore zope-testrunner --auto-color --auto-progress --test-path src/plone_6_demo_site/src/
 
+  classic-black:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v3
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'classic'
+          check: 'black'
+
+  classic-flake8:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v3
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'classic'
+          check: 'flake8'
+
+  classic-isort:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v3
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'classic'
+          check: 'isort'
+
+  classic-zpretty:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v3
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'classic'
+          check: 'zpretty'
+
   frontend-eslint:
     runs-on: ubuntu-latest
     defaults:
@@ -180,6 +228,10 @@ jobs:
       - backend-isort
       - backend-zpretty
       - backend-tests
+      - classic-black
+      - classic-flake8
+      - classic-isort
+      - classic-zpretty
       - frontend-eslint
       - frontend-prettier
       - frontend-i18n
@@ -194,6 +246,9 @@ jobs:
             file: Dockerfile
           - image: frontend
             context: frontend
+            file: Dockerfile
+          - image: classic
+            context: classic
             file: Dockerfile
     steps:
 

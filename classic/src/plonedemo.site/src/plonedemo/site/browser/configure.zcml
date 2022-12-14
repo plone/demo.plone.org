@@ -1,0 +1,50 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonedemo.site"
+    >
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include
+      package="z3c.jbot"
+      file="meta.zcml"
+      />
+  <browser:jbot
+      directory="overrides"
+      layer="plonedemo.site.interfaces.IPlonedemoSiteLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      directory="static"
+      name="plonedemo.site"
+      type="plone"
+      />
+
+  <browser:page
+      name="demo_frontpage"
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      template="templates/frontpage.pt"
+      permission="zope.Public"
+      />
+
+  <browser:viewlet
+      name="frontpage_viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class=".viewlets.FrontpageViewlet"
+      template="templates/frontpage_viewlet.pt"
+      permission="zope2.View"
+      layer="plonedemo.site.interfaces.IPlonedemoSiteLayer"
+      />
+
+  <browser:viewlet
+      name="versions_viewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.VersionsViewlet"
+      template="templates/versions_viewlet.pt"
+      permission="zope2.View"
+      layer="plonedemo.site.interfaces.IPlonedemoSiteLayer"
+      />
+
+</configure>

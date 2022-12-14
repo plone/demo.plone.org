@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+  <order manager="plone.abovecontent"
+         skinname="Plone Default"
+  >
+    <viewlet name="frontpage_viewlet" />
+    <viewlet name="plone.path_bar" />
+  </order>
+  <order manager="plone.portalfooter"
+         skinname="Plone Default"
+  >
+    <viewlet name="versions_viewlet" />
+  </order>
+</object>

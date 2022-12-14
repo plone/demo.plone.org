@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema"
+          name="plone.webstats_js"
+  >
+    <value>&lt;!-- Piwik --&gt;&#13;
+&lt;script type="text/javascript"&gt;&#13;
+  var _paq = _paq || [];&#13;
+  _paq.push(['trackPageView']);&#13;
+  _paq.push(['enableLinkTracking']);&#13;
+  (function() {&#13;
+    var u="//piwik.portknox.net/";&#13;
+    _paq.push(['setTrackerUrl', u+'piwik.php']);&#13;
+    _paq.push(['setSiteId', 10]);&#13;
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];&#13;
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);&#13;
+  })();&#13;
+&lt;/script&gt;&#13;
+&lt;noscript&gt;&lt;p&gt;&lt;img src="//piwik.portknox.net/piwik.php?idsite=10" style="border:0;" alt="" /&gt;&lt;/p&gt;&lt;/noscript&gt;&#13;
+&lt;!-- End Piwik Code --&gt;&#13;
+</value>
+  </record>
+
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema"
+          name="plone.site_title"
+  >
+    <value>demo.plone.org</value>
+  </record>
+
+  <record interface="Products.CMFPlone.interfaces.controlpanel.ILinkSchema"
+          name="plone.mark_special_links"
+  >
+    <value>False</value>
+  </record>
+
+  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
+          name="plone.available_languages"
+  >
+    <value>
+      <element>en</element>
+      <element>de</element>
+      <element>es</element>
+      <element>eu</element>
+    </value>
+  </record>
+
+  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
+          name="plone.default_language"
+  >
+    <value>en</value>
+  </record>
+
+  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
+          name="plone.display_flags"
+  >
+    <value>True</value>
+  </record>
+
+  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
+          name="plone.use_request_negotiation"
+  >
+    <value>True</value>
+  </record>
+
+  <record name="plone.displayed_types">
+    <value purge="false">
+      <element>Collection</element>
+    </value>
+  </record>
+
+  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           prefix="plone.bundles/plonedemo-bundle"
+  >
+    <value key="enabled">True</value>
+    <value key="csscompilation">++plone++plonedemo.site/plonedemo.site.css</value>
+    <value key="jscompilation">++plone++plonedemo.site/plonedemo.site.js</value>
+    <value key="last_compilation" />
+  </records>
+
+</registry>
