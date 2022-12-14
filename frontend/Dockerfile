@@ -1,10 +1,13 @@
+# syntax=docker/dockerfile:1
 FROM node:16-slim as base
 FROM base as builder
 
-RUN apt-get update \
-    && buildDeps="python3 build-essential" \
-    && apt-get install -y --no-install-recommends $buildDeps \
-    && rm -rf /var/lib/apt/lists/*
+RUN <<EOT
+    apt-get update
+    buildDeps="python3 build-essential"
+    apt-get install -y --no-install-recommends $buildDeps
+    rm -rf /var/lib/apt/lists/*
+EOT
 
 COPY --chown=node . /build/
 RUN corepack enable

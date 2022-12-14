@@ -1,0 +1,49 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonedemo.site"
+    >
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include file="dependencies.zcml" />
+
+  <include package=".browser" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plonedemo.site"
+      description="Installs the plonedemo.site add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plonedemo.site - uninstall"
+      description="Uninstalls the plonedemo.site add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      provides="Products.CMFPlone.interfaces.INonInstallable"
+      name="plonedemo.site"
+      />
+
+  <plone:CORSPolicy
+      allow_origin="http://localhost:3000,http://127.0.0.1:3000"
+      allow_credentials="true"
+      allow_methods="DELETE,GET,OPTIONS,PATCH,POST,PUT"
+      expose_headers="Content-Length,X-My-Header"
+      allow_headers="Accept,Authorization,Content-Type,X-Custom-Header,Origin"
+      max_age="3600"
+      />
+
+</configure>

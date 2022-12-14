@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      tal:omit-tag=""
+      i18n:domain="plonedemo.site"
+      tal:condition="view/show">
+
+<div class="technical_versions container">
+
+    <h4 i18n:translate="">Technical Details:</h4>
+    <ul>
+      <tal:list-versions repeat="version python:view.version_overview()">
+        <li tal:content="version">Version</li>
+      </tal:list-versions>
+    </ul>
+    <span i18n:translate="">This site was last reset on:</span>
+    <span tal:replace="python: view.portal_created()">XXXX</span>
+
+</div>
+</html>

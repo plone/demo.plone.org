@@ -1,0 +1,31 @@
+body.userrole-authenticated .for_authenticated,
+body.userrole-anonymous .for_anonymous {
+    display: block;
+}
+
+body.userrole-authenticated .for_anonymous,
+body.userrole-anonymous .for_authenticated {
+    display: none;
+}
+
+.principal.plonedemo {
+    padding: 20px 0;
+    background-color: #d9d7d7;
+}
+
+.principal.plonedemo h2 {
+    margin: 20px 0;
+}
+
+.principal.plonedemo h3 {
+    margin-top: 0;
+}
+
+.technical_versions {
+    text-align: center;
+}
+
+.technical_versions ul {
+    padding-left: 0;
+    list-style: none;
+}

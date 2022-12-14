@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      tal:omit-tag=""
+      i18n:domain="plonedemo.site"
+      tal:condition="view/show">
+
+<div class="principal plonedemo" role="complementary">
+    <div class="container"
+         tal:define="portal_state context/@@plone_portal_state;
+                     navigation_root_url portal_state/navigation_root_url;">
+        <div>
+            <h2 i18n:translate="">Plone &mdash; The ultimate Open Source Enterprise CMS</h2>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                    <h5 i18n:translate="">About this site</h5>
+                    <p i18n:translate="">This is a demo-site where you can test Plone <span tal:replace="python: view.get_plone_version()" i18n:name="plone_version"></span>.
+                    The site will be reset every <span i18n:name="reset_hours" tal:replace="view/reset_hours">4</span> hours.</p>
+                    <h5 i18n:translate="">More demo sites</h5>
+                    <ul>
+                        <li><a i18n:translate="" class="link-plain" href="https://demo.plone.org" target="_blank">Plone 6</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://classic.demo.plone.org" target="_blank">Plone 6 Classic UI</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://52.demo.plone.org" target="_blank">Plone 5.2</a></li>
+                        <li tal:replace="nothing"><a i18n:translate="" class="link-plain" href="https://nightly.demo.plone.org" target="_blank">Plone 6 (nightly build)</a></li>
+                        <li tal:replace="nothing"><a i18n:translate="" class="link-plain" href="https://nightly-classic.demo.plone.org" target="_blank">Plone 6 Classic UI (nightly build)</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-xs-12 col-sm-6  col-md-4">
+                    <h5 i18n:translate="">Want to know more?</h5>
+                    <ul>
+                        <li><a i18n:translate="" class="link-plain" href="https://plone.org" target="_blank">About Plone</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://docs.plone.org" target="_blank">Documentation</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://training.plone.org" target="_blank">Training</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://community.plone.org" target="_blank">Forum</a></li>
+                        <li><a i18n:translate="" class="link-plain" href="https://github.com/collective/awesome-plone#contents" target="_blank">Add-ons for Plone</a></li>
+                    </ul>
+                    <p class="small" i18n:translate="">This site is provided by the Plone Community. If you have suggestions or encounter problems please <a href="https://github.com/collective/demo.plone.de/issues">submit a issue</a> on github.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5 class="for_anonymous"><a class="btn btn-primary pat-plone-modal" role="button" href="${navigation_root_url}/login" data-pat-plone-modal='{"prependContent": ".portalMessage", "title": "Log in", "width": "26em"}' i18n:translate="">Log in now!</a></h5>
+
+                    <p class="for_authenticated"><a class="btn btn-primary" role="button" href="${navigation_root_url}/logout" i18n:translate="">Log out</a></p>
+
+                    <dl>
+                        <dt i18n:translate="">Manager</dt>
+                        <dd i18n:translate="description_manager">Manage content, users, addons and settings.</dd>
+                        <dt i18n:translate="">Editor-in-chief</dt>
+                        <dd i18n:translate="description_editor_in_chief">Create, edit and publish content.</dd>
+                        <dt i18n:translate="">Editor</dt>
+                        <dd i18n:translate="description_editor">Create, edit and submit content.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
