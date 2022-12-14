@@ -62,7 +62,7 @@ def post_install(setup):
         # Import zexp for language
         import_zexp(
             setup,
-            filename=f"py3demo_{language}.zexp",
+            filename=f"demo_{language}.zexp",
             container=container,
             name="demo",
             update=True,
