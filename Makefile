@@ -124,7 +124,7 @@ install-classic:  ## Create virtualenv and install Plone
 	$(MAKE) -C "./classic/" build-dev
 	$(MAKE) create-site-classic
 
-.PHONY: build-backend
+.PHONY: build-classic
 build-classic:  ## Build classic
 	$(MAKE) -C "./classic/" build-dev
 
@@ -132,7 +132,7 @@ build-classic:  ## Build classic
 create-site-classic: ## Create a Plone site with default content
 	$(MAKE) -C "./classic/" create-site
 
-.PHONY: start-backend
+.PHONY: start-classic
 start-classic: ## Start Plone Backend
 	$(MAKE) -C "./classic/" start
 
