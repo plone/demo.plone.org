@@ -125,11 +125,11 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@kitconcept/volto-blocks-grid": "5.2.0",
-    "@plone/volto": "16.5.0"
+    "@kitconcept/volto-blocks-grid": "6.1.0",
+    "@plone/volto": "16.9.0"
   },
   "devDependencies": {
-    "@plone/scripts": "^2.1.5",
+    "@plone/scripts": "^2.3.0",
     "@storybook/addon-actions": "^6.3.0",
     "@storybook/addon-controls": "6.3.0",
     "@storybook/addon-essentials": "^6.3.0",
