@@ -27,6 +27,13 @@ export default function applyConfig(config) {
     defaultLanguage: 'en',
   };
 
+  config.settings.apiExpanders = [
+    {
+      match: '',
+      GET_CONTENT: ['breadcrumbs', 'navigation', 'actions', 'types'],
+    },
+  ];
+
   config.blocks.blocksConfig.system = {
     id: 'system',
     title: 'System',
@@ -37,10 +44,6 @@ export default function applyConfig(config) {
     restricted: false,
     mostUsed: true,
     sidebarTab: 1,
-    security: {
-      addPermission: [],
-      view: [],
-    },
   };
 
   return config;
