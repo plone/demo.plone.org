@@ -1,13 +1,13 @@
 # syntax=docker/dockerfile:1
 ARG SEED=1000
-ARG PLONE_VERSION=6.0.1
+ARG PLONE_VERSION=6.0.2
 FROM plone/plone-backend:${PLONE_VERSION}
 
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-      org.label-schema.name="demo-backend" \
-      org.label-schema.description="Plone 6 Demo Site backend image." \
-      org.label-schema.vendor="Plone Foundation"
+    org.label-schema.name="demo-backend" \
+    org.label-schema.description="Plone 6 Demo Site backend image." \
+    org.label-schema.vendor="Plone Foundation"
 
 # Add local code
 COPY . .
