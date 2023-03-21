@@ -12,7 +12,10 @@ services:
       - public
       - demoplone
     deploy:
-      replicas: 2
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
       labels:
         - traefik.enable=true
         - traefik.docker.network=public
@@ -35,6 +38,9 @@ services:
     deploy:
       # Just one, as we do not have a shared database
       replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
       labels:
         - traefik.enable=true
         - traefik.docker.network=public
@@ -58,6 +64,9 @@ services:
     deploy:
       # Just one, as we do not have a shared database
       replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
       labels:
         - traefik.enable=true
         - traefik.docker.network=public
