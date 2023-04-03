@@ -7,7 +7,11 @@ on:
       - "backend/**"
       - "frontend/**"
       - ".github/workflows/ci.yml"
-
+  pull_request:
+    paths:
+      - "backend/**"
+      - "frontend/**"
+      - ".github/workflows/ci.yml"
   schedule:
     - cron:  '0 */2 * * *'
 
@@ -19,6 +23,7 @@ env:
 jobs:
 
   backend-black:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -31,6 +36,7 @@ jobs:
           check: 'black'
 
   backend-flake8:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -43,6 +49,7 @@ jobs:
           check: 'flake8'
 
   backend-isort:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -55,6 +62,7 @@ jobs:
           check: 'isort'
 
   backend-zpretty:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -67,6 +75,7 @@ jobs:
           check: 'zpretty'
 
   backend-tests:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
 
     defaults:
@@ -93,6 +102,7 @@ jobs:
           PYTHONWARNINGS=ignore zope-testrunner --auto-color --auto-progress --test-path src/plone_6_demo_site/src/
 
   classic-black:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -105,6 +115,7 @@ jobs:
           check: 'black'
 
   classic-flake8:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -117,6 +128,7 @@ jobs:
           check: 'flake8'
 
   classic-isort:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -129,6 +141,7 @@ jobs:
           check: 'isort'
 
   classic-zpretty:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     steps:
       - name: Checkout codebase
@@ -141,6 +154,7 @@ jobs:
           check: 'zpretty'
 
   frontend-eslint:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -163,6 +177,7 @@ jobs:
         run: yarn run lint:ci
 
   frontend-prettier:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -175,6 +190,7 @@ jobs:
         run: npx prettier@2.0.5 --single-quote --check 'src/**/*.{js,jsx,ts,tsx,css,scss}' --config=package.json
 
   frontend-i18n:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     name: i18n sync
     runs-on: ubuntu-latest
     defaults:
@@ -199,6 +215,7 @@ jobs:
         run: make i18n-ci
 
   frontend-tests:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -221,6 +238,7 @@ jobs:
         run: make test
 
   release:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
     needs:
       - backend-black
