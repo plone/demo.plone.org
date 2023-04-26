@@ -18,7 +18,7 @@ on:
 env:
   node-version: 16.x
   python: "3.11"
-  plone: "6.0.3"
+  plone: "6.0.4"
 
 jobs:
 

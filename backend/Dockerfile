@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG SEED=1000
-ARG PLONE_VERSION=6.0.3
+ARG PLONE_VERSION=6.0.4
 FROM plone/plone-backend:${PLONE_VERSION}
 
 
