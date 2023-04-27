@@ -125,8 +125,8 @@
     "node": "^14 || ^16"
   },
   "dependencies": {
-    "@kitconcept/volto-blocks-grid": "6.1.0",
-    "@plone/volto": "16.9.0"
+    "@kitconcept/volto-blocks-grid": "7.0.0",
+    "@plone/volto": "16.20.4"
   },
   "devDependencies": {
     "@plone/scripts": "^2.3.0",
