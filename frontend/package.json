@@ -25,7 +25,10 @@
     "build-storybook": "build-storybook"
   },
   "addons": [
-    "@kitconcept/volto-blocks-grid"
+    "volto-form-block",
+    "@kitconcept/volto-blocks-grid",
+    "@kitconcept/volto-separator-block",
+    "@kitconcept/volto-slider-block"
   ],
   "jest": {
     "transform": {
@@ -126,7 +129,10 @@
   },
   "dependencies": {
     "@kitconcept/volto-blocks-grid": "7.0.0",
-    "@plone/volto": "16.20.4"
+    "@kitconcept/volto-separator-block": "*",
+    "@kitconcept/volto-slider-block": "*",
+    "@plone/volto": "16.20.4",
+    "volto-form-block": "*"
   },
   "devDependencies": {
     "@plone/scripts": "^2.3.0",
