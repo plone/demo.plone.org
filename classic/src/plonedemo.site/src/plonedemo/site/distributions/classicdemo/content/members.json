@@ -1,0 +1,99 @@
+{
+    "groups": [
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Administrators",
+            "groups": [],
+            "principals": [
+                "manager"
+            ],
+            "roles": [
+                "Manager"
+            ],
+            "title": "Administrators"
+        },
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Reviewers",
+            "groups": [],
+            "principals": [
+                "editorinchief"
+            ],
+            "roles": [
+                "Reviewer"
+            ],
+            "title": "Reviewers"
+        },
+        {
+            "description": "",
+            "email": "",
+            "groupid": "Site Administrators",
+            "groups": [],
+            "principals": [],
+            "roles": [
+                "Site Administrator"
+            ],
+            "title": "Site Administrators"
+        }
+    ],
+    "members": [
+        {
+            "description": "",
+            "email": "demo@plone.de",
+            "fullname": "Editor",
+            "groups": [],
+            "home_page": "",
+            "last_login_time": "2000-01-01T00:00:00",
+            "listed": true,
+            "location": "",
+            "login_time": "2000-01-01T00:00:00",
+            "password": "{SSHA}4pT0ZZKQUfkoCyW0TPx8jT2voUwraAuRv5XW",
+            "roles": [
+                "Editor",
+                "Contributor",
+                "Reader",
+                "Member"
+            ],
+            "username": "editor"
+        },
+        {
+            "description": "",
+            "email": "demo@plone.de",
+            "fullname": "Editor-in-chief",
+            "groups": [
+                "Reviewers"
+            ],
+            "home_page": "",
+            "last_login_time": "2000-01-01T00:00:00",
+            "listed": true,
+            "location": "",
+            "login_time": "2000-01-01T00:00:00",
+            "password": "{SSHA}5M3Ck3Vu8+XtWmYDmpnWkSeWlds0KCf7D9Yr",
+            "roles": [
+                "Member",
+                "Editor",
+                "Contributor",
+                "Reader"
+            ],
+            "username": "editorinchief"
+        },
+        {
+            "description": "",
+            "email": "demo@plone.de",
+            "fullname": "Manager",
+            "groups": [
+                "Administrators"
+            ],
+            "home_page": "",
+            "last_login_time": "2000-01-01T00:00:00",
+            "listed": true,
+            "location": "",
+            "login_time": "2000-01-01T00:00:00",
+            "password": "{SSHA}J4S9HAzQsPXngzOLXVIKL4gzUenEwWKsif9I",
+            "roles": [],
+            "username": "manager"
+        }
+    ]
+}

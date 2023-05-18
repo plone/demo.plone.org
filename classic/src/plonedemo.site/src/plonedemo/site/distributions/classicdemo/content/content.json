@@ -1,0 +1,3404 @@
+[
+  {
+    "@id": "http://localhost:8080/Plone/de",
+    "@type": "LRF",
+    "UID": "bb0d139598c3442fad5e37d57b196fd9",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "de",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "UID": "7612ad31c36f4d79b29d621138bfaa9f",
+      "description": "",
+      "title": "Website"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Deutsch",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/assets",
+    "@type": "LIF",
+    "UID": "2828e1db574b43118a73ffba2b6f41e8",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "assets",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de",
+      "@type": "LRF",
+      "UID": "bb0d139598c3442fad5e37d57b196fd9",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Deutsch"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Assets",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo",
+    "@type": "Folder",
+    "UID": "79f01c49712d47c0977f8c35b949af7a",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-19T16:12:33+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-07-19T18:13:23",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "demo",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "summary_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de",
+      "@type": "LRF",
+      "UID": "bb0d139598c3442fad5e37d57b196fd9",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Deutsch"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Demo",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:12:33+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:13:23+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-event",
+    "@type": "Event",
+    "UID": "97dd7d61838e46eebb5ac7e62239b2af",
+    "allow_discussion": false,
+    "attendees": [],
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": "Plone Community",
+    "contact_phone": null,
+    "contributors": [],
+    "created": "2018-07-19T16:16:58+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-07-19T18:17:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-event",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "event_view",
+    "location": "Planet Earth",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "open_end": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "recurrence": null,
+    "review_state": "published",
+    "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
+    "subjects": [],
+    "sync_uid": null,
+    "title": "Ein Termin",
+    "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:16:58+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:17:04+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-file.pdf",
+    "@type": "File",
+    "UID": "3d300e8eff2d4ebaa7c670b5d4151d86",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:47:16+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/3d300e8eff2d4ebaa7c670b5d4151d86-file/agreement.pdf",
+      "content-type": "application/pdf",
+      "filename": "agreement.pdf",
+      "size": 68434
+    },
+    "id": "a-file.pdf",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Eine Datei",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-folder",
+    "@type": "Folder",
+    "UID": "78dd69b22bfd4486806c1bb89d2acd06",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:44:38+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:44:43",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-folder",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Ein Ordner",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:44:38+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:44:43+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-folder/a-page-inside-a-folder",
+    "@type": "Document",
+    "UID": "dd01c82bbbb64b8ab37469843ecd1d03",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-07-20T13:45:13+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-07-20T15:45:18",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-page-inside-a-folder",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo/a-folder",
+      "@type": "Folder",
+      "UID": "78dd69b22bfd4486806c1bb89d2acd06",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Ein Ordner"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Eine Seite in einem Ordner",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:45:13+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:45:18+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-image.jpg",
+    "@type": "Image",
+    "UID": "0ec640ff06e4401792c31018655050db",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:49:01+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-image.jpg",
+    "image": {
+      "blob_path": "blobs/0ec640ff06e4401792c31018655050db-image/paris.jpg",
+      "content-type": "image/jpeg",
+      "filename": "paris.jpg",
+      "height": 755,
+      "size": 431326,
+      "width": 1664
+    },
+    "is_folderish": false,
+    "language": "de",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Ein Bild",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-link",
+    "@type": "Link",
+    "UID": "182dcc5b98c94818b9f4c1c8e488c7ff",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-07-20T13:48:10+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:48:14",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-link",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "remoteUrl": "https://plone.com/",
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Ein Link",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:48:10+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:48:14+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-news-item",
+    "@type": "News Item",
+    "UID": "ecaab7fb8d2c4183b8bd57080d06f7ec",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-07-19T16:18:17+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-07-19T18:19:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-news-item",
+    "image": {
+      "blob_path": "blobs/ecaab7fb8d2c4183b8bd57080d06f7ec-image/turner.jpg",
+      "content-type": "image/jpeg",
+      "filename": "turner.jpg",
+      "height": 1002,
+      "size": 862842,
+      "width": 1664
+    },
+    "image_caption": null,
+    "is_folderish": false,
+    "language": "de",
+    "layout": "newsitem_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Eine Nachricht",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:18:17+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:19:14+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-page",
+    "@type": "Document",
+    "UID": "fb91bddde7eb46efbed20e9c10fb4929",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-07-19T16:15:11+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
+    "effective": "2018-07-19T18:15:27",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-page",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Eine Seite",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:15:11+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:15:27+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/a-video.mp4",
+    "@type": "File",
+    "UID": "ddf211ecd2914ff18ed82ba9b402033a",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:46:10+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/ddf211ecd2914ff18ed82ba9b402033a-file/sample_960x400_ocean_with_audio.mp4",
+      "content-type": "video/mp4",
+      "filename": "sample_960x400_ocean_with_audio.mp4",
+      "size": 17520898
+    },
+    "id": "a-video.mp4",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Ein Video",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/demo/eine-kollektion",
+    "@type": "Collection",
+    "UID": "cd6271401a744e649e99afd5bb786bef",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2022-04-02T14:14:32+00:00",
+    "creators": [
+      "admin"
+    ],
+    "customViewFields": [
+      "Title",
+      "Creator",
+      "Type",
+      "ModificationDate"
+    ],
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.",
+    "effective": "2022-04-02T16:15:29",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "eine-kollektion",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
+    "language": "de",
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de/demo",
+      "@type": "Folder",
+      "UID": "79f01c49712d47c0977f8c35b949af7a",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "query": [
+      {
+        "i": "portal_type",
+        "o": "plone.app.querystring.operation.selection.any",
+        "v": [
+          "News Item",
+          "Document"
+        ]
+      }
+    ],
+    "review_state": "published",
+    "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
+    "subjects": [],
+    "text": {
+      "content-type": "text/html",
+      "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+      "encoding": "utf-8"
+    },
+    "title": "Eine Kollektion",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2022-04-02T14:14:32+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2022-04-02T14:15:29+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/de/frontpage",
+    "@type": "Document",
+    "UID": "f66f008b011f4249a93b1f6438fef86e",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2023-05-18T19:16:57+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Das ultimative Open Source Enterprise CMS",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "frontpage",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/de",
+      "@type": "LRF",
+      "UID": "bb0d139598c3442fad5e37d57b196fd9",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Deutsch"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Willkommen bei Plone",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:57+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:57+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en",
+    "@type": "LRF",
+    "UID": "2ed13af4ba714c2a961f44234a1f60a0",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "en",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "UID": "7612ad31c36f4d79b29d621138bfaa9f",
+      "description": "",
+      "title": "Website"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "English",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/assets",
+    "@type": "LIF",
+    "UID": "4f5987d8dfa74bcb90ca5e9444352d20",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "assets",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en",
+      "@type": "LRF",
+      "UID": "2ed13af4ba714c2a961f44234a1f60a0",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "English"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Assets",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo",
+    "@type": "Folder",
+    "UID": "9afb95a79cfa4c0684715027244e61e0",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-19T16:31:18+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-07-19T18:31:44",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "demo",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "summary_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en",
+      "@type": "LRF",
+      "UID": "2ed13af4ba714c2a961f44234a1f60a0",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "English"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Demo",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:31:18+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:31:44+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-collection",
+    "@type": "Collection",
+    "UID": "bfdc104dadc844cdb4a9412165dad82e",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2022-04-02T14:20:31+00:00",
+    "creators": [
+      "admin"
+    ],
+    "customViewFields": [
+      "Title",
+      "Creator",
+      "Type",
+      "ModificationDate"
+    ],
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui",
+    "effective": "2022-04-02T16:20:33",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-collection",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
+    "language": "en",
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "query": [
+      {
+        "i": "portal_type",
+        "o": "plone.app.querystring.operation.selection.any",
+        "v": [
+          "News Item",
+          "Document"
+        ]
+      }
+    ],
+    "review_state": "published",
+    "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
+    "subjects": [],
+    "text": {
+      "content-type": "text/html",
+      "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+      "encoding": "utf-8"
+    },
+    "title": "A Collection",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2022-04-02T14:20:31+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2022-04-02T14:20:33+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-file.pdf",
+    "@type": "File",
+    "UID": "4620411803a54769832a906094928c6e",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:53:26+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/4620411803a54769832a906094928c6e-file/agreement.pdf",
+      "content-type": "application/pdf",
+      "filename": "agreement.pdf",
+      "size": 68434
+    },
+    "id": "a-file.pdf",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "A File",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-folder",
+    "@type": "Folder",
+    "UID": "a07f9e78ee864e689d72fde066adbac3",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:51:36+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:52:13",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-folder",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A Folder",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:51:36+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:52:13+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-folder/a-page-inside-a-folder",
+    "@type": "Document",
+    "UID": "cdeb51770c5a4525abaa0493bb5780bb",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-07-20T13:52:55+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-07-20T15:53:01",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-page-inside-a-folder",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo/a-folder",
+      "@type": "Folder",
+      "UID": "a07f9e78ee864e689d72fde066adbac3",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "A Folder"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A Page inside a Folder",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:52:55+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:53:01+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-link",
+    "@type": "Link",
+    "UID": "2ce50f00faf74ffb8e3db907e02f83fc",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-07-20T13:52:00+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:52:06",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-link",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "remoteUrl": "https://plone.com/",
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A Link",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-20T13:52:00+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-20T13:52:06+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-news-item",
+    "@type": "News Item",
+    "UID": "4423a1b21c06425886e315c4d0e3a676",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-07-19T16:34:46+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-07-19T18:34:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-news-item",
+    "image": {
+      "blob_path": "blobs/4423a1b21c06425886e315c4d0e3a676-image/turner.jpg",
+      "content-type": "image/jpeg",
+      "filename": "turner.jpg",
+      "height": 1002,
+      "size": 862842,
+      "width": 1664
+    },
+    "image_caption": null,
+    "is_folderish": false,
+    "language": "en",
+    "layout": "newsitem_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A News Item",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:34:46+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:34:52+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-page",
+    "@type": "Document",
+    "UID": "5c380e40de1f424b92e9a220467f078c",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-07-19T16:32:10+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
+    "effective": "2018-07-19T18:32:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-page",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A Page",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:32:10+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:32:19+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/a-video.mp4",
+    "@type": "File",
+    "UID": "80101e01f8474f22b85e1704e580c0d9",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:51:31+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/80101e01f8474f22b85e1704e580c0d9-file/sample_960x400_ocean_with_audio.mp4",
+      "content-type": "video/mp4",
+      "filename": "sample_960x400_ocean_with_audio.mp4",
+      "size": 17520898
+    },
+    "id": "a-video.mp4",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "A Video",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/an-event",
+    "@type": "Event",
+    "UID": "cfb30b644a9c4886b4950a7e708e0cbb",
+    "allow_discussion": false,
+    "attendees": [
+      "Plone Community"
+    ],
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
+    "contributors": [],
+    "created": "2018-07-19T16:33:34+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-07-19T18:33:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org/",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "an-event",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "event_view",
+    "location": "Planet Earth",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "open_end": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "recurrence": null,
+    "review_state": "published",
+    "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
+    "subjects": [],
+    "sync_uid": null,
+    "title": "An Event",
+    "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-07-19T16:33:34+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-07-19T16:33:42+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/demo/an-image.jpg",
+    "@type": "Image",
+    "UID": "d5a10ad499c34d699049d8027c25e4ca",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:51:49+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "an-image.jpg",
+    "image": {
+      "blob_path": "blobs/d5a10ad499c34d699049d8027c25e4ca-image/paris.jpg",
+      "content-type": "image/jpeg",
+      "filename": "paris.jpg",
+      "height": 755,
+      "size": 431326,
+      "width": 1664
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en/demo",
+      "@type": "Folder",
+      "UID": "9afb95a79cfa4c0684715027244e61e0",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "An Image",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/en/frontpage",
+    "@type": "Document",
+    "UID": "ea7414c2163d440996ec4e98b0e18e8b",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "The ultimate Open Source Enterprise CMS",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "frontpage",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/en",
+      "@type": "LRF",
+      "UID": "2ed13af4ba714c2a961f44234a1f60a0",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "English"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Welcome to Plone",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es",
+    "@type": "LRF",
+    "UID": "33958c80f95745d29465d570b078d8b4",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "es",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "UID": "7612ad31c36f4d79b29d621138bfaa9f",
+      "description": "",
+      "title": "Website"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Espa\u00f1ol",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo",
+    "@type": "Folder",
+    "UID": "353551eee36e491e89bc097f17f05e59",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:12:01+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-08-27T13:16:38",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "demo",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es",
+      "@type": "LRF",
+      "UID": "33958c80f95745d29465d570b078d8b4",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Espa\u00f1ol"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Demo",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:12:01+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:16:38+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/big_buck_bunny.mp4",
+    "@type": "File",
+    "UID": "cab2899784ae45838248ef78cce39bcd",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:21:38+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/cab2899784ae45838248ef78cce39bcd-file/sample_960x400_ocean_with_audio.mp4",
+      "content-type": "video/mp4",
+      "filename": "sample_960x400_ocean_with_audio.mp4",
+      "size": 17520898
+    },
+    "id": "big_buck_bunny.mp4",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Un v\u00eddeo",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/ploneconf-plone5.pdf",
+    "@type": "File",
+    "UID": "637f6e3818e44a6e885df677021c6835",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:22:05+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/637f6e3818e44a6e885df677021c6835-file/agreement.pdf",
+      "content-type": "application/pdf",
+      "filename": "agreement.pdf",
+      "size": 68434
+    },
+    "id": "ploneconf-plone5.pdf",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Un archivo",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/q6.jpg",
+    "@type": "Image",
+    "UID": "8b9931d15212461685e4f23483aed815",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:23:16+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "q6.jpg",
+    "image": {
+      "blob_path": "blobs/8b9931d15212461685e4f23483aed815-image/paris.jpg",
+      "content-type": "image/jpeg",
+      "filename": "paris.jpg",
+      "height": 755,
+      "size": 431326,
+      "width": 1664
+    },
+    "is_folderish": false,
+    "language": "es",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Una imagen",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/un-enlace",
+    "@type": "Link",
+    "UID": "ae9d4c02a78b487fb74be8fde688e773",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-08-27T11:22:37+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-08-27T13:22:42",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "un-enlace",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "remoteUrl": "https://plone.com",
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Un enlace",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:22:37+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:22:42+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/un-evento",
+    "@type": "Event",
+    "UID": "fb46a1a5e28248c9befe9b5a696d52b4",
+    "allow_discussion": false,
+    "attendees": [
+      "Plone Community"
+    ],
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
+    "contributors": [],
+    "created": "2018-08-27T11:17:32+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-08-27T13:17:39",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org/",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "un-evento",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "event_view",
+    "location": "Planeta Tierra",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "open_end": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "recurrence": null,
+    "review_state": "published",
+    "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
+    "subjects": [],
+    "sync_uid": null,
+    "title": "Un Evento",
+    "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:17:33+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:17:39+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/una-carpeta",
+    "@type": "Folder",
+    "UID": "bd5ff3d542bc42f79d2eab0b99c1ec9d",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:20:07+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-08-27T13:20:13",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "una-carpeta",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Una carpeta",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:20:07+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:20:13+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/una-carpeta/una-pagina-dentro-de-una-carpeta",
+    "@type": "Document",
+    "UID": "593cf5489fce493a95b59bb4f3ef9ee1",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-08-27T11:20:58+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-08-27T13:21:10",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "una-pagina-dentro-de-una-carpeta",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo/una-carpeta",
+      "@type": "Folder",
+      "UID": "bd5ff3d542bc42f79d2eab0b99c1ec9d",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Una carpeta"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Una P\u00e1gina dentro de una carpeta",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:20:58+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:21:10+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/una-coleccion",
+    "@type": "Collection",
+    "UID": "0a600821c535433c974b2e706fabd704",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2022-04-02T14:22:11+00:00",
+    "creators": [
+      "admin"
+    ],
+    "customViewFields": [
+      "Title",
+      "Creator",
+      "Type",
+      "ModificationDate"
+    ],
+    "description": "Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.",
+    "effective": "2022-04-02T16:22:14",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "una-coleccion",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
+    "language": "es",
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "query": [
+      {
+        "i": "portal_type",
+        "o": "plone.app.querystring.operation.selection.any",
+        "v": [
+          "News Item",
+          "Document"
+        ]
+      }
+    ],
+    "review_state": "published",
+    "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
+    "subjects": [],
+    "text": {
+      "content-type": "text/html",
+      "data": "<p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.</p>",
+      "encoding": "utf-8"
+    },
+    "title": "Una Colecci\u00f3n",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2022-04-02T14:22:11+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2022-04-02T14:22:14+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/una-noticia",
+    "@type": "News Item",
+    "UID": "1be0093b8c624ade89eba7329f8d6947",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-08-27T11:19:32+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-08-27T13:19:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "una-noticia",
+    "image": {
+      "blob_path": "blobs/1be0093b8c624ade89eba7329f8d6947-image/turner.jpg",
+      "content-type": "image/jpeg",
+      "filename": "turner.jpg",
+      "height": 1002,
+      "size": 862842,
+      "width": 1664
+    },
+    "image_caption": null,
+    "is_folderish": false,
+    "language": "es",
+    "layout": "newsitem_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Una noticia",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:19:32+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:19:42+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/demo/una-pagina",
+    "@type": "Document",
+    "UID": "13f909b522a94443823e187ea9ebab0b",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-08-27T11:12:41+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
+    "effective": "2018-08-27T13:16:45",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "una-pagina",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es/demo",
+      "@type": "Folder",
+      "UID": "353551eee36e491e89bc097f17f05e59",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Una p\u00e1gina",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:12:41+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:16:46+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/frontpage",
+    "@type": "Document",
+    "UID": "92db7b2b3b7046f38319431e799ee3ba",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2023-05-18T19:16:57+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "El Sistema de Gesti\u00f3n de Contenido de Fuentes Abiertas",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "frontpage",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es",
+      "@type": "LRF",
+      "UID": "33958c80f95745d29465d570b078d8b4",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Espa\u00f1ol"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Bienvenido a Plone",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:57+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:57+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/es/recursos",
+    "@type": "LIF",
+    "UID": "07bb9b1ef8e14bb68e1f2477c4001fac",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "recursos",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/es",
+      "@type": "LRF",
+      "UID": "33958c80f95745d29465d570b078d8b4",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Espa\u00f1ol"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Recursos",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu",
+    "@type": "LRF",
+    "UID": "4f689684b41f425f8b49f36e22f60a6b",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "eu",
+    "is_folderish": true,
+    "language": "eu",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone",
+      "@type": "Plone Site",
+      "UID": "7612ad31c36f4d79b29d621138bfaa9f",
+      "description": "",
+      "title": "Website"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Euskara",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo",
+    "@type": "Folder",
+    "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:23:52+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-08-27T13:24:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "demo",
+    "is_folderish": true,
+    "language": "eu",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu",
+      "@type": "LRF",
+      "UID": "4f689684b41f425f8b49f36e22f60a6b",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Euskara"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Demo",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:23:52+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:24:00+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/albiste-bat",
+    "@type": "News Item",
+    "UID": "9336d0516e3f400b94c68d9f26e901a6",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-08-27T11:27:44+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-08-27T13:27:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "albiste-bat",
+    "image": {
+      "blob_path": "blobs/9336d0516e3f400b94c68d9f26e901a6-image/turner.jpg",
+      "content-type": "image/jpeg",
+      "filename": "turner.jpg",
+      "height": 1002,
+      "size": 862842,
+      "width": 1664
+    },
+    "image_caption": null,
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "newsitem_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Albiste bat",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:27:44+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:27:51+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/big_buck_bunny.mp4",
+    "@type": "File",
+    "UID": "b5b3abbe061a47cd8ee700ec7314a21b",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:29:33+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/b5b3abbe061a47cd8ee700ec7314a21b-file/sample_960x400_ocean_with_audio.mp4",
+      "content-type": "video/mp4",
+      "filename": "sample_960x400_ocean_with_audio.mp4",
+      "size": 17520898
+    },
+    "id": "big_buck_bunny.mp4",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Bideo bat",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/bilduma-bat",
+    "@type": "Collection",
+    "UID": "0f11e9bdcaa54d08a81c9a80295c555a",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2022-04-02T14:25:37+00:00",
+    "creators": [
+      "admin"
+    ],
+    "customViewFields": [
+      "Title",
+      "Creator",
+      "Type",
+      "ModificationDate"
+    ],
+    "description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2022-04-02T16:25:40",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "bilduma-bat",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
+    "language": "eu",
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "query": [
+      {
+        "i": "portal_type",
+        "o": "plone.app.querystring.operation.selection.any",
+        "v": [
+          "News Item",
+          "Document"
+        ]
+      }
+    ],
+    "review_state": "published",
+    "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
+    "subjects": [],
+    "text": {
+      "content-type": "text/html",
+      "data": "<p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>",
+      "encoding": "utf-8"
+    },
+    "title": "Bilduma bat",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2022-04-02T14:25:37+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2022-04-02T14:25:40+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/hitzordu-bat",
+    "@type": "Event",
+    "UID": "2c56691daadb47d893afbfd73d828923",
+    "allow_discussion": false,
+    "attendees": [
+      "Plone Community"
+    ],
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
+    "contributors": [],
+    "created": "2018-08-27T11:26:34+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-08-27T13:26:39",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "hitzordu-bat",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "event_view",
+    "location": "Lurra",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "open_end": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "recurrence": null,
+    "review_state": "published",
+    "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
+    "subjects": [],
+    "sync_uid": null,
+    "title": "Hitzordu bat",
+    "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:26:34+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:26:39+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/karpeta-bat",
+    "@type": "Folder",
+    "UID": "f71e1ae3257d4ef2b296507f4874b069",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:28:19+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-08-27T13:28:25",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "karpeta-bat",
+    "is_folderish": true,
+    "language": "eu",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Karpeta bat",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:28:19+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:28:25+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/karpeta-bat/karpeta-baten-barruko-orrialdea",
+    "@type": "Document",
+    "UID": "4ec428770dec41f0874ff729a0e88003",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-08-27T11:28:59+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-08-27T13:29:14",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "karpeta-baten-barruko-orrialdea",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo/karpeta-bat",
+      "@type": "Folder",
+      "UID": "f71e1ae3257d4ef2b296507f4874b069",
+      "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Karpeta bat"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Karpeta baten barruko orrialdea",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:28:59+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:29:14+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/lotura-bat",
+    "@type": "Link",
+    "UID": "04ac7450c2654f6ab08ffdfda51c05e1",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-08-27T11:30:44+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": "2018-08-27T13:30:49",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "lotura-bat",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "remoteUrl": "https://plone.com",
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Lotura bat",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:30:44+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:30:49+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/orrialde-bat",
+    "@type": "Document",
+    "UID": "7fe145a7f1e64f908af37370f4435f85",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2018-08-27T11:26:00+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
+    "effective": "2018-08-27T13:26:07",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "orrialde-bat",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Orrialde bat",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2018-08-27T11:26:00+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2018-08-27T11:26:07+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/ploneconf-plone5.pdf",
+    "@type": "File",
+    "UID": "900054dde288445b8f38375507e8bbfe",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:30:12+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+      "blob_path": "blobs/900054dde288445b8f38375507e8bbfe-file/agreement.pdf",
+      "content-type": "application/pdf",
+      "filename": "agreement.pdf",
+      "size": 68434
+    },
+    "id": "ploneconf-plone5.pdf",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Fitxategi bat",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/demo/q6.jpg",
+    "@type": "Image",
+    "UID": "f552f34782cb49f69c9df6d3bfc53332",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:31:11+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "q6.jpg",
+    "image": {
+      "blob_path": "blobs/f552f34782cb49f69c9df6d3bfc53332-image/paris.jpg",
+      "content-type": "image/jpeg",
+      "filename": "paris.jpg",
+      "height": 755,
+      "size": 431326,
+      "width": 1664
+    },
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu/demo",
+      "@type": "Folder",
+      "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+      "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Demo"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Irudi bat",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/frontpage",
+    "@type": "Document",
+    "UID": "f6a8f3d4f8aa49cabdbd9641996389a5",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+      "items": []
+    },
+    "contributors": [],
+    "created": "2023-05-18T19:16:57+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "Software Libreko Edukiak Kudeatzeko Sistema",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "frontpage",
+    "is_folderish": true,
+    "language": "eu",
+    "layout": "document_view",
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "modified": "2023-05-18T19:16:57+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu",
+      "@type": "LRF",
+      "UID": "4f689684b41f425f8b49f36e22f60a6b",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Euskara"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Ongi etorri Plone era",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:57+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:57+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  },
+  {
+    "@id": "http://localhost:8080/Plone/eu/media",
+    "@type": "LIF",
+    "UID": "9c4b13445b3e48628e6f5fbb9b835e1e",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2023-05-18T19:16:56+00:00",
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "media",
+    "is_folderish": true,
+    "language": "eu",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2023-05-18T19:16:56+00:00",
+    "parent": {
+      "@id": "http://localhost:8080/Plone/eu",
+      "@type": "LRF",
+      "UID": "4f689684b41f425f8b49f36e22f60a6b",
+      "description": "",
+      "image_field": null,
+      "image_scales": null,
+      "review_state": "published",
+      "title": "Euskara"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Media",
+    "version": "current",
+    "workflow_history": {
+      "simple_publication_workflow": [
+        {
+          "action": null,
+          "actor": "admin",
+          "comments": "",
+          "review_state": "private",
+          "time": "2023-05-18T19:16:56+00:00"
+        },
+        {
+          "action": "publish",
+          "actor": "admin",
+          "comments": "",
+          "review_state": "published",
+          "time": "2023-05-18T19:16:56+00:00"
+        }
+      ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+  }
+]

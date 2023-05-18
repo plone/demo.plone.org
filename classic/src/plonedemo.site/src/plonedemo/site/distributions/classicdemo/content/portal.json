@@ -1,0 +1,30 @@
+[
+  {
+    "@id": "http://localhost:8080/Plone",
+    "@type": "Plone Site",
+    "UID": "7612ad31c36f4d79b29d621138bfaa9f",
+    "allow_discussion": null,
+    "contributors": [],
+    "creators": [
+      "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "Plone",
+    "is_folderish": true,
+    "items_total": 4,
+    "lock": {
+      "locked": false,
+      "stealable": true
+    },
+    "layout": "language-switcher",
+    "parent": {},
+    "review_state": null,
+    "rights": "",
+    "subjects": [],
+    "table_of_contents": null,
+    "title": "Website"
+  }
+]

@@ -47,6 +47,7 @@ setup(
         "plone.restapi",
         "z3c.jbot",
         "six",
+        "plone.distribution",
     ],
     extras_require={
         "test": [

@@ -46,4 +46,11 @@
       max_age="3600"
       />
 
+  <plone:distribution
+      name="classicdemo"
+      title="Plone Classic Demo Site"
+      description="A Plone 6 Classic UI Site with demo content"
+      directory="distributions/classicdemo"
+      />
+
 </configure>
