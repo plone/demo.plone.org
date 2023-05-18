@@ -48,6 +48,7 @@ setup(
         "Plone",
         "prettyconf",
         "plone.api",
+        "plone.distribution",
     ],
     extras_require={
         "test": [
