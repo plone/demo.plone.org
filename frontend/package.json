@@ -126,7 +126,7 @@
   },
   "dependencies": {
     "@kitconcept/volto-blocks-grid": "7.0.0",
-    "@plone/volto": "16.20.4"
+    "@plone/volto": "16.20.7"
   },
   "devDependencies": {
     "@plone/scripts": "^2.3.0",
@@ -146,5 +146,9 @@
     "stylelint-config-prettier": "8.0.1",
     "stylelint-prettier": "1.1.2"
   },
-  "packageManager": "yarn@3.2.3"
+  "packageManager": "yarn@3.2.3",
+  "volta": {
+    "node": "16.20.0",
+    "yarn": "3.6.0"
+  }
 }
