@@ -1,7 +1,7 @@
 import React from 'react';
 import { getSystemInformation } from '@plone/volto/actions';
 import { useDispatch, useSelector } from 'react-redux';
-import VersionOverview from './VersionOverview';
+import { VersionOverview } from '@plone/volto/components';
 
 const SystemView = (props) => {
   const dispatch = useDispatch();

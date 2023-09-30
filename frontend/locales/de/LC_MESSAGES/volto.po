@@ -26,7 +26,4 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
 
-#: components/Blocks/System/VersionOverview
-# defaultMessage: No addons found
-msgid "No addons found"
-msgstr ""
+

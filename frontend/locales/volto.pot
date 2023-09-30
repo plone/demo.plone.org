@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2022-12-12T18:36:12.239Z\n"
+"POT-Creation-Date: 2023-09-30T14:38:43.919Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,4 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
-#: components/Blocks/System/VersionOverview
-# defaultMessage: No addons found
-msgid "No addons found"
-msgstr ""
+
