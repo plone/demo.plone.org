@@ -11,7 +11,4 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-#: components/Blocks/System/VersionOverview
-# defaultMessage: No addons found
-msgid "No addons found"
-msgstr ""
+

@@ -30,7 +30,4 @@ msgstr ""
 "Language-Name: Nederlands\n"
 "Preferred-Encodings: utf-8\n"
 
-#: components/Blocks/System/VersionOverview
-# defaultMessage: No addons found
-msgid "No addons found"
-msgstr ""
+
