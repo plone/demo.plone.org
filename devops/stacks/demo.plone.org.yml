@@ -23,7 +23,7 @@ services:
         # Service
         - traefik.http.services.demo-frontend.loadbalancer.server.port=3000
         # Router
-        - traefik.http.routers.demo-frontend.rule=Host(`demo.plone.org`)
+        - traefik.http.routers.demo-frontend.rule=Host(`demo.plone.org`,`6.demo.plone.org`)
         - traefik.http.routers.demo-frontend.entrypoints=https
         - traefik.http.routers.demo-frontend.tls=true
         - traefik.http.routers.demo-frontend.tls.certresolver=le
