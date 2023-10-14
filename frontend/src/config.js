@@ -27,13 +27,6 @@ export default function applyConfig(config) {
     defaultLanguage: 'en',
   };
 
-  config.settings.apiExpanders = [
-    {
-      match: '',
-      GET_CONTENT: ['breadcrumbs', 'navigation', 'actions', 'types'],
-    },
-  ];
-
   config.blocks.blocksConfig.system = {
     id: 'system',
     title: 'System',
