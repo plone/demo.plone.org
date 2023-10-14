@@ -60,7 +60,7 @@ preinstall: ## Preinstall task, checks if missdev (mrs-developer) is present and
 
 .PHONY: develop
 develop: ## Runs missdev in the local project (mrs.developer.json should be present)
-	npx -p mrs-developer missdev --config=jsconfig.json --output=addons --fetch-https
+	npx -p mrs-developer missdev --output=addons --fetch-https
 
 .PHONY: omelette
 omelette: ## Creates the omelette folder that contains a link to the installed version of Volto (a softlink pointing to node_modules/@plone/volto)
