@@ -122,7 +122,7 @@
     "node": "^18 || ^20"
   },
   "dependencies": {
-    "@plone/volto": "17.1.1"
+    "@plone/volto": "17.5.0"
   },
   "devDependencies": {
     "@plone/scripts": "^3.0.0",
@@ -152,7 +152,7 @@
     "react-error-overlay": "6.0.9"
   },
   "volta": {
-    "node": "16.20.0",
+    "node": "20.9.0",
     "yarn": "3.6.0"
   }
 }
