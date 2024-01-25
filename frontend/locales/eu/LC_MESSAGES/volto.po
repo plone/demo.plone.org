@@ -1,4 +1,3 @@
-# Translation of plone.pot to EU
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
