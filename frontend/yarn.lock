@@ -2907,26 +2907,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/scripts@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@plone/scripts@npm:3.0.1"
-  dependencies:
-    babel-plugin-react-intl: 5.1.17
-    babel-preset-razzle: 4.2.17
-    chalk: 4
-    commander: 8.2.0
-    fs-extra: 10.1.0
-    git-url-parse: ^13.1.0
-    mrs-developer: "*"
-    pofile: 1.0.10
-  bin:
-    addon: addon/index.js
-    changelogupdater: changelogupdater.cjs
-    i18n: i18n.cjs
-  checksum: 06a7c63f975268c97c5a70d1f104de5089adb36bbe1b15a860ad108f72c2109f90ab246b80f74238f9fb1f406866202260ea5a8ee1953fe919ddf5947a201d86
-  languageName: node
-  linkType: hard
-
 "@plone/scripts@npm:^3.0.0":
   version: 3.0.0
   resolution: "@plone/scripts@npm:3.0.0"
@@ -2947,9 +2927,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:17.6.0":
-  version: 17.6.0
-  resolution: "@plone/volto@npm:17.6.0"
+"@plone/scripts@npm:^3.2.1":
+  version: 3.3.1
+  resolution: "@plone/scripts@npm:3.3.1"
+  dependencies:
+    "@babel/core": ^7.0.0
+    babel-plugin-react-intl: 5.1.17
+    babel-preset-razzle: 4.2.17
+    chalk: 4
+    commander: 8.2.0
+    comment-json: ^4.2.3
+    fs-extra: 10.1.0
+    git-url-parse: ^13.1.0
+    glob: 7.1.6
+    lodash: 4.17.21
+    mrs-developer: ^2.1.1
+    pofile: 1.0.10
+  bin:
+    addon: addon/index.js
+    changelogupdater: changelogupdater.cjs
+    i18n: i18n.cjs
+  checksum: ca61990664378456f3ea97f3cbd00ed9c805990edc6a3d4d452e6a858ff21297e24bede4706307136506399898fdbb8934f8af55de9848a1adb9235295cda8db
+  languageName: node
+  linkType: hard
+
+"@plone/volto@npm:17.11.2":
+  version: 17.11.2
+  resolution: "@plone/volto@npm:17.11.2"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/eslint-parser": 7.22.15
@@ -2965,7 +2969,7 @@ __metadata:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
-    "@plone/scripts": 3.0.1
+    "@plone/scripts": ^3.2.1
     "@testing-library/cypress": 9.0.0
     "@testing-library/jest-dom": 5.16.4
     "@testing-library/react": 12.1.5
@@ -3127,7 +3131,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: 73de7743e55ff128e8aa748954eb5b43f9bc5d8af5c0a1bcad26aa5801969a85816e71fc69db64c0daeb67d0424f8249cb2211e2510094c92a59ef457e598a2f
+  checksum: 13ff7449879c43fb83df002fec52bfde2c39bae2436fd1b041079181fc6fd3c2ff402685554a034ea4ac8f8401dd24fa39812fcf5b4e01657b13a8a15c1e2e3d
   languageName: node
   linkType: hard
 
@@ -6959,6 +6963,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"array-timsort@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "array-timsort@npm:1.0.3"
+  checksum: fd4b5b0911214bdc8b5699ed10d309685551b518b3819c611c967cff59b87aee01cf591a10e36a3f14dbff696984bd6682b845f6fdbf1217195e910f241a4f78
+  languageName: node
+  linkType: hard
+
 "array-union@npm:^1.0.2":
   version: 1.0.2
   resolution: "array-union@npm:1.0.2"
@@ -9061,6 +9072,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"comment-json@npm:^4.2.3":
+  version: 4.2.3
+  resolution: "comment-json@npm:4.2.3"
+  dependencies:
+    array-timsort: ^1.0.3
+    core-util-is: ^1.0.3
+    esprima: ^4.0.1
+    has-own-prop: ^2.0.0
+    repeat-string: ^1.6.1
+  checksum: 7f8d26266b0d49de9661f6365cbcc373fee4f4d0f422a203dfb17ad8f3d84c5be5ded444874935a197cd03cff297c53fe48910256cb4171cb2e52a3e6b9d317c
+  languageName: node
+  linkType: hard
+
 "common-path-prefix@npm:^3.0.0":
   version: 3.0.0
   resolution: "common-path-prefix@npm:3.0.0"
@@ -9390,7 +9414,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-util-is@npm:~1.0.0":
+"core-util-is@npm:^1.0.3, core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
   checksum: 9de8597363a8e9b9952491ebe18167e3b36e7707569eed0ebf14f8bba773611376466ae34575bca8cfe3c767890c859c74056084738f09d4e4a6f902b2ad7d99
@@ -13466,6 +13490,13 @@ __metadata:
   dependencies:
     is-glob: ^3.0.0
   checksum: cafad93e599f49f676a9ab444ec90210fcda35ac14ad6c9bb96c08057ad18a1318f1116b053aa6bdc744f19252537006872d3fc76785e842bbe8cc4312447fc8
+  languageName: node
+  linkType: hard
+
+"has-own-prop@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "has-own-prop@npm:2.0.0"
+  checksum: ca6336e85ead2295c9603880cbc199e2d3ff7eaea0e9035d68fbc79892e9cf681abc62c0909520f112c671dad9961be2173b21dff951358cc98425c560e789e0
   languageName: node
   linkType: hard
 
@@ -17572,7 +17603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mrs-developer@npm:*":
+"mrs-developer@npm:*, mrs-developer@npm:^2.1.1":
   version: 2.1.1
   resolution: "mrs-developer@npm:2.1.1"
   dependencies:
@@ -18975,7 +19006,7 @@ __metadata:
   resolution: "plone6-demo@workspace:."
   dependencies:
     "@plone/scripts": ^3.0.0
-    "@plone/volto": 17.6.0
+    "@plone/volto": 17.11.2
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0
