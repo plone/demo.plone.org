@@ -1,4 +1,4 @@
-name: CI for Backend and Frontend
+name: Build and Deploy demo.plone.org
 
 on:
   workflow_dispatch:
@@ -6,13 +6,12 @@ on:
     paths:
       - "backend/**"
       - "frontend/**"
-      - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "backend/**"
       - "frontend/**"
-      - ".github/workflows/ci.yml"
   schedule:
+    - cron:  '0 */12 * * *'
 
 env:
   node-version: 20.x
@@ -236,3 +235,90 @@ jobs:
       - name: Test
         run: make test
 
+  release:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    needs:
+      - backend-black
+      - backend-flake8
+      - backend-isort
+      - backend-zpretty
+      - backend-tests
+      - classic-black
+      - classic-flake8
+      - classic-isort
+      - classic-zpretty
+      - frontend-eslint
+      - frontend-prettier
+      - frontend-i18n
+      - frontend-tests
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - image: backend
+            context: backend
+            file: Dockerfile
+          - image: frontend
+            context: frontend
+            file: Dockerfile
+          - image: classic
+            context: classic
+            file: Dockerfile
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            ghcr.io/plone/demo-${{ matrix.image }}
+          tags: |
+            type=sha
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', github.event.repository.default_branch) }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to ghcr
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          platforms: linux/amd64
+          context: ${{ matrix.context }}
+          file: ${{ matrix.context }}/${{ matrix.file }}
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: SEED=$GITHUB_RUN_ID
+  deploy:
+
+    runs-on: ubuntu-latest
+    environment: demo.plone.org
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to demo.plone.org
+        uses: kitconcept/docker-stack-deploy@v1.2.0
+        with:
+          registry: "ghcr.io"
+          username: ${{ github.actor }}
+          password: ${{ secrets.DEPLOY_GHCR_READ_TOKEN }}
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_port: ${{ secrets.DEPLOY_PORT }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_private_key: ${{ secrets.DEPLOY_SSH }}
+          stack_file: "devops/stacks/demo.plone.org.yml"
+          stack_name: "demoploneorg"
+          deploy_timeout: 480

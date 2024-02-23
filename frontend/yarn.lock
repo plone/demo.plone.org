@@ -2931,9 +2931,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:17.11.3":
-  version: 17.11.3
-  resolution: "@plone/volto@npm:17.11.3"
+"@plone/scripts@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "@plone/scripts@npm:3.3.2"
+  dependencies:
+    "@babel/core": ^7.0.0
+    babel-plugin-react-intl: 5.1.17
+    babel-preset-razzle: 4.2.17
+    chalk: 4
+    commander: 8.2.0
+    comment-json: ^4.2.3
+    fs-extra: 10.1.0
+    git-url-parse: ^13.1.0
+    glob: 7.1.6
+    lodash: 4.17.21
+    mrs-developer: ^2.1.1
+    pofile: 1.0.10
+  bin:
+    addon: addon/index.js
+    changelogupdater: changelogupdater.cjs
+    i18n: i18n.cjs
+  checksum: 7dc67a582e4a9b48fd51564ceccc3ce7f57c6b9355c56ebf915e32add6ac3b216e796f2ae4dc5f0c2dca53a815e05c79e2b7dabc02f6e0b9df7ea03e347b9763
+  languageName: node
+  linkType: hard
+
+"@plone/volto@npm:17.15.1":
+  version: 17.15.1
+  resolution: "@plone/volto@npm:17.15.1"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/eslint-parser": 7.22.15
@@ -2949,11 +2973,12 @@ __metadata:
     "@loadable/component": 5.14.1
     "@loadable/server": 5.14.0
     "@loadable/webpack-plugin": 5.15.2
-    "@plone/scripts": ^3.3.1
+    "@plone/scripts": ^3.3.2
     "@testing-library/cypress": 9.0.0
     "@testing-library/jest-dom": 5.16.4
     "@testing-library/react": 12.1.5
     "@testing-library/react-hooks": 8.0.1
+    "@types/uuid": 9.0.8
     autoprefixer: 10.4.8
     axe-core: 4.4.2
     babel-plugin-add-module-exports: 0.2.1
@@ -3111,7 +3136,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: ed02a89dcc14002a43870fcd079354525b5d8f71a44c9d2b1ca62ddae63f9ae197e35f7b58154933632ba662158ce8a9102589c92a4c40b4de03ab193eb60bda
+  checksum: deafb99987f8752bdc8917eb42d4e9e1d928de6e8d3ade0f648082a38774fcae1d02c3895d5b283164b01e606d11295c10be611556613b74fb85ae80008d5e43
   languageName: node
   linkType: hard
 
@@ -5521,6 +5546,13 @@ __metadata:
   version: 2.0.8
   resolution: "@types/unist@npm:2.0.8"
   checksum: f4852d10a6752dc70df363917ef74453e5d2fd42824c0f6d09d19d530618e1402193977b1207366af4415aaec81d4e262c64d00345402020c4ca179216e553c7
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:9.0.8":
+  version: 9.0.8
+  resolution: "@types/uuid@npm:9.0.8"
+  checksum: b8c60b7ba8250356b5088302583d1704a4e1a13558d143c549c408bf8920535602ffc12394ede77f8a8083511b023704bc66d1345792714002bfa261b17c5275
   languageName: node
   linkType: hard
 
@@ -18936,7 +18968,7 @@ __metadata:
   resolution: "plone6-demo@workspace:."
   dependencies:
     "@plone/scripts": ^3.3.1
-    "@plone/volto": 17.11.3
+    "@plone/volto": 17.15.1
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0

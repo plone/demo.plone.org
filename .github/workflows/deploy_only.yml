@@ -2,9 +2,7 @@ name: Deploy demo.plone.org
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '30 23 * * *'
-
+  
 jobs:
 
   deploy:
@@ -13,7 +11,7 @@ jobs:
     environment: demo.plone.org
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Deploy to demo.plone.org
         uses: kitconcept/docker-stack-deploy@v1.2.0
@@ -26,5 +24,5 @@ jobs:
           remote_user: ${{ secrets.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
           stack_file: "devops/stacks/demo.plone.org.yml"
-          stack_name: "demoploneorg"
+          stack_name: "demo-plone-org"
           deploy_timeout: 480

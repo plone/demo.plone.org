@@ -1,11 +1,11 @@
-version: '3.3'
+version: '3.8'
 
 services:
 
   frontend:
     image: ghcr.io/plone/demo-frontend:latest
     environment:
-      RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
+      RAZZLE_INTERNAL_API_PATH: http://demo-plone-org_backend:8080/Plone
     depends_on:
       - backend
     networks:
