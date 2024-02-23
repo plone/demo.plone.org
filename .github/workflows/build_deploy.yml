@@ -2,14 +2,6 @@ name: Build and Deploy demo.plone.org
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - "backend/**"
-      - "frontend/**"
-  pull_request:
-    paths:
-      - "backend/**"
-      - "frontend/**"
   schedule:
     - cron:  '0 */12 * * *'
 
@@ -301,9 +293,11 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: SEED=$GITHUB_RUN_ID
-  deploy:
 
+  deploy:
     runs-on: ubuntu-latest
+    needs:
+      - release
     environment: demo.plone.org
     steps:
       - name: Checkout
@@ -320,5 +314,5 @@ jobs:
           remote_user: ${{ secrets.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
           stack_file: "devops/stacks/demo.plone.org.yml"
-          stack_name: "demoploneorg"
+          stack_name: "demo-plone-org"
           deploy_timeout: 480
