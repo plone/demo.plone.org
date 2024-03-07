@@ -1,7 +1,6 @@
 from AccessControl.SecurityManagement import newSecurityManager
+from plone.distribution.api import site as site_api
 from plone6demo.interfaces import IPLONE6DEMOLayer
-from Products.CMFPlone.factory import _DEFAULT_PROFILE
-from Products.CMFPlone.factory import addPloneSite
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
@@ -42,21 +41,18 @@ admin = admin.__of__(app.acl_users)
 newSecurityManager(None, admin)
 
 site_id = "Plone"
-payload = {
-    "title": "Plone 6 Demo Site",
-    "profile_id": _DEFAULT_PROFILE,
-    "extension_ids": ["plone6demo:default", "plone6demo:initial", "plone.volto:demo"],
-    "setup_content": False,
+answers = {
+    "site_id": site_id,
+    "title": "Plone Site",
+    "description": "A Plone Site",
     "default_language": "en",
     "portal_timezone": "America/Sao_Paulo",
+    "setup_content": True,
 }
 
 if site_id in app.objectIds() and DELETE_EXISTING:
-    app.manage_delObjects([site_id])
+    app.manage_delObjects(site_id)
     transaction.commit()
     app._p_jar.sync()
 
-if site_id not in app.objectIds():
-    site = addPloneSite(app, site_id, **payload)
-    transaction.commit()
-    app._p_jar.sync()
+site_api._create_site(context=app, distribution_name="voltodemo", answers=answers)

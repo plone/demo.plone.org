@@ -15,6 +15,10 @@
       package="plone.behavior"
       file="meta.zcml"
       />
+  <include
+      package="plone.distribution"
+      file="meta.zcml"
+      />
 
   <include file="dependencies.zcml" />
 
