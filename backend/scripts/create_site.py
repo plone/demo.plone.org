@@ -41,7 +41,10 @@ admin = admin.__of__(app.acl_users)
 newSecurityManager(None, admin)
 
 site_id = "Plone"
+distribution = "voltodemo"
+
 answers = {
+    "distribution": distribution,
     "site_id": site_id,
     "title": "Plone Site",
     "description": "A Plone Site",
@@ -55,4 +58,9 @@ if site_id in app.objectIds() and DELETE_EXISTING:
     transaction.commit()
     app._p_jar.sync()
 
-site_api._create_site(context=app, distribution_name="voltodemo", answers=answers)
+site_api.create_site(
+    context=app,
+    distribution_name=distribution,
+    answers=answers,
+)
+transaction.commit()
