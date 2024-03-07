@@ -58,7 +58,7 @@ if site_id in app.objectIds() and DELETE_EXISTING:
     transaction.commit()
     app._p_jar.sync()
 
-site_api.create_site(
+site_api.create(
     context=app,
     distribution_name=distribution,
     answers=answers,
