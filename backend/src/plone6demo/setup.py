@@ -1,4 +1,5 @@
 """Installer for the plone6demo package."""
+
 from setuptools import find_packages
 from setuptools import setup
 
@@ -48,6 +49,8 @@ setup(
         "Plone",
         "prettyconf",
         "plone.api",
+        "plone.distribution",
+        "collective.volto.formsupport",
     ],
     extras_require={
         "test": [

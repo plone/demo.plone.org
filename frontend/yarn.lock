@@ -1933,6 +1933,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eeacms/volto-accordion-block@npm:*":
+  version: 10.4.6
+  resolution: "@eeacms/volto-accordion-block@npm:10.4.6"
+  dependencies:
+    "@eeacms/volto-widget-theme-picker": "*"
+  checksum: 7435b0cddbe7f3b611207e74c2e19bd04af4d2fde1b4439ad19941d10ea29f2f9aae2a0195e63a47ce01de72db27d2f9ce4382a774a82fff7ccc9c9585930013
+  languageName: node
+  linkType: hard
+
+"@eeacms/volto-widget-theme-picker@npm:*":
+  version: 1.1.5
+  resolution: "@eeacms/volto-widget-theme-picker@npm:1.1.5"
+  checksum: 20f1469cc82e22edc7a93e418910d8ed458a7975b8e3c4b1d5c19502132327011260a825e492a1418cfff724072e941a97512a7d1713864fc39406587a0307e8
+  languageName: node
+  linkType: hard
+
 "@emotion/babel-plugin@npm:^11.11.0":
   version: 11.11.0
   resolution: "@emotion/babel-plugin@npm:11.11.0"
@@ -2335,6 +2351,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hcaptcha/react-hcaptcha@npm:^0.3.6":
+  version: 0.3.10
+  resolution: "@hcaptcha/react-hcaptcha@npm:0.3.10"
+  peerDependencies:
+    react: ">= 16.3.0"
+    react-dom: ">= 16.3.0"
+  checksum: 3b0d6a8c7da8072ba226663d9904051231cc1754936a1082b46764a966004406876971adb8917d3d7c6920283501c1bd5b7886c83e33885c4b8d5218fdc25ff5
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.11":
   version: 0.11.11
   resolution: "@humanwhocodes/config-array@npm:0.11.11"
@@ -2688,6 +2714,76 @@ __metadata:
   version: 3.4.0
   resolution: "@juggle/resize-observer@npm:3.4.0"
   checksum: 2505028c05cc2e17639fcad06218b1c4b60f932a4ebb4b41ab546ef8c157031ae377e3f560903801f6d01706dbefd4943b6c4704bf19ed86dfa1c62f1473a570
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-button-block@npm:*":
+  version: 2.3.1
+  resolution: "@kitconcept/volto-button-block@npm:2.3.1"
+  checksum: c8b2dd02d48b3db640784116c92e585267fda6bacf6a856233720e05bbffb9c89dace536176937b38c038b6bd24a452fb880538157f58da35423d558f29c90d2
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-heading-block@npm:*":
+  version: 2.4.0
+  resolution: "@kitconcept/volto-heading-block@npm:2.4.0"
+  dependencies:
+    react-contenteditable: 3.3.6
+  checksum: baf6814d34286eda9ced00bb8eb8a0683af9a6381a05e5f9d3fe1ccb51e02b37dedda79bb70a2749471084a5ba894620ca548ca9d30c4ca7364a2ef32812e9cd
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-highlight-block@npm:*":
+  version: 3.0.0
+  resolution: "@kitconcept/volto-highlight-block@npm:3.0.0"
+  peerDependencies:
+    "@plone/volto": ^17.0.0
+  checksum: 8ffe16304534d5dfa0b5b2406bd2d3d96506b374c95173ea326aa0ae09ec5ed29ec50fd3434a377177b5d362ce700cd1f2a0750d947abaaf060a48de9c9c58d1
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-introduction-block@npm:*":
+  version: 1.0.0
+  resolution: "@kitconcept/volto-introduction-block@npm:1.0.0"
+  checksum: 2dd290e7705637e5805d66dfa87bd2d8f5a2eab981faeec78a9aa36b5a6330ee6a1a11003ec251fcbe21b0d185c9b51ac638ade17f45c9fc627468275dc58084
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-light-theme@npm:*":
+  version: 3.0.1
+  resolution: "@kitconcept/volto-light-theme@npm:3.0.1"
+  peerDependencies:
+    "@eeacms/volto-accordion-block": ^10.4.0
+    "@kitconcept/volto-button-block": ^2.3.1
+    "@kitconcept/volto-dsgvo-banner": ^1.3.0
+    "@kitconcept/volto-heading-block": ^2.4.0
+    "@kitconcept/volto-highlight-block": ^3.0.0
+    "@kitconcept/volto-introduction-block": ^1.0.0
+    "@kitconcept/volto-separator-block": ^4.0.0
+    "@kitconcept/volto-slider-block": ^6.1.0
+    "@plone/volto": ^17.15.1
+  checksum: c95bc1964231da33e2dacc72d63fa2d544a8a1f68ffaa994a64d5f4941a46761a8da5006ee74f036f66f84cf3414a3d1673fc778a178857b546bc5be516a2e1e
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-separator-block@npm:*":
+  version: 4.1.0
+  resolution: "@kitconcept/volto-separator-block@npm:4.1.0"
+  peerDependencies:
+    "@plone/volto": ">=16.0.0"
+  checksum: 3907a7eb7987a39907630ba0b46d1b8eb64a08008e0ad9b894d1347244d09f47c8daad398937cf5ea136697374d0c8352b825c8b2e7c4969367c8125275fdb79
+  languageName: node
+  linkType: hard
+
+"@kitconcept/volto-slider-block@npm:*":
+  version: 6.1.1
+  resolution: "@kitconcept/volto-slider-block@npm:6.1.1"
+  dependencies:
+    deepmerge: 4.2.2
+    embla-carousel-react: ^8.0.0-rc15
+  peerDependencies:
+    "@plone/volto": ^17.0.0-alpha.21
+  checksum: e5a81af1df855333d6bf69649f620e75bd57a6b5a5a91c4e70e89fd9c2b9996b7a4d39229f39c4c60e785bc5a1efb1c224a9e078b85da1d1bcc6b71c8812e7dc
   languageName: node
   linkType: hard
 
@@ -10247,6 +10343,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deepmerge@npm:4.2.2":
+  version: 4.2.2
+  resolution: "deepmerge@npm:4.2.2"
+  checksum: a8c43a1ed8d6d1ed2b5bf569fa4c8eb9f0924034baf75d5d406e47e157a451075c4db353efea7b6bcc56ec48116a8ce72fccf867b6e078e7c561904b5897530b
+  languageName: node
+  linkType: hard
+
 "deepmerge@npm:^1.5.2":
   version: 1.5.2
   resolution: "deepmerge@npm:1.5.2"
@@ -10990,6 +11093,34 @@ __metadata:
     minimalistic-assert: ^1.0.1
     minimalistic-crypto-utils: ^1.0.1
   checksum: d56d21fd04e97869f7ffcc92e18903b9f67f2d4637a23c860492fbbff5a3155fd9ca0184ce0c865dd6eb2487d234ce9551335c021c376cd2d3b7cb749c7d10f4
+  languageName: node
+  linkType: hard
+
+"embla-carousel-react@npm:^8.0.0-rc15":
+  version: 8.0.0
+  resolution: "embla-carousel-react@npm:8.0.0"
+  dependencies:
+    embla-carousel: 8.0.0
+    embla-carousel-reactive-utils: 8.0.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.1 || ^18.0.0
+  checksum: 7e4acbb45a1c225222400156427e59dba14312032492e38d862a8ba8dc6c0c55aa9d4bd041aff04faa6bd51cf571fddf718f6f2c72a2ed1a400cd4310c835024
+  languageName: node
+  linkType: hard
+
+"embla-carousel-reactive-utils@npm:8.0.0":
+  version: 8.0.0
+  resolution: "embla-carousel-reactive-utils@npm:8.0.0"
+  peerDependencies:
+    embla-carousel: 8.0.0
+  checksum: 5f0ea60fc84d06f4c15481ca56ae67736d27ac802d7b36ed5b03af55425b1dc69c38737446284de7e85b0a6bef4f267a4d985888390630e39bc842b0b2b48d7e
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:8.0.0":
+  version: 8.0.0
+  resolution: "embla-carousel@npm:8.0.0"
+  checksum: 0fef615c0fbd8a8f972f55d8ea8780347394a19453248e5260a7ffb74401a84683b21d7c3e473a9bf4e96cf123756c7735906014ada13c8ba79e311b87bf458c
   languageName: node
   linkType: hard
 
@@ -12366,6 +12497,13 @@ __metadata:
   peerDependencies:
     webpack: ^4.0.0 || ^5.0.0
   checksum: faf43eecf233f4897b0150aaa874eeeac214e4f9de49738a9e0ef734a30b5260059e85b7edadf852b98e415f875bd5f12587768a93fd52aaf2e479ecf95fab20
+  languageName: node
+  linkType: hard
+
+"file-saver@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "file-saver@npm:2.0.5"
+  checksum: c62d96e5cebc58b4bdf3ae8a60d5cf9607ad82f75f798c33a4ee63435ac2203002584d5256a2a780eda7feb5e19dc3b6351c2212e58b3f529e63d265a7cc79f7
   languageName: node
   linkType: hard
 
@@ -18967,6 +19105,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "plone6-demo@workspace:."
   dependencies:
+    "@eeacms/volto-accordion-block": "*"
+    "@kitconcept/volto-button-block": "*"
+    "@kitconcept/volto-heading-block": "*"
+    "@kitconcept/volto-highlight-block": "*"
+    "@kitconcept/volto-introduction-block": "*"
+    "@kitconcept/volto-light-theme": "*"
+    "@kitconcept/volto-separator-block": "*"
+    "@kitconcept/volto-slider-block": "*"
     "@plone/scripts": ^3.3.1
     "@plone/volto": 17.15.1
     "@storybook/addon-actions": ^6.3.0
@@ -18989,6 +19135,7 @@ __metadata:
     ts-jest: ^26.4.2
     ts-loader: 9.4.4
     typescript: 5.2.2
+    volto-form-block: "*"
   languageName: unknown
   linkType: soft
 
@@ -19888,7 +20035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:15.x, prop-types@npm:^15.0.0, prop-types@npm:^15.5.10, prop-types@npm:^15.5.7, prop-types@npm:^15.5.8, prop-types@npm:^15.6.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.7.1, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -20433,6 +20580,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-contenteditable@npm:3.3.6":
+  version: 3.3.6
+  resolution: "react-contenteditable@npm:3.3.6"
+  dependencies:
+    fast-deep-equal: ^3.1.3
+    prop-types: ^15.7.1
+  peerDependencies:
+    react: ">=16.3"
+  checksum: 3ff8b78e63ddcdc4b93cf19ec022872116d2d8f672b2ff1b9ae12e9d807b88530d2b17bef2de9ab8a61a182bd9338388f11356cf1681d7c7894642c37be65def
+  languageName: node
+  linkType: hard
+
 "react-cookie@npm:4.1.1":
   version: 4.1.1
   resolution: "react-cookie@npm:4.1.1"
@@ -20517,7 +20676,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dnd-html5-backend@npm:5.0.1":
+"react-dnd-html5-backend@npm:5.0.1, react-dnd-html5-backend@npm:^5.0.1":
   version: 5.0.1
   resolution: "react-dnd-html5-backend@npm:5.0.1"
   dependencies:
@@ -20529,7 +20688,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dnd@npm:5.0.0":
+"react-dnd@npm:5.0.0, react-dnd@npm:^5.0.0":
   version: 5.0.0
   resolution: "react-dnd@npm:5.0.0"
   dependencies:
@@ -20643,6 +20802,18 @@ __metadata:
   version: 3.2.2
   resolution: "react-fast-compare@npm:3.2.2"
   checksum: 2071415b4f76a3e6b55c84611c4d24dcb12ffc85811a2840b5a3f1ff2d1a99be1020d9437ee7c6e024c9f4cbb84ceb35e48cf84f28fcb00265ad2dfdd3947704
+  languageName: node
+  linkType: hard
+
+"react-google-recaptcha-v3@npm:^1.8.0":
+  version: 1.10.1
+  resolution: "react-google-recaptcha-v3@npm:1.10.1"
+  dependencies:
+    hoist-non-react-statics: ^3.3.2
+  peerDependencies:
+    react: ^16.3 || ^17.0 || ^18.0
+    react-dom: ^17.0 || ^18.0
+  checksum: b5ffe0bc0b13ad9ab2fa7b7acd979c7ff9d4f9d698412eaf8721167883a2ace2b4f3f5386c4b70f59f1cab9f062c368c360dbaa1b2cad4f1645795f3dbdf9355
   languageName: node
   linkType: hard
 
@@ -25433,6 +25604,33 @@ __metadata:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 10a1c50aab54ff8b4c9042c15fc64aefccce8d2fb90c0640403242db0ee7fb269f9b102bdb69cfb435d7ef3180d61fd4fb004a043a12709abaf9056cfd7e039d
+  languageName: node
+  linkType: hard
+
+"volto-form-block@npm:*":
+  version: 3.3.1
+  resolution: "volto-form-block@npm:3.3.1"
+  dependencies:
+    "@hcaptcha/react-hcaptcha": ^0.3.6
+    file-saver: ^2.0.5
+    react-google-recaptcha-v3: ^1.8.0
+    volto-subblocks: ^2.0.0
+  peerDependencies:
+    "@plone/volto": ">=16.0.0-alpha.38"
+    volto-subblocks: ^2.0.0
+  checksum: 8bd22321126b19e5fccaff8f7783b42f83f7d4cc175d821bfe247c21bc9afcd52c9f301bc7b17ab1dbab0907748cd85e8897d3311ff30a50f84b2ebcc2465581
+  languageName: node
+  linkType: hard
+
+"volto-subblocks@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "volto-subblocks@npm:2.0.0"
+  dependencies:
+    react-dnd: ^5.0.0
+    react-dnd-html5-backend: ^5.0.1
+  peerDependencies:
+    "@plone/volto": ">=16.0.0-alpha.38"
+  checksum: 7e4774cd63aad14d46f8371d725d800cc978dafb3672cb9ddb16e032b8fc849948d7e39301c3d55864a40d5143e101fd819165ba5254a016be31812f826c4f76
   languageName: node
   linkType: hard
 

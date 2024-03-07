@@ -1,0 +1,318 @@
+{
+    "@id": "/blocks-with-images",
+    "@type": "Document",
+    "UID": "fcebaf7804424b32a38a47609eedff7c",
+    "allow_discussion": false,
+    "blocks": {
+        "2e417d0b-716e-48a6-b3a9-7621422697d0": {
+            "@type": "image",
+            "align": "center",
+            "credit": {},
+            "description": "",
+            "image_field": "image",
+            "size": "l",
+            "title": "testimage",
+            "url": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf"
+        },
+        "353a74e7-ec47-44fc-a203-778a8694aca6": {
+            "@type": "separator",
+            "styles": {
+                "align": "full"
+            }
+        },
+        "3842e1a5-0729-40be-8940-fd84b446d385": {
+            "@type": "highlight",
+            "image_field": "image",
+            "plaintext": "Text",
+            "styles": {
+                "descriptionColor": "highlight-custom-color-1"
+            },
+            "title": "Highlight title",
+            "url": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Text"
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "a8d073ef-8f08-4898-8b22-6e62b7180524": {
+            "@type": "accordion",
+            "collapsed": false,
+            "data": {
+                "blocks": {
+                    "b18ec911-3034-4978-9bba-e2c8c8925975": {
+                        "@type": "accordionPanel",
+                        "blocks": {
+                            "129fdc0e-80e9-40c6-ba9c-f0c13d42376d": {
+                                "@type": "teaser",
+                                "description": "",
+                                "head_title": null,
+                                "href": [
+                                    {
+                                        "@id": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+                                        "@type": "Image",
+                                        "Description": "",
+                                        "Title": "testimage",
+                                        "getRemoteUrl": null,
+                                        "hasPreviewImage": null,
+                                        "head_title": null,
+                                        "image_field": "image",
+                                        "title": "testimage"
+                                    }
+                                ],
+                                "styles": {
+                                    "align": "left"
+                                },
+                                "title": "testimage"
+                            },
+                            "4b117929-0302-4035-9af1-3ce3ef09e2da": {
+                                "@type": "slate",
+                                "plaintext": "Text",
+                                "styles": {},
+                                "value": [
+                                    {
+                                        "children": [
+                                            {
+                                                "text": "Text"
+                                            }
+                                        ],
+                                        "type": "p"
+                                    }
+                                ]
+                            },
+                            "a124f00b-2b4b-4c62-b9eb-51c0d6e90a04": {
+                                "@type": "image",
+                                "align": "center",
+                                "credit": {},
+                                "description": "",
+                                "image_field": "image",
+                                "size": "l",
+                                "title": "testimage",
+                                "url": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf"
+                            }
+                        },
+                        "blocks_layout": {
+                            "items": [
+                                "a124f00b-2b4b-4c62-b9eb-51c0d6e90a04",
+                                "129fdc0e-80e9-40c6-ba9c-f0c13d42376d",
+                                "4b117929-0302-4035-9af1-3ce3ef09e2da"
+                            ]
+                        },
+                        "selected": "2bc83f64-1f35-4349-9153-d2cd5a5970f0",
+                        "title": "Title"
+                    }
+                },
+                "blocks_layout": {
+                    "items": [
+                        "b18ec911-3034-4978-9bba-e2c8c8925975"
+                    ]
+                }
+            },
+            "filtering": false,
+            "non_exclusive": false,
+            "right_arrows": true,
+            "styles": {}
+        },
+        "ad3da4fa-3bf7-4395-bd1f-295a2d4b0155": {
+            "@type": "gridBlock",
+            "blocks": {
+                "b6894eed-c260-484b-b49d-4322fc9c6fb5": {
+                    "@type": "teaser",
+                    "description": "",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+                            "@type": "Image",
+                            "Description": "",
+                            "Title": "testimage",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": null,
+                            "head_title": null,
+                            "image_field": "image",
+                            "title": "testimage"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "testimage"
+                },
+                "f6a3f08b-94c9-44a0-a5f4-46b4abfedede": {
+                    "@type": "image",
+                    "align": "center",
+                    "credit": {},
+                    "description": "",
+                    "image_field": "image",
+                    "size": "l",
+                    "title": "testimage",
+                    "url": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "f6a3f08b-94c9-44a0-a5f4-46b4abfedede",
+                    "b6894eed-c260-484b-b49d-4322fc9c6fb5"
+                ]
+            },
+            "styles": {}
+        },
+        "bb3443d6-115f-41da-9875-53e6bbcddb79": {
+            "@type": "image",
+            "align": "right",
+            "credit": {},
+            "description": "",
+            "image_field": "image",
+            "size": "m",
+            "styles": {
+                "size:noprefix": "medium"
+            },
+            "title": "testimage",
+            "url": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf"
+        },
+        "c5d7a94d-7a6c-4a31-9054-7c6ab42688f0": {
+            "@type": "teaser",
+            "description": "",
+            "head_title": null,
+            "href": [
+                {
+                    "@id": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+                    "@type": "Image",
+                    "Description": "",
+                    "Title": "testimage",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": null,
+                    "head_title": null,
+                    "image_field": "image",
+                    "title": "testimage"
+                }
+            ],
+            "styles": {
+                "align": "left"
+            },
+            "title": "testimage"
+        },
+        "cca8390f-37f7-474d-ac60-7f83f6c2de82": {
+            "@type": "title"
+        },
+        "eeed263a-c9bf-4934-81bf-b6028cb83123": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "f3fa6220-6fc8-4fd8-9a33-1a80e5ab5fde": {
+            "@type": "slider",
+            "slides": [
+                {
+                    "@id": "39073f9d-bddf-46a4-8106-e765f7b4396d",
+                    "description": "",
+                    "flagAlign": "left",
+                    "href": [
+                        {
+                            "@id": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+                            "Description": "",
+                            "Title": "testimage",
+                            "hasPreviewImage": null,
+                            "image_field": "image",
+                            "title": "testimage"
+                        }
+                    ],
+                    "title": "testimage"
+                },
+                {
+                    "@id": "b385900b-64bc-403e-83bf-f4a089765b74",
+                    "description": "",
+                    "flagAlign": "right",
+                    "href": [
+                        {
+                            "@id": "../resolveuid/9abc1a813bcf46388e565b277bd8c6bf",
+                            "Description": "",
+                            "Title": "testimage",
+                            "hasPreviewImage": null,
+                            "image_field": "image",
+                            "title": "testimage"
+                        }
+                    ],
+                    "title": "testimage"
+                }
+            ],
+            "styles": {}
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "cca8390f-37f7-474d-ac60-7f83f6c2de82",
+            "2e417d0b-716e-48a6-b3a9-7621422697d0",
+            "bb3443d6-115f-41da-9875-53e6bbcddb79",
+            "353a74e7-ec47-44fc-a203-778a8694aca6",
+            "ad3da4fa-3bf7-4395-bd1f-295a2d4b0155",
+            "c5d7a94d-7a6c-4a31-9054-7c6ab42688f0",
+            "a8d073ef-8f08-4898-8b22-6e62b7180524",
+            "3842e1a5-0729-40be-8940-fd84b446d385",
+            "f3fa6220-6fc8-4fd8-9a33-1a80e5ab5fde",
+            "eeed263a-c9bf-4934-81bf-b6028cb83123"
+        ]
+    },
+    "contributors": [],
+    "created": "2024-03-07T11:34:34+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "blocks-with-images",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-07T11:35:36+00:00",
+    "parent": {
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "b935f2ac8f3f4bcf934fdfbabe25c891",
+        "description": "A Plone Site",
+        "title": "Site",
+        "type_title": "Website"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "private",
+    "rights": "",
+    "subjects": [],
+    "title": "Blocks with Images",
+    "type_title": "Seite",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-07T11:34:34+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

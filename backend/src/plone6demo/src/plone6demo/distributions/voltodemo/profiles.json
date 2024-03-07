@@ -1,0 +1,9 @@
+{
+  "base": [
+    "plone.app.contenttypes:default",
+    "plone.app.caching:default",
+    "plonetheme.barceloneta:default",
+    "collective.volto.formsupport:default",
+    "plone.volto:default"
+  ]
+}
