@@ -1,0 +1,123 @@
+{
+    "@id": "/form",
+    "@type": "Document",
+    "UID": "13de82575e16493fbc54514e548a9f3c",
+    "allow_discussion": false,
+    "blocks": {
+        "00e8d49b-5b99-4d2f-83b3-7d69bc80b893": {
+            "@type": "title"
+        },
+        "3687103d-0766-4d5e-8aae-fc7e65c457a6": {
+            "@type": "form",
+            "lastChange": 1709833667316,
+            "remove_data_after_days": -1,
+            "send_email": true,
+            "show_cancel": false,
+            "subblocks": [
+                {
+                    "field_id": "1709833577467",
+                    "field_type": "text",
+                    "id": "1709833577467",
+                    "label": "Name",
+                    "required": true
+                },
+                {
+                    "field_id": "1709833592544",
+                    "field_type": "from",
+                    "id": "1709833592544",
+                    "label": "Email",
+                    "required": true
+                },
+                {
+                    "field_id": "1709833604677",
+                    "field_type": "textarea",
+                    "id": "1709833604677",
+                    "label": "Message",
+                    "required": false
+                },
+                {
+                    "field_id": "1709833616406",
+                    "field_type": "multiple_choice",
+                    "id": "1709833616406",
+                    "input_values": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                    ],
+                    "label": "Select field",
+                    "required": false
+                }
+            ],
+            "title": "A simple form"
+        },
+        "eb25b89c-d64a-4566-8e6e-71fd0f371964": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "00e8d49b-5b99-4d2f-83b3-7d69bc80b893",
+            "3687103d-0766-4d5e-8aae-fc7e65c457a6",
+            "eb25b89c-d64a-4566-8e6e-71fd0f371964"
+        ]
+    },
+    "contributors": [],
+    "created": "2024-03-07T17:47:56+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "form",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-07T17:47:56+00:00",
+    "parent": {
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "60493e72a14d451887c104fad6c52ff7",
+        "description": "A Plone Site",
+        "title": "Plone Site",
+        "type_title": "Plone Site"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "private",
+    "rights": "",
+    "subjects": [],
+    "title": "Form",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-07T17:47:56+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

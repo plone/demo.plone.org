@@ -1,0 +1,119 @@
+{
+    "@id": "/content/page",
+    "@type": "Document",
+    "UID": "2e8ed811e2954e9882d561be8b25cb8c",
+    "allow_discussion": false,
+    "blocks": {
+        "1923851d-b62e-45b7-8425-aa047aaa6e76": {
+            "@type": "slate",
+            "plaintext": "Organic qui acerbic dark milk sit decaffeinated origin siphon. Affogato lait a mountain irish plunger spoon irish that cortado pot half single. Decaffeinated white carajillo lait foam kopi sugar blue caf\u00e9 coffee single variety saucer wings steamed. Cappuccino macchiato spice caramelization saucer half mountain viennese. Froth affogato go robusta beans carajillo dark shot qui fair mocha.",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Organic qui acerbic dark milk sit decaffeinated origin siphon. Affogato lait a mountain irish plunger spoon irish that cortado pot half single. Decaffeinated white carajillo lait foam kopi sugar blue caf\u00e9 coffee single variety saucer wings steamed. Cappuccino macchiato spice caramelization saucer half mountain viennese. Froth affogato go robusta beans carajillo dark shot qui fair mocha."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "603e7230-53ed-4364-977d-4bfd11809a35": {
+            "@type": "slate",
+            "plaintext": "Carajillo cappuccino grinder whipped luwak filter caf\u00e9 blue coffee affogato cultivar spoon grounds. Carajillo viennese lait cream single pot lait extraction. Luwak french so instant latte seasonal caramelization carajillo pot medium. Mazagran milk cultivar barista caffeine medium breve ristretto cortado crema brewed aged extraction irish. Mazagran pumpkin arabica spice aroma sit caf\u00e9 origin redeye as chicory cream irish turkish cream.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Carajillo cappuccino grinder whipped luwak filter caf\u00e9 blue coffee affogato cultivar spoon grounds. Carajillo viennese lait cream single pot lait extraction. Luwak french so instant latte seasonal caramelization carajillo pot medium. Mazagran milk cultivar barista caffeine medium breve ristretto cortado crema brewed aged extraction irish. Mazagran pumpkin arabica spice aroma sit caf\u00e9 origin redeye as chicory cream irish turkish cream."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "7ea2d08f-0fe5-493e-bbd1-d53f5bd38bee": {
+            "@type": "slate",
+            "plaintext": "And carajillo aromatic affogato instant cream grinder kopi panna. Qui robusta milk and dripper variety caffeine grinder mazagran irish chicory grounds. Filter cream con so robust steamed wings coffee. Spoon panna lungo skinny brewed qui aroma aged id grinder. Spoon aromatic so decaffeinated at dark acerbic siphon and redeye at mug.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "And carajillo aromatic affogato instant cream grinder kopi panna. Qui robusta milk and dripper variety caffeine grinder mazagran irish chicory grounds. Filter cream con so robust steamed wings coffee. Spoon panna lungo skinny brewed qui aroma aged id grinder. Spoon aromatic so decaffeinated at dark acerbic siphon and redeye at mug."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "af503055-b17f-4393-8f76-ee11b7b1aae8": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "af503055-b17f-4393-8f76-ee11b7b1aae8",
+            "7ea2d08f-0fe5-493e-bbd1-d53f5bd38bee",
+            "603e7230-53ed-4364-977d-4bfd11809a35",
+            "1923851d-b62e-45b7-8425-aa047aaa6e76"
+        ]
+    },
+    "contributors": [],
+    "created": "2024-03-07T16:01:59+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": "2024-03-07T17:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "page",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-07T16:09:11+00:00",
+    "parent": {
+        "@id": "/content",
+        "@type": "Document",
+        "UID": "dbc92ee33e9a4fc18b03414b4989415e",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "private",
+        "title": "Content",
+        "type_title": "Page"
+    },
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "Page",
+    "type_title": "Page",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-07T16:01:59+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2024-03-07T16:09:11+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

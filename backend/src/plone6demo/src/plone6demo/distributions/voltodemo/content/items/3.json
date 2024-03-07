@@ -1,10 +1,43 @@
 {
-    "@id": "/testimage.jpg",
-    "@type": "Image",
-    "UID": "9abc1a813bcf46388e565b277bd8c6bf",
+    "@id": "/content",
+    "@type": "Document",
+    "UID": "dbc92ee33e9a4fc18b03414b4989415e",
     "allow_discussion": false,
+    "blocks": {
+        "c8405419-7ef0-49f5-8199-a4679dac2af0": {
+            "@type": "slate",
+            "plaintext": "",
+            "styles": {},
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "e416dcc1-f12a-43b8-8f17-5928881f60cb": {
+            "@type": "listing",
+            "headlineTag": "h2",
+            "styles": {},
+            "variation": "default"
+        },
+        "f3a3c97b-97fe-45f4-97f5-4655de91b8ad": {
+            "@type": "title"
+        }
+    },
+    "blocks_layout": {
+        "items": [
+            "f3a3c97b-97fe-45f4-97f5-4655de91b8ad",
+            "e416dcc1-f12a-43b8-8f17-5928881f60cb",
+            "c8405419-7ef0-49f5-8199-a4679dac2af0"
+        ]
+    },
     "contributors": [],
-    "created": "2024-03-07T11:29:54+00:00",
+    "created": "2024-03-07T16:01:35+00:00",
     "creators": [
         "admin"
     ],
@@ -12,34 +45,42 @@
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "testimage.jpg",
-    "image": {
-        "blob_path": "blobs/9abc1a813bcf46388e565b277bd8c6bf-image/mana5280-DAQOskiNFtg-unsplash.jpg",
-        "content-type": "image/jpeg",
-        "filename": "mana5280-DAQOskiNFtg-unsplash.jpg",
-        "height": 3268,
-        "size": 2059558,
-        "width": 4575
+    "id": "content",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
     },
-    "is_folderish": false,
-    "language": "de",
-    "layout": "image_view",
-    "lock": {},
-    "modified": "2024-03-07T11:30:08+00:00",
+    "modified": "2024-03-07T17:45:18+00:00",
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "b935f2ac8f3f4bcf934fdfbabe25c891",
+        "UID": "60493e72a14d451887c104fad6c52ff7",
         "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "title": "Plone Site",
+        "type_title": "Plone Site"
     },
-    "review_state": null,
+    "preview_caption": null,
+    "preview_image": null,
+    "review_state": "private",
     "rights": "",
     "subjects": [],
-    "title": "testimage",
-    "type_title": "Bild",
+    "title": "Content",
+    "type_title": "Page",
     "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-07T16:01:35+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

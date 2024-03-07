@@ -279,7 +279,7 @@
     "expires": null,
     "id": "blocks-with-images",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
@@ -289,10 +289,10 @@
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "b935f2ac8f3f4bcf934fdfbabe25c891",
+        "UID": "60493e72a14d451887c104fad6c52ff7",
         "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "title": "Plone Site",
+        "type_title": "Plone Site"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -300,7 +300,7 @@
     "rights": "",
     "subjects": [],
     "title": "Blocks with Images",
-    "type_title": "Seite",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
