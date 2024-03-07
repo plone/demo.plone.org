@@ -14,11 +14,7 @@ const SystemView = (props) => {
     /* eslint-disable react-hooks/exhaustive-deps */
   }, []);
 
-  return (
-    <div className="block system">
-      <VersionOverview {...systemInfo} />
-    </div>
-  );
+  return <VersionOverview {...systemInfo} />;
 };
 
 export default SystemView;
