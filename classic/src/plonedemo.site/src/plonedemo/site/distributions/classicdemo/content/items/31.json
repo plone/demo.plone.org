@@ -1,37 +1,43 @@
 {
-    "@id": "/es",
-    "@type": "LRF",
-    "UID": "d066fc6505ca4ace9df8402aa8cad8df",
+    "@id": "/es/demo/un-enlace",
+    "@type": "Link",
+    "UID": "ae9d4c02a78b487fb74be8fde688e773",
     "allow_discussion": false,
+    "changeNote": "",
     "contributors": [],
-    "created": "2024-03-08T08:53:33+00:00",
+    "created": "2018-08-27T11:22:37+00:00",
     "creators": [
         "admin"
     ],
     "description": "",
-    "effective": null,
-    "exclude_from_nav": true,
+    "effective": "2018-08-27T13:22:00",
+    "exclude_from_nav": false,
     "expires": null,
-    "id": "es",
-    "is_folderish": true,
+    "id": "un-enlace",
+    "is_folderish": false,
     "language": "es",
-    "layout": "folder_listing",
+    "layout": "link_redirect_view",
     "lock": {},
-    "modified": "2024-03-08T09:19:10+00:00",
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/",
-        "@type": "Plone Site",
-        "UID": "307af1b9faa64e3999fa9dc37f2f39a0",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "@id": "/es/demo",
+        "@type": "Folder",
+        "UID": "353551eee36e491e89bc097f17f05e59",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
     },
+    "remoteUrl": "https://plone.com",
     "review_state": "published",
-    "rights": "",
+    "rights": null,
     "subjects": [],
-    "title": "Espa\u00f1ol",
-    "type_title": "Basisordner einer Sprache",
+    "title": "Un enlace",
+    "type_title": "Link",
     "version": "current",
+    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -39,14 +45,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2018-08-27T11:22:37+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2018-08-27T11:22:42+00:00"
             }
         ]
     },

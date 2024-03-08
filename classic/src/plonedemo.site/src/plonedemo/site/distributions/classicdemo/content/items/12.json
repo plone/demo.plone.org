@@ -1,31 +1,42 @@
 {
-    "@id": "/de/demo/a-page",
-    "@type": "Document",
-    "UID": "fb91bddde7eb46efbed20e9c10fb4929",
+    "@id": "/de/demo/ein-formular",
+    "@type": "EasyForm",
+    "CSRFProtection": true,
+    "UID": "76f47b0fbb6d49dd921cd0c6a4015fff",
+    "actions_model": "<model xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\" xmlns:marshal=\"http://namespaces.plone.org/supermodel/marshal\" xmlns:form=\"http://namespaces.plone.org/supermodel/form\" xmlns:security=\"http://namespaces.plone.org/supermodel/security\" xmlns:indexer=\"http://namespaces.plone.org/supermodel/indexer\" xmlns:lingua=\"http://namespaces.plone.org/supermodel/lingua\" xmlns:users=\"http://namespaces.plone.org/supermodel/users\" xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\" xmlns=\"http://namespaces.plone.org/supermodel/schema\" i18n:domain=\"collective.easyform\">\n  <schema>\n    <field name=\"mailer\" type=\"collective.easyform.actions.Mailer\">\n      <description i18n:translate=\"\">E-Mails Form Input</description>\n      <replyto_field>replyto</replyto_field>\n      <required>False</required>\n      <subject_field>topic</subject_field>\n      <title i18n:translate=\"\">Mailer</title>\n    </field>\n    <field name=\"data\" type=\"collective.easyform.actions.SaveData\">\n      <title>Data</title>\n    </field>\n  </schema>\n</model>",
+    "afterValidationOverride": null,
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
-    "changeNote": "",
     "contributors": [],
-    "created": "2018-07-19T16:15:11+00:00",
+    "created": "2024-03-08T09:19:37+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
-    "effective": "2018-07-19T18:15:00",
+    "default_fieldset_label": null,
+    "description": "",
+    "effective": "2024-03-08T10:19:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-page",
+    "fields_model": "<model xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\" xmlns:marshal=\"http://namespaces.plone.org/supermodel/marshal\" xmlns:form=\"http://namespaces.plone.org/supermodel/form\" xmlns:security=\"http://namespaces.plone.org/supermodel/security\" xmlns:indexer=\"http://namespaces.plone.org/supermodel/indexer\" xmlns:lingua=\"http://namespaces.plone.org/supermodel/lingua\" xmlns:users=\"http://namespaces.plone.org/supermodel/users\" xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\" xmlns=\"http://namespaces.plone.org/supermodel/schema\" i18n:domain=\"collective.easyform\">\n  <schema>\n    <field name=\"replyto\" type=\"zope.schema.TextLine\" easyform:TDefault=\"python:member and member.getProperty('email', '') or ''\" easyform:serverSide=\"False\" easyform:validators=\"isValidEmail\" easyform:THidden=\"False\">\n      <description/>\n      <title i18n:translate=\"Your E-Mail Address\">Ihre Email</title>\n    </field>\n    <field name=\"comments\" type=\"zope.schema.Text\" easyform:serverSide=\"False\" easyform:THidden=\"False\">\n      <description/>\n      <required>False</required>\n      <title i18n:translate=\"Comments\">Nachricht</title>\n    </field>\n    <field name=\"auswahlfeld\" type=\"zope.schema.Choice\" easyform:serverSide=\"False\" easyform:THidden=\"False\">\n      <description/>\n      <required>False</required>\n      <title>Auswahlfeld</title>\n      <values>\n        <element>Black</element>\n        <element>White</element>\n        <element>Green</element>\n        <element>Red</element>\n        <element>Can I take my friend to bed?</element>\n        <element>Pink</element>\n        <element>Brown</element>\n        <element>Yellow</element>\n        <element>Orange</element>\n        <element>And Blue</element>\n        <element>I love you</element>\n      </values>\n    </field>\n    <field name=\"datenschutz\" type=\"zope.schema.Bool\" easyform:serverSide=\"False\" easyform:validators=\"isChecked\" easyform:THidden=\"False\">\n      <default>False</default>\n      <description>Ich akzeptiere hiermit die Datenschutzerkl&#228;rung.</description>\n      <title>Datenschutz</title>\n      <form:widget type=\"plone.app.z3cform.widgets.singlecheckbox.SingleCheckBoxBoolFieldWidget\"/>\n    </field>\n  </schema>\n</model>",
+    "forceSSL": false,
+    "formActionOverride": null,
+    "formEpilogue": null,
+    "formPrologue": {
+        "content-type": "text/html",
+        "data": "<p>Ein einfaches Testformular</p>",
+        "encoding": "utf-8"
+    },
+    "form_tabbing": true,
+    "headerInjection": null,
+    "id": "ein-formular",
+    "includeEmpties": true,
     "is_folderish": false,
     "language": "de",
-    "layout": "document_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "layout": "view",
+    "lock": {},
+    "method": "post",
+    "modified": "2024-03-08T11:28:08+00:00",
+    "nameAttribute": null,
+    "onDisplayOverride": null,
     "parent": {
         "@id": "/de/demo",
         "@type": "Folder",
@@ -37,19 +48,28 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
+    "resetLabel": "Zur\u00fccksetzen",
     "review_state": "published",
     "rights": null,
-    "subjects": [],
-    "table_of_contents": false,
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Fusce vel ante vel dolor feugiat vulputate? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus pretium tellus, id porttitor erat volutpat et. Donec vehicula accumsan ornare. Mauris quis vulputate dui. Duis convallis congue ornare. Vivamus cursus vestibulum neque at fermentum. Mauris sed velit in enim scelerisque luctus ac vel mauris. Etiam imperdiet tempor lorem, quis ultrices quam blandit ultricies. Ut sodales lacinia purus hendrerit lobortis. Pellentesque blandit; sem at aliquam pulvinar, felis diam tincidunt nisi, ac varius ligula eros eget tortor.</p>\r\n<h2>Vivamus leo ipsum</h2>\r\n<p>Dictum sed luctus elementum, ornare quis justo? Nam sagittis mattis turpis, eu varius sapien pulvinar non. Etiam in enim eget odio cursus condimentum! Nullam porta, quam ut sagittis auctor, dui urna ullamcorper urna, semper facilisis purus velit nec leo. Nam libero sem, auctor vitae pretium sit amet, posuere eget arcu.</p>\r\n<h2>Maecenas ultrices</h2>\r\n<p>Neque in porttitor scelerisque, nunc nunc semper libero, ac dapibus leo lectus et dui. Praesent sem urna, malesuada in volutpat ac, tincidunt sit amet dolor. Ut dignissim ante vel sem semper venenatis? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vitae lectus leo; non bibendum purus.</p>\r\n<ul>\r\n<li>Quisque sit amet aliquam elit</li>\r\n<li>Aenean odio urna, congue eu sollicitudin ac</li>\r\n<li>Interdum ac lorem</li>\r\n<li>Pellentesque habitant morbi tristique</li>\r\n</ul>\r\n<p>Aliquam mattis purus vel nunc tempor sed tempus turpis imperdiet. Pellentesque tincidunt gravida eros at adipiscing. Sed ut tempus nibh. Suspendisse euismod, metus sed lobortis luctus, odio nulla malesuada turpis, in aliquam elit lorem id ante? Pellentesque a elementum dui! Morbi id tellus eget lacus sollicitudin dignissim. Praesent venenatis pellentesque dolor, nec vestibulum felis consectetur non? Sed facilisis, velit vel auctor aliquam, lorem mauris euismod libero, non pellentesque urna mauris vel sem. Aenean eget diam at sem auctor lacinia nec non nisl. Integer sodales fringilla vulputate. Duis massa ante, aliquet id interdum at; placerat nec magna. Ut eleifend sem ut mi elementum eget pellentesque urna dignissim!</p>",
-        "encoding": "utf-8"
+    "savedDataStorage": {
+        "data": {}
     },
-    "title": "Eine Seite",
-    "type_title": "Seite",
+    "showAll": true,
+    "showFields": [],
+    "subjects": [],
+    "submitLabel": "Absenden",
+    "submitLabelOverride": null,
+    "thanksEpilogue": null,
+    "thanksPageOverride": null,
+    "thanksPageOverrideAction": "redirect_to",
+    "thanksPrologue": null,
+    "thanksdescription": "Danke f\u00fcr Ihren Beitrag.",
+    "thankstitle": "Vielen Dank",
+    "title": "Ein Formular",
+    "type_title": "EasyForm",
+    "unload_protection": true,
+    "useCancelButton": false,
     "version": "current",
-    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -57,14 +77,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-19T16:15:11+00:00"
+                "time": "2024-03-08T09:19:37+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-19T16:15:27+00:00"
+                "time": "2024-03-08T09:19:41+00:00"
             }
         ]
     },

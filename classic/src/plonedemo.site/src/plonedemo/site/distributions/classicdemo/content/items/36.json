@@ -1,23 +1,34 @@
 {
-    "@id": "/es/demo/un-enlace",
-    "@type": "Link",
-    "UID": "ae9d4c02a78b487fb74be8fde688e773",
+    "@id": "/es/demo/una-coleccion",
+    "@type": "Collection",
+    "UID": "0a600821c535433c974b2e706fabd704",
     "allow_discussion": false,
-    "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:22:37+00:00",
+    "created": "2022-04-02T14:22:11+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": "2018-08-27T13:22:00",
+    "customViewFields": [
+        "Title",
+        "Creator",
+        "Type",
+        "ModificationDate"
+    ],
+    "description": "Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.",
+    "effective": "2022-04-02T16:22:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "un-enlace",
+    "id": "una-coleccion",
     "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
     "language": "es",
-    "layout": "link_redirect_view",
-    "lock": {},
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/es/demo",
@@ -30,14 +41,29 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "remoteUrl": "https://plone.com",
+    "query": [
+        {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+                "News Item",
+                "Document"
+            ]
+        }
+    ],
     "review_state": "published",
     "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
     "subjects": [],
-    "title": "Un enlace",
-    "type_title": "Link",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Una Colecci\u00f3n",
+    "type_title": "Kollektion",
     "version": "current",
-    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -45,14 +71,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:22:37+00:00"
+                "time": "2022-04-02T14:22:11+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:22:42+00:00"
+                "time": "2022-04-02T14:22:14+00:00"
             }
         ]
     },

@@ -1,68 +1,36 @@
 {
-    "@id": "/de/demo/eine-kollektion",
-    "@type": "Collection",
-    "UID": "cd6271401a744e649e99afd5bb786bef",
+    "@id": "/en",
+    "@type": "LRF",
+    "UID": "0ec57c1f5b104a59b034553ec00908ec",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2022-04-02T14:14:32+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "customViewFields": [
-        "Title",
-        "Creator",
-        "Type",
-        "ModificationDate"
-    ],
-    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.",
-    "effective": "2022-04-02T16:15:00",
-    "exclude_from_nav": false,
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
     "expires": null,
-    "id": "eine-kollektion",
-    "is_folderish": false,
-    "item_count": 30,
-    "items_total": 4,
-    "language": "de",
-    "layout": "tabular_view",
-    "limit": 1000,
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "id": "en",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2024-03-08T11:24:19+00:00",
     "parent": {
-        "@id": "/de/demo",
-        "@type": "Folder",
-        "UID": "79f01c49712d47c0977f8c35b949af7a",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-        "image_field": null,
-        "image_scales": null,
-        "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "76010a4439cd48d3afbeec33ba81bbcd",
+        "description": "A Plone Site",
+        "title": "Site",
+        "type_title": "Website"
     },
-    "query": [
-        {
-            "i": "portal_type",
-            "o": "plone.app.querystring.operation.selection.any",
-            "v": [
-                "News Item",
-                "Document"
-            ]
-        }
-    ],
     "review_state": "published",
-    "rights": null,
-    "sort_on": "modified",
-    "sort_reversed": true,
+    "rights": "",
     "subjects": [],
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Eine Kollektion",
-    "type_title": "Kollektion",
+    "title": "English",
+    "type_title": "Basisordner einer Sprache",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -71,14 +39,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2022-04-02T14:14:32+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2022-04-02T14:15:29+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             }
         ]
     },

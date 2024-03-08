@@ -1,29 +1,22 @@
 {
-    "@id": "/de/demo/a-image.jpg",
-    "@type": "Image",
-    "UID": "0ec640ff06e4401792c31018655050db",
+    "@id": "/de/demo/a-link",
+    "@type": "Link",
+    "UID": "182dcc5b98c94818b9f4c1c8e488c7ff",
     "allow_discussion": false,
+    "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:49:01+00:00",
+    "created": "2018-07-20T13:48:10+00:00",
     "creators": [
         "admin"
     ],
-    "description": null,
-    "effective": null,
+    "description": "",
+    "effective": "2018-07-20T15:48:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-image.jpg",
-    "image": {
-        "blob_path": "blobs/0ec640ff06e4401792c31018655050db-image/paris.jpg",
-        "content-type": "image/jpeg",
-        "filename": "paris.jpg",
-        "height": 755,
-        "size": 431326,
-        "width": 1664
-    },
+    "id": "a-link",
     "is_folderish": false,
     "language": "de",
-    "layout": "image_view",
+    "layout": "link_redirect_view",
     "lock": {},
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
@@ -37,12 +30,32 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "review_state": null,
+    "remoteUrl": "https://plone.com/",
+    "review_state": "published",
     "rights": null,
     "subjects": [],
-    "title": "Ein Bild",
-    "type_title": "Bild",
+    "title": "Ein Link",
+    "type_title": "Link",
     "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-20T13:48:10+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-20T13:48:14+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

@@ -1,24 +1,31 @@
 {
-    "@id": "/eu/demo/karpeta-bat",
-    "@type": "Folder",
-    "UID": "f71e1ae3257d4ef2b296507f4874b069",
+    "@id": "/eu/demo/q6.jpg",
+    "@type": "Image",
+    "UID": "f552f34782cb49f69c9df6d3bfc53332",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-08-27T11:28:19+00:00",
+    "created": "2018-08-27T11:31:11+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-08-27T13:28:00",
+    "description": null,
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "karpeta-bat",
-    "is_folderish": true,
+    "id": "q6.jpg",
+    "image": {
+        "blob_path": "blobs/f552f34782cb49f69c9df6d3bfc53332-image/paris.jpg",
+        "content-type": "image/jpeg",
+        "filename": "paris.jpg",
+        "height": 755,
+        "size": 431326,
+        "width": 1664
+    },
+    "is_folderish": false,
     "language": "eu",
-    "layout": "listing_view",
+    "layout": "image_view",
     "lock": {},
-    "modified": "2024-03-08T09:19:09+00:00",
-    "nextPreviousEnabled": false,
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/eu/demo",
         "@type": "Folder",
@@ -30,30 +37,12 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "review_state": "published",
+    "review_state": null,
     "rights": null,
     "subjects": [],
-    "title": "Karpeta bat",
-    "type_title": "Ordner",
+    "title": "Irudi bat",
+    "type_title": "Bild",
     "version": "current",
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2018-08-27T11:28:19+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2018-08-27T11:28:25+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

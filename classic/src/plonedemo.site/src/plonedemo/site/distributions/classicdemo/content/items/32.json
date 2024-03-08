@@ -1,41 +1,64 @@
 {
-    "@id": "/es/demo",
-    "@type": "Folder",
-    "UID": "353551eee36e491e89bc097f17f05e59",
+    "@id": "/es/demo/un-evento",
+    "@type": "Event",
+    "UID": "fb46a1a5e28248c9befe9b5a696d52b4",
     "allow_discussion": false,
+    "attendees": [
+        "Plone Community"
+    ],
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
     "contributors": [],
-    "created": "2018-08-27T11:12:01+00:00",
+    "created": "2018-08-27T11:17:32+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-    "effective": "2018-08-27T13:16:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-08-27T13:17:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org/",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "demo",
-    "is_folderish": true,
+    "id": "un-evento",
+    "is_folderish": false,
     "language": "es",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T09:19:10+00:00",
-    "nextPreviousEnabled": false,
+    "layout": "event_view",
+    "location": "Planeta Tierra",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
+    "open_end": false,
     "parent": {
-        "@id": "/es",
-        "@type": "LRF",
-        "UID": "d066fc6505ca4ace9df8402aa8cad8df",
-        "description": "",
+        "@id": "/es/demo",
+        "@type": "Folder",
+        "UID": "353551eee36e491e89bc097f17f05e59",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Espa\u00f1ol",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Demo",
+        "type_title": "Ordner"
     },
+    "recurrence": null,
     "review_state": "published",
     "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
     "subjects": [],
-    "title": "Demo",
-    "type_title": "Ordner",
+    "sync_uid": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "encoding": "utf-8"
+    },
+    "title": "Un Evento",
+    "type_title": "Termin",
     "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -43,14 +66,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:12:01+00:00"
+                "time": "2018-08-27T11:17:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:16:38+00:00"
+                "time": "2018-08-27T11:17:39+00:00"
             }
         ]
     },

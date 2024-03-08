@@ -1,28 +1,34 @@
 {
-    "@id": "/de/demo/a-video.mp4",
-    "@type": "File",
-    "UID": "ddf211ecd2914ff18ed82ba9b402033a",
+    "@id": "/de/demo/eine-kollektion",
+    "@type": "Collection",
+    "UID": "cd6271401a744e649e99afd5bb786bef",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-07-20T13:46:10+00:00",
+    "created": "2022-04-02T14:14:32+00:00",
     "creators": [
         "admin"
     ],
-    "description": null,
-    "effective": null,
+    "customViewFields": [
+        "Title",
+        "Creator",
+        "Type",
+        "ModificationDate"
+    ],
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.",
+    "effective": "2022-04-02T16:15:00",
     "exclude_from_nav": false,
     "expires": null,
-    "file": {
-        "blob_path": "0x00/0x00/0x00/0x00/0x00/0x03/0x06/0xc7/0x03f7144f2ae3d833.blob",
-        "content-type": "video/mp4",
-        "filename": "sample_960x400_ocean_with_audio.mp4",
-        "size": 17520898
-    },
-    "id": "a-video.mp4",
+    "id": "eine-kollektion",
     "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
     "language": "de",
-    "layout": "file_view",
-    "lock": {},
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/de/demo",
@@ -35,12 +41,47 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "review_state": null,
+    "query": [
+        {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+                "News Item",
+                "Document"
+            ]
+        }
+    ],
+    "review_state": "published",
     "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
     "subjects": [],
-    "title": "Ein Video",
-    "type_title": "Datei",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Eine Kollektion",
+    "type_title": "Kollektion",
     "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2022-04-02T14:14:32+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2022-04-02T14:15:29+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

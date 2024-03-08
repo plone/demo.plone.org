@@ -1,36 +1,40 @@
 {
-    "@id": "/en",
-    "@type": "LRF",
-    "UID": "0ec57c1f5b104a59b034553ec00908ec",
+    "@id": "/en/demo",
+    "@type": "Folder",
+    "UID": "9afb95a79cfa4c0684715027244e61e0",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2024-03-08T08:53:33+00:00",
+    "created": "2018-07-19T16:31:18+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": null,
-    "exclude_from_nav": true,
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-07-19T18:31:00",
+    "exclude_from_nav": false,
     "expires": null,
-    "id": "en",
+    "id": "demo",
     "is_folderish": true,
     "language": "en",
-    "layout": "folder_listing",
+    "layout": "summary_view",
     "lock": {},
-    "modified": "2024-03-08T09:19:10+00:00",
+    "modified": "2024-03-08T11:29:28+00:00",
+    "nextPreviousEnabled": false,
     "parent": {
-        "@id": "/",
-        "@type": "Plone Site",
-        "UID": "307af1b9faa64e3999fa9dc37f2f39a0",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "0ec57c1f5b104a59b034553ec00908ec",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "English",
+        "type_title": "Basisordner einer Sprache"
     },
     "review_state": "published",
-    "rights": "",
+    "rights": null,
     "subjects": [],
-    "title": "English",
-    "type_title": "Basisordner einer Sprache",
+    "title": "Demo",
+    "type_title": "Ordner",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -39,14 +43,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2018-07-19T16:31:18+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2018-07-19T16:31:44+00:00"
             }
         ]
     },

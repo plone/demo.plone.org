@@ -1,46 +1,73 @@
 {
-    "@id": "/en/demo/a-video.mp4",
-    "@type": "File",
-    "UID": "80101e01f8474f22b85e1704e580c0d9",
+    "@id": "/en/frontpage",
+    "@type": "Document",
+    "UID": "e40c713df9f1414b8c7fc0e190006a51",
     "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:51:31+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "description": null,
+    "description": "The ultimate Open Source Enterprise CMS",
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "file": {
-        "blob_path": "0x00/0x00/0x00/0x00/0x00/0x03/0x08/0x0b/0x03f7144f2ae3d833.blob",
-        "content-type": "video/mp4",
-        "filename": "sample_960x400_ocean_with_audio.mp4",
-        "size": 17520898
-    },
-    "id": "a-video.mp4",
+    "id": "frontpage",
     "is_folderish": false,
     "language": "en",
-    "layout": "file_view",
-    "lock": {},
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
     "modified": "2024-03-08T08:53:33+00:00",
     "parent": {
-        "@id": "/en/demo",
-        "@type": "Folder",
-        "UID": "9afb95a79cfa4c0684715027244e61e0",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "0ec57c1f5b104a59b034553ec00908ec",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "English",
+        "type_title": "Basisordner einer Sprache"
     },
-    "review_state": null,
-    "rights": null,
+    "review_state": "published",
+    "rights": "",
     "subjects": [],
-    "title": "A Video",
-    "type_title": "Datei",
+    "table_of_contents": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Edit this site and test Plone now!</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Welcome to Plone",
+    "type_title": "Seite",
     "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-08T08:53:33+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2024-03-08T08:53:33+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

@@ -1,48 +1,59 @@
 {
-    "@id": "/en/demo/an-image.jpg",
-    "@type": "Image",
-    "UID": "d5a10ad499c34d699049d8027c25e4ca",
+    "@id": "/es/demo",
+    "@type": "Folder",
+    "UID": "353551eee36e491e89bc097f17f05e59",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-07-20T13:51:49+00:00",
+    "created": "2018-08-27T11:12:01+00:00",
     "creators": [
         "admin"
     ],
-    "description": null,
-    "effective": null,
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-08-27T13:16:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "an-image.jpg",
-    "image": {
-        "blob_path": "blobs/d5a10ad499c34d699049d8027c25e4ca-image/paris.jpg",
-        "content-type": "image/jpeg",
-        "filename": "paris.jpg",
-        "height": 755,
-        "size": 431326,
-        "width": 1664
-    },
-    "is_folderish": false,
-    "language": "en",
-    "layout": "image_view",
+    "id": "demo",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "listing_view",
     "lock": {},
-    "modified": "2024-03-08T08:53:34+00:00",
+    "modified": "2024-03-08T11:32:35+00:00",
+    "nextPreviousEnabled": false,
     "parent": {
-        "@id": "/en/demo",
-        "@type": "Folder",
-        "UID": "9afb95a79cfa4c0684715027244e61e0",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "@id": "/es",
+        "@type": "LRF",
+        "UID": "d066fc6505ca4ace9df8402aa8cad8df",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "Espa\u00f1ol",
+        "type_title": "Basisordner einer Sprache"
     },
-    "review_state": null,
+    "review_state": "published",
     "rights": null,
     "subjects": [],
-    "title": "An Image",
-    "type_title": "Bild",
+    "title": "Demo",
+    "type_title": "Ordner",
     "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-08-27T11:12:01+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-08-27T11:16:38+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

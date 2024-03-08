@@ -72,9 +72,9 @@
             "login_time": "2000-01-01T00:00:00",
             "password": "{SSHA}YBMBj1RqHRYAC5keNzFDykDALQj1cPDBjaF2",
             "roles": [
-                "Contributor",
                 "Reader",
                 "Member",
+                "Contributor",
                 "Editor"
             ],
             "username": "editorinchief"
@@ -87,10 +87,10 @@
                 "Administrators"
             ],
             "home_page": "",
-            "last_login_time": "2000-01-01T00:00:00",
+            "last_login_time": "2024-03-08T11:35:03+00:00",
             "listed": true,
             "location": "",
-            "login_time": "2000-01-01T00:00:00",
+            "login_time": "2024-03-08T11:35:04+00:00",
             "password": "{SSHA}1rin6pe/0d43orKxk+/kjtYvDYz3ZnAXRs2q",
             "roles": [],
             "username": "manager"

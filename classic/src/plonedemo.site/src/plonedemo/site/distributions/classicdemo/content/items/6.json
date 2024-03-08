@@ -1,29 +1,24 @@
 {
-    "@id": "/de/demo/a-file.pdf",
-    "@type": "File",
-    "UID": "3d300e8eff2d4ebaa7c670b5d4151d86",
+    "@id": "/de/demo/a-folder",
+    "@type": "Folder",
+    "UID": "78dd69b22bfd4486806c1bb89d2acd06",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-07-20T13:47:16+00:00",
+    "created": "2018-07-20T13:44:38+00:00",
     "creators": [
         "admin"
     ],
-    "description": null,
-    "effective": null,
+    "description": "",
+    "effective": "2018-07-20T15:44:00",
     "exclude_from_nav": false,
     "expires": null,
-    "file": {
-        "blob_path": "0x00/0x00/0x00/0x00/0x00/0x03/0x05/0xc2/0x03f7144f2ae3d833.blob",
-        "content-type": "application/pdf",
-        "filename": "agreement.pdf",
-        "size": 68434
-    },
-    "id": "a-file.pdf",
-    "is_folderish": false,
+    "id": "a-folder",
+    "is_folderish": true,
     "language": "de",
-    "layout": "file_view",
+    "layout": "listing_view",
     "lock": {},
-    "modified": "2024-03-08T08:53:34+00:00",
+    "modified": "2024-03-08T11:24:17+00:00",
+    "nextPreviousEnabled": false,
     "parent": {
         "@id": "/de/demo",
         "@type": "Folder",
@@ -35,12 +30,30 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "review_state": null,
+    "review_state": "published",
     "rights": null,
     "subjects": [],
-    "title": "Eine Datei",
-    "type_title": "Datei",
+    "title": "Ein Ordner",
+    "type_title": "Ordner",
     "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-20T13:44:38+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-20T13:44:43+00:00"
+            }
+        ]
+    },
     "working_copy": null,
     "working_copy_of": null
 }

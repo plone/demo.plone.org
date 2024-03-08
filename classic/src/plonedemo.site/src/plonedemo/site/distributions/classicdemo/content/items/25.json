@@ -1,36 +1,37 @@
 {
-    "@id": "/en/demo/a-news-item",
-    "@type": "News Item",
-    "UID": "4423a1b21c06425886e315c4d0e3a676",
+    "@id": "/en/demo/an-event",
+    "@type": "Event",
+    "UID": "cfb30b644a9c4886b4950a7e708e0cbb",
     "allow_discussion": false,
+    "attendees": [
+        "Plone Community"
+    ],
     "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
     "contributors": [],
-    "created": "2018-07-19T16:34:46+00:00",
+    "created": "2018-07-19T16:33:34+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
-    "effective": "2018-07-19T18:34:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-07-19T18:33:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org/",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-news-item",
-    "image": {
-        "blob_path": "blobs/4423a1b21c06425886e315c4d0e3a676-image/turner.jpg",
-        "content-type": "image/jpeg",
-        "filename": "turner.jpg",
-        "height": 1002,
-        "size": 862842,
-        "width": 1664
-    },
-    "image_caption": null,
+    "id": "an-event",
     "is_folderish": false,
     "language": "en",
-    "layout": "newsitem_view",
+    "layout": "event_view",
+    "location": "Planet Earth",
     "lock": {
         "locked": false,
         "stealable": true
     },
     "modified": "2024-03-08T08:53:33+00:00",
+    "open_end": false,
     "parent": {
         "@id": "/en/demo",
         "@type": "Folder",
@@ -42,18 +43,22 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
+    "recurrence": null,
     "review_state": "published",
     "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
     "subjects": [],
+    "sync_uid": null,
     "text": {
         "content-type": "text/html",
-        "data": "<p>Donec sed odio dui. <a href=\"../../resolveuid/5c380e40de1f424b92e9a220467f078c\" data-val=\"5c380e40de1f424b92e9a220467f078c\" data-linktype=\"internal\">Etiam porta sem malesuada magna mollis euismod</a>. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>\r\n<h1>Curabitur blandit tempus porttitor.</h1>\r\n<p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. <strong>Maecenas sed diam</strong> eget risus varius blandit sit amet non magna.<br /><br />Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>",
+        "data": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>",
         "encoding": "utf-8"
     },
-    "title": "A News Item",
-    "type_title": "Nachricht",
+    "title": "An Event",
+    "type_title": "Termin",
     "version": "current",
     "versioning_enabled": true,
+    "whole_day": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -61,14 +66,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-19T16:34:46+00:00"
+                "time": "2018-07-19T16:33:34+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-19T16:34:52+00:00"
+                "time": "2018-07-19T16:33:42+00:00"
             }
         ]
     },

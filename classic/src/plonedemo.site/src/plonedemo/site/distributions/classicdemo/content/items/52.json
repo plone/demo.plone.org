@@ -1,7 +1,7 @@
 {
-    "@id": "/eu/demo/karpeta-bat/karpeta-baten-barruko-orrialdea",
+    "@id": "/eu/frontpage",
     "@type": "Document",
-    "UID": "4ec428770dec41f0874ff729a0e88003",
+    "UID": "ef5e5df2eeb440c7bd750f224757b58f",
     "allow_discussion": false,
     "blocks": {},
     "blocks_layout": {
@@ -9,15 +9,15 @@
     },
     "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:28:59+00:00",
+    "created": "2024-03-08T08:53:34+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-08-27T13:29:00",
+    "description": "Software Libreko Edukiak Kudeatzeko Sistema",
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "karpeta-baten-barruko-orrialdea",
+    "id": "frontpage",
     "is_folderish": false,
     "language": "eu",
     "layout": "document_view",
@@ -27,26 +27,26 @@
     },
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/eu/demo/karpeta-bat",
-        "@type": "Folder",
-        "UID": "f71e1ae3257d4ef2b296507f4874b069",
-        "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+        "@id": "/eu",
+        "@type": "LRF",
+        "UID": "1300ff76fc49485f99d40949ade199a5",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Karpeta bat",
-        "type_title": "Ordner"
+        "title": "Euskara",
+        "type_title": "Basisordner einer Sprache"
     },
     "review_state": "published",
-    "rights": null,
+    "rights": "",
     "subjects": [],
-    "table_of_contents": false,
+    "table_of_contents": null,
     "text": {
         "content-type": "text/html",
-        "data": "<p><span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.</span><br /><br /><span>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.</span><br /><br /><span>Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</span></p>",
+        "data": "<p>Editatu gune hau eta probatu Plone orain!</p>",
         "encoding": "utf-8"
     },
-    "title": "Karpeta baten barruko orrialdea",
+    "title": "Ongi etorri Plone era",
     "type_title": "Seite",
     "version": "current",
     "versioning_enabled": true,
@@ -57,14 +57,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:28:59+00:00"
+                "time": "2024-03-08T08:53:34+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:29:14+00:00"
+                "time": "2024-03-08T08:53:34+00:00"
             }
         ]
     },

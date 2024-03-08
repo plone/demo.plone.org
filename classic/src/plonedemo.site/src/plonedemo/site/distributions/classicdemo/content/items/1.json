@@ -1,7 +1,7 @@
 {
-    "@id": "/Plone11",
+    "@id": "/Plone",
     "@type": "Plone Site",
-    "UID": "307af1b9faa64e3999fa9dc37f2f39a0",
+    "UID": "76010a4439cd48d3afbeec33ba81bbcd",
     "allow_discussion": null,
     "contributors": [],
     "creators": [
@@ -11,7 +11,7 @@
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "Plone11",
+    "id": "Plone",
     "is_folderish": true,
     "items_total": 4,
     "language": "de",

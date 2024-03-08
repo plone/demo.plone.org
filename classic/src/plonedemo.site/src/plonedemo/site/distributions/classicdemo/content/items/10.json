@@ -1,23 +1,35 @@
 {
-    "@id": "/de/demo/a-link",
-    "@type": "Link",
-    "UID": "182dcc5b98c94818b9f4c1c8e488c7ff",
+    "@id": "/de/demo/a-news-item",
+    "@type": "News Item",
+    "UID": "ecaab7fb8d2c4183b8bd57080d06f7ec",
     "allow_discussion": false,
     "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:48:10+00:00",
+    "created": "2018-07-19T16:18:17+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": "2018-07-20T15:48:00",
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-07-19T18:19:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-link",
+    "id": "a-news-item",
+    "image": {
+        "blob_path": "blobs/ecaab7fb8d2c4183b8bd57080d06f7ec-image/turner.jpg",
+        "content-type": "image/jpeg",
+        "filename": "turner.jpg",
+        "height": 1002,
+        "size": 862842,
+        "width": 1664
+    },
+    "image_caption": null,
     "is_folderish": false,
     "language": "de",
-    "layout": "link_redirect_view",
-    "lock": {},
+    "layout": "newsitem_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/de/demo",
@@ -30,12 +42,16 @@
         "title": "Demo",
         "type_title": "Ordner"
     },
-    "remoteUrl": "https://plone.com/",
     "review_state": "published",
     "rights": null,
     "subjects": [],
-    "title": "Ein Link",
-    "type_title": "Link",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Donec sed odio dui. <a href=\"../../resolveuid/fb91bddde7eb46efbed20e9c10fb4929\" data-linktype=\"internal\" data-val=\"fb91bddde7eb46efbed20e9c10fb4929\">Etiam porta sem malesuada magna mollis euismod</a>. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>\r\n<h1>Curabitur blandit tempus porttitor.</h1>\r\n<p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. <strong>Maecenas sed diam</strong> eget risus varius blandit sit amet non magna.<br /><br />Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Eine Nachricht",
+    "type_title": "Nachricht",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {
@@ -45,14 +61,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-20T13:48:10+00:00"
+                "time": "2018-07-19T16:18:17+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-20T13:48:14+00:00"
+                "time": "2018-07-19T16:19:14+00:00"
             }
         ]
     },

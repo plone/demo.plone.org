@@ -1,39 +1,68 @@
 {
-    "@id": "/en/assets",
-    "@type": "LIF",
-    "UID": "e082374ad260493a86c2c415569c3ad4",
+    "@id": "/en/demo/a-collection",
+    "@type": "Collection",
+    "UID": "bfdc104dadc844cdb4a9412165dad82e",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2024-03-08T08:53:33+00:00",
+    "created": "2022-04-02T14:20:31+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": null,
-    "exclude_from_nav": true,
+    "customViewFields": [
+        "Title",
+        "Creator",
+        "Type",
+        "ModificationDate"
+    ],
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui",
+    "effective": "2022-04-02T16:20:00",
+    "exclude_from_nav": false,
     "expires": null,
-    "id": "assets",
-    "is_folderish": true,
+    "id": "a-collection",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
     "language": "en",
-    "layout": "folder_listing",
-    "lock": {},
-    "modified": "2024-03-08T08:53:33+00:00",
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/en",
-        "@type": "LRF",
-        "UID": "0ec57c1f5b104a59b034553ec00908ec",
-        "description": "",
+        "@id": "/en/demo",
+        "@type": "Folder",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "English",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Demo",
+        "type_title": "Ordner"
     },
+    "query": [
+        {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+                "News Item",
+                "Document"
+            ]
+        }
+    ],
     "review_state": "published",
-    "rights": "",
+    "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
     "subjects": [],
-    "title": "Assets",
-    "type_title": "Sprachunabh\u00e4ngiger Ordner",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "A Collection",
+    "type_title": "Kollektion",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -42,14 +71,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2022-04-02T14:20:31+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2024-03-08T08:53:33+00:00"
+                "time": "2022-04-02T14:20:33+00:00"
             }
         ]
     },

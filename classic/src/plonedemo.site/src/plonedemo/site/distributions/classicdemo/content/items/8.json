@@ -1,73 +1,48 @@
 {
-    "@id": "/de/demo/a-folder/a-page-inside-a-folder",
-    "@type": "Document",
-    "UID": "dd01c82bbbb64b8ab37469843ecd1d03",
+    "@id": "/de/demo/a-image.jpg",
+    "@type": "Image",
+    "UID": "0ec640ff06e4401792c31018655050db",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
-    "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:45:13+00:00",
+    "created": "2018-07-20T13:49:01+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-07-20T15:45:00",
+    "description": null,
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-page-inside-a-folder",
+    "id": "a-image.jpg",
+    "image": {
+        "blob_path": "blobs/0ec640ff06e4401792c31018655050db-image/paris.jpg",
+        "content-type": "image/jpeg",
+        "filename": "paris.jpg",
+        "height": 755,
+        "size": 431326,
+        "width": 1664
+    },
     "is_folderish": false,
     "language": "de",
-    "layout": "document_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
+    "layout": "image_view",
+    "lock": {},
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/de/demo/a-folder",
+        "@id": "/de/demo",
         "@type": "Folder",
-        "UID": "78dd69b22bfd4486806c1bb89d2acd06",
-        "description": "",
+        "UID": "79f01c49712d47c0977f8c35b949af7a",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Ein Ordner",
+        "title": "Demo",
         "type_title": "Ordner"
     },
-    "review_state": "published",
+    "review_state": null,
     "rights": null,
     "subjects": [],
-    "table_of_contents": false,
-    "text": {
-        "content-type": "text/html",
-        "data": "<header>\r\n<div class=\"documentDescription description\">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</div>\r\n</header>\r\n<div id=\"viewlet-above-content-body\"></div>\r\n<div id=\"content-core\">\r\n<div class=\"\" id=\"parent-fieldname-text\">\r\n<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.<br /><br />Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.<br /><br />Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\r\n</div>\r\n</div>",
-        "encoding": "utf-8"
-    },
-    "title": "Eine Seite in einem Ordner",
-    "type_title": "Seite",
+    "title": "Ein Bild",
+    "type_title": "Bild",
     "version": "current",
-    "versioning_enabled": true,
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2018-07-20T13:45:13+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2018-07-20T13:45:18+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

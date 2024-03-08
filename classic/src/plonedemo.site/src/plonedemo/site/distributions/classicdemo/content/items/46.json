@@ -1,41 +1,64 @@
 {
-    "@id": "/eu/demo",
-    "@type": "Folder",
-    "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+    "@id": "/eu/demo/hitzordu-bat",
+    "@type": "Event",
+    "UID": "2c56691daadb47d893afbfd73d828923",
     "allow_discussion": false,
+    "attendees": [
+        "Plone Community"
+    ],
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
     "contributors": [],
-    "created": "2018-08-27T11:23:52+00:00",
+    "created": "2018-08-27T11:26:34+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-    "effective": "2018-08-27T13:24:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-08-27T13:26:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "demo",
-    "is_folderish": true,
+    "id": "hitzordu-bat",
+    "is_folderish": false,
     "language": "eu",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T09:19:10+00:00",
-    "nextPreviousEnabled": false,
+    "layout": "event_view",
+    "location": "Lurra",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
+    "open_end": false,
     "parent": {
-        "@id": "/eu",
-        "@type": "LRF",
-        "UID": "1300ff76fc49485f99d40949ade199a5",
-        "description": "",
+        "@id": "/eu/demo",
+        "@type": "Folder",
+        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Euskara",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Demo",
+        "type_title": "Ordner"
     },
+    "recurrence": null,
     "review_state": "published",
     "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
     "subjects": [],
-    "title": "Demo",
-    "type_title": "Ordner",
+    "sync_uid": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p><span>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</span><br /><br /><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</span></p>",
+        "encoding": "utf-8"
+    },
+    "title": "Hitzordu bat",
+    "type_title": "Termin",
     "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -43,14 +66,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:23:52+00:00"
+                "time": "2018-08-27T11:26:34+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:24:00+00:00"
+                "time": "2018-08-27T11:26:39+00:00"
             }
         ]
     },

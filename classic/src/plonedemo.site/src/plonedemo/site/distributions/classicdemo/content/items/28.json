@@ -1,64 +1,37 @@
 {
-    "@id": "/en/demo/an-event",
-    "@type": "Event",
-    "UID": "cfb30b644a9c4886b4950a7e708e0cbb",
+    "@id": "/es",
+    "@type": "LRF",
+    "UID": "d066fc6505ca4ace9df8402aa8cad8df",
     "allow_discussion": false,
-    "attendees": [
-        "Plone Community"
-    ],
-    "changeNote": "",
-    "contact_email": null,
-    "contact_name": null,
-    "contact_phone": null,
     "contributors": [],
-    "created": "2018-07-19T16:33:34+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
-    "effective": "2018-07-19T18:33:00",
-    "end": "2024-10-05T22:00:00+00:00",
-    "event_url": "http://ploneconf.org/",
-    "exclude_from_nav": false,
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
     "expires": null,
-    "id": "an-event",
-    "is_folderish": false,
-    "language": "en",
-    "layout": "event_view",
-    "location": "Planet Earth",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:33+00:00",
-    "open_end": false,
+    "id": "es",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2024-03-08T11:24:19+00:00",
     "parent": {
-        "@id": "/en/demo",
-        "@type": "Folder",
-        "UID": "9afb95a79cfa4c0684715027244e61e0",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-        "image_field": null,
-        "image_scales": null,
-        "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "76010a4439cd48d3afbeec33ba81bbcd",
+        "description": "A Plone Site",
+        "title": "Site",
+        "type_title": "Website"
     },
-    "recurrence": null,
     "review_state": "published",
-    "rights": null,
-    "start": "2024-09-29T22:00:00+00:00",
+    "rights": "",
     "subjects": [],
-    "sync_uid": null,
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "An Event",
-    "type_title": "Termin",
+    "title": "Espa\u00f1ol",
+    "type_title": "Basisordner einer Sprache",
     "version": "current",
-    "versioning_enabled": true,
-    "whole_day": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -66,14 +39,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-19T16:33:34+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-19T16:33:42+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             }
         ]
     },

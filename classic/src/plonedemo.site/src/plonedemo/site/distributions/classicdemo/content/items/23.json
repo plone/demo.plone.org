@@ -1,53 +1,57 @@
 {
-    "@id": "/en/demo/a-folder/a-page-inside-a-folder",
-    "@type": "Document",
-    "UID": "cdeb51770c5a4525abaa0493bb5780bb",
+    "@id": "/en/demo/a-news-item",
+    "@type": "News Item",
+    "UID": "4423a1b21c06425886e315c4d0e3a676",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
     "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:52:55+00:00",
+    "created": "2018-07-19T16:34:46+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-07-20T15:53:00",
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-07-19T18:34:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-page-inside-a-folder",
+    "id": "a-news-item",
+    "image": {
+        "blob_path": "blobs/4423a1b21c06425886e315c4d0e3a676-image/turner.jpg",
+        "content-type": "image/jpeg",
+        "filename": "turner.jpg",
+        "height": 1002,
+        "size": 862842,
+        "width": 1664
+    },
+    "image_caption": null,
     "is_folderish": false,
     "language": "en",
-    "layout": "document_view",
+    "layout": "newsitem_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
     "modified": "2024-03-08T08:53:33+00:00",
     "parent": {
-        "@id": "/en/demo/a-folder",
+        "@id": "/en/demo",
         "@type": "Folder",
-        "UID": "a07f9e78ee864e689d72fde066adbac3",
-        "description": "",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "A Folder",
+        "title": "Demo",
         "type_title": "Ordner"
     },
     "review_state": "published",
     "rights": null,
     "subjects": [],
-    "table_of_contents": false,
     "text": {
         "content-type": "text/html",
-        "data": "<div id=\"content-core\">\r\n<div class=\"\" id=\"parent-fieldname-text\">\r\n<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.<br /><br />Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.<br /><br />Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\r\n</div>\r\n</div>",
+        "data": "<p>Donec sed odio dui. <a href=\"../../resolveuid/5c380e40de1f424b92e9a220467f078c\" data-val=\"5c380e40de1f424b92e9a220467f078c\" data-linktype=\"internal\">Etiam porta sem malesuada magna mollis euismod</a>. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>\r\n<h1>Curabitur blandit tempus porttitor.</h1>\r\n<p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. <strong>Maecenas sed diam</strong> eget risus varius blandit sit amet non magna.<br /><br />Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>",
         "encoding": "utf-8"
     },
-    "title": "A Page inside a Folder",
-    "type_title": "Seite",
+    "title": "A News Item",
+    "type_title": "Nachricht",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {
@@ -57,14 +61,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-20T13:52:55+00:00"
+                "time": "2018-07-19T16:34:46+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-20T13:53:01+00:00"
+                "time": "2018-07-19T16:34:52+00:00"
             }
         ]
     },
