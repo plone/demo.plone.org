@@ -1,24 +1,24 @@
 {
-    "@id": "/content-types/link",
+    "@id": "/content-types/external-link",
     "@type": "Link",
-    "UID": "51aa57a0fb694d528ee5a76af0107131",
+    "UID": "362783c333434d2f89a00bd48ea37e34",
     "allow_discussion": false,
     "changeNote": "",
     "contributors": [],
-    "created": "2023-07-06T21:35:19+00:00",
+    "created": "2024-03-07T16:06:57+00:00",
     "creators": [
         "admin"
     ],
-    "description": "The Link content type can be used to display links on the page. Users are automatically redirected to the external site when they click on the link.",
-    "effective": "2023-07-06T18:35:00",
+    "description": "",
+    "effective": "2024-03-07T17:09:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "link",
+    "id": "external-link",
     "is_folderish": false,
-    "language": "de",
+    "language": "en",
     "layout": "link_redirect_view",
     "lock": {},
-    "modified": "2023-09-22T14:27:41+00:00",
+    "modified": "2024-03-08T15:08:21+00:00",
     "parent": {
         "@id": "/content-types",
         "@type": "Document",
@@ -28,13 +28,13 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Content Types",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
-    "remoteUrl": "https://www.google.com",
+    "remoteUrl": "https://plone.org",
     "review_state": "published",
     "rights": "",
     "subjects": [],
-    "title": "Link",
+    "title": "External Link",
     "type_title": "Link",
     "version": "current",
     "versioning_enabled": true,
@@ -45,14 +45,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2023-07-06T21:35:19+00:00"
+                "time": "2024-03-07T16:06:57+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2023-07-06T21:35:19+00:00"
+                "time": "2024-03-07T16:09:12+00:00"
             }
         ]
     },

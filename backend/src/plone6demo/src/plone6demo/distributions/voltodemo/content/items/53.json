@@ -1,255 +1,197 @@
 {
-    "@id": "/vertical-spacing/listing-and-text",
+    "@id": "/vertical-spacing/teasers-and-text",
     "@type": "Document",
-    "UID": "e017bd4a0b3845aab26f6d855cc4ef14",
+    "UID": "1efc7b73b28e4edeaf40040709299d69",
     "allow_discussion": false,
     "blocks": {
-        "02e2a3ef-7d51-43d4-a122-5171bd88617b": {
-            "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-            "value": [
+        "427934d4-5170-40af-b849-44b55c44f697": {
+            "@type": "teaser",
+            "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+            "href": [
                 {
-                    "children": [
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "Title": "Inhaltstyp: Seite (Page)",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "image_field": "preview_image",
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            ],
+            "styles": {
+                "align": "left",
+                "backgroundColor": "grey"
+            },
+            "title": "Inhaltstyp: Seite (Page)"
+        },
+        "5803406e-bb08-42b1-994d-96dfdb068555": {
+            "@type": "teaser",
+            "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+            "href": [
+                {
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "Title": "Inhaltstyp: Seite (Page)",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "image_field": "preview_image",
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            ],
+            "styles": {
+                "align": "right",
+                "backgroundColor": "grey"
+            },
+            "title": "Inhaltstyp: Seite (Page)"
+        },
+        "91161714-fcea-4bdd-b809-9edd4cc1da2b": {
+            "@type": "gridBlock",
+            "blocks": {
+                "3131582e-133c-49f1-8f8a-84178fa65bdf": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
                         {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
                         }
                     ],
-                    "type": "p"
-                }
-            ]
-        },
-        "095f04c7-99fd-4c0b-8628-3dc78e0d5971": {
-            "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-            "value": [
-                {
-                    "children": [
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
+                },
+                "f3719d15-b7aa-491b-951b-afe82762bc74": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
                         {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
                         }
                     ],
-                    "type": "p"
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
                 }
-            ]
+            },
+            "blocks_layout": {
+                "items": [
+                    "f3719d15-b7aa-491b-951b-afe82762bc74",
+                    "3131582e-133c-49f1-8f8a-84178fa65bdf"
+                ]
+            },
+            "headline": "This one has heading",
+            "styles": {}
         },
-        "0f4ec27c-90e7-4c35-846f-3296d1049786": {
-            "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "34290989-9769-44b6-ad39-4505c20a7ee0": {
-            "@type": "listing",
-            "block": "a4359eb0-6416-477d-84a8-d06b3a9a3e89",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "portal_type",
-                        "o": "plone.app.querystring.operation.selection.any",
-                        "v": [
-                            "Document"
-                        ]
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "summary"
-        },
-        "4a5e5f8e-3d7a-4860-8d0f-f7043df08e5d": {
-            "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "601fc136-27f4-44b3-851b-ba5c0c76c2d7": {
-            "@type": "listing",
-            "block": "cf98535a-82bf-4553-8588-6fc679a7c1c0",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "path",
-                        "o": "plone.app.querystring.operation.string.absolutePath",
-                        "v": ""
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "default"
-        },
-        "91762b77-6b5f-41f8-a230-b2d83de72e6e": {
-            "@type": "listing",
-            "block": "cc17562e-083b-4f11-af21-b0dd2d2b61e6",
-            "headline": "Listing: Nachrichten",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "portal_type",
-                        "o": "plone.app.querystring.operation.selection.any",
-                        "v": [
-                            "News Item"
-                        ]
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "newsListing"
-        },
-        "93acf721-12a7-4902-8942-260201401830": {
-            "@type": "listing",
-            "block": "cf98535a-82bf-4553-8588-6fc679a7c1c0",
-            "headline": "Listing: Standard",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "path",
-                        "o": "plone.app.querystring.operation.string.absolutePath",
-                        "v": "/block"
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "default"
-        },
-        "9ab289c8-ddfb-4c3a-b622-12b153f11406": {
-            "@type": "listing",
-            "block": "cc17562e-083b-4f11-af21-b0dd2d2b61e6",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "portal_type",
-                        "o": "plone.app.querystring.operation.selection.any",
-                        "v": [
-                            "News Item"
-                        ]
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "newsListing"
-        },
-        "a8adf4ff-d857-4caa-82a2-1d91321a22d0": {
-            "@type": "listing",
-            "block": "a4359eb0-6416-477d-84a8-d06b3a9a3e89",
-            "headline": "Listing: Zusammenfassung",
-            "headlineTag": "h2",
-            "query": [],
-            "querystring": {
-                "limit": "3",
-                "query": [
-                    {
-                        "i": "portal_type",
-                        "o": "plone.app.querystring.operation.selection.any",
-                        "v": [
-                            "Document"
-                        ]
-                    }
-                ],
-                "sort_order": "ascending"
-            },
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "variation": "summary"
-        },
-        "dca03386-bb08-4981-9389-90fc4bcee334": {
+        "af8bd9d7-c793-4619-941a-22885c1dcb0f": {
             "@type": "title"
         },
-        "ed7ab4a5-cc35-4b6e-8081-eda78ae646df": {
+        "b986af79-52ce-4787-a632-d08fc3b8f39f": {
             "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
+            "plaintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.",
+            "styles": {},
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat."
                         }
                     ],
                     "type": "p"
                 }
             ]
         },
-        "f24d16e8-9ce6-4d91-aab5-ee0462281f2b": {
+        "c444e3d8-260d-4953-a821-59dcf419622c": {
+            "@type": "teaser",
+            "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+            "href": [
+                {
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "Title": "Inhaltstyp: Seite (Page)",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "image_field": "preview_image",
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            ],
+            "styles": {
+                "align": "right",
+                "backgroundColor": "grey"
+            },
+            "title": "Inhaltstyp: Seite (Page)"
+        },
+        "d5b58f85-a6e5-43bd-a8e8-e4015f2835c1": {
             "@type": "slate",
-            "plaintext": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+            "plaintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat.",
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Cras ultricies ligula sed magna dictum porta. Cras ultricies ligula sed magna dictum porta. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus."
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit tortor eget felis porttitor volutpat."
                         }
                     ],
                     "type": "p"
                 }
             ]
+        },
+        "f7f6732e-091b-4a80-87d7-55e10dd43696": {
+            "@type": "teaser",
+            "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+            "href": [
+                {
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "Title": "Inhaltstyp: Seite (Page)",
+                    "getRemoteUrl": null,
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "image_field": "preview_image",
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            ],
+            "styles": {
+                "align": "left",
+                "backgroundColor": "grey"
+            },
+            "title": "Inhaltstyp: Seite (Page)"
         }
     },
     "blocks_layout": {
         "items": [
-            "dca03386-bb08-4981-9389-90fc4bcee334",
-            "f24d16e8-9ce6-4d91-aab5-ee0462281f2b",
-            "601fc136-27f4-44b3-851b-ba5c0c76c2d7",
-            "095f04c7-99fd-4c0b-8628-3dc78e0d5971",
-            "34290989-9769-44b6-ad39-4505c20a7ee0",
-            "ed7ab4a5-cc35-4b6e-8081-eda78ae646df",
-            "9ab289c8-ddfb-4c3a-b622-12b153f11406",
-            "02e2a3ef-7d51-43d4-a122-5171bd88617b",
-            "93acf721-12a7-4902-8942-260201401830",
-            "0f4ec27c-90e7-4c35-846f-3296d1049786",
-            "a8adf4ff-d857-4caa-82a2-1d91321a22d0",
-            "4a5e5f8e-3d7a-4860-8d0f-f7043df08e5d",
-            "91762b77-6b5f-41f8-a230-b2d83de72e6e"
+            "af8bd9d7-c793-4619-941a-22885c1dcb0f",
+            "427934d4-5170-40af-b849-44b55c44f697",
+            "5803406e-bb08-42b1-994d-96dfdb068555",
+            "91161714-fcea-4bdd-b809-9edd4cc1da2b",
+            "d5b58f85-a6e5-43bd-a8e8-e4015f2835c1",
+            "f7f6732e-091b-4a80-87d7-55e10dd43696",
+            "c444e3d8-260d-4953-a821-59dcf419622c",
+            "b986af79-52ce-4787-a632-d08fc3b8f39f"
         ]
     },
     "contributors": [],
@@ -261,15 +203,15 @@
     "effective": "2023-07-06T18:35:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "listing-and-text",
+    "id": "teasers-and-text",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-09-30T06:59:18+00:00",
+    "modified": "2023-09-22T14:07:46+00:00",
     "parent": {
         "@id": "/vertical-spacing",
         "@type": "Document",
@@ -279,15 +221,15 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Vertical Spacing",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "preview_caption": null,
     "preview_image": null,
     "review_state": "published",
     "rights": "",
     "subjects": [],
-    "title": "Listing and Text",
-    "type_title": "Seite",
+    "title": "Teasers and Text",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

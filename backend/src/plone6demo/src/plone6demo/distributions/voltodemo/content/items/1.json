@@ -1,7 +1,7 @@
 {
     "@id": "/Plone",
     "@type": "Plone Site",
-    "UID": "70544f379d854fb9a5d378b8abd1f63f",
+    "UID": "ffac8d6ec644414d8eff2d8e253a22ae",
     "allow_discussion": null,
     "blocks": {
         "03511c33-6c36-4135-a60a-0be82ccc7e8f": {
@@ -835,14 +835,14 @@
     "creators": [
         "admin"
     ],
-    "description": "A Plone Site",
+    "description": "Welcome to Plone 6!",
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
     "id": "Plone",
     "is_folderish": true,
-    "items_total": 6,
-    "language": "de",
+    "items_total": 5,
+    "language": "en",
     "lock": {
         "locked": false,
         "stealable": true
@@ -852,6 +852,6 @@
     "rights": "",
     "subjects": [],
     "table_of_contents": null,
-    "title": "Site",
-    "type_title": "Website"
+    "title": "Welcome to Plone 6!",
+    "type_title": "Plone Site"
 }

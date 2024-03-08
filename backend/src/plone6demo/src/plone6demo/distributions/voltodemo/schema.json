@@ -17,7 +17,7 @@
       "title": {
         "type": "string",
         "title": "Title",
-        "default": "Site",
+        "default": "Welcome to Plone 6!",
         "description": "A short title for the site. This will be shown as part of the title of the browser window on each page."
       },
       "description": {
@@ -25,8 +25,12 @@
         "title": "Site Description",
         "default": "A Plone Site"
       },
-      "default_language": {"$ref": "#/definitions/languages"},
-      "portal_timezone": {"$ref": "#/definitions/timezones"},
+      "default_language": {
+        "$ref": "#/definitions/languages"
+      },
+      "portal_timezone": {
+        "$ref": "#/definitions/timezones"
+      },
       "setup_content": {
         "type": "boolean",
         "title": "Create Example Content",
@@ -35,6 +39,5 @@
       }
     }
   },
-  "uischema": {
-  }
+  "uischema": {}
 }

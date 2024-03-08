@@ -583,7 +583,7 @@
     "expires": null,
     "id": "teaser",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
@@ -599,7 +599,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Grid",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -607,7 +607,7 @@
     "rights": "",
     "subjects": [],
     "title": "Grid-Teaser block",
-    "type_title": "Seite",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

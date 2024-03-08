@@ -1,7 +1,7 @@
 {
-    "@id": "/images/penguin3.jpg",
+    "@id": "/images/penguin4.jpg",
     "@type": "Image",
-    "UID": "7de78fea55354a29ad78b909efb07436",
+    "UID": "0c351dd841c34c6da9c313b1bc551e34",
     "allow_discussion": false,
     "contributors": [],
     "created": "2024-03-08T12:05:46+00:00",
@@ -12,17 +12,17 @@
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "penguin3.jpg",
+    "id": "penguin4.jpg",
     "image": {
-        "blob_path": "blobs/7de78fea55354a29ad78b909efb07436-image/penguin3.jpg",
+        "blob_path": "blobs/0c351dd841c34c6da9c313b1bc551e34-image/penguin4.jpg",
         "content-type": "image/jpeg",
-        "filename": "penguin3.jpg",
-        "height": 3632,
-        "size": 1071135,
-        "width": 5456
+        "filename": "penguin4.jpg",
+        "height": 3024,
+        "size": 917167,
+        "width": 4032
     },
     "is_folderish": false,
-    "language": "de",
+    "language": "en",
     "layout": "image_view",
     "lock": {},
     "modified": "2024-03-08T12:05:46+00:00",
@@ -35,13 +35,13 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Images",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "review_state": null,
     "rights": "",
     "subjects": [],
-    "title": "penguin3.jpg",
-    "type_title": "Bild",
+    "title": "penguin4.jpg",
+    "type_title": "Image",
     "version": "current",
     "working_copy": null,
     "working_copy_of": null

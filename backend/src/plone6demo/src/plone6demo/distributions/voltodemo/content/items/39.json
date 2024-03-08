@@ -1,93 +1,48 @@
 {
-    "@id": "/images",
-    "@type": "Document",
-    "UID": "342acac105fe4a43ae0a19d49d752e0b",
+    "@id": "/images/penguin1.jpg",
+    "@type": "Image",
+    "UID": "9abc1a813bcf46388e565b277bd8c6bf",
     "allow_discussion": false,
-    "blocks": {
-        "183bf050-57b7-4841-b9c8-f9b5a15fe086": {
-            "@type": "listing",
-            "headlineTag": "h2",
-            "styles": {},
-            "variation": "imageGallery"
-        },
-        "2d181d1f-1fac-420a-b410-4f4d5379f8ea": {
-            "@type": "slate",
-            "plaintext": "",
-            "styles": {},
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": ""
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "55e93046-15ee-41f5-b63c-fde0d9b6ce52": {
-            "@type": "title"
-        }
-    },
-    "blocks_layout": {
-        "items": [
-            "55e93046-15ee-41f5-b63c-fde0d9b6ce52",
-            "183bf050-57b7-4841-b9c8-f9b5a15fe086",
-            "2d181d1f-1fac-420a-b410-4f4d5379f8ea"
-        ]
-    },
     "contributors": [],
-    "created": "2024-03-08T12:05:38+00:00",
+    "created": "2024-03-07T11:29:54+00:00",
     "creators": [
         "admin"
     ],
     "description": "",
-    "effective": "2024-03-08T15:35:43",
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "images",
-    "is_folderish": true,
-    "language": "de",
-    "layout": "document_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
+    "id": "penguin1.jpg",
+    "image": {
+        "blob_path": "blobs/9abc1a813bcf46388e565b277bd8c6bf-image/penguin1.jpg",
+        "content-type": "image/jpeg",
+        "filename": "penguin1.jpg",
+        "height": 1286,
+        "size": 524642,
+        "width": 1800
     },
-    "modified": "2024-03-08T14:35:43+00:00",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2024-03-08T15:03:43+00:00",
     "parent": {
-        "@id": "/",
-        "@type": "Plone Site",
-        "UID": "70544f379d854fb9a5d378b8abd1f63f",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "@id": "/images",
+        "@type": "Document",
+        "UID": "342acac105fe4a43ae0a19d49d752e0b",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Images",
+        "type_title": "Page"
     },
-    "preview_caption": null,
-    "preview_image": null,
-    "review_state": "published",
+    "review_state": null,
     "rights": "",
     "subjects": [],
-    "title": "Images",
-    "type_title": "Seite",
+    "title": "penguin1.jpg",
+    "type_title": "Image",
     "version": "current",
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2024-03-08T12:05:38+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2024-03-08T14:35:43+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

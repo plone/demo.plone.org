@@ -46,8 +46,8 @@ distribution = "voltodemo"
 answers = {
     "distribution": distribution,
     "site_id": site_id,
-    "title": "Plone Site",
-    "description": "A Plone Site",
+    "title": "Welcome to Plone 6!",
+    "description": "Welcome to Plone 6!",
     "default_language": "en",
     "portal_timezone": "America/Sao_Paulo",
     "setup_content": True,

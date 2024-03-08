@@ -1,204 +1,326 @@
 {
-    "@id": "/vertical-spacing/heading-and-introduction",
+    "@id": "/vertical-spacing/highlight-and-grid",
     "@type": "Document",
-    "UID": "cffd9eef5c154c04891af9ef9185ed8c",
+    "UID": "d7c7e8ed1ffb4b2fa20525f4f434ba27",
     "allow_discussion": false,
     "blocks": {
-        "06a477a3-0d16-4e74-9466-2fd56743e234": {
+        "16e0d40e-9da7-4523-9cb0-43cf2bfc5fc4": {
+            "@type": "gridBlock",
+            "blocks": {
+                "3131582e-133c-49f1-8f8a-84178fa65bdf": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
+                },
+                "f3719d15-b7aa-491b-951b-afe82762bc74": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "f3719d15-b7aa-491b-951b-afe82762bc74",
+                    "3131582e-133c-49f1-8f8a-84178fa65bdf"
+                ]
+            },
+            "styles": {}
+        },
+        "429c0a28-cf90-4d4d-ad8a-acc904bf3070": {
+            "@type": "highlight",
+            "allow_image_download": true,
+            "alt": "",
+            "blurhash": "1.3398:L89aT~e:0MMcRln3MwSiZ~EQs6x]",
+            "button": true,
+            "buttonLink": [
+                {
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "CreationDate": "2023-07-06T23:35:20+02:00",
+                    "Creator": "admin",
+                    "Date": "2023-07-06T18:35:00+02:00",
+                    "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                    "EffectiveDate": "2023-07-06T18:35:00+02:00",
+                    "ExpirationDate": "None",
+                    "ModificationDate": "2023-09-22T16:25:49+02:00",
+                    "Subject": [],
+                    "Title": "Page",
+                    "Type": "Page",
+                    "UID": "7ab9c48ede33415fa2a66a99549c8f70",
+                    "author_name": null,
+                    "cmf_uid": null,
+                    "commentators": [],
+                    "created": "2023-07-06T21:35:20+00:00",
+                    "description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                    "effective": "2023-07-06T16:35:00+00:00",
+                    "end": null,
+                    "exclude_from_nav": false,
+                    "expires": "2499-12-30T22:00:00+00:00",
+                    "getIcon": null,
+                    "getId": "page",
+                    "getObjSize": "676.8 KB",
+                    "getPath": "/Plone/content-types/page",
+                    "getRemoteUrl": null,
+                    "getURL": "http://localhost:8080/Plone/content-types/page",
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "id": "page",
+                    "image_field": "preview_image",
+                    "in_response_to": null,
+                    "is_folderish": true,
+                    "last_comment_date": null,
+                    "listCreators": [
+                        "admin"
+                    ],
+                    "location": null,
+                    "mime_type": "text/plain",
+                    "modified": "2023-09-22T14:25:49+00:00",
+                    "nav_title": null,
+                    "portal_type": "Document",
+                    "review_state": "published",
+                    "start": null,
+                    "sync_uid": null,
+                    "title": "Page",
+                    "total_comments": 0,
+                    "type_title": "Page"
+                }
+            ],
+            "buttonText": "Other button text",
+            "credit": {
+                "data": "<a href=\"/de/service/impressum\">DLR (CC BY-NC-ND 3.0)</a>"
+            },
+            "description_color": "blue3",
+            "image_field": "image",
+            "plaintext": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
+            "styles": {
+                "descriptionColor": "highlight-custom-color-4"
+            },
+            "title": "Highlight-Block",
+            "url": "/content-types/image",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
+        },
+        "4974677f-f93a-41ba-9136-73c7b487754f": {
             "@type": "slate",
-            "plaintext": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "plaintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui."
                         }
                     ],
                     "type": "p"
                 }
             ]
         },
-        "070db1c2-eb82-43a0-9a97-77895178c855": {
-            "@type": "separator"
-        },
-        "16e584fc-97c9-4e63-9805-b56021300eb9": {
-            "@type": "introduction",
-            "plaintext": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.",
-            "value": [
+        "a117798d-06a3-4c57-92a9-672f1ce5dc90": {
+            "@type": "highlight",
+            "allow_image_download": true,
+            "alt": "",
+            "blurhash": "1.3398:L89aT~e:0MMcRln3MwSiZ~EQs6x]",
+            "button": true,
+            "buttonLink": [
                 {
-                    "children": [
-                        {
-                            "text": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh."
-                        }
+                    "@id": "/content-types/page",
+                    "@type": "Document",
+                    "CreationDate": "2023-07-06T23:35:20+02:00",
+                    "Creator": "admin",
+                    "Date": "2023-07-06T18:35:00+02:00",
+                    "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                    "EffectiveDate": "2023-07-06T18:35:00+02:00",
+                    "ExpirationDate": "None",
+                    "ModificationDate": "2023-09-22T16:25:49+02:00",
+                    "Subject": [],
+                    "Title": "Page",
+                    "Type": "Page",
+                    "UID": "7ab9c48ede33415fa2a66a99549c8f70",
+                    "author_name": null,
+                    "cmf_uid": null,
+                    "commentators": [],
+                    "created": "2023-07-06T21:35:20+00:00",
+                    "description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                    "effective": "2023-07-06T16:35:00+00:00",
+                    "end": null,
+                    "exclude_from_nav": false,
+                    "expires": "2499-12-30T22:00:00+00:00",
+                    "getIcon": null,
+                    "getId": "page",
+                    "getObjSize": "676.8 KB",
+                    "getPath": "/Plone/content-types/page",
+                    "getRemoteUrl": null,
+                    "getURL": "http://localhost:8080/Plone/content-types/page",
+                    "hasPreviewImage": true,
+                    "head_title": null,
+                    "id": "page",
+                    "image_field": "preview_image",
+                    "in_response_to": null,
+                    "is_folderish": true,
+                    "last_comment_date": null,
+                    "listCreators": [
+                        "admin"
                     ],
-                    "type": "p"
+                    "location": null,
+                    "mime_type": "text/plain",
+                    "modified": "2023-09-22T14:25:49+00:00",
+                    "nav_title": null,
+                    "portal_type": "Document",
+                    "review_state": "published",
+                    "start": null,
+                    "sync_uid": null,
+                    "title": "Page",
+                    "total_comments": 0,
+                    "type_title": "Page"
                 }
-            ]
-        },
-        "2a800015-1cb4-41ec-bdc7-5dbab3797aac": {
-            "@type": "heading",
-            "alignment": "left",
-            "heading": " This is a Heading ",
-            "styles": {
-                "backgroundColor": "grey"
+            ],
+            "buttonText": "Mehr Infos",
+            "credit": {
+                "data": "<a href=\"/de/service/impressum\">DLR (CC BY-NC-ND 3.0)</a>"
             },
-            "tag": "h2"
-        },
-        "342ea03a-bd83-437a-8740-fe38675a8917": {
-            "@type": "heading",
-            "alignment": "left",
-            "heading": " This is a Heading ",
+            "description_color": "blue3",
+            "image_field": "image",
+            "plaintext": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
             "styles": {
-                "backgroundColor": "grey"
+                "descriptionColor": "highlight-custom-color-1"
             },
-            "tag": "h2"
-        },
-        "4323824d-ccf8-439e-b15b-23c2d14960ef": {
-            "@type": "introduction",
-            "plaintext": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.",
+            "title": "Highlight-Block",
+            "url": "/content-types/image-light",
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh."
+                            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt."
                         }
                     ],
                     "type": "p"
                 }
             ]
         },
-        "47f847ce-0804-45c1-9a81-78334c121901": {
+        "b249bf0e-2f21-4c54-bfac-d847a473bb0d": {
+            "@type": "gridBlock",
+            "blocks": {
+                "3131582e-133c-49f1-8f8a-84178fa65bdf": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
+                },
+                "f3719d15-b7aa-491b-951b-afe82762bc74": {
+                    "@type": "teaser",
+                    "description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                    "head_title": null,
+                    "href": [
+                        {
+                            "@id": "/content-types/page",
+                            "@type": "Document",
+                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
+                            "Title": "Inhaltstyp: Seite (Page)",
+                            "getRemoteUrl": null,
+                            "hasPreviewImage": true,
+                            "head_title": null,
+                            "image_field": "preview_image",
+                            "title": "Inhaltstyp: Seite (Page)"
+                        }
+                    ],
+                    "styles": {
+                        "align": "left"
+                    },
+                    "title": "Inhaltstyp: Seite (Page)"
+                }
+            },
+            "blocks_layout": {
+                "items": [
+                    "f3719d15-b7aa-491b-951b-afe82762bc74",
+                    "3131582e-133c-49f1-8f8a-84178fa65bdf"
+                ]
+            },
+            "styles": {}
+        },
+        "c9a5a276-8e30-4cec-b5e2-d1c2c29d130c": {
             "@type": "slate",
-            "plaintext": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
+            "plaintext": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus suscipit tortor eget felis porttitor volutpat. Pellentesque in ipsum id orci porta dapibus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui."
                         }
                     ],
                     "type": "p"
                 }
             ]
         },
-        "7c710bd7-53a5-4c46-837d-8339a7f18e26": {
-            "@type": "separator"
-        },
-        "aeed53e0-e68f-42cd-9ef5-416829054442": {
-            "@type": "slate",
-            "plaintext": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "b471b7f1-ce1e-4b5c-b81b-1cc9c179ec2f": {
+        "eb96fbff-47dd-498b-8bd3-2ec5097ce673": {
             "@type": "title"
-        },
-        "b89f0933-3beb-48c9-b34c-2e2818e89121": {
-            "@type": "separator",
-            "styles": {
-                "backgroundColor": "grey"
-            }
-        },
-        "b8c89238-bf86-480c-b99d-b713121864c6": {
-            "@type": "separator",
-            "styles": {
-                "backgroundColor": "grey"
-            }
-        },
-        "c51365a9-f204-45f2-ba6a-4b3d65c8d071": {
-            "@type": "introduction",
-            "plaintext": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "cbfe21d7-6b19-4c53-891b-28cafab6e6cb": {
-            "@type": "heading",
-            "alignment": "left",
-            "heading": " This is a Heading ",
-            "tag": "h2"
-        },
-        "d3c84b05-35a6-4614-9a40-a6139f7090b8": {
-            "@type": "slate",
-            "plaintext": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "d4f0e983-15ff-491c-99f1-641a0f8b5602": {
-            "@type": "introduction",
-            "plaintext": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh.",
-            "styles": {
-                "backgroundColor": "grey"
-            },
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "df4ac400-3e25-429a-b557-b6856af46395": {
-            "@type": "heading",
-            "alignment": "left",
-            "heading": " This is a Heading ",
-            "tag": "h2"
         }
     },
     "blocks_layout": {
         "items": [
-            "b471b7f1-ce1e-4b5c-b81b-1cc9c179ec2f",
-            "df4ac400-3e25-429a-b557-b6856af46395",
-            "4323824d-ccf8-439e-b15b-23c2d14960ef",
-            "06a477a3-0d16-4e74-9466-2fd56743e234",
-            "2a800015-1cb4-41ec-bdc7-5dbab3797aac",
-            "d4f0e983-15ff-491c-99f1-641a0f8b5602",
-            "47f847ce-0804-45c1-9a81-78334c121901",
-            "cbfe21d7-6b19-4c53-891b-28cafab6e6cb",
-            "070db1c2-eb82-43a0-9a97-77895178c855",
-            "16e584fc-97c9-4e63-9805-b56021300eb9",
-            "7c710bd7-53a5-4c46-837d-8339a7f18e26",
-            "d3c84b05-35a6-4614-9a40-a6139f7090b8",
-            "342ea03a-bd83-437a-8740-fe38675a8917",
-            "b8c89238-bf86-480c-b99d-b713121864c6",
-            "c51365a9-f204-45f2-ba6a-4b3d65c8d071",
-            "b89f0933-3beb-48c9-b34c-2e2818e89121",
-            "aeed53e0-e68f-42cd-9ef5-416829054442"
+            "eb96fbff-47dd-498b-8bd3-2ec5097ce673",
+            "a117798d-06a3-4c57-92a9-672f1ce5dc90",
+            "16e0d40e-9da7-4523-9cb0-43cf2bfc5fc4",
+            "c9a5a276-8e30-4cec-b5e2-d1c2c29d130c",
+            "429c0a28-cf90-4d4d-ad8a-acc904bf3070",
+            "b249bf0e-2f21-4c54-bfac-d847a473bb0d",
+            "4974677f-f93a-41ba-9136-73c7b487754f"
         ]
     },
     "contributors": [],
@@ -210,15 +332,15 @@
     "effective": "2023-07-06T18:35:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "heading-and-introduction",
+    "id": "highlight-and-grid",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-09-22T14:07:46+00:00",
+    "modified": "2023-09-30T06:55:06+00:00",
     "parent": {
         "@id": "/vertical-spacing",
         "@type": "Document",
@@ -228,15 +350,15 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Vertical Spacing",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "preview_caption": null,
     "preview_image": null,
     "review_state": "published",
     "rights": "",
     "subjects": [],
-    "title": "Heading and Introduction",
-    "type_title": "Seite",
+    "title": "Highlight and Grid",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

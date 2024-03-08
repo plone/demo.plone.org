@@ -47,20 +47,20 @@
     "expires": null,
     "id": "block",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T14:40:18+00:00",
+    "modified": "2024-03-08T14:53:45+00:00",
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "70544f379d854fb9a5d378b8abd1f63f",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "UID": "ffac8d6ec644414d8eff2d8e253a22ae",
+        "description": "Welcome to Plone 6!",
+        "title": "Welcome to Plone 6!",
+        "type_title": "Plone Site"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -70,7 +70,7 @@
         "main folder"
     ],
     "title": "Blocks",
-    "type_title": "Seite",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

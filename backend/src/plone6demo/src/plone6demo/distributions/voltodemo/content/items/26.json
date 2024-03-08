@@ -1,65 +1,82 @@
 {
-    "@id": "/content-types/event",
-    "@type": "Event",
-    "UID": "7adc12f0e7604982a6cdcb9437bccf66",
+    "@id": "/content-types/copy_of_news-item",
+    "@type": "News Item",
+    "UID": "af85ff98cd6446eebcba56305ed89fed",
     "allow_discussion": false,
-    "attendees": [],
     "blocks": {
-        "6e6979eb-af21-466f-b2de-3148144ac950": {
+        "6db5aa18-6fd8-4efe-9bc6-9cd6fc1dd0be": {
             "@type": "slate",
-            "plaintext": "",
+            "plaintext": "Ristretto so chicory skinny ristretto au decaffeinated sugar that spoon shop crema ut pot lungo. Flavour that milk brewed flavour whipped kopi black and robusta. Bar sugar americano eu froth variety brewed acerbic steamed. Aroma est milk doppio frappuccino half cream filter french froth luwak. Acerbic plunger au barista flavour in froth trade.",
             "styles": {},
             "value": [
                 {
                     "children": [
                         {
-                            "text": ""
+                            "text": "Ristretto so chicory skinny ristretto au decaffeinated sugar that spoon shop crema ut pot lungo. Flavour that milk brewed flavour whipped kopi black and robusta. Bar sugar americano eu froth variety brewed acerbic steamed. Aroma est milk doppio frappuccino half cream filter french froth luwak. Acerbic plunger au barista flavour in froth trade."
                         }
                     ],
                     "type": "p"
                 }
             ]
         },
-        "b539ed36-442b-4c7d-8b9b-8af01963c206": {
-            "@type": "eventMetadata"
+        "8c686422-757e-4519-ae6a-ffcb4d107e22": {
+            "@type": "introduction",
+            "plaintext": "Cinnamon skinny medium panna americano spice affogato froth frappuccino that.",
+            "value": [
+                {
+                    "children": [
+                        {
+                            "text": "Cinnamon skinny medium panna americano spice affogato froth frappuccino that."
+                        }
+                    ],
+                    "type": "p"
+                }
+            ]
         },
-        "d3f1c443-583f-4e8e-a682-3bf25752a300": {
+        "944cfb1b-3ef7-425f-a5ef-eb9242429bfd": {
+            "@type": "leadimage",
+            "align": "center"
+        },
+        "a0ac0f60-667b-4b22-a49f-989f2ae8c3cc": {
             "@type": "title"
         }
     },
     "blocks_layout": {
         "items": [
-            "d3f1c443-583f-4e8e-a682-3bf25752a300",
-            "b539ed36-442b-4c7d-8b9b-8af01963c206",
-            "6e6979eb-af21-466f-b2de-3148144ac950"
+            "a0ac0f60-667b-4b22-a49f-989f2ae8c3cc",
+            "8c686422-757e-4519-ae6a-ffcb4d107e22",
+            "944cfb1b-3ef7-425f-a5ef-eb9242429bfd",
+            "6db5aa18-6fd8-4efe-9bc6-9cd6fc1dd0be"
         ]
     },
     "changeNote": "",
-    "contact_email": "m.mustermann@plone.com",
-    "contact_name": "Max Mustermann",
-    "contact_phone": "+49 1234 567-890",
     "contributors": [],
-    "created": "2023-07-06T21:35:07+00:00",
+    "created": "2024-03-07T16:07:50+00:00",
     "creators": [
         "admin"
     ],
-    "description": "The event content type can be used to display an event on the website.",
-    "effective": "2023-07-06T18:35:00",
-    "end": "2023-12-31T12:00:00+00:00",
-    "event_url": "http://www.musterevents.com",
+    "description": "Cinnamon skinny medium panna americano spice affogato froth frappuccino that.",
+    "effective": "2024-03-07T17:09:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "event",
+    "id": "copy_of_news-item",
+    "image": {
+        "blob_path": "blobs/af85ff98cd6446eebcba56305ed89fed-image/sergio-martinez-rhNJJ4eD2zk-unsplash.jpg",
+        "content-type": "image/jpeg",
+        "filename": "sergio-martinez-rhNJJ4eD2zk-unsplash.jpg",
+        "height": 3456,
+        "size": 2231807,
+        "width": 5184
+    },
+    "image_caption": null,
     "is_folderish": true,
-    "language": "de",
-    "layout": "event_view",
-    "location": "Musterhausener Landstrasse 134 Standort E123 67111 Musterhausen",
+    "language": "en",
+    "layout": "newsitem_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-02-14T11:02:26+00:00",
-    "open_end": false,
+    "modified": "2024-03-08T15:09:29+00:00",
     "parent": {
         "@id": "/content-types",
         "@type": "Document",
@@ -69,28 +86,15 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Content Types",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
-    "preview_caption": null,
-    "preview_image": {
-        "blob_path": "blobs/7adc12f0e7604982a6cdcb9437bccf66-preview_image/event.svg",
-        "content-type": "image/svg+xml",
-        "filename": "event.svg",
-        "height": 36,
-        "size": 703,
-        "width": 36
-    },
-    "recurrence": null,
     "review_state": "published",
     "rights": "",
-    "start": "2023-01-01T11:00:00+00:00",
     "subjects": [],
-    "sync_uid": null,
-    "title": "Event",
-    "type_title": "Termin",
+    "title": "Another News Item",
+    "type_title": "News Item",
     "version": "current",
     "versioning_enabled": true,
-    "whole_day": false,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -98,14 +102,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2023-07-06T21:35:07+00:00"
+                "time": "2024-03-07T16:07:50+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2023-07-06T21:35:07+00:00"
+                "time": "2024-03-07T16:09:12+00:00"
             }
         ]
     },

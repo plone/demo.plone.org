@@ -47,13 +47,13 @@
     "expires": null,
     "id": "grid-block",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T14:35:13+00:00",
+    "modified": "2024-03-08T14:53:44+00:00",
     "parent": {
         "@id": "/block",
         "@type": "Document",
@@ -63,7 +63,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Blocks",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "preview_caption": null,
     "preview_image": {
@@ -78,7 +78,7 @@
     "rights": "",
     "subjects": [],
     "title": "Grid",
-    "type_title": "Seite",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

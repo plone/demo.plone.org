@@ -178,7 +178,7 @@
     "expires": null,
     "id": "maps-block",
     "is_folderish": true,
-    "language": "de",
+    "language": "en",
     "layout": "document_view",
     "lock": {
         "locked": false,
@@ -194,7 +194,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Blocks",
-        "type_title": "Seite"
+        "type_title": "Page"
     },
     "preview_caption": null,
     "preview_image": null,
@@ -202,7 +202,7 @@
     "rights": "",
     "subjects": [],
     "title": "Maps",
-    "type_title": "Seite",
+    "type_title": "Page",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
