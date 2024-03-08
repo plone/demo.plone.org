@@ -1,12 +1,13 @@
 from AccessControl.SecurityManagement import newSecurityManager
-from plone.distribution.api import site as site_api
 from plone6demo.interfaces import IPLONE6DEMOLayer
+from plone.distribution.api import site as site_api
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
 
 import os
 import transaction
+
 
 truthy = frozenset(("t", "true", "y", "yes", "on", "1"))
 
