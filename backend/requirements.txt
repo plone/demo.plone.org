@@ -6,4 +6,3 @@ zope.testrunner
 # Add required add-ons
 # (Ideally add them in setup.py for plone6demo)
 # collective.easyform
-plone.distribution
