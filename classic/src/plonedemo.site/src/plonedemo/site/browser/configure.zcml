@@ -22,13 +22,6 @@
       type="plone"
       />
 
-  <browser:page
-      name="demo_frontpage"
-      for="plone.app.layout.navigation.interfaces.INavigationRoot"
-      template="templates/frontpage.pt"
-      permission="zope.Public"
-      />
-
   <browser:viewlet
       name="frontpage_viewlet"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
