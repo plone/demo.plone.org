@@ -1,16 +1,10 @@
 {
-    "@id": "/block",
+    "@id": "/content",
     "@type": "Document",
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
+    "UID": "dbc92ee33e9a4fc18b03414b4989415e",
     "allow_discussion": false,
     "blocks": {
-        "4f0384d8-2319-4c17-896e-7e4c9c253870": {
-            "@type": "listing",
-            "headlineTag": "h2",
-            "styles": {},
-            "variation": "default"
-        },
-        "694274fb-a0f1-44f6-871f-51b3459dbc2b": {
+        "c8405419-7ef0-49f5-8199-a4679dac2af0": {
             "@type": "slate",
             "plaintext": "",
             "styles": {},
@@ -25,27 +19,33 @@
                 }
             ]
         },
-        "8078bc6a-9358-4d25-89e0-0ae9c31863bf": {
+        "e416dcc1-f12a-43b8-8f17-5928881f60cb": {
+            "@type": "listing",
+            "headlineTag": "h2",
+            "styles": {},
+            "variation": "default"
+        },
+        "f3a3c97b-97fe-45f4-97f5-4655de91b8ad": {
             "@type": "title"
         }
     },
     "blocks_layout": {
         "items": [
-            "8078bc6a-9358-4d25-89e0-0ae9c31863bf",
-            "4f0384d8-2319-4c17-896e-7e4c9c253870",
-            "694274fb-a0f1-44f6-871f-51b3459dbc2b"
+            "f3a3c97b-97fe-45f4-97f5-4655de91b8ad",
+            "e416dcc1-f12a-43b8-8f17-5928881f60cb",
+            "c8405419-7ef0-49f5-8199-a4679dac2af0"
         ]
     },
     "contributors": [],
-    "created": "2023-09-22T14:06:39+00:00",
+    "created": "2024-03-07T16:01:35+00:00",
     "creators": [
         "admin"
     ],
     "description": "",
-    "effective": "2023-09-22T16:09:00",
+    "effective": "2024-03-08T12:40:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "block",
+    "id": "content",
     "is_folderish": true,
     "language": "de",
     "layout": "document_view",
@@ -53,7 +53,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T14:40:18+00:00",
+    "modified": "2024-03-08T14:40:52+00:00",
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
@@ -66,10 +66,8 @@
     "preview_image": null,
     "review_state": "published",
     "rights": "",
-    "subjects": [
-        "main folder"
-    ],
-    "title": "Blocks",
+    "subjects": [],
+    "title": "Content",
     "type_title": "Seite",
     "version": "current",
     "workflow_history": {
@@ -79,14 +77,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2023-09-22T14:06:39+00:00"
+                "time": "2024-03-07T16:01:35+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2023-09-22T14:09:15+00:00"
+                "time": "2024-03-08T11:40:53+00:00"
             }
         ]
     },

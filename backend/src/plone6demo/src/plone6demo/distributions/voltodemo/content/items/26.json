@@ -1,19 +1,14 @@
 {
-    "@id": "/block/grid-block",
-    "@type": "Document",
-    "UID": "99c70917b6894af08dd306fdbc0eff6a",
+    "@id": "/content-types/event",
+    "@type": "Event",
+    "UID": "7adc12f0e7604982a6cdcb9437bccf66",
     "allow_discussion": false,
+    "attendees": [],
     "blocks": {
-        "616b625c-b79f-4881-8536-b67a9e401a7d": {
-            "@type": "listing",
-            "block": "616b625c-b79f-4881-8536-b67a9e401a7d",
-            "headlineTag": "h2",
-            "query": [],
-            "variation": "default"
-        },
-        "7624cf59-05d0-4055-8f55-5fd6597d84b0": {
+        "6e6979eb-af21-466f-b2de-3148144ac950": {
             "@type": "slate",
             "plaintext": "",
+            "styles": {},
             "value": [
                 {
                     "children": [
@@ -25,6 +20,9 @@
                 }
             ]
         },
+        "b539ed36-442b-4c7d-8b9b-8af01963c206": {
+            "@type": "eventMetadata"
+        },
         "d3f1c443-583f-4e8e-a682-3bf25752a300": {
             "@type": "title"
         }
@@ -32,54 +30,67 @@
     "blocks_layout": {
         "items": [
             "d3f1c443-583f-4e8e-a682-3bf25752a300",
-            "616b625c-b79f-4881-8536-b67a9e401a7d",
-            "7624cf59-05d0-4055-8f55-5fd6597d84b0"
+            "b539ed36-442b-4c7d-8b9b-8af01963c206",
+            "6e6979eb-af21-466f-b2de-3148144ac950"
         ]
     },
+    "changeNote": "",
+    "contact_email": "m.mustermann@plone.com",
+    "contact_name": "Max Mustermann",
+    "contact_phone": "+49 1234 567-890",
     "contributors": [],
     "created": "2023-07-06T21:35:07+00:00",
     "creators": [
         "admin"
     ],
-    "description": "\nThe Grid block allows adding multi-column blocks. A grid block can contain between one and four columns of different blocks. Teasers and images can be added in a grid block.",
+    "description": "The event content type can be used to display an event on the website.",
     "effective": "2023-07-06T18:35:00",
+    "end": "2023-12-31T12:00:00+00:00",
+    "event_url": "http://www.musterevents.com",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "grid-block",
+    "id": "event",
     "is_folderish": true,
     "language": "de",
-    "layout": "document_view",
+    "layout": "event_view",
+    "location": "Musterhausener Landstrasse 134 Standort E123 67111 Musterhausen",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T14:35:13+00:00",
+    "modified": "2024-02-14T11:02:26+00:00",
+    "open_end": false,
     "parent": {
-        "@id": "/block",
+        "@id": "/content-types",
         "@type": "Document",
-        "UID": "425695d2b7cb47e69374d6f211f17e38",
-        "description": "",
+        "UID": "e8178744e30a418b9a5768997bb29a19",
+        "description": "This section has a sample of content types available in this site.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Blocks",
+        "title": "Content Types",
         "type_title": "Seite"
     },
     "preview_caption": null,
     "preview_image": {
-        "blob_path": "blobs/99c70917b6894af08dd306fdbc0eff6a-preview_image/black-starry-night.jpg",
-        "content-type": "image/jpeg",
-        "filename": "black-starry-night.jpg",
-        "height": 1708,
-        "size": 693013,
-        "width": 2400
+        "blob_path": "blobs/7adc12f0e7604982a6cdcb9437bccf66-preview_image/event.svg",
+        "content-type": "image/svg+xml",
+        "filename": "event.svg",
+        "height": 36,
+        "size": 703,
+        "width": 36
     },
+    "recurrence": null,
     "review_state": "published",
     "rights": "",
+    "start": "2023-01-01T11:00:00+00:00",
     "subjects": [],
-    "title": "Grid",
-    "type_title": "Seite",
+    "sync_uid": null,
+    "title": "Event",
+    "type_title": "Termin",
     "version": "current",
+    "versioning_enabled": true,
+    "whole_day": false,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -94,7 +105,7 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2023-07-06T21:35:08+00:00"
+                "time": "2023-07-06T21:35:07+00:00"
             }
         ]
     },

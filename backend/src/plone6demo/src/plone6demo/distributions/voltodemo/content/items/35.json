@@ -1,0 +1,61 @@
+{
+    "@id": "/content/external-link",
+    "@type": "Link",
+    "UID": "362783c333434d2f89a00bd48ea37e34",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2024-03-07T16:06:57+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": "2024-03-07T17:09:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "external-link",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2024-03-07T16:09:12+00:00",
+    "parent": {
+        "@id": "/content",
+        "@type": "Document",
+        "UID": "dbc92ee33e9a4fc18b03414b4989415e",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Content",
+        "type_title": "Seite"
+    },
+    "remoteUrl": "https://plone.org",
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "External Link",
+    "type_title": "Link",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-07T16:06:57+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2024-03-07T16:09:12+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

@@ -1,100 +1,110 @@
 {
-    "@id": "/content/page",
+    "@id": "/block/grid-block/listing",
     "@type": "Document",
-    "UID": "2e8ed811e2954e9882d561be8b25cb8c",
+    "UID": "3ac4a2c6c4034a1686bc0ee2d2072fd6",
     "allow_discussion": false,
     "blocks": {
-        "1923851d-b62e-45b7-8425-aa047aaa6e76": {
-            "@type": "slate",
-            "plaintext": "Organic qui acerbic dark milk sit decaffeinated origin siphon. Affogato lait a mountain irish plunger spoon irish that cortado pot half single. Decaffeinated white carajillo lait foam kopi sugar blue caf\u00e9 coffee single variety saucer wings steamed. Cappuccino macchiato spice caramelization saucer half mountain viennese. Froth affogato go robusta beans carajillo dark shot qui fair mocha.",
-            "styles": {},
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Organic qui acerbic dark milk sit decaffeinated origin siphon. Affogato lait a mountain irish plunger spoon irish that cortado pot half single. Decaffeinated white carajillo lait foam kopi sugar blue caf\u00e9 coffee single variety saucer wings steamed. Cappuccino macchiato spice caramelization saucer half mountain viennese. Froth affogato go robusta beans carajillo dark shot qui fair mocha."
-                        }
-                    ],
-                    "type": "p"
+        "5a361b25-3e19-4c06-866f-a2db6feed983": {
+            "@type": "gridBlock",
+            "blocks": {
+                "0fae8b67-374c-4ca2-b3e0-86114e2f17e1": {
+                    "@type": "listing",
+                    "headlineTag": "h2",
+                    "querystring": {
+                        "limit": "7",
+                        "query": [
+                            {
+                                "i": "path",
+                                "o": "plone.app.querystring.operation.string.absolutePath",
+                                "v": "/block/grid-block"
+                            }
+                        ],
+                        "sort_on": "getId",
+                        "sort_order": "descending",
+                        "sort_order_boolean": true
+                    },
+                    "styles": {},
+                    "variation": "default"
+                },
+                "b940ae89-2b34-472b-aac8-f3d96dfe46f4": {
+                    "@type": "listing",
+                    "headlineTag": "h2",
+                    "querystring": {
+                        "limit": "7",
+                        "query": [
+                            {
+                                "i": "path",
+                                "o": "plone.app.querystring.operation.string.absolutePath",
+                                "v": "/block/grid-block"
+                            }
+                        ],
+                        "sort_order": "ascending"
+                    },
+                    "styles": {},
+                    "variation": "default"
                 }
-            ]
+            },
+            "blocks_layout": {
+                "items": [
+                    "b940ae89-2b34-472b-aac8-f3d96dfe46f4",
+                    "0fae8b67-374c-4ca2-b3e0-86114e2f17e1"
+                ]
+            },
+            "styles": {}
         },
-        "603e7230-53ed-4364-977d-4bfd11809a35": {
-            "@type": "slate",
-            "plaintext": "Carajillo cappuccino grinder whipped luwak filter caf\u00e9 blue coffee affogato cultivar spoon grounds. Carajillo viennese lait cream single pot lait extraction. Luwak french so instant latte seasonal caramelization carajillo pot medium. Mazagran milk cultivar barista caffeine medium breve ristretto cortado crema brewed aged extraction irish. Mazagran pumpkin arabica spice aroma sit caf\u00e9 origin redeye as chicory cream irish turkish cream.",
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "Carajillo cappuccino grinder whipped luwak filter caf\u00e9 blue coffee affogato cultivar spoon grounds. Carajillo viennese lait cream single pot lait extraction. Luwak french so instant latte seasonal caramelization carajillo pot medium. Mazagran milk cultivar barista caffeine medium breve ristretto cortado crema brewed aged extraction irish. Mazagran pumpkin arabica spice aroma sit caf\u00e9 origin redeye as chicory cream irish turkish cream."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "7ea2d08f-0fe5-493e-bbd1-d53f5bd38bee": {
-            "@type": "slate",
-            "plaintext": "And carajillo aromatic affogato instant cream grinder kopi panna. Qui robusta milk and dripper variety caffeine grinder mazagran irish chicory grounds. Filter cream con so robust steamed wings coffee. Spoon panna lungo skinny brewed qui aroma aged id grinder. Spoon aromatic so decaffeinated at dark acerbic siphon and redeye at mug.",
-            "value": [
-                {
-                    "children": [
-                        {
-                            "text": "And carajillo aromatic affogato instant cream grinder kopi panna. Qui robusta milk and dripper variety caffeine grinder mazagran irish chicory grounds. Filter cream con so robust steamed wings coffee. Spoon panna lungo skinny brewed qui aroma aged id grinder. Spoon aromatic so decaffeinated at dark acerbic siphon and redeye at mug."
-                        }
-                    ],
-                    "type": "p"
-                }
-            ]
-        },
-        "af503055-b17f-4393-8f76-ee11b7b1aae8": {
+        "fc7973d9-34e3-484c-a20b-1af7eecd9879": {
             "@type": "title"
         }
     },
     "blocks_layout": {
         "items": [
-            "af503055-b17f-4393-8f76-ee11b7b1aae8",
-            "7ea2d08f-0fe5-493e-bbd1-d53f5bd38bee",
-            "603e7230-53ed-4364-977d-4bfd11809a35",
-            "1923851d-b62e-45b7-8425-aa047aaa6e76"
+            "fc7973d9-34e3-484c-a20b-1af7eecd9879",
+            "5a361b25-3e19-4c06-866f-a2db6feed983"
         ]
     },
     "contributors": [],
-    "created": "2024-03-07T16:01:59+00:00",
+    "created": "2023-07-06T21:35:22+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": "2024-03-07T17:09:00",
+    "description": "\nThe Grid block allows adding multi-column blocks. A grid block can contain between one and four columns of different blocks. This is a grid block with multiple listing blocks.",
+    "effective": "2023-07-06T18:35:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "page",
+    "id": "listing",
     "is_folderish": true,
-    "language": "en",
+    "language": "de",
     "layout": "document_view",
     "lock": {
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-07T16:09:11+00:00",
+    "modified": "2023-09-27T08:36:08+00:00",
     "parent": {
-        "@id": "/content",
+        "@id": "/block/grid-block",
         "@type": "Document",
-        "UID": "dbc92ee33e9a4fc18b03414b4989415e",
-        "description": "",
+        "UID": "99c70917b6894af08dd306fdbc0eff6a",
+        "description": " The Grid block allows adding multi-column blocks. A grid block can contain between one and four columns of different blocks. Teasers and images can be added in a grid block.",
         "image_field": null,
         "image_scales": null,
-        "review_state": "private",
-        "title": "Content",
-        "type_title": "Page"
+        "review_state": "published",
+        "title": "Grid",
+        "type_title": "Seite"
     },
     "preview_caption": null,
-    "preview_image": null,
+    "preview_image": {
+        "blob_path": "blobs/3ac4a2c6c4034a1686bc0ee2d2072fd6-preview_image/black-starry-night.jpg",
+        "content-type": "image/jpeg",
+        "filename": "black-starry-night.jpg",
+        "height": 1708,
+        "size": 693013,
+        "width": 2400
+    },
     "review_state": "published",
     "rights": "",
     "subjects": [],
-    "title": "Page",
-    "type_title": "Page",
+    "title": "Grid-Listing",
+    "type_title": "Seite",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -103,14 +113,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2024-03-07T16:01:59+00:00"
+                "time": "2023-07-06T21:35:22+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2024-03-07T16:09:11+00:00"
+                "time": "2023-07-06T21:35:22+00:00"
             }
         ]
     },

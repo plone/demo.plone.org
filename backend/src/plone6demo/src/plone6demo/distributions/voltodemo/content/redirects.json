@@ -1,0 +1,9 @@
+{
+    "/Plone/form": "/Plone/block/form",
+    "/Plone/image.png": "/Plone/plone-foundation.png",
+    "/Plone/images/image": "/Plone/content-types/image",
+    "/Plone/images/image-light": "/Plone/content-types/image-light",
+    "/Plone/images/testimage.jpg": "/Plone/images/penguin1.jpg",
+    "/Plone/testimage.jpg": "/Plone/images/penguin1.jpg",
+    "/Plone/typography": "/Plone/content/typography"
+}
