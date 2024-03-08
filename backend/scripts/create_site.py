@@ -8,7 +8,6 @@ from zope.interface import directlyProvides
 import os
 import transaction
 
-
 truthy = frozenset(("t", "true", "y", "yes", "on", "1"))
 
 

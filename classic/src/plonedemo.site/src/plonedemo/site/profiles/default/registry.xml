@@ -27,8 +27,7 @@
     <value>False</value>
   </record>
 
-  <record name="plone.available_languages"
-  >
+  <record name="plone.available_languages">
     <value>
       <element>en</element>
       <element>de</element>

@@ -48,8 +48,8 @@
       name="classicdemo"
       title="Plone Classic Demo Site"
       description="A Plone 6 Classic Site with demo content"
-      headless="False"
       directory="distributions/classicdemo"
+      headless="False"
       post_handler=".setuphandlers.post_install"
       />
 

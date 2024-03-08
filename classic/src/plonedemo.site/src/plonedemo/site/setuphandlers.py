@@ -4,7 +4,6 @@ from zope.interface import implementer
 
 @implementer(INonInstallable)
 class HiddenProfiles:
-
     def getNonInstallableProducts(self):
         return ["plone.volto"]
 

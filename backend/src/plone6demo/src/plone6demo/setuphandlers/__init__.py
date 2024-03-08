@@ -1,4 +1,3 @@
-from plone6demo import logger
 from Products.CMFPlone.interfaces import INonInstallable
 from zope.interface import implementer
 
