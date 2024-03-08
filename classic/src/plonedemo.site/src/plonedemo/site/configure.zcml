@@ -19,7 +19,6 @@
       description="Installs the plonedemo.site add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -28,7 +27,6 @@
       description="Uninstalls the plonedemo.site add-on."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/uninstall"
-      post_handler=".setuphandlers.uninstall"
       />
 
   <utility
@@ -44,6 +42,15 @@
       expose_headers="Content-Length,X-My-Header"
       allow_headers="Accept,Authorization,Content-Type,X-Custom-Header,Origin"
       max_age="3600"
+      />
+
+  <plone:distribution
+      name="classicdemo"
+      title="Plone Classic Demo Site"
+      description="A Plone 6 Classic Site with demo content"
+      headless="False"
+      directory="distributions/classicdemo"
+      post_handler=".setuphandlers.post_install"
       />
 
 </configure>
