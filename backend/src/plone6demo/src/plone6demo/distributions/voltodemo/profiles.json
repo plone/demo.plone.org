@@ -4,6 +4,7 @@
     "plone.app.caching:default",
     "plonetheme.barceloneta:default",
     "collective.volto.formsupport:default",
-    "plone.volto:default"
+    "plone.volto:default",
+    "plone6demo:default"
   ]
 }
