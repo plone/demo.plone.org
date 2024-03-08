@@ -1,0 +1,80 @@
+{
+    "@id": "/de/demo/a-event",
+    "@type": "Event",
+    "UID": "97dd7d61838e46eebb5ac7e62239b2af",
+    "allow_discussion": false,
+    "attendees": [],
+    "changeNote": "",
+    "contact_email": null,
+    "contact_name": "Plone Community",
+    "contact_phone": null,
+    "contributors": [],
+    "created": "2018-07-19T16:16:58+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-07-19T18:17:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-event",
+    "is_folderish": false,
+    "language": "de",
+    "layout": "event_view",
+    "location": "Planet Earth",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
+    "open_end": false,
+    "parent": {
+        "@id": "/de/demo",
+        "@type": "Folder",
+        "UID": "79f01c49712d47c0977f8c35b949af7a",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "recurrence": null,
+    "review_state": "published",
+    "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
+    "subjects": [],
+    "sync_uid": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.<br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Ein Termin",
+    "type_title": "Termin",
+    "version": "current",
+    "versioning_enabled": true,
+    "whole_day": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-19T16:16:58+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-19T16:17:04+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

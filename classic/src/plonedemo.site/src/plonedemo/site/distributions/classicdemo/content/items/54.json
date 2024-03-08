@@ -1,0 +1,73 @@
+{
+    "@id": "/eu/demo/orrialde-bat",
+    "@type": "Document",
+    "UID": "7fe145a7f1e64f908af37370f4435f85",
+    "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-08-27T11:26:00+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
+    "effective": "2018-08-27T13:26:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "orrialde-bat",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
+    "parent": {
+        "@id": "/eu/demo",
+        "@type": "Folder",
+        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "table_of_contents": false,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Fusce vel ante vel dolor feugiat vulputate? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus pretium tellus, id porttitor erat volutpat et. Donec vehicula accumsan ornare. Mauris quis vulputate dui. Duis convallis congue ornare. Vivamus cursus vestibulum neque at fermentum. Mauris sed velit in enim scelerisque luctus ac vel mauris. Etiam imperdiet tempor lorem, quis ultrices quam blandit ultricies. Ut sodales lacinia purus hendrerit lobortis. Pellentesque blandit; sem at aliquam pulvinar, felis diam tincidunt nisi, ac varius ligula eros eget tortor.</p>\r\n<h2>Vivamus leo ipsum</h2>\r\n<p>Dictum sed luctus elementum, ornare quis justo? Nam sagittis mattis turpis, eu varius sapien pulvinar non. Etiam in enim eget odio cursus condimentum! Nullam porta, quam ut sagittis auctor, dui urna ullamcorper urna, semper facilisis purus velit nec leo. Nam libero sem, auctor vitae pretium sit amet, posuere eget arcu.</p>\r\n<h2>Maecenas ultrices</h2>\r\n<p>Neque in porttitor scelerisque, nunc nunc semper libero, ac dapibus leo lectus et dui. Praesent sem urna, malesuada in volutpat ac, tincidunt sit amet dolor. Ut dignissim ante vel sem semper venenatis? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vitae lectus leo; non bibendum purus.</p>\r\n<ul>\r\n<li>Quisque sit amet aliquam elit</li>\r\n<li>Aenean odio urna, congue eu sollicitudin ac</li>\r\n<li>Interdum ac lorem</li>\r\n<li>Pellentesque habitant morbi tristique</li>\r\n</ul>\r\n<p>Aliquam mattis purus vel nunc tempor sed tempus turpis imperdiet. Pellentesque tincidunt gravida eros at adipiscing. Sed ut tempus nibh. Suspendisse euismod, metus sed lobortis luctus, odio nulla malesuada turpis, in aliquam elit lorem id ante? Pellentesque a elementum dui! Morbi id tellus eget lacus sollicitudin dignissim. Praesent venenatis pellentesque dolor, nec vestibulum felis consectetur non? Sed facilisis, velit vel auctor aliquam, lorem mauris euismod libero, non pellentesque urna mauris vel sem. Aenean eget diam at sem auctor lacinia nec non nisl. Integer sodales fringilla vulputate. Duis massa ante, aliquet id interdum at; placerat nec magna. Ut eleifend sem ut mi elementum eget pellentesque urna dignissim!</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Orrialde bat",
+    "type_title": "Seite",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-08-27T11:26:00+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-08-27T11:26:07+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

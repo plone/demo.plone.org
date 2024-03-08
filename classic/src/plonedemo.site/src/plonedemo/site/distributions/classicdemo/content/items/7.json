@@ -1,0 +1,59 @@
+{
+    "@id": "/de/demo/a-folder",
+    "@type": "Folder",
+    "UID": "78dd69b22bfd4486806c1bb89d2acd06",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:44:38+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:44:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-folder",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "listing_view",
+    "lock": {},
+    "modified": "2024-03-08T09:19:08+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+        "@id": "/de/demo",
+        "@type": "Folder",
+        "UID": "79f01c49712d47c0977f8c35b949af7a",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Ein Ordner",
+    "type_title": "Ordner",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-20T13:44:38+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-20T13:44:43+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

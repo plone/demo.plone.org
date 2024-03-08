@@ -1,0 +1,55 @@
+{
+    "@id": "/en",
+    "@type": "LRF",
+    "UID": "0ec57c1f5b104a59b034553ec00908ec",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2024-03-08T08:53:33+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
+    "expires": null,
+    "id": "en",
+    "is_folderish": true,
+    "language": "en",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2024-03-08T09:19:10+00:00",
+    "parent": {
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "307af1b9faa64e3999fa9dc37f2f39a0",
+        "description": "A Plone Site",
+        "title": "Site",
+        "type_title": "Website"
+    },
+    "review_state": "published",
+    "rights": "",
+    "subjects": [],
+    "title": "English",
+    "type_title": "Basisordner einer Sprache",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2024-03-08T08:53:33+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2024-03-08T08:53:33+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

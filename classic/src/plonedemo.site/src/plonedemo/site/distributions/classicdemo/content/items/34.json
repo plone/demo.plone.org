@@ -1,0 +1,46 @@
+{
+    "@id": "/es/demo/ploneconf-plone5.pdf",
+    "@type": "File",
+    "UID": "637f6e3818e44a6e885df677021c6835",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:22:05+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+        "blob_path": "0x00/0x00/0x00/0x00/0x00/0x03/0x08/0xb8/0x03f7144f2ae3d833.blob",
+        "content-type": "application/pdf",
+        "filename": "agreement.pdf",
+        "size": 68434
+    },
+    "id": "ploneconf-plone5.pdf",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2024-03-08T08:53:34+00:00",
+    "parent": {
+        "@id": "/es/demo",
+        "@type": "Folder",
+        "UID": "353551eee36e491e89bc097f17f05e59",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Un archivo",
+    "type_title": "Datei",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

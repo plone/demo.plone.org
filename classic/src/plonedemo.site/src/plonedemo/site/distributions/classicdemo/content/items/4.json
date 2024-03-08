@@ -1,0 +1,59 @@
+{
+    "@id": "/de/demo",
+    "@type": "Folder",
+    "UID": "79f01c49712d47c0977f8c35b949af7a",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-19T16:12:33+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-07-19T18:13:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "demo",
+    "is_folderish": true,
+    "language": "de",
+    "layout": "summary_view",
+    "lock": {},
+    "modified": "2024-03-08T09:19:37+00:00",
+    "nextPreviousEnabled": false,
+    "parent": {
+        "@id": "/de",
+        "@type": "LRF",
+        "UID": "1f58fedb9e2f49d688e920c912b85013",
+        "description": "",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Deutsch",
+        "type_title": "Basisordner einer Sprache"
+    },
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "Demo",
+    "type_title": "Ordner",
+    "version": "current",
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-19T16:12:33+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-19T16:13:23+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

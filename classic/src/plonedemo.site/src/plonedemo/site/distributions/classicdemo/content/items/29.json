@@ -1,0 +1,48 @@
+{
+    "@id": "/en/demo/an-image.jpg",
+    "@type": "Image",
+    "UID": "d5a10ad499c34d699049d8027c25e4ca",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-07-20T13:51:49+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "an-image.jpg",
+    "image": {
+        "blob_path": "blobs/d5a10ad499c34d699049d8027c25e4ca-image/paris.jpg",
+        "content-type": "image/jpeg",
+        "filename": "paris.jpg",
+        "height": 755,
+        "size": 431326,
+        "width": 1664
+    },
+    "is_folderish": false,
+    "language": "en",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2024-03-08T08:53:34+00:00",
+    "parent": {
+        "@id": "/en/demo",
+        "@type": "Folder",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "An Image",
+    "type_title": "Bild",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}

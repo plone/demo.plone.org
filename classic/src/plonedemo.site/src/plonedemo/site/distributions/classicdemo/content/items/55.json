@@ -1,0 +1,46 @@
+{
+    "@id": "/eu/demo/ploneconf-plone5.pdf",
+    "@type": "File",
+    "UID": "900054dde288445b8f38375507e8bbfe",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2018-08-27T11:30:12+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": null,
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+        "blob_path": "0x00/0x00/0x00/0x00/0x00/0x03/0x0b/0xb0/0x03f7144f2ae3d833.blob",
+        "content-type": "application/pdf",
+        "filename": "agreement.pdf",
+        "size": 68434
+    },
+    "id": "ploneconf-plone5.pdf",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2024-03-08T08:53:34+00:00",
+    "parent": {
+        "@id": "/eu/demo",
+        "@type": "Folder",
+        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Fitxategi bat",
+    "type_title": "Datei",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}
