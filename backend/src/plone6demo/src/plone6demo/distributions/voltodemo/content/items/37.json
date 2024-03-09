@@ -90,6 +90,11 @@
         },
         "47cef702-7d66-4313-b3ec-585408735218": {
             "@type": "toc",
+            "levels": [
+                "h2",
+                "h3"
+            ],
+            "styles": {},
             "variation": "default"
         },
         "4a035155-91fc-4371-82e8-b6d56866647f": {
@@ -137,7 +142,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types",
+                            "@id": "../../resolveuid/e8178744e30a418b9a5768997bb29a19",
                             "@type": "Document",
                             "Description": "This section has a sample of content types available in this site.",
                             "Title": "Content Types",
@@ -406,6 +411,7 @@
         },
         "caa483f6-bc0f-4a5a-94d2-925897969928": {
             "@type": "slateTable",
+            "styles": {},
             "table": {
                 "basic": false,
                 "celled": true,
@@ -574,7 +580,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T15:08:21+00:00",
+    "modified": "2024-03-09T09:53:01+00:00",
     "parent": {
         "@id": "/content-types",
         "@type": "Document",

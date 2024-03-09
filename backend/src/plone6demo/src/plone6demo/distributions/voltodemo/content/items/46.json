@@ -13,7 +13,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -35,7 +35,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -89,7 +89,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -111,7 +111,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -147,7 +147,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -169,7 +169,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -220,7 +220,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -242,7 +242,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -278,15 +278,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -300,15 +300,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -336,7 +336,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -358,7 +358,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -396,15 +396,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -418,15 +418,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -452,7 +452,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -474,7 +474,7 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
                             "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
                             "Title": "Inhaltstyp: Seite (Page)",
@@ -522,15 +522,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -544,15 +544,15 @@
                     "head_title": null,
                     "href": [
                         {
-                            "@id": "/content-types/page",
+                            "@id": "../../resolveuid/7ab9c48ede33415fa2a66a99549c8f70",
                             "@type": "Document",
-                            "Description": "Der Inhaltstyp Seite kann verwendet werden Inhalte auf einer Einzelseite der Webseite darzustellen. Seiten k\u00f6nnen mit Hilfe von Text, Bildern und Bl\u00f6cken strukturiert werden.",
-                            "Title": "Inhaltstyp: Seite (Page)",
+                            "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
+                            "Title": "Page",
                             "getRemoteUrl": null,
                             "hasPreviewImage": true,
                             "head_title": null,
                             "image_field": "preview_image",
-                            "title": "Inhaltstyp: Seite (Page)"
+                            "title": "Page"
                         }
                     ],
                     "styles": {
@@ -604,7 +604,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2023-09-22T14:07:46+00:00",
+    "modified": "2024-03-09T09:33:49+00:00",
     "parent": {
         "@id": "/vertical-spacing",
         "@type": "Document",
