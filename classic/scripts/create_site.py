@@ -1,7 +1,6 @@
 from AccessControl.SecurityManagement import newSecurityManager
 from plonedemo.site.interfaces import IPlonedemoSiteLayer
-from Products.CMFPlone.factory import _DEFAULT_PROFILE
-from Products.CMFPlone.factory import addPloneSite
+from plone.distribution.api import site as site_api
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
@@ -42,17 +41,16 @@ admin = admin.__of__(app.acl_users)
 newSecurityManager(None, admin)
 
 site_id = "Plone"
-payload = {
-    "title": "Plone 6 Demo Site",
-    "profile_id": _DEFAULT_PROFILE,
-    "extension_ids": [
-        "plone.app.caching:default",
-        "plonetheme.barceloneta:default",
-        "plonedemo.site:default",
-    ],
-    "setup_content": False,
+distribution = "classicdemo"
+
+answers = {
+    "distribution": distribution,
+    "site_id": site_id,
+    "title": "Welcome to Plone 6!",
+    "description": "Welcome to Plone 6!",
     "default_language": "en",
-    "portal_timezone": "Europe/Berlin",
+    "portal_timezone": "America/Sao_Paulo",
+    "setup_content": True,
 }
 
 if site_id in app.objectIds() and DELETE_EXISTING:
@@ -60,7 +58,9 @@ if site_id in app.objectIds() and DELETE_EXISTING:
     transaction.commit()
     app._p_jar.sync()
 
-if site_id not in app.objectIds():
-    site = addPloneSite(app, site_id, **payload)
-    transaction.commit()
-    app._p_jar.sync()
+site_api.create(
+    context=app,
+    distribution_name=distribution,
+    answers=answers,
+)
+transaction.commit()
