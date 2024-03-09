@@ -8,7 +8,7 @@
   <property name="behaviors"
             purge="false"
   >
-    <element value="plone.multilingual" />
+    <element value="plone.translatable" />
   </property>
 
 </object>

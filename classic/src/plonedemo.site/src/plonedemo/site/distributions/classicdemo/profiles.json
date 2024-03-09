@@ -4,7 +4,7 @@
     "plone.app.caching:default",
     "plonetheme.barceloneta:default",
     "plone.app.multilingual:default",
-    "plonedemo.site:default",
-    "collective.easyform:default"
+    "collective.easyform:default",
+    "plonedemo.site:default"
   ]
 }
