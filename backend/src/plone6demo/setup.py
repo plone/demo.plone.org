@@ -1,4 +1,5 @@
 """Installer for the plone6demo package."""
+
 from setuptools import find_packages
 from setuptools import setup
 
@@ -22,9 +23,13 @@ setup(
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
         "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: Distribution",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -46,8 +51,9 @@ setup(
     install_requires=[
         "setuptools",
         "Plone",
-        "prettyconf",
         "plone.api",
+        "plone.distribution",
+        "collective.volto.formsupport",
     ],
     extras_require={
         "test": [

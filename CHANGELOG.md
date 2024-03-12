@@ -1,3 +1,11 @@
+# 2024-03-08
+
+- Switch to plone.distribution. [pbauer]
+
+- Add distribution voltodemo, use volto-light-theme and add some demo content. [pbauer]
+
+- Add distribution classicdemo and add easyform. [pbauer]
+
 # 2024-02-23
 
 - Run a single workflow for build and deploy, twice a day. [fredvd]

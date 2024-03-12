@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <registry>
-  <record interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema"
-          name="plone.webstats_js"
-  >
+  <record name="plone.webstats_js">
     <value>&lt;!-- Piwik --&gt;&#13;
 &lt;script type="text/javascript"&gt;&#13;
   var _paq = _paq || [];&#13;
@@ -21,21 +19,15 @@
 </value>
   </record>
 
-  <record interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema"
-          name="plone.site_title"
-  >
+  <record name="plone.site_title">
     <value>demo.plone.org</value>
   </record>
 
-  <record interface="Products.CMFPlone.interfaces.controlpanel.ILinkSchema"
-          name="plone.mark_special_links"
-  >
+  <record name="plone.mark_special_links">
     <value>False</value>
   </record>
 
-  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
-          name="plone.available_languages"
-  >
+  <record name="plone.available_languages">
     <value>
       <element>en</element>
       <element>de</element>
@@ -44,21 +36,15 @@
     </value>
   </record>
 
-  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
-          name="plone.default_language"
-  >
+  <record name="plone.default_language">
     <value>en</value>
   </record>
 
-  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
-          name="plone.display_flags"
-  >
+  <record name="plone.display_flags">
     <value>True</value>
   </record>
 
-  <record interface="plone.app.multilingual.interfaces.IMultiLanguageExtraOptionsSchema"
-          name="plone.use_request_negotiation"
-  >
+  <record name="plone.use_request_negotiation">
     <value>True</value>
   </record>
 

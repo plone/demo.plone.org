@@ -1,4 +1,5 @@
 """Installer for the plonedemo.site package."""
+
 from setuptools import find_packages
 from setuptools import setup
 
@@ -21,20 +22,21 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 5.0",
-        "Framework :: Plone :: 5.1",
-        "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: Distribution",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords="Python Plone",
     author="Philip Bauer",
     author_email="bauer@starzel.de",
-    url="https://github.com/collective/demo.plone.de",
+    url="https://github.com/collective/demo.plone.org",
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),
     namespace_packages=["plonedemo"],
@@ -47,6 +49,8 @@ setup(
         "plone.restapi",
         "z3c.jbot",
         "six",
+        "plone.distribution",
+        "collective.easyform",
     ],
     extras_require={
         "test": [

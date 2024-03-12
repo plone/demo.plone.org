@@ -1,0 +1,61 @@
+{
+    "@id": "/en/demo/a-link",
+    "@type": "Link",
+    "UID": "2ce50f00faf74ffb8e3db907e02f83fc",
+    "allow_discussion": false,
+    "changeNote": "",
+    "contributors": [],
+    "created": "2018-07-20T13:52:00+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": "2018-07-20T15:52:00",
+    "exclude_from_nav": false,
+    "expires": null,
+    "id": "a-link",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "link_redirect_view",
+    "lock": {},
+    "modified": "2024-03-08T08:53:34+00:00",
+    "parent": {
+        "@id": "/en/demo",
+        "@type": "Folder",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Ordner"
+    },
+    "remoteUrl": "https://plone.com/",
+    "review_state": "published",
+    "rights": null,
+    "subjects": [],
+    "title": "A Link",
+    "type_title": "Link",
+    "version": "current",
+    "versioning_enabled": true,
+    "workflow_history": {
+        "simple_publication_workflow": [
+            {
+                "action": null,
+                "actor": "admin",
+                "comments": "",
+                "review_state": "private",
+                "time": "2018-07-20T13:52:00+00:00"
+            },
+            {
+                "action": "publish",
+                "actor": "admin",
+                "comments": "",
+                "review_state": "published",
+                "time": "2018-07-20T13:52:06+00:00"
+            }
+        ]
+    },
+    "working_copy": null,
+    "working_copy_of": null
+}

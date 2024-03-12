@@ -4,5 +4,6 @@
   <dependencies>
     <dependency>profile-plone.app.multilingual:default</dependency>
     <dependency>profile-plone.restapi:blocks</dependency>
+    <dependency>profile-collective.easyform:default</dependency>
   </dependencies>
 </metadata>

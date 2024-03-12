@@ -151,8 +151,3 @@ msgstr ""
 #: ../configure.zcml:29
 msgid "plonedemo.site - uninstall"
 msgstr ""
-
-#. Default: "<p>Edit this site and test Plone now!</p>"
-#: ../browser/templates/frontpage.pt:10
-msgid "plonedemo_frontpage"
-msgstr "<p>Bearbeiten Sie diese Seite und testen Sie Plone jetzt!</p>"

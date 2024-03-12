@@ -15,11 +15,15 @@ GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
+# Set distributions still in development
+DISTRIBUTIONS="classicdemo"
+ALLOWED_DISTRIBUTIONS="classicdemo"
+
 PLONE_VERSION=6.0.10.1
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
-CODE_QUALITY_VERSION=2.0.4
+CODE_QUALITY_VERSION=2.0.2
 ifndef LOG_LEVEL
 	LOG_LEVEL=INFO
 endif
@@ -42,7 +46,7 @@ endif
 # version ok?
 PYTHON_VERSION_MIN=3.8
 PYTHON_VERSION_OK=$(shell $(PYTHON) -c "import sys; print((int(sys.version_info[0]), int(sys.version_info[1])) >= tuple(map(int, '$(PYTHON_VERSION_MIN)'.split('.'))))")
-ifeq ($(PYTHON_VERSION_OK),0)
+ifeq ($(PYTHON_VERSION_OK),False)
   $(error "Need python $(PYTHON_VERSION) >= $(PYTHON_VERSION_MIN)")
 endif
 
@@ -87,7 +91,7 @@ clean-test: ## remove test and coverage artifacts
 bin/pip:
 	@echo "$(GREEN)==> Setup Virtual Env$(RESET)"
 	$(PYTHON) -m venv .
-	bin/pip install -U "pip" "wheel" "cookiecutter" "mxdev"
+	bin/pip install -U "setuptools" "pip" "wheel" "cookiecutter" "mxdev"
 
 .PHONY: config
 config: bin/pip  ## Create instance configuration
@@ -150,8 +154,8 @@ test_quiet: ## run tests removing deprecation warnings
 	PYTHONWARNINGS=ignore ./bin/zope-testrunner --auto-color --auto-progress --test-path src/plonedemo.site/src/
 
 .PHONY: create-site
-create-site: instance/etc/zope.ini ## Create a new site from scratch
-	PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf ./scripts/create_site.py
+create-site: ## Create a new site using default distribution and default answers
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) ALLOWED_DISTRIBUTIONS=$(DISTRIBUTIONS) PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf scripts/create-site.py
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
