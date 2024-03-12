@@ -760,7 +760,18 @@
                         {
                             "children": [
                                 {
-                                    "text": "You can log in and use it as an admin user using these "
+                                    "text": "You can "
+                                },
+                                {
+                                    "children": [
+                                        {
+                                            "text": "log in"
+                                        }
+                                    ],
+                                    "type": "strong"
+                                },
+                                {
+                                    "text": " and use it as an admin user using these "
                                 },
                                 {
                                     "children": [
@@ -803,8 +814,8 @@
             },
             "blocks_layout": {
                 "items": [
-                    "d78b666f-b07b-4036-9853-efe6263515aa",
                     "c9f92df8-81fd-4259-a149-5c8798735350",
+                    "d78b666f-b07b-4036-9853-efe6263515aa",
                     "d105783c-fa27-4c92-a3d9-6323adbe5e72"
                 ]
             },
