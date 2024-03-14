@@ -10,8 +10,8 @@
         "3687103d-0766-4d5e-8aae-fc7e65c457a6": {
             "@type": "form",
             "default_from": "noreply@plone.org",
-            "lastChange": 1709909066340,
-            "remove_data_after_days": -1,
+            "lastChange": 1710238630312,
+            "remove_data_after_days": "-1",
             "send_email": true,
             "show_cancel": false,
             "store": true,
@@ -94,7 +94,7 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-08T14:44:49+00:00",
+    "modified": "2024-03-12T10:18:30+00:00",
     "parent": {
         "@id": "/block",
         "@type": "Document",

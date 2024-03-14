@@ -29,9 +29,9 @@
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "87f1f0ea555d423698c3ce09e17d7873",
-        "description": "Site created with a new Plone Distribution",
-        "title": "Welcome to Plone 6",
+        "UID": "c15b0bfa382142e493ec4fe23e2988c1",
+        "description": "A Plone Site",
+        "title": "Welcome to Plone 6!",
         "type_title": "Plone Site"
     },
     "review_state": null,
