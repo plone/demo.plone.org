@@ -52,13 +52,13 @@
         "locked": false,
         "stealable": true
     },
-    "modified": "2024-03-09T13:33:30+00:00",
+    "modified": "2024-03-14T16:44:16+00:00",
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "c15b0bfa382142e493ec4fe23e2988c1",
-        "description": "A Plone Site",
-        "title": "Welcome to Plone 6!",
+        "UID": "d9fa395c1757420698a37cc2b11c6034",
+        "description": "Site created with a new Plone Distribution",
+        "title": "Welcome to Plone 6",
         "type_title": "Plone Site"
     },
     "preview_caption": null,
