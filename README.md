@@ -2,8 +2,7 @@
 
 [![Built with Cookiecutter Plone Starter](https://img.shields.io/badge/built%20with-Cookiecutter%20Plone%20Starter-0083be.svg?logo=cookiecutter)](https://github.com/collective/cookiecutter-plone-starter/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Backend Tests](https://github.com/collective/demo.plone.org/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/demo.plone.org/actions/workflows/backend.yml)
-[![Frontend Tests](https://github.com/collective/demo.plone.org/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/demo.plone.org/actions/workflows/frontend.yml)
+[![CI for Backend and Frontend](https://github.com/plone/demo.plone.org/actions/workflows/ci.yml/badge.svg)](https://github.com/plone/demo.plone.org/actions/workflows/ci.yml)
 
 This runs the sites https://demo.plone.org and https://classic.demo.plone.org
 
