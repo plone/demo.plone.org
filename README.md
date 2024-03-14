@@ -1,11 +1,13 @@
-# Plone 6 Demo Site
+# Plone 6 Demo Sites
 
 [![Built with Cookiecutter Plone Starter](https://img.shields.io/badge/built%20with-Cookiecutter%20Plone%20Starter-0083be.svg?logo=cookiecutter)](https://github.com/collective/cookiecutter-plone-starter/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Backend Tests](https://github.com/collective/plone-6-demo-site/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/plone-6-demo-site/actions/workflows/backend.yml)
-[![Frontend Tests](https://github.com/collective/plone-6-demo-site/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/plone-6-demo-site/actions/workflows/frontend.yml)
+[![Backend Tests](https://github.com/collective/demo.plone.org/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/demo.plone.org/actions/workflows/backend.yml)
+[![Frontend Tests](https://github.com/collective/demo.plone.org/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/demo.plone.org/actions/workflows/frontend.yml)
 
-A new project using Plone 6.
+This runs the sites https://demo.plone.org and https://classic.demo.plone.org
+
+The Volto demo uses the folders `/backend` and `/frontend`, the ClassicUI demo uses the folder `/classic`
 
 ## Quick start
 
@@ -16,15 +18,15 @@ A new project using Plone 6.
 - yarn
 - Docker
 
-### Install
+### Install and create demo-sites
 
 ```shell
-git clone git@github.com:collective/plone-6-demo-site.git
-cd plone-6-demo-site
+git clone git@github.com:collective/demo.plone.org.git
+cd demo.plone.org
 make install
 ```
 
-### Start
+### Start Volto Demo
 
 Start the Backend (http://localhost:8080/)
 
@@ -38,41 +40,37 @@ Start the Frontend (http://localhost:3000/)
 make start-frontend
 ```
 
-## Structure
+### Start Classic Demo
 
-This monorepo is composed by two distinct codebases: api and frontend.
+Start the Backend (http://localhost:8080/)
 
-- **backend**: API (Backend) Plone installation using pip (not buildout). Includes a policy package named plone_6_demo_site
-- **frontend**: React (Volto) package named frontend
+```shell
+make start-classic
+```
 
-### Reasoning
+### Update Demo Content
 
-- Repo contains all codebase needed to run the site (excluding existing addons for Plone and React).
-- Github Workflows are triggered based on changes on each codebase (see .github/workflows)
-- Easier to create Docker images for each codebase
-- Showcase Plone installation/setup without buildout
+The demo-sites use https://github.com/plone/plone.distribution to create and manage the demo-content.
 
-## Linters and Formatting
+To update/extend the content run the site locally and make the changes you wish to see.
 
-There are some hooks to run lint checks on the code. If you want to automatically format them, you can run
+Use http://localhost:8080/Plone/@@dist_export_all to export the data.
 
-`make format`
+Test your changes by creating a fresh site:
 
-in the root folder or especifically in each backend or frontend folders.
+Volto:
 
-Linters commands are available in each backend and frontend folder.
+```shell
+make create-site
+```
 
-## Acceptance tests
+Classic:
 
-There are `Makefile` commands in place:
+```shell
+make create-site-classic
+```
 
-`build-test-acceptance-server`: Build Acceptance Backend Server Docker image that it's being used afterwards. Must be run before running the tests, if the backend code has changed.
-
-`start-test-acceptance-server`: Start server fixture in docker (previous build required)
-
-`start-test-acceptance-frontend`: Start the Core Acceptance Frontend Fixture in dev mode
-
-`test-acceptance`: Start Core Cypress Acceptance Tests in dev mode
+If you are content, make a pull-request with the changes.
 
 ## Credits
 
