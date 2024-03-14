@@ -23,7 +23,6 @@
                     <ul>
                         <li><a i18n:translate="" class="link-plain" href="https://demo.plone.org" target="_blank">Plone 6</a></li>
                         <li><a i18n:translate="" class="link-plain" href="https://classic.demo.plone.org" target="_blank">Plone 6 Classic UI</a></li>
-                        <li><a i18n:translate="" class="link-plain" href="https://52.demo.plone.org" target="_blank">Plone 5.2</a></li>
                         <li tal:replace="nothing"><a i18n:translate="" class="link-plain" href="https://nightly.demo.plone.org" target="_blank">Plone 6 (nightly build)</a></li>
                         <li tal:replace="nothing"><a i18n:translate="" class="link-plain" href="https://nightly-classic.demo.plone.org" target="_blank">Plone 6 Classic UI (nightly build)</a></li>
                     </ul>
