@@ -145,6 +145,7 @@
     "jest-junit": "8.0.0",
     "mrs-developer": "*",
     "postcss": "8.4.13",
+    "postcss-less": "6.0.0",
     "prettier": "3.0.3",
     "razzle": "4.2.18",
     "stylelint": "15.10.3",
