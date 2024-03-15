@@ -18,7 +18,11 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "paths": {},
+        "paths": {
+            "volto-demo": [
+                "addons/volto-demo/src"
+            ]
+        },
         "baseUrl": "src"
     },
     "include": [

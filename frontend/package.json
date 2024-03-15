@@ -24,17 +24,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "addons": [
-    "volto-form-block",
-    "@eeacms/volto-accordion-block",
-    "@kitconcept/volto-button-block",
-    "@kitconcept/volto-heading-block",
-    "@kitconcept/volto-introduction-block",
-    "@kitconcept/volto-highlight-block",
-    "@kitconcept/volto-separator-block",
-    "@kitconcept/volto-slider-block",
-    "@kitconcept/volto-light-theme"
-  ],
   "jest": {
     "transform": {
       "^.+\\.js(x)?$": "babel-jest",
@@ -132,17 +121,15 @@
   "engines": {
     "node": "^18 || ^20"
   },
+  "addons": [
+    "volto-demo"
+  ],
+  "theme": "@kitconcept/volto-light-theme",
+  "workspaces": [
+    "src/addons/volto-demo"
+  ],
   "dependencies": {
-    "@eeacms/volto-accordion-block": "*",
-    "@kitconcept/volto-button-block": "*",
-    "@kitconcept/volto-heading-block": "*",
-    "@kitconcept/volto-highlight-block": "*",
-    "@kitconcept/volto-introduction-block": "*",
-    "@kitconcept/volto-light-theme": "*",
-    "@kitconcept/volto-separator-block": "*",
-    "@kitconcept/volto-slider-block": "*",
-    "@plone/volto": "17.15.1",
-    "volto-form-block": "*"
+    "@plone/volto": "17.15.5"
   },
   "devDependencies": {
     "@plone/scripts": "^3.3.1",
@@ -158,6 +145,7 @@
     "jest-junit": "8.0.0",
     "mrs-developer": "*",
     "postcss": "8.4.13",
+    "postcss-less": "6.0.0",
     "prettier": "3.0.3",
     "razzle": "4.2.18",
     "stylelint": "15.10.3",
@@ -174,6 +162,5 @@
   "volta": {
     "node": "20.9.0",
     "yarn": "3.6.0"
-  },
-  "theme": "@kitconcept/volto-light-theme"
+  }
 }
