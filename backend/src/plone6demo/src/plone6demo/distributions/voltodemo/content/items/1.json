@@ -1,18 +1,18 @@
 {
     "@id": "/Plone",
     "@type": "Plone Site",
-    "UID": "d9fa395c1757420698a37cc2b11c6034",
+    "UID": "4c6da749a26941dda1203fa202d53094",
     "allow_discussion": null,
     "blocks": {
         "03511c33-6c36-4135-a60a-0be82ccc7e8f": {
             "@type": "slate",
-            "plaintext": "Happy hacking!",
+            "plaintext": "Happy Hacking!",
             "styles": {},
             "value": [
                 {
                     "children": [
                         {
-                            "text": "Happy hacking!"
+                            "text": "Happy Hacking!"
                         }
                     ],
                     "type": "h2"
@@ -243,6 +243,9 @@
         },
         "303984b4-693a-408f-83f7-5a88b243d7db": {
             "@type": "slider",
+            "autoplayDelay": 4000,
+            "autoplayEnabled": false,
+            "autoplayJump": false,
             "slides": [
                 {
                     "@id": "b09f39ea-36c3-4f09-9a18-30aef3565a22",
@@ -321,7 +324,7 @@
                     "@id": "ef8ceecc-7c1d-4e0a-9b67-a56e7d03f6e3",
                     "buttonText": "See all blocks",
                     "description": "This theme makes it easy to create beautiful user experiences.",
-                    "flagAlign": "left",
+                    "flagAlign": "right",
                     "head_title": "Welcome to Volto Light Theme",
                     "hideButton": false,
                     "href": [
@@ -844,7 +847,7 @@
     "creators": [
         "admin"
     ],
-    "description": "Site created with a new Plone Distribution",
+    "description": "A Plone Site",
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
@@ -861,6 +864,6 @@
     "rights": "",
     "subjects": [],
     "table_of_contents": null,
-    "title": "Welcome to Plone 6",
+    "title": "Welcome to Plone 6!",
     "type_title": "Plone Site"
 }
