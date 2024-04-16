@@ -1,24 +1,35 @@
 {
-    "@id": "/en/demo/a-folder",
-    "@type": "Folder",
-    "UID": "a07f9e78ee864e689d72fde066adbac3",
+    "@id": "/en/demo/a-collection",
+    "@type": "Collection",
+    "UID": "bfdc104dadc844cdb4a9412165dad82e",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-07-20T13:51:36+00:00",
+    "created": "2022-04-02T14:20:31+00:00",
     "creators": [
         "admin"
     ],
-    "description": "",
-    "effective": "2018-07-20T15:52:00",
+    "customViewFields": [
+        "Title",
+        "Creator",
+        "Type",
+        "ModificationDate"
+    ],
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui",
+    "effective": "2022-04-02T16:20:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-folder",
-    "is_folderish": true,
+    "id": "a-collection",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
     "language": "en",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T11:24:18+00:00",
-    "nextPreviousEnabled": false,
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/en/demo",
         "@type": "Folder",
@@ -28,13 +39,30 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
+    "query": [
+        {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+                "News Item",
+                "Document"
+            ]
+        }
+    ],
     "review_state": "published",
     "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
     "subjects": [],
-    "title": "A Folder",
-    "type_title": "Ordner",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "A Collection",
+    "type_title": "Bilduma",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -43,14 +71,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-20T13:51:36+00:00"
+                "time": "2022-04-02T14:20:31+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-20T13:52:13+00:00"
+                "time": "2022-04-02T14:20:33+00:00"
             }
         ]
     },

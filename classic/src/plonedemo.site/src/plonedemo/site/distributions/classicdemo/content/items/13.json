@@ -39,7 +39,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "query": [
         {
@@ -62,7 +62,7 @@
         "encoding": "utf-8"
     },
     "title": "Eine Kollektion",
-    "type_title": "Kollektion",
+    "type_title": "Bilduma",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

@@ -1,41 +1,55 @@
 {
-    "@id": "/es/demo",
-    "@type": "Folder",
-    "UID": "353551eee36e491e89bc097f17f05e59",
+    "@id": "/en/frontpage",
+    "@type": "Document",
+    "UID": "e40c713df9f1414b8c7fc0e190006a51",
     "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:12:01+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-    "effective": "2018-08-27T13:16:00",
+    "description": "The ultimate Open Source Enterprise CMS",
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "demo",
-    "is_folderish": true,
-    "language": "es",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T11:32:35+00:00",
-    "nextPreviousEnabled": false,
+    "id": "frontpage",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:33+00:00",
     "parent": {
-        "@id": "/es",
+        "@id": "/en",
         "@type": "LRF",
-        "UID": "d066fc6505ca4ace9df8402aa8cad8df",
+        "UID": "0ec57c1f5b104a59b034553ec00908ec",
         "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Espa\u00f1ol",
-        "type_title": "Basisordner einer Sprache"
+        "title": "English",
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
     "review_state": "published",
-    "rights": null,
+    "rights": "",
     "subjects": [],
-    "title": "Demo",
-    "type_title": "Ordner",
+    "table_of_contents": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Edit this site and test Plone now!</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Welcome to Plone",
+    "type_title": "Orria",
     "version": "current",
+    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -43,14 +57,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:12:01+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:16:38+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             }
         ]
     },

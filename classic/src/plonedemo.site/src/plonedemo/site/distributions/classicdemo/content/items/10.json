@@ -40,7 +40,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "review_state": "published",
     "rights": null,
@@ -51,7 +51,7 @@
         "encoding": "utf-8"
     },
     "title": "Eine Nachricht",
-    "type_title": "Nachricht",
+    "type_title": "Albistea",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {

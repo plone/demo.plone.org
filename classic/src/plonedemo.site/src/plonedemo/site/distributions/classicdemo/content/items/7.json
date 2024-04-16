@@ -35,7 +35,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Ein Ordner",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "review_state": "published",
     "rights": null,
@@ -47,7 +47,7 @@
         "encoding": "utf-8"
     },
     "title": "Eine Seite in einem Ordner",
-    "type_title": "Seite",
+    "type_title": "Orria",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {

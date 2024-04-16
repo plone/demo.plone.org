@@ -1,55 +1,46 @@
 {
-    "@id": "/es",
-    "@type": "LRF",
-    "UID": "d066fc6505ca4ace9df8402aa8cad8df",
+    "@id": "/en/demo/penguin.mp4",
+    "@type": "File",
+    "UID": "ec74047c5f0e47af804f410e8df38b4f",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2024-03-08T08:53:33+00:00",
+    "created": "2024-04-16T11:00:57+00:00",
     "creators": [
         "admin"
     ],
     "description": "",
     "effective": null,
-    "exclude_from_nav": true,
+    "exclude_from_nav": false,
     "expires": null,
-    "id": "es",
-    "is_folderish": true,
-    "language": "es",
-    "layout": "folder_listing",
+    "file": {
+        "blob_path": "blobs/ec74047c5f0e47af804f410e8df38b4f-file/penguin.mp4",
+        "content-type": "video/mp4",
+        "filename": "penguin.mp4",
+        "size": 8032002
+    },
+    "id": "penguin.mp4",
+    "is_folderish": false,
+    "language": "en",
+    "layout": "file_view",
     "lock": {},
-    "modified": "2024-03-08T11:24:19+00:00",
+    "modified": "2024-04-16T11:00:57+00:00",
     "parent": {
-        "@id": "/",
-        "@type": "Plone Site",
-        "UID": "76010a4439cd48d3afbeec33ba81bbcd",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "@id": "/en/demo",
+        "@type": "Folder",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Karpeta"
     },
-    "review_state": "published",
-    "rights": "",
+    "review_state": null,
+    "rights": null,
     "subjects": [],
-    "title": "Espa\u00f1ol",
-    "type_title": "Basisordner einer Sprache",
+    "title": "A Video",
+    "type_title": "Fitxategia",
     "version": "current",
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2024-03-08T08:53:33+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2024-03-08T08:53:33+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

@@ -1,68 +1,36 @@
 {
-    "@id": "/eu/demo/bilduma-bat",
-    "@type": "Collection",
-    "UID": "0f11e9bdcaa54d08a81c9a80295c555a",
+    "@id": "/eu",
+    "@type": "LRF",
+    "UID": "1300ff76fc49485f99d40949ade199a5",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2022-04-02T14:25:37+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "customViewFields": [
-        "Title",
-        "Creator",
-        "Type",
-        "ModificationDate"
-    ],
-    "description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.",
-    "effective": "2022-04-02T16:25:00",
-    "exclude_from_nav": false,
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
     "expires": null,
-    "id": "bilduma-bat",
-    "is_folderish": false,
-    "item_count": 30,
-    "items_total": 4,
+    "id": "eu",
+    "is_folderish": true,
     "language": "eu",
-    "layout": "tabular_view",
-    "limit": 1000,
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2024-04-16T10:59:41+00:00",
     "parent": {
-        "@id": "/eu/demo",
-        "@type": "Folder",
-        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-        "image_field": null,
-        "image_scales": null,
-        "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "@id": "/",
+        "@type": "Plone Site",
+        "UID": "1f90e4b2d47343439f9c5a65c2a0e957",
+        "description": "Site created with a new Plone Distribution",
+        "title": "Welcome to Plone 6",
+        "type_title": "Plone Ataria"
     },
-    "query": [
-        {
-            "i": "portal_type",
-            "o": "plone.app.querystring.operation.selection.any",
-            "v": [
-                "News Item",
-                "Document"
-            ]
-        }
-    ],
     "review_state": "published",
-    "rights": null,
-    "sort_on": "modified",
-    "sort_reversed": true,
+    "rights": "",
     "subjects": [],
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Bilduma bat",
-    "type_title": "Kollektion",
+    "title": "Euskara",
+    "type_title": "Erroko Hizkuntza Karpeta",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -71,14 +39,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2022-04-02T14:25:37+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2022-04-02T14:25:40+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             }
         ]
     },

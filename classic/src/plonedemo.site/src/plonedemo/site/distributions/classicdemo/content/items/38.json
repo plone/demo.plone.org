@@ -1,7 +1,7 @@
 {
-    "@id": "/es/demo/una-pagina",
+    "@id": "/es/demo/una-carpeta/una-pagina-dentro-de-una-carpeta",
     "@type": "Document",
-    "UID": "13f909b522a94443823e187ea9ebab0b",
+    "UID": "593cf5489fce493a95b59bb4f3ef9ee1",
     "allow_discussion": false,
     "blocks": {},
     "blocks_layout": {
@@ -9,15 +9,15 @@
     },
     "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:12:41+00:00",
+    "created": "2018-08-27T11:20:58+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
-    "effective": "2018-08-27T13:16:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-08-27T13:21:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "una-pagina",
+    "id": "una-pagina-dentro-de-una-carpeta",
     "is_folderish": false,
     "language": "es",
     "layout": "document_view",
@@ -27,15 +27,15 @@
     },
     "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/es/demo",
+        "@id": "/es/demo/una-carpeta",
         "@type": "Folder",
-        "UID": "353551eee36e491e89bc097f17f05e59",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "UID": "bd5ff3d542bc42f79d2eab0b99c1ec9d",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "Una carpeta",
+        "type_title": "Karpeta"
     },
     "review_state": "published",
     "rights": null,
@@ -43,11 +43,11 @@
     "table_of_contents": false,
     "text": {
         "content-type": "text/html",
-        "data": "Fusce vel ante vel dolor feugiat vulputate? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus pretium tellus, id porttitor erat volutpat et. Donec vehicula accumsan ornare. Mauris quis vulputate dui. Duis convallis congue ornare. Vivamus cursus vestibulum neque at fermentum. Mauris sed velit in enim scelerisque luctus ac vel mauris. Etiam imperdiet tempor lorem, quis ultrices quam blandit ultricies. Ut sodales lacinia purus hendrerit lobortis. Pellentesque blandit; sem at aliquam pulvinar, felis diam tincidunt nisi, ac varius ligula eros eget tortor.\r\n\r\nVivamus leo ipsum\r\nDictum sed luctus elementum, ornare quis justo? Nam sagittis mattis turpis, eu varius sapien pulvinar non. Etiam in enim eget odio cursus condimentum! Nullam porta, quam ut sagittis auctor, dui urna ullamcorper urna, semper facilisis purus velit nec leo. Nam libero sem, auctor vitae pretium sit amet, posuere eget arcu.\r\n\r\nMaecenas ultrices\r\nNeque in porttitor scelerisque, nunc nunc semper libero, ac dapibus leo lectus et dui. Praesent sem urna, malesuada in volutpat ac, tincidunt sit amet dolor. Ut dignissim ante vel sem semper venenatis? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vitae lectus leo; non bibendum purus.\r\n\r\nQuisque sit amet aliquam elit\r\nAenean odio urna, congue eu sollicitudin ac\r\nInterdum ac lorem\r\nPellentesque habitant morbi tristique\r\nAliquam mattis purus vel nunc tempor sed tempus turpis imperdiet. Pellentesque tincidunt gravida eros at adipiscing. Sed ut tempus nibh. Suspendisse euismod, metus sed lobortis luctus, odio nulla malesuada turpis, in aliquam elit lorem id ante? Pellentesque a elementum dui! Morbi id tellus eget lacus sollicitudin dignissim. Praesent venenatis pellentesque dolor, nec vestibulum felis consectetur non? Sed facilisis, velit vel auctor aliquam, lorem mauris euismod libero, non pellentesque urna mauris vel sem. Aenean eget diam at sem auctor lacinia nec non nisl. Integer sodales fringilla vulputate. Duis massa ante, aliquet id interdum at; placerat nec magna. Ut eleifend sem ut mi elementum eget pellentesque urna dignissim!",
+        "data": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.\r\n\r\nPraesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.\r\n\r\nNullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
         "encoding": "utf-8"
     },
-    "title": "Una p\u00e1gina",
-    "type_title": "Seite",
+    "title": "Una P\u00e1gina dentro de una carpeta",
+    "type_title": "Orria",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {
@@ -57,14 +57,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:12:41+00:00"
+                "time": "2018-08-27T11:20:58+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:16:46+00:00"
+                "time": "2018-08-27T11:21:10+00:00"
             }
         ]
     },

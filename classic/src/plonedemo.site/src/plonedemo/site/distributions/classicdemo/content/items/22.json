@@ -1,24 +1,38 @@
 {
-    "@id": "/en/demo/a-link",
-    "@type": "Link",
-    "UID": "2ce50f00faf74ffb8e3db907e02f83fc",
+    "@id": "/en/demo/a-form",
+    "@type": "EasyForm",
+    "CSRFProtection": true,
+    "UID": "998eb483577d4680973a69780841e8e1",
+    "actions_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\">\n>\n  <schema>\n    <field name=\"mailer\"\n           type=\"collective.easyform.actions.Mailer\"\n    >\n      <title i18n:translate=\"\">Mailer</title>\n      <description i18n:translate=\"\">E-Mails Form Input</description>\n      <replyto_field>replyto</replyto_field>\n      <subject_field>topic</subject_field>\n    </field>\n  </schema>\n</model>\n",
+    "afterValidationOverride": null,
     "allow_discussion": false,
-    "changeNote": "",
     "contributors": [],
-    "created": "2018-07-20T13:52:00+00:00",
+    "created": "2024-03-08T11:29:28+00:00",
     "creators": [
         "admin"
     ],
+    "default_fieldset_label": null,
     "description": "",
-    "effective": "2018-07-20T15:52:00",
+    "effective": "2024-03-08T12:29:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-link",
+    "fields_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\"\n>\n  <schema>\n    <field easyform:TDefault=\"python:member and member.getProperty('email', '') or ''\"\n           easyform:serverSide=\"False\"\n           easyform:validators=\"isValidEmail\"\n           name=\"replyto\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Your E-Mail Address</title>\n    </field>\n    <field name=\"topic\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Subject</title>\n    </field>\n    <field name=\"comments\"\n           type=\"zope.schema.Text\"\n    >\n      <description />\n      <title i18n:translate=\"\">Comments</title>\n    </field>\n  </schema>\n</model>\n",
+    "forceSSL": false,
+    "formActionOverride": null,
+    "formEpilogue": null,
+    "formPrologue": null,
+    "form_tabbing": true,
+    "headerInjection": null,
+    "id": "a-form",
+    "includeEmpties": true,
     "is_folderish": false,
     "language": "en",
-    "layout": "link_redirect_view",
+    "layout": "view",
     "lock": {},
-    "modified": "2024-03-08T08:53:34+00:00",
+    "method": "post",
+    "modified": "2024-03-08T11:35:43+00:00",
+    "nameAttribute": null,
+    "onDisplayOverride": null,
     "parent": {
         "@id": "/en/demo",
         "@type": "Folder",
@@ -28,16 +42,27 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
-    "remoteUrl": "https://plone.com/",
+    "resetLabel": "Zur\u00fccksetzen",
     "review_state": "published",
     "rights": null,
+    "showAll": true,
+    "showFields": [],
     "subjects": [],
-    "title": "A Link",
-    "type_title": "Link",
+    "submitLabel": "Absenden",
+    "submitLabelOverride": null,
+    "thanksEpilogue": null,
+    "thanksPageOverride": null,
+    "thanksPageOverrideAction": "redirect_to",
+    "thanksPrologue": null,
+    "thanksdescription": "Danke f\u00fcr Ihren Beitrag.",
+    "thankstitle": "Vielen Dank",
+    "title": "A Form",
+    "type_title": "EasyForm",
+    "unload_protection": true,
+    "useCancelButton": false,
     "version": "current",
-    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -45,14 +70,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-20T13:52:00+00:00"
+                "time": "2024-03-08T11:29:28+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-20T13:52:06+00:00"
+                "time": "2024-03-08T11:29:34+00:00"
             }
         ]
     },

@@ -39,7 +39,7 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "recurrence": null,
     "review_state": "published",
@@ -53,7 +53,7 @@
         "encoding": "utf-8"
     },
     "title": "Ein Termin",
-    "type_title": "Termin",
+    "type_title": "Hitzordua",
     "version": "current",
     "versioning_enabled": true,
     "whole_day": true,

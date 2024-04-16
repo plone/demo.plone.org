@@ -1,26 +1,31 @@
 {
-    "@id": "/en/demo/a-page",
-    "@type": "Document",
-    "UID": "5c380e40de1f424b92e9a220467f078c",
+    "@id": "/en/demo/a-news-item",
+    "@type": "News Item",
+    "UID": "4423a1b21c06425886e315c4d0e3a676",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
     "changeNote": "",
     "contributors": [],
-    "created": "2018-07-19T16:32:10+00:00",
+    "created": "2018-07-19T16:34:46+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
-    "effective": "2018-07-19T18:32:00",
+    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
+    "effective": "2018-07-19T18:34:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-page",
+    "id": "a-news-item",
+    "image": {
+        "blob_path": "blobs/4423a1b21c06425886e315c4d0e3a676-image/turner.jpg",
+        "content-type": "image/jpeg",
+        "filename": "turner.jpg",
+        "height": 1002,
+        "size": 862842,
+        "width": 1664
+    },
+    "image_caption": null,
     "is_folderish": false,
     "language": "en",
-    "layout": "document_view",
+    "layout": "newsitem_view",
     "lock": {
         "locked": false,
         "stealable": true
@@ -35,19 +40,18 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "review_state": "published",
     "rights": null,
     "subjects": [],
-    "table_of_contents": false,
     "text": {
         "content-type": "text/html",
-        "data": "<p class=\"text-columns-3\">Fusce vel ante vel dolor feugiat vulputate? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque luctus pretium tellus, id porttitor erat volutpat et. Donec vehicula accumsan ornare. Mauris quis vulputate dui. Duis convallis congue ornare. Vivamus cursus vestibulum neque at fermentum. Mauris sed velit in enim scelerisque luctus ac vel mauris. Etiam imperdiet tempor lorem, quis ultrices quam blandit ultricies. Ut sodales lacinia purus hendrerit lobortis. Pellentesque blandit; sem at aliquam pulvinar, felis diam tincidunt nisi, ac varius ligula eros eget tortor.</p>\r\n<h2>Vivamus leo ipsum</h2>\r\n<p>Dictum sed luctus elementum, ornare quis justo? Nam sagittis mattis turpis, eu varius sapien pulvinar non. Etiam in enim eget odio cursus condimentum! Nullam porta, quam ut sagittis auctor, dui urna ullamcorper urna, semper facilisis purus velit nec leo. Nam libero sem, auctor vitae pretium sit amet, posuere eget arcu.</p>\r\n<h2>Maecenas ultrices</h2>\r\n<p>Neque in porttitor scelerisque, nunc nunc semper libero, ac dapibus leo lectus et dui. Praesent sem urna, malesuada in volutpat ac, tincidunt sit amet dolor. Ut dignissim ante vel sem semper venenatis? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vitae lectus leo; non bibendum purus.</p>\r\n<ul>\r\n<li>Quisque sit amet aliquam elit</li>\r\n<li>Aenean odio urna, congue eu sollicitudin ac</li>\r\n<li>Interdum ac lorem</li>\r\n<li>Pellentesque habitant morbi tristique</li>\r\n</ul>\r\n<p>Aliquam mattis purus vel nunc tempor sed tempus turpis imperdiet. Pellentesque tincidunt gravida eros at adipiscing. Sed ut tempus nibh. Suspendisse euismod, metus sed lobortis luctus, odio nulla malesuada turpis, in aliquam elit lorem id ante? Pellentesque a elementum dui! Morbi id tellus eget lacus sollicitudin dignissim. Praesent venenatis pellentesque dolor, nec vestibulum felis consectetur non? Sed facilisis, velit vel auctor aliquam, lorem mauris euismod libero, non pellentesque urna mauris vel sem. Aenean eget diam at sem auctor lacinia nec non nisl. Integer sodales fringilla vulputate. Duis massa ante, aliquet id interdum at; placerat nec magna. Ut eleifend sem ut mi elementum eget pellentesque urna dignissim!</p>",
+        "data": "<p>Donec sed odio dui. <a href=\"../../resolveuid/5c380e40de1f424b92e9a220467f078c\" data-val=\"5c380e40de1f424b92e9a220467f078c\" data-linktype=\"internal\">Etiam porta sem malesuada magna mollis euismod</a>. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>\r\n<h1>Curabitur blandit tempus porttitor.</h1>\r\n<p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. <strong>Maecenas sed diam</strong> eget risus varius blandit sit amet non magna.<br /><br />Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>",
         "encoding": "utf-8"
     },
-    "title": "A Page",
-    "type_title": "Seite",
+    "title": "A News Item",
+    "type_title": "Albistea",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {
@@ -57,14 +61,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-07-19T16:32:10+00:00"
+                "time": "2018-07-19T16:34:46+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-07-19T16:32:19+00:00"
+                "time": "2018-07-19T16:34:52+00:00"
             }
         ]
     },

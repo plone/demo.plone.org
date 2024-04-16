@@ -28,14 +28,14 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
     "remoteUrl": "https://plone.com/",
     "review_state": "published",
     "rights": null,
     "subjects": [],
     "title": "Ein Link",
-    "type_title": "Link",
+    "type_title": "Lotura",
     "version": "current",
     "versioning_enabled": true,
     "workflow_history": {

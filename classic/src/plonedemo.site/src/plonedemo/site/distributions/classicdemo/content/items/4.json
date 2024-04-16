@@ -17,7 +17,7 @@
     "language": "de",
     "layout": "summary_view",
     "lock": {},
-    "modified": "2024-03-08T11:24:19+00:00",
+    "modified": "2024-04-16T11:00:33+00:00",
     "nextPreviousEnabled": false,
     "parent": {
         "@id": "/de",
@@ -28,13 +28,13 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Deutsch",
-        "type_title": "Basisordner einer Sprache"
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
     "review_state": "published",
     "rights": null,
     "subjects": [],
     "title": "Demo",
-    "type_title": "Ordner",
+    "type_title": "Karpeta",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

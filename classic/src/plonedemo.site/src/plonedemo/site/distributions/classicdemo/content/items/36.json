@@ -1,35 +1,38 @@
 {
-    "@id": "/es/demo/una-coleccion",
-    "@type": "Collection",
-    "UID": "0a600821c535433c974b2e706fabd704",
+    "@id": "/es/demo/un-formulario",
+    "@type": "EasyForm",
+    "CSRFProtection": true,
+    "UID": "aa6c61a2c130419ea55d57d2d4383dc8",
+    "actions_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\">\n>\n  <schema>\n    <field name=\"mailer\"\n           type=\"collective.easyform.actions.Mailer\"\n    >\n      <title i18n:translate=\"\">Mailer</title>\n      <description i18n:translate=\"\">E-Mails Form Input</description>\n      <replyto_field>replyto</replyto_field>\n      <subject_field>topic</subject_field>\n    </field>\n  </schema>\n</model>\n",
+    "afterValidationOverride": null,
     "allow_discussion": false,
     "contributors": [],
-    "created": "2022-04-02T14:22:11+00:00",
+    "created": "2024-03-08T11:32:35+00:00",
     "creators": [
         "admin"
     ],
-    "customViewFields": [
-        "Title",
-        "Creator",
-        "Type",
-        "ModificationDate"
-    ],
-    "description": "Nulla vitae elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.",
-    "effective": "2022-04-02T16:22:00",
+    "default_fieldset_label": null,
+    "description": "",
+    "effective": "2024-03-08T12:32:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "una-coleccion",
+    "fields_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\"\n>\n  <schema>\n    <field easyform:TDefault=\"python:member and member.getProperty('email', '') or ''\"\n           easyform:serverSide=\"False\"\n           easyform:validators=\"isValidEmail\"\n           name=\"replyto\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Your E-Mail Address</title>\n    </field>\n    <field name=\"topic\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Subject</title>\n    </field>\n    <field name=\"comments\"\n           type=\"zope.schema.Text\"\n    >\n      <description />\n      <title i18n:translate=\"\">Comments</title>\n    </field>\n  </schema>\n</model>\n",
+    "forceSSL": false,
+    "formActionOverride": null,
+    "formEpilogue": null,
+    "formPrologue": null,
+    "form_tabbing": true,
+    "headerInjection": null,
+    "id": "un-formulario",
+    "includeEmpties": true,
     "is_folderish": false,
-    "item_count": 30,
-    "items_total": 4,
     "language": "es",
-    "layout": "tabular_view",
-    "limit": 1000,
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "layout": "view",
+    "lock": {},
+    "method": "post",
+    "modified": "2024-03-08T11:32:38+00:00",
+    "nameAttribute": null,
+    "onDisplayOverride": null,
     "parent": {
         "@id": "/es/demo",
         "@type": "Folder",
@@ -39,30 +42,26 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
-    "query": [
-        {
-            "i": "portal_type",
-            "o": "plone.app.querystring.operation.selection.any",
-            "v": [
-                "News Item",
-                "Document"
-            ]
-        }
-    ],
+    "resetLabel": "Limpiar",
     "review_state": "published",
     "rights": null,
-    "sort_on": "modified",
-    "sort_reversed": true,
+    "showAll": true,
+    "showFields": [],
     "subjects": [],
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Una Colecci\u00f3n",
-    "type_title": "Kollektion",
+    "submitLabel": "Enviar",
+    "submitLabelOverride": null,
+    "thanksEpilogue": null,
+    "thanksPageOverride": null,
+    "thanksPageOverrideAction": "redirect_to",
+    "thanksPrologue": null,
+    "thanksdescription": "Gracias por su env\u00edo",
+    "thankstitle": "Gracias",
+    "title": "Un formulario",
+    "type_title": "EasyForm",
+    "unload_protection": true,
+    "useCancelButton": false,
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -71,14 +70,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2022-04-02T14:22:11+00:00"
+                "time": "2024-03-08T11:32:35+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2022-04-02T14:22:14+00:00"
+                "time": "2024-03-08T11:32:38+00:00"
             }
         ]
     },

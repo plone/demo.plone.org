@@ -1,55 +1,64 @@
 {
-    "@id": "/es/demo/una-carpeta/una-pagina-dentro-de-una-carpeta",
-    "@type": "Document",
-    "UID": "593cf5489fce493a95b59bb4f3ef9ee1",
+    "@id": "/es/demo/un-evento",
+    "@type": "Event",
+    "UID": "fb46a1a5e28248c9befe9b5a696d52b4",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
+    "attendees": [
+        "Plone Community"
+    ],
     "changeNote": "",
+    "contact_email": null,
+    "contact_name": null,
+    "contact_phone": null,
     "contributors": [],
-    "created": "2018-08-27T11:20:58+00:00",
+    "created": "2018-08-27T11:17:32+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-08-27T13:21:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2018-08-27T13:17:00",
+    "end": "2024-10-05T22:00:00+00:00",
+    "event_url": "http://ploneconf.org/",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "una-pagina-dentro-de-una-carpeta",
+    "id": "un-evento",
     "is_folderish": false,
     "language": "es",
-    "layout": "document_view",
+    "layout": "event_view",
+    "location": "Planeta Tierra",
     "lock": {
         "locked": false,
         "stealable": true
     },
     "modified": "2024-03-08T08:53:34+00:00",
+    "open_end": false,
     "parent": {
-        "@id": "/es/demo/una-carpeta",
+        "@id": "/es/demo",
         "@type": "Folder",
-        "UID": "bd5ff3d542bc42f79d2eab0b99c1ec9d",
-        "description": "",
+        "UID": "353551eee36e491e89bc097f17f05e59",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Una carpeta",
-        "type_title": "Ordner"
+        "title": "Demo",
+        "type_title": "Karpeta"
     },
+    "recurrence": null,
     "review_state": "published",
     "rights": null,
+    "start": "2024-09-29T22:00:00+00:00",
     "subjects": [],
-    "table_of_contents": false,
+    "sync_uid": null,
     "text": {
         "content-type": "text/html",
-        "data": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.\r\n\r\nPraesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.\r\n\r\nNullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "data": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
         "encoding": "utf-8"
     },
-    "title": "Una P\u00e1gina dentro de una carpeta",
-    "type_title": "Seite",
+    "title": "Un Evento",
+    "type_title": "Hitzordua",
     "version": "current",
     "versioning_enabled": true,
+    "whole_day": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -57,14 +66,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:20:58+00:00"
+                "time": "2018-08-27T11:17:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:21:10+00:00"
+                "time": "2018-08-27T11:17:39+00:00"
             }
         ]
     },

@@ -1,73 +1,46 @@
 {
-    "@id": "/de/frontpage",
-    "@type": "Document",
-    "UID": "4a843a854ce0465299c6acf1ee606462",
+    "@id": "/de/demo/penguin.mp4",
+    "@type": "File",
+    "UID": "b05e1a877d9f497780933c423abf667f",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
-    "changeNote": "",
     "contributors": [],
-    "created": "2024-03-08T08:53:34+00:00",
+    "created": "2024-04-16T07:41:52+00:00",
     "creators": [
-        "admin"
+        "manager"
     ],
-    "description": "Das ultimative Open Source Enterprise CMS",
+    "description": null,
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "frontpage",
+    "file": {
+        "blob_path": "blobs/b05e1a877d9f497780933c423abf667f-file/penguin.mp4",
+        "content-type": "video/mp4",
+        "filename": "penguin.mp4",
+        "size": 8032002
+    },
+    "id": "penguin.mp4",
     "is_folderish": false,
     "language": "de",
-    "layout": "document_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2024-04-16T11:00:25+00:00",
     "parent": {
-        "@id": "/de",
-        "@type": "LRF",
-        "UID": "1f58fedb9e2f49d688e920c912b85013",
-        "description": "",
+        "@id": "/de/demo",
+        "@type": "Folder",
+        "UID": "79f01c49712d47c0977f8c35b949af7a",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Deutsch",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Demo",
+        "type_title": "Karpeta"
     },
-    "review_state": "published",
-    "rights": "",
+    "review_state": null,
+    "rights": null,
     "subjects": [],
-    "table_of_contents": null,
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Bearbeiten Sie diese Seite und testen Sie Plone jetzt!</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Willkommen bei Plone",
-    "type_title": "Seite",
+    "title": "Ein Video",
+    "type_title": "Fitxategia",
     "version": "current",
-    "versioning_enabled": true,
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2024-03-08T08:53:34+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2024-03-08T08:53:34+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

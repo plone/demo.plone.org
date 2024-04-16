@@ -1,68 +1,55 @@
 {
-    "@id": "/en/demo/a-form",
-    "@type": "EasyForm",
-    "CSRFProtection": true,
-    "UID": "998eb483577d4680973a69780841e8e1",
-    "actions_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\">\n>\n  <schema>\n    <field name=\"mailer\"\n           type=\"collective.easyform.actions.Mailer\"\n    >\n      <title i18n:translate=\"\">Mailer</title>\n      <description i18n:translate=\"\">E-Mails Form Input</description>\n      <replyto_field>replyto</replyto_field>\n      <subject_field>topic</subject_field>\n    </field>\n  </schema>\n</model>\n",
-    "afterValidationOverride": null,
+    "@id": "/en/demo/a-folder/a-page-inside-a-folder",
+    "@type": "Document",
+    "UID": "cdeb51770c5a4525abaa0493bb5780bb",
     "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "changeNote": "",
     "contributors": [],
-    "created": "2024-03-08T11:29:28+00:00",
+    "created": "2018-07-20T13:52:55+00:00",
     "creators": [
         "admin"
     ],
-    "default_fieldset_label": null,
-    "description": "",
-    "effective": "2024-03-08T12:29:00",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+    "effective": "2018-07-20T15:53:00",
     "exclude_from_nav": false,
     "expires": null,
-    "fields_model": "<model xmlns=\"http://namespaces.plone.org/supermodel/schema\"\n       xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\"\n       xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\"\n       i18n:domain=\"collective.easyform\"\n>\n  <schema>\n    <field easyform:TDefault=\"python:member and member.getProperty('email', '') or ''\"\n           easyform:serverSide=\"False\"\n           easyform:validators=\"isValidEmail\"\n           name=\"replyto\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Your E-Mail Address</title>\n    </field>\n    <field name=\"topic\"\n           type=\"zope.schema.TextLine\"\n    >\n      <description />\n      <title i18n:translate=\"\">Subject</title>\n    </field>\n    <field name=\"comments\"\n           type=\"zope.schema.Text\"\n    >\n      <description />\n      <title i18n:translate=\"\">Comments</title>\n    </field>\n  </schema>\n</model>\n",
-    "forceSSL": false,
-    "formActionOverride": null,
-    "formEpilogue": null,
-    "formPrologue": null,
-    "form_tabbing": true,
-    "headerInjection": null,
-    "id": "a-form",
-    "includeEmpties": true,
+    "id": "a-page-inside-a-folder",
     "is_folderish": false,
     "language": "en",
-    "layout": "view",
-    "lock": {},
-    "method": "post",
-    "modified": "2024-03-08T11:35:43+00:00",
-    "nameAttribute": null,
-    "onDisplayOverride": null,
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:33+00:00",
     "parent": {
-        "@id": "/en/demo",
+        "@id": "/en/demo/a-folder",
         "@type": "Folder",
-        "UID": "9afb95a79cfa4c0684715027244e61e0",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "UID": "a07f9e78ee864e689d72fde066adbac3",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "A Folder",
+        "type_title": "Karpeta"
     },
-    "resetLabel": "Reset",
     "review_state": "published",
     "rights": null,
-    "showAll": true,
-    "showFields": [],
     "subjects": [],
-    "submitLabel": "Submit",
-    "submitLabelOverride": null,
-    "thanksEpilogue": null,
-    "thanksPageOverride": null,
-    "thanksPageOverrideAction": "redirect_to",
-    "thanksPrologue": null,
-    "thanksdescription": "Thanks for your input.",
-    "thankstitle": "Thank You",
-    "title": "A Form",
-    "type_title": "EasyForm",
-    "unload_protection": true,
-    "useCancelButton": false,
+    "table_of_contents": false,
+    "text": {
+        "content-type": "text/html",
+        "data": "<div id=\"content-core\">\r\n<div class=\"\" id=\"parent-fieldname-text\">\r\n<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.<br /><br />Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.<br /><br />Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>\r\n</div>\r\n</div>",
+        "encoding": "utf-8"
+    },
+    "title": "A Page inside a Folder",
+    "type_title": "Orria",
     "version": "current",
+    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -70,14 +57,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2024-03-08T11:29:28+00:00"
+                "time": "2018-07-20T13:52:55+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2024-03-08T11:29:34+00:00"
+                "time": "2018-07-20T13:53:01+00:00"
             }
         ]
     },

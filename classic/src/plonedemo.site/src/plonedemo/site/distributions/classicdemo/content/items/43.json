@@ -1,59 +1,40 @@
 {
-    "@id": "/eu/demo/albiste-bat",
-    "@type": "News Item",
-    "UID": "9336d0516e3f400b94c68d9f26e901a6",
+    "@id": "/es/recursos",
+    "@type": "LIF",
+    "UID": "3f22e55c6c1c4fb385c9fb82ac8a44e8",
     "allow_discussion": false,
-    "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:27:44+00:00",
+    "created": "2024-03-08T08:53:33+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
-    "effective": "2018-08-27T13:27:00",
-    "exclude_from_nav": false,
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": true,
     "expires": null,
-    "id": "albiste-bat",
-    "image": {
-        "blob_path": "blobs/9336d0516e3f400b94c68d9f26e901a6-image/turner.jpg",
-        "content-type": "image/jpeg",
-        "filename": "turner.jpg",
-        "height": 1002,
-        "size": 862842,
-        "width": 1664
-    },
-    "image_caption": null,
-    "is_folderish": false,
-    "language": "eu",
-    "layout": "newsitem_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "id": "recursos",
+    "is_folderish": true,
+    "language": "es",
+    "layout": "folder_listing",
+    "lock": {},
+    "modified": "2024-03-08T08:53:33+00:00",
     "parent": {
-        "@id": "/eu/demo",
-        "@type": "Folder",
-        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "@id": "/es",
+        "@type": "LRF",
+        "UID": "d066fc6505ca4ace9df8402aa8cad8df",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "Espa\u00f1ol",
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
     "review_state": "published",
-    "rights": null,
+    "rights": "",
     "subjects": [],
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Donec sed odio dui.<span>\u00a0</span><a href=\"../../en/demo/a-page\">Etiam porta sem malesuada magna mollis euismod</a>. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus.</p>\r\n<h1>Curabitur blandit tempus porttitor.</h1>\r\n<p>Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.<span>\u00a0</span><strong>Maecenas sed diam</strong><span>\u00a0</span>eget risus varius blandit sit amet non magna.<br /><br />Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Albiste bat",
-    "type_title": "Nachricht",
+    "title": "Recursos",
+    "type_title": "Hizkuntzarekiko Independentea den Karpeta",
     "version": "current",
-    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -61,14 +42,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:27:44+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:27:51+00:00"
+                "time": "2024-03-08T08:53:33+00:00"
             }
         ]
     },

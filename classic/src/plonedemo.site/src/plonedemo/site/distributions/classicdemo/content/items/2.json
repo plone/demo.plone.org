@@ -17,20 +17,20 @@
     "language": "de",
     "layout": "folder_listing",
     "lock": {},
-    "modified": "2024-03-08T11:24:19+00:00",
+    "modified": "2024-04-16T10:59:41+00:00",
     "parent": {
         "@id": "/",
         "@type": "Plone Site",
-        "UID": "76010a4439cd48d3afbeec33ba81bbcd",
-        "description": "A Plone Site",
-        "title": "Site",
-        "type_title": "Website"
+        "UID": "1f90e4b2d47343439f9c5a65c2a0e957",
+        "description": "Site created with a new Plone Distribution",
+        "title": "Welcome to Plone 6",
+        "type_title": "Plone Ataria"
     },
     "review_state": "published",
     "rights": "",
     "subjects": [],
     "title": "Deutsch",
-    "type_title": "Basisordner einer Sprache",
+    "type_title": "Erroko Hizkuntza Karpeta",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

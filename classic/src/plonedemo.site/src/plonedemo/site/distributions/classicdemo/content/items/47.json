@@ -1,24 +1,35 @@
 {
-    "@id": "/eu/demo/karpeta-bat",
-    "@type": "Folder",
-    "UID": "f71e1ae3257d4ef2b296507f4874b069",
+    "@id": "/eu/demo/bilduma-bat",
+    "@type": "Collection",
+    "UID": "0f11e9bdcaa54d08a81c9a80295c555a",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2018-08-27T11:28:19+00:00",
+    "created": "2022-04-02T14:25:37+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-    "effective": "2018-08-27T13:28:00",
+    "customViewFields": [
+        "Title",
+        "Creator",
+        "Type",
+        "ModificationDate"
+    ],
+    "description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+    "effective": "2022-04-02T16:25:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "karpeta-bat",
-    "is_folderish": true,
+    "id": "bilduma-bat",
+    "is_folderish": false,
+    "item_count": 30,
+    "items_total": 4,
     "language": "eu",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T11:24:18+00:00",
-    "nextPreviousEnabled": false,
+    "layout": "tabular_view",
+    "limit": 1000,
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
         "@id": "/eu/demo",
         "@type": "Folder",
@@ -28,13 +39,30 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Demo",
-        "type_title": "Ordner"
+        "type_title": "Karpeta"
     },
+    "query": [
+        {
+            "i": "portal_type",
+            "o": "plone.app.querystring.operation.selection.any",
+            "v": [
+                "News Item",
+                "Document"
+            ]
+        }
+    ],
     "review_state": "published",
     "rights": null,
+    "sort_on": "modified",
+    "sort_reversed": true,
     "subjects": [],
-    "title": "Karpeta bat",
-    "type_title": "Ordner",
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Bilduma bat",
+    "type_title": "Bilduma",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -43,14 +71,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:28:19+00:00"
+                "time": "2022-04-02T14:25:37+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:28:25+00:00"
+                "time": "2022-04-02T14:25:40+00:00"
             }
         ]
     },

@@ -1,41 +1,55 @@
 {
-    "@id": "/eu/demo",
-    "@type": "Folder",
-    "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+    "@id": "/es/frontpage",
+    "@type": "Document",
+    "UID": "fc2b43f7bbe04bec886ecd8dd287ca5e",
     "allow_discussion": false,
+    "blocks": {},
+    "blocks_layout": {
+        "items": []
+    },
+    "changeNote": "",
     "contributors": [],
-    "created": "2018-08-27T11:23:52+00:00",
+    "created": "2024-03-08T08:53:34+00:00",
     "creators": [
         "admin"
     ],
-    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
-    "effective": "2018-08-27T13:24:00",
+    "description": "El Sistema de Gesti\u00f3n de Contenido de Fuentes Abiertas",
+    "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "demo",
-    "is_folderish": true,
-    "language": "eu",
-    "layout": "listing_view",
-    "lock": {},
-    "modified": "2024-03-08T11:34:30+00:00",
-    "nextPreviousEnabled": false,
+    "id": "frontpage",
+    "is_folderish": false,
+    "language": "es",
+    "layout": "document_view",
+    "lock": {
+        "locked": false,
+        "stealable": true
+    },
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/eu",
+        "@id": "/es",
         "@type": "LRF",
-        "UID": "1300ff76fc49485f99d40949ade199a5",
+        "UID": "d066fc6505ca4ace9df8402aa8cad8df",
         "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Euskara",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Espa\u00f1ol",
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
     "review_state": "published",
-    "rights": null,
+    "rights": "",
     "subjects": [],
-    "title": "Demo",
-    "type_title": "Ordner",
+    "table_of_contents": null,
+    "text": {
+        "content-type": "text/html",
+        "data": "<p>\u00a1Edita esta p\u00e1gina y prueba Plone ahora!</p>",
+        "encoding": "utf-8"
+    },
+    "title": "Bienvenido a Plone",
+    "type_title": "Orria",
     "version": "current",
+    "versioning_enabled": true,
     "workflow_history": {
         "simple_publication_workflow": [
             {
@@ -43,14 +57,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2018-08-27T11:23:52+00:00"
+                "time": "2024-03-08T08:53:34+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2018-08-27T11:24:00+00:00"
+                "time": "2024-03-08T08:53:34+00:00"
             }
         ]
     },

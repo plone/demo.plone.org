@@ -27,13 +27,13 @@
         "image_scales": null,
         "review_state": "published",
         "title": "Deutsch",
-        "type_title": "Basisordner einer Sprache"
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
     "review_state": "published",
     "rights": "",
     "subjects": [],
     "title": "Assets",
-    "type_title": "Sprachunabh\u00e4ngiger Ordner",
+    "type_title": "Hizkuntzarekiko Independentea den Karpeta",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [

@@ -1,73 +1,48 @@
 {
-    "@id": "/en/frontpage",
-    "@type": "Document",
-    "UID": "e40c713df9f1414b8c7fc0e190006a51",
+    "@id": "/en/demo/an-image.jpg",
+    "@type": "Image",
+    "UID": "d5a10ad499c34d699049d8027c25e4ca",
     "allow_discussion": false,
-    "blocks": {},
-    "blocks_layout": {
-        "items": []
-    },
-    "changeNote": "",
     "contributors": [],
-    "created": "2024-03-08T08:53:33+00:00",
+    "created": "2018-07-20T13:51:49+00:00",
     "creators": [
         "admin"
     ],
-    "description": "The ultimate Open Source Enterprise CMS",
+    "description": null,
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
-    "id": "frontpage",
+    "id": "an-image.jpg",
+    "image": {
+        "blob_path": "blobs/d5a10ad499c34d699049d8027c25e4ca-image/paris.jpg",
+        "content-type": "image/jpeg",
+        "filename": "paris.jpg",
+        "height": 755,
+        "size": 431326,
+        "width": 1664
+    },
     "is_folderish": false,
     "language": "en",
-    "layout": "document_view",
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:33+00:00",
+    "layout": "image_view",
+    "lock": {},
+    "modified": "2024-03-08T08:53:34+00:00",
     "parent": {
-        "@id": "/en",
-        "@type": "LRF",
-        "UID": "0ec57c1f5b104a59b034553ec00908ec",
-        "description": "",
+        "@id": "/en/demo",
+        "@type": "Folder",
+        "UID": "9afb95a79cfa4c0684715027244e61e0",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "English",
-        "type_title": "Basisordner einer Sprache"
+        "title": "Demo",
+        "type_title": "Karpeta"
     },
-    "review_state": "published",
-    "rights": "",
+    "review_state": null,
+    "rights": null,
     "subjects": [],
-    "table_of_contents": null,
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Edit this site and test Plone now!</p>",
-        "encoding": "utf-8"
-    },
-    "title": "Welcome to Plone",
-    "type_title": "Seite",
+    "title": "An Image",
+    "type_title": "Irudia",
     "version": "current",
-    "versioning_enabled": true,
-    "workflow_history": {
-        "simple_publication_workflow": [
-            {
-                "action": null,
-                "actor": "admin",
-                "comments": "",
-                "review_state": "private",
-                "time": "2024-03-08T08:53:33+00:00"
-            },
-            {
-                "action": "publish",
-                "actor": "admin",
-                "comments": "",
-                "review_state": "published",
-                "time": "2024-03-08T08:53:33+00:00"
-            }
-        ]
-    },
     "working_copy": null,
     "working_copy_of": null
 }

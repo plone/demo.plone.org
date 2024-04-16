@@ -1,13 +1,13 @@
 {
     "@id": "/Plone",
     "@type": "Plone Site",
-    "UID": "76010a4439cd48d3afbeec33ba81bbcd",
+    "UID": "1f90e4b2d47343439f9c5a65c2a0e957",
     "allow_discussion": null,
     "contributors": [],
     "creators": [
         "admin"
     ],
-    "description": "A Plone Site",
+    "description": "Site created with a new Plone Distribution",
     "effective": null,
     "exclude_from_nav": false,
     "expires": null,
@@ -25,6 +25,6 @@
     "subjects": [],
     "table_of_contents": null,
     "text": null,
-    "title": "Site",
-    "type_title": "Website"
+    "title": "Welcome to Plone 6",
+    "type_title": "Plone Ataria"
 }

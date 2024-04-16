@@ -1,68 +1,40 @@
 {
-    "@id": "/en/demo/a-collection",
-    "@type": "Collection",
-    "UID": "bfdc104dadc844cdb4a9412165dad82e",
+    "@id": "/en/demo",
+    "@type": "Folder",
+    "UID": "9afb95a79cfa4c0684715027244e61e0",
     "allow_discussion": false,
     "contributors": [],
-    "created": "2022-04-02T14:20:31+00:00",
+    "created": "2018-07-19T16:31:18+00:00",
     "creators": [
         "admin"
     ],
-    "customViewFields": [
-        "Title",
-        "Creator",
-        "Type",
-        "ModificationDate"
-    ],
-    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui",
-    "effective": "2022-04-02T16:20:00",
+    "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+    "effective": "2018-07-19T18:31:00",
     "exclude_from_nav": false,
     "expires": null,
-    "id": "a-collection",
-    "is_folderish": false,
-    "item_count": 30,
-    "items_total": 4,
+    "id": "demo",
+    "is_folderish": true,
     "language": "en",
-    "layout": "tabular_view",
-    "limit": 1000,
-    "lock": {
-        "locked": false,
-        "stealable": true
-    },
-    "modified": "2024-03-08T08:53:34+00:00",
+    "layout": "summary_view",
+    "lock": {},
+    "modified": "2024-04-16T11:04:35+00:00",
+    "nextPreviousEnabled": false,
     "parent": {
-        "@id": "/en/demo",
-        "@type": "Folder",
-        "UID": "9afb95a79cfa4c0684715027244e61e0",
-        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "@id": "/en",
+        "@type": "LRF",
+        "UID": "0ec57c1f5b104a59b034553ec00908ec",
+        "description": "",
         "image_field": null,
         "image_scales": null,
         "review_state": "published",
-        "title": "Demo",
-        "type_title": "Ordner"
+        "title": "English",
+        "type_title": "Erroko Hizkuntza Karpeta"
     },
-    "query": [
-        {
-            "i": "portal_type",
-            "o": "plone.app.querystring.operation.selection.any",
-            "v": [
-                "News Item",
-                "Document"
-            ]
-        }
-    ],
     "review_state": "published",
     "rights": null,
-    "sort_on": "modified",
-    "sort_reversed": true,
     "subjects": [],
-    "text": {
-        "content-type": "text/html",
-        "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
-        "encoding": "utf-8"
-    },
-    "title": "A Collection",
-    "type_title": "Kollektion",
+    "title": "Demo",
+    "type_title": "Karpeta",
     "version": "current",
     "workflow_history": {
         "simple_publication_workflow": [
@@ -71,14 +43,14 @@
                 "actor": "admin",
                 "comments": "",
                 "review_state": "private",
-                "time": "2022-04-02T14:20:31+00:00"
+                "time": "2018-07-19T16:31:18+00:00"
             },
             {
                 "action": "publish",
                 "actor": "admin",
                 "comments": "",
                 "review_state": "published",
-                "time": "2022-04-02T14:20:33+00:00"
+                "time": "2018-07-19T16:31:44+00:00"
             }
         ]
     },

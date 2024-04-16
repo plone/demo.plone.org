@@ -1,0 +1,46 @@
+{
+    "@id": "/eu/demo/penguin.mp4",
+    "@type": "File",
+    "UID": "197d80f18c104e388deee717d782d6ce",
+    "allow_discussion": false,
+    "contributors": [],
+    "created": "2024-04-16T11:03:33+00:00",
+    "creators": [
+        "admin"
+    ],
+    "description": "",
+    "effective": null,
+    "exclude_from_nav": false,
+    "expires": null,
+    "file": {
+        "blob_path": "blobs/197d80f18c104e388deee717d782d6ce-file/penguin.mp4",
+        "content-type": "video/mp4",
+        "filename": "penguin.mp4",
+        "size": 8032002
+    },
+    "id": "penguin.mp4",
+    "is_folderish": false,
+    "language": "eu",
+    "layout": "file_view",
+    "lock": {},
+    "modified": "2024-04-16T11:03:33+00:00",
+    "parent": {
+        "@id": "/eu/demo",
+        "@type": "Folder",
+        "UID": "85fbc18f5dba40d5bf456cd935fcfcfa",
+        "description": "Vestibulum dignissim erat id eros mollis vitae tempus leo ultricies. Cras dapibus suscipit consectetur. Integer tincidunt feugiat tristique. Sed et arcu risus. Nam venenatis, tortor ac tincidunt amet.",
+        "image_field": null,
+        "image_scales": null,
+        "review_state": "published",
+        "title": "Demo",
+        "type_title": "Karpeta"
+    },
+    "review_state": null,
+    "rights": null,
+    "subjects": [],
+    "title": "Bideoa bat",
+    "type_title": "Fitxategia",
+    "version": "current",
+    "working_copy": null,
+    "working_copy_of": null
+}
