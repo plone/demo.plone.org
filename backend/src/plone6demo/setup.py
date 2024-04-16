@@ -52,7 +52,7 @@ setup(
         "setuptools",
         "Plone",
         "plone.api",
-        "plone.distribution",
+        "plone.distribution>=1.0.0b4",
         "collective.volto.formsupport",
     ],
     extras_require={
