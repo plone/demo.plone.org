@@ -49,7 +49,7 @@ setup(
         "plone.restapi",
         "z3c.jbot",
         "six",
-        "plone.distribution",
+        "plone.distribution>=1.0.0b4",
         "collective.easyform",
     ],
     extras_require={
