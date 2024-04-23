@@ -1,3 +1,7 @@
+# 2024-04-23
+
+- Add support for an instance-local.yaml file in the backend which is git ignored, so you can locally change storage for the backend. [fredvd]
+
 # 2024-03-08
 
 - Switch to plone.distribution. [pbauer]
