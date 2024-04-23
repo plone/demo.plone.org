@@ -227,6 +227,90 @@ jobs:
       - name: Test
         run: make test
 
+  frontend-volto-eslint:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend-volto
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ env.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+          cache: 'yarn'
+          cache-dependency-path: 'frontend/yarn.lock'
+
+      - name: Install packages
+        run: make install
+
+      - name: Lint
+        run: yarn run lint
+
+  frontend-volto-prettier:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend-volto
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Run Prettier
+        run: npx prettier@2.0.5 --single-quote --check 'src/**/*.{js,jsx,ts,tsx,css,scss}' --config=package.json
+
+  frontend-volto-i18n:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    name: i18n sync
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend-volto
+
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ env.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+          cache: 'yarn'
+          cache-dependency-path: 'frontend/yarn.lock'
+
+      - name: Install packages
+        run: make install
+
+      - name: Test i18n sync
+        run: make i18n-ci
+
+  frontend-volto-tests:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend-volto
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ env.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.node-version }}
+          cache: 'yarn'
+          cache-dependency-path: 'frontend-volto/yarn.lock'
+
+      - name: Install packages
+        run: make install
+
+      - name: Test
+        run: make test
+
   release:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
@@ -244,7 +328,10 @@ jobs:
       - frontend-prettier
       - frontend-i18n
       - frontend-tests
-
+      - frontend-volto-eslint
+      - frontend-volto-prettier
+      - frontend-volto-i18n
+      - frontend-volto-tests
     strategy:
       fail-fast: false
       matrix:
@@ -258,6 +345,10 @@ jobs:
           - image: classic
             context: classic
             file: Dockerfile
+          - image: frontend-volto
+            context: frontend-volto
+            file: Dockerfile
+
     steps:
 
       - name: Checkout
