@@ -1,4 +1,8 @@
-## Documentation
+# volto-frontend
+
+`volto-frontend` is the frontend of `volto.demo.plone.org`, a demo of Volto core without add-ons.
+This site is useful for demonstrating observed behavior of Volto core.
+It is pre-populated with Volto block content.
 
 A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/voltohandson/index.html](https://training.plone.org/voltohandson/index.html).
 
