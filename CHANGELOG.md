@@ -1,7 +1,7 @@
 
 # 2024-04-23
 
-- Add demo for vanilla volto without add'ons or themes to be hosted at volto.demo.plone.org. [fredvd
+- Add demo for vanilla volto without add-ons or themes to be hosted at volto.demo.plone.org. @fredvd
 
 - Add support for an instance-local.yaml file in the backend which is git ignored, so you can locally change storage for the backend. [fredvd]
 
