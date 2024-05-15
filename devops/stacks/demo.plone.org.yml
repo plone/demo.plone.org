@@ -84,10 +84,10 @@ services:
         - traefik.http.routers.demo-classic.middlewares=gzip,demo-classic-vhm
 
   backend_volto:
-    image: ghcr.io/plone/demo-backend:latest
+    image: ghcr.io/plone/demo-backend-volto:latest
     networks:
       - public
-      - demoplone
+      - demoplonevolto
     deploy:
       # Just one, as we do not have a shared database
       replicas: 1
@@ -118,7 +118,7 @@ services:
       - backend
     networks:
       - public
-      - demoplone
+      - demoplonevolto
     deploy:
       replicas: 1
       placement:
@@ -141,6 +141,7 @@ services:
 networks:
   public:
     external: true
-    driver: overlay
   demoplone:
+    driver: overlay
+  demoplonevolto:
     driver: overlay

@@ -6,10 +6,14 @@ on:
     paths:
       - "backend/**"
       - "frontend/**"
+      - "frontend-volto/**"
+
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "backend/**"
+      - "backend-volto/**"
+
       - "frontend/**"
       - ".github/workflows/ci.yml"
 

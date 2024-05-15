@@ -91,6 +91,86 @@ jobs:
         run: |
           PYTHONWARNINGS=ignore zope-testrunner --auto-color --auto-progress --test-path src/plone_6_demo_site/src/
 
+  backend-volto-black:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'backend-volto'
+          check: 'black'
+
+  backend-volto-flake8:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'backend-volto'
+          check: 'flake8'
+
+  backend-volto-isort:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'backend-volto'
+          check: 'isort'
+
+  backend-volto-zpretty:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase
+        uses: actions/checkout@v4
+
+      - name: Run check
+        uses: plone/code-analysis-action@v2
+        with:
+          base_dir: 'backend-volto'
+          check: 'zpretty'
+
+  backend-volto-tests:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: ./backend-volto
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Plone ${{ env.plone }} with Python ${{ env.python }}
+        uses: plone/setup-plone@v2.0.0
+        with:
+          python-version: ${{ env.python }}
+          plone-version: ${{ env.plone }}
+
+      - name: Install package
+        run: |
+          pip install mxdev
+          mxdev -c mx.ini
+          pip install -r requirements-mxdev.txt
+
+      - name: Run tests
+        run: |
+          PYTHONWARNINGS=ignore zope-testrunner --auto-color --auto-progress --test-path src/plone_6_demo_site/src/
+
+
   classic-black:
     if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.event.pull_request.base.repo.full_name
     runs-on: ubuntu-latest
@@ -339,6 +419,9 @@ jobs:
           - image: backend
             context: backend
             file: Dockerfile
+          - image: backend-volto
+            context: backend-volto
+            file: Dockerfile            
           - image: frontend
             context: frontend
             file: Dockerfile
