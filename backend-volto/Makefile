@@ -159,8 +159,8 @@ test_quiet: ## run tests removing deprecation warnings
 	PYTHONWARNINGS=ignore ./bin/zope-testrunner --auto-color --auto-progress --test-path src/plone6demo/src/
 
 .PHONY: create-site
-create-site: ## Create a new site using default distribution and default answers
-	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) ALLOWED_DISTRIBUTIONS=$(DISTRIBUTIONS) PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf scripts/create_site.py
+create-site: instance/etc/zope.ini ## Create a new site from scratch
+	PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf ./scripts/create_site.py
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080

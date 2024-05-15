@@ -13,6 +13,15 @@
       />
 
   <genericsetup:registerProfile
+      name="initial"
+      title="Plone 6 Demo Site: Initial content"
+      description="Initial content for our website."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/initial"
+      pre_handler=".setuphandlers.populate_portal"
+      />
+
+  <genericsetup:registerProfile
       name="uninstall"
       title="Plone 6 Demo Site: Uninstall"
       description="Uninstall Plone 6 Demo Site setup."
