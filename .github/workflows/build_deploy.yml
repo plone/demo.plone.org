@@ -400,6 +400,11 @@ jobs:
       - backend-isort
       - backend-zpretty
       - backend-tests
+      - backend-volto-black
+      - backend-volto-flake8
+      - backend-volto-isort
+      - backend-volto-zpretty
+      - backend-volto-tests
       - classic-black
       - classic-flake8
       - classic-isort
@@ -412,6 +417,9 @@ jobs:
       - frontend-volto-prettier
       - frontend-volto-i18n
       - frontend-volto-tests
+    permissions:
+      contents: read
+      packages: write
     strategy:
       fail-fast: false
       matrix:
@@ -421,7 +429,7 @@ jobs:
             file: Dockerfile
           - image: backend-volto
             context: backend-volto
-            file: Dockerfile            
+            file: Dockerfile
           - image: frontend
             context: frontend
             file: Dockerfile
