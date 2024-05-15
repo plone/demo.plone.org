@@ -83,6 +83,61 @@ services:
         - traefik.http.routers.demo-classic.service=demo-classic
         - traefik.http.routers.demo-classic.middlewares=gzip,demo-classic-vhm
 
+  backend_volto:
+    image: ghcr.io/plone/demo-backend:latest
+    networks:
+      - public
+      - demoplone
+    deploy:
+      # Just one, as we do not have a shared database
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-volto-backend.loadbalancer.server.port=8080
+        # Middleware
+        - "traefik.http.middlewares.demo-volto-backend-vhm.replacepathregex.regex=^/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.demo-volto-backend-vhm.replacepathregex.replacement=/VirtualHostBase/https/volto.demo.plone.org/Plone/++api++/VirtualHostRoot/$$1"
+        # Router
+        - traefik.http.routers.demo-volto-backend.rule=Host(`volto.demo.plone.org`) && (PathPrefix(`/++api++`))
+        - traefik.http.routers.demo-volto-backend.entrypoints=https
+        - traefik.http.routers.demo-volto-backend.tls=true
+        - traefik.http.routers.demo-volto-backend.service=demo-backend
+        - traefik.http.routers.demo-volto-backend.middlewares=gzip,demo-volto-backend-vhm
+
+  frontend_volto:
+    image: ghcr.io/plone/demo-frontend-volto:latest
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://demo-plone-org_backend_volto:8080/Plone
+    depends_on:
+      - backend
+    networks:
+      - public
+      - demoplone
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-frontend-volto.loadbalancer.server.port=3000
+        # Router
+        - traefik.http.routers.demo-frontend-volto.rule=Host(`volto.demo.plone.org`)
+        - traefik.http.routers.demo-frontend-volto.entrypoints=https
+        - traefik.http.routers.demo-frontend-volto.tls=true
+        - traefik.http.routers.demo-frontend-volto.tls.certresolver=le
+        - traefik.http.routers.demo-frontend-volto.service=demo-frontend-volto
+        - traefik.http.routers.demo-frontend-volto.middlewares=gzip
+
 networks:
   public:
     external: true
