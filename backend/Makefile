@@ -19,7 +19,7 @@ YELLOW=`tput setaf 3`
 DISTRIBUTIONS="voltodemo"
 ALLOWED_DISTRIBUTIONS="voltodemo"
 
-PLONE_VERSION=6.0.11
+PLONE_VERSION=6.0.11.1
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
@@ -173,3 +173,7 @@ debug: instance/etc/zope.ini ## Run debug console
 .PHONY: build-image
 build-image:  ## Build Docker Image
 	@docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)
+
+.PHONY: build-image-nocache
+build-image-nocache:  ## Build Docker Image
+	@docker buildx build . -t $(IMAGE_NAME):$(IMAGE_TAG) --no-cache-filter plonebackend -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)

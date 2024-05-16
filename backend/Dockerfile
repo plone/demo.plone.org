@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 ARG SEED=1000
 ARG PLONE_VERSION=6.0.11
-FROM plone/plone-backend:${PLONE_VERSION}
+FROM plone/plone-backend:${PLONE_VERSION} AS plonebackend
 
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
@@ -14,7 +14,7 @@ COPY . .
 
 # Install local requirements and fix permissions
 RUN <<EOT
-    ./bin/pip install mxdev
+    ./bin/pip install mxdev==4.0.2
     mv requirements-docker.txt requirements.txt
     ./bin/mxdev -c mx.ini
     ./bin/pip install -r requirements-mxdev.txt
@@ -27,3 +27,6 @@ RUN <<EOT
     ADDITIONAL_PROFILES=plone6demo:initial
     ./docker-entrypoint.sh create-site
 EOT
+
+ENTRYPOINT [ "/app/docker-entrypoint.sh" ]
+CMD ["start"]
