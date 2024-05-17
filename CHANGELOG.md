@@ -1,4 +1,10 @@
 
+# 2024-05-17
+
+- Update distribution content and update plone.distribution to 2.0.0a1. [fredvd]
+
+- Pin plone.distribution to 1.0.0b4 for now to get backend distribution back up and running. [fredvd]
+
 # 2024-04-23
 
 - Add demo for vanilla volto without add'ons or themes to be hosted at volto.demo.plone.org. [fredvd]
