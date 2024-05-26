@@ -107,7 +107,7 @@ services:
         - traefik.http.routers.demo-volto-backend.rule=Host(`volto.demo.plone.org`) && (PathPrefix(`/++api++`))
         - traefik.http.routers.demo-volto-backend.entrypoints=https
         - traefik.http.routers.demo-volto-backend.tls=true
-        - traefik.http.routers.demo-volto-backend.service=demo-backend
+        - traefik.http.routers.demo-volto-backend.service=demo-volto-backend
         - traefik.http.routers.demo-volto-backend.middlewares=gzip,demo-volto-backend-vhm
 
   frontend_volto:
