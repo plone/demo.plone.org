@@ -16,10 +16,10 @@ RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
 # Set distributions still in development
-DISTRIBUTIONS="voltodemo"
-ALLOWED_DISTRIBUTIONS="voltodemo"
+DISTRIBUTIONS="plainvoltodemo"
+ALLOWED_DISTRIBUTIONS="plainvoltodemo"
 
-PLONE_VERSION=6.0.11
+PLONE_VERSION=6.0.11.1
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
@@ -32,7 +32,7 @@ USER_INFO=$$(id -u ${CURRENT_USER}):$$(getent group ${CURRENT_USER}|cut -d: -f3)
 LINT=docker run --rm -e LOG_LEVEL="${LOG_LEVEL}" -v "${BACKEND_FOLDER}":/github/workspace plone/code-quality:${CODE_QUALITY_VERSION} check
 FORMAT=docker run --rm --user="${USER_INFO}" -e LOG_LEVEL="${LOG_LEVEL}" -v "${BACKEND_FOLDER}":/github/workspace plone/code-quality:${CODE_QUALITY_VERSION} format
 
-IMAGE_NAME=ghcr.io/plone/demo-backend-volto
+IMAGE_NAME=ghcr.io/plone/demo-backend
 IMAGE_TAG=latest
 
 # Python checks
@@ -159,8 +159,8 @@ test_quiet: ## run tests removing deprecation warnings
 	PYTHONWARNINGS=ignore ./bin/zope-testrunner --auto-color --auto-progress --test-path src/plone6demo/src/
 
 .PHONY: create-site
-create-site: instance/etc/zope.ini ## Create a new site from scratch
-	PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf ./scripts/create_site.py
+create-site: ## Create a new site using default distribution and default answers
+	DEVELOP_DISTRIBUTIONS=$(DISTRIBUTIONS) ALLOWED_DISTRIBUTIONS=$(DISTRIBUTIONS) PYTHONWARNINGS=ignore ./bin/zconsole run instance/etc/zope.conf scripts/create_site.py
 
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
@@ -173,3 +173,7 @@ debug: instance/etc/zope.ini ## Run debug console
 .PHONY: build-image
 build-image:  ## Build Docker Image
 	@docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)
+
+.PHONY: build-image-nocache
+build-image-nocache:  ## Build Docker Image
+	@docker buildx build . -t $(IMAGE_NAME):$(IMAGE_TAG) --no-cache-filter plonebackend -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)
