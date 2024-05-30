@@ -2891,9 +2891,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kitconcept/volto-light-theme@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@kitconcept/volto-light-theme@npm:3.3.0"
+"@kitconcept/volto-light-theme@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@kitconcept/volto-light-theme@npm:3.3.1"
   dependencies:
     "@plone/components": 2.0.0-alpha.6
   peerDependencies:
@@ -2905,7 +2905,7 @@ __metadata:
     "@kitconcept/volto-introduction-block": ^1.0.0
     "@kitconcept/volto-separator-block": ^4.1.1
     "@kitconcept/volto-slider-block": ^6.3.1
-  checksum: 36f04e1c983971e354baddbd495201b770c8317d8fcf8607b3b97f887889e4a10917d91e709cce53c25f2a6e337fca8be1dc3179a11809e893968574f96bec82
+  checksum: 338e15b85aaefa5389802689a0187e1e0424778dba8f53475f4bb0e47afd360c56c6583ec16a0bb5b676c22b49716b8c5c762766d65d981fa28f735b9e28f292
   languageName: node
   linkType: hard
 
@@ -27524,7 +27524,7 @@ __metadata:
     "@kitconcept/volto-heading-block": ^2.4.0
     "@kitconcept/volto-highlight-block": ^3.0.1
     "@kitconcept/volto-introduction-block": ^1.0.0
-    "@kitconcept/volto-light-theme": ^3.3.0
+    "@kitconcept/volto-light-theme": ^3.3.1
     "@kitconcept/volto-separator-block": ^4.1.1
     "@kitconcept/volto-slider-block": ^6.3.1
     "@plone/scripts": ^3.6.1
