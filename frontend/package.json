@@ -129,7 +129,7 @@
     "src/addons/volto-demo"
   ],
   "dependencies": {
-    "@plone/volto": "17.16.0"
+    "@plone/volto": "17.18.2"
   },
   "devDependencies": {
     "@plone/scripts": "^3.3.1",
