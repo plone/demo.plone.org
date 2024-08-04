@@ -3226,9 +3226,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plone/volto@npm:17.16.0":
-  version: 17.16.0
-  resolution: "@plone/volto@npm:17.16.0"
+"@plone/volto@npm:17.18.2":
+  version: 17.18.2
+  resolution: "@plone/volto@npm:17.18.2"
   dependencies:
     "@babel/core": ^7.0.0
     "@babel/eslint-parser": 7.22.15
@@ -3407,7 +3407,7 @@ __metadata:
     webpack-node-externals: 3.0.0
     xmlrpc: 1.3.2
     yarnhook: 0.5.1
-  checksum: 95936ec6f5078cdd1bcecd59a89888a8d4d0a06b4ac528d34d2e08d2a2cfc0299bdc3a529fafb8f0d605a0003f736fbb853b9e1b5232c6a32a3b5aef00b94c13
+  checksum: 10ea868052d3f7172db4e104a93e91d8e7190b04a77c11ce7495cfc3ee9d53d5a939a2e3433e9fa124bff0b01d78a0c1cec362437d144e382ff66983aa86b2a5
   languageName: node
   linkType: hard
 
@@ -20848,7 +20848,7 @@ __metadata:
   resolution: "plone6-demo@workspace:."
   dependencies:
     "@plone/scripts": ^3.3.1
-    "@plone/volto": 17.16.0
+    "@plone/volto": 17.18.2
     "@storybook/addon-actions": ^6.3.0
     "@storybook/addon-controls": 6.3.0
     "@storybook/addon-essentials": ^6.3.0
