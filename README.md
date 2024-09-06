@@ -20,7 +20,7 @@ The Volto demo uses the folders `/backend` and `/frontend`, the ClassicUI demo u
 ### Install and create demo-sites
 
 ```shell
-git clone git@github.com:collective/demo.plone.org.git
+git clone git@github.com:plone/demo.plone.org.git
 cd demo.plone.org
 make install
 ```
