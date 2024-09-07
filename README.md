@@ -53,17 +53,31 @@ The demo-sites use https://github.com/plone/plone.distribution to create and man
 
 To update/extend the content run the site locally and make the changes you wish to see.
 
-Use `make export-distribution` and `make export-distribution-classic` to export the data to the distribution.
+Export and test depending on the type of site: Volto or Classic.
+
+#### Volto
+
+Export the data to the distribution:
+
+```shell
+make export-distribution
+```
 
 Test your changes by creating a fresh site:
-
-Volto:
 
 ```shell
 make create-site
 ```
 
-Classic:
+#### Classic
+
+Export the data to the distribution:
+
+```shell
+make export-distribution-classic
+```
+
+Test your changes by creating a fresh site:
 
 ```shell
 make create-site-classic
