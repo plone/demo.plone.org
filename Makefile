@@ -48,6 +48,10 @@ install-backend:  ## Create virtualenv and install Plone
 build-backend:  ## Build Backend
 	$(MAKE) -C "./backend/" build-dev
 
+.PHONY: export-distribution
+export-distribution: ## Export content
+	$(MAKE) -C "./backend/" export-distribution
+
 .PHONY: create-site
 create-site: ## Create a Plone site with default content
 	$(MAKE) -C "./backend/" create-site
@@ -127,6 +131,10 @@ install-classic:  ## Create virtualenv and install Plone
 .PHONY: build-classic
 build-classic:  ## Build classic
 	$(MAKE) -C "./classic/" build-dev
+
+.PHONY: export-distribution-classic
+export-distribution-classic: ## Export content
+	$(MAKE) -C "./classic/" export-distribution
 
 .PHONY: create-site-classic
 create-site-classic: ## Create a Plone site with default content
