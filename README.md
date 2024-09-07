@@ -53,7 +53,7 @@ The demo-sites use https://github.com/plone/plone.distribution to create and man
 
 To update/extend the content run the site locally and make the changes you wish to see.
 
-Use http://localhost:8080/Plone/@@dist_export_all to export the data.
+Use `make export-distribution` and  `make export-distribution-classic` to export the data to the distribution.
 
 Test your changes by creating a fresh site:
 
