@@ -132,7 +132,7 @@ install-classic:  ## Create virtualenv and install Plone
 build-classic:  ## Build classic
 	$(MAKE) -C "./classic/" build-dev
 
-.PHONY: export-distribution
+.PHONY: export-distribution-classic
 export-distribution-classic: ## Export content
 	$(MAKE) -C "./classic/" export-distribution
 
