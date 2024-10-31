@@ -1,102 +1,203 @@
-# volto-frontend
+# Volto Demo add-on (volto-demo)
 
-`volto-frontend` is the frontend of `volto.demo.plone.org`, a demo of Volto core without add-ons.
-This site is useful for demonstrating observed behavior of Volto core.
-It is pre-populated with Volto block content.
+A new add-on for Volto
 
-A training on how to create your own website using Volto is available as part of the Plone training at [https://training.plone.org/voltohandson/index.html](https://training.plone.org/voltohandson/index.html).
+[![npm](https://img.shields.io/npm/v/volto-demo)](https://www.npmjs.com/package/volto-demo)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/volto-demo/)
+[![Code analysis checks](https://github.com/collective/volto-demo/actions/workflows/code.yml/badge.svg)](https://github.com/collective/volto-demo/actions/workflows/code.yml)
+[![Unit tests](https://github.com/collective/volto-demo/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/volto-demo/actions/workflows/unit.yml)
 
-## Quick start
+## Features
 
-You can use the following commands while working with the project.
+<!-- List your awesome features here -->
+
+## Installation
+
+To install your project, you must choose the method appropriate to your version of Volto.
+
+
+### Volto 17 and earlier
+
+Create a new Volto project (you can skip this step if you already have one):
+
+```
+npm install -g yo @plone/generator-volto
+yo @plone/volto my-volto-project --addon volto-demo
+cd my-volto-project
+```
+
+Add `volto-demo` to your package.json:
+
+```JSON
+"addons": [
+    "volto-demo"
+],
+
+"dependencies": {
+    "volto-demo": "*"
+}
+```
+
+Download and install the new add-on by running:
+
+```
+yarn install
+```
+
+Start volto with:
+
+```
+yarn start
+```
+
+### Volto 18 and later
+
+Add `volto-demo` to your `package.json`:
+
+```json
+"dependencies": {
+    "volto-demo": "*"
+}
+```
+
+Add `volto-demo` to your `volto.config.js`:
+
+```javascript
+const addons = ['volto-demo'];
+```
+
+If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
+
+```javascript
+const theme = 'volto-demo';
+```
+
+## Test installation
+
+Visit http://localhost:3000/ in a browser, login, and check the awesome new features.
+
+
+## Development
+
+The development of this add-on is done in isolation using a new approach using pnpm workspaces and latest `mrs-developer` and other Volto core improvements.
+For this reason, it only works with pnpm and Volto 18 (currently in alpha).
+
+
+### Pre-requisites
+
+-   [Node.js](https://6.docs.plone.org/install/create-project.html#node-js)
+-   [Make](https://6.docs.plone.org/install/create-project.html#make)
+-   [Docker](https://6.docs.plone.org/install/create-project.html#docker)
+
+
+### Make convenience commands
+
+Run `make help` to list the available commands.
+
+```text
+help                             Show this help
+install                          Installs the add-on in a development environment
+start                            Starts Volto, allowing reloading of the add-on during development
+build                            Build a production bundle for distribution of the project with the add-on
+i18n                             Sync i18n
+ci-i18n                          Check if i18n is not synced
+format                           Format codebase
+lint                             Lint, or catch and remove problems, in code base
+release                          Release the add-on on npmjs.org
+release-dry-run                  Dry-run the release of the add-on on npmjs.org
+test                             Run unit tests
+ci-test                          Run unit tests in CI
+backend-docker-start             Starts a Docker-based backend for development
+storybook-start                  Start Storybook server on port 6006
+storybook-build                  Build Storybook
+acceptance-frontend-dev-start    Start acceptance frontend in development mode
+acceptance-frontend-prod-start   Start acceptance frontend in production mode
+acceptance-backend-start         Start backend acceptance server
+ci-acceptance-backend-start      Start backend acceptance server in headless mode for CI
+acceptance-test                  Start Cypress in interactive mode
+ci-acceptance-test               Run cypress tests in headless mode for CI
+```
+
+### Development environment set up
+
+Install package requirements.
 
 ```shell
 make install
 ```
 
-Installs and checks out the `mrs-developer` directives (via `make develop`), creates a shortcut to the Volto source code (`omelette` folder), then triggers the install of the frontend environment.
+### Start developing
+
+Start the backend.
 
 ```shell
-yarn start
+make backend-docker-start
 ```
 
-Runs the project in development mode.
-You can view your application at `http://localhost:3000`.
-
-The page will reload when you edit it.
+In a separate terminal session, start the frontend.
 
 ```shell
-yarn build
+make start
 ```
 
-Builds the app for production in the build folder.
+### Lint code
 
-The build is minified, and the file names include the hashes.
-Your app is ready to be deployed!
+Run ESlint, Prettier, and Stylelint in analyze mode.
 
 ```shell
-yarn start:prod
+make lint
 ```
 
-Runs the compiled app in production.
+### Format code
 
-You can view your application at `http://localhost:3000`
+Run ESlint, Prettier, and Stylelint in fix mode.
 
 ```shell
-yarn test
+make format
 ```
 
-Runs the test watcher (Jest) in interactive mode.
-By default, the command runs tests related to files changed since the last commit.
+### i18n
+
+Extract the i18n messages to locales.
 
 ```shell
-yarn i18n
+make i18n
 ```
 
-Runs the test i18n runner, which extracts all the translation strings and generates the needed files.
+### Unit tests
 
-## mrs-developer
-
-[mrs-developer](https://github.com/collective/mrs-developer) is a great tool for developing multiple packages at the same time.
-
-mrs-developer should work with this project by running the configured shortcut script:
+Run unit tests.
 
 ```shell
-make develop
+make test
 ```
 
-Volto's latest Razzle configuration will pay attention to your `tsconfig.json` (or `jsconfig.json`) file for any customizations.
+### Run Cypress tests
 
-In case you don't want (or can't) install mrs-developer globally, you can install it in this project by running the following command:
+Run each of these steps in separate terminal sessions.
+
+In the first session, start the frontend in development mode.
 
 ```shell
-yarn add -W mrs-developer
+make acceptance-frontend-dev-start
 ```
 
-## Acceptance tests
-
-To run your app locally while developing the project acceptance tests (Cypress), there are some `Makefile` commands in place (in the repo root). Run them in order:
+In the second session, start the backend acceptance server.
 
 ```shell
-start-test-acceptance-server
+make acceptance-backend-start
 ```
 
-Start the server fixture in Docker.
-This command requires that you first build your app.
+In the third session, start the Cypress interactive test runner.
 
 ```shell
-start-test-acceptance-frontend
+make acceptance-test
 ```
 
-Start the core Acceptance frontend fixture in development mode.
+## License
 
-```shell
-test-acceptance
-```
+The project is licensed under the MIT license.
 
-Start core Cypress acceptance tests in development mode.
+## Credits and Acknowledgements 🙏
 
-```shell
-full-test-acceptance
-```
-Start the whole Cypress acceptance test suite (backend, frontend, and headless tests) in headless (CI) mode.
+Crafted with care by **Generated using [Cookieplone (0.7.1)](https://github.com/plone/cookieplone) and [cookiecutter-plone (6e8c38d)](https://github.com/plone/cookiecutter-plone/commit/6e8c38d31c345198262caf5fc03c0a1e748dba4b) on 2024-10-31 10:46:12.515164**. A special thanks to all contributors and supporters!
