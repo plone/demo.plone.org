@@ -14,6 +14,9 @@ jobs:
 
   config:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
     outputs:
       BASE_TAG: ${{ steps.vars.outputs.BASE_TAG }}
       VOLTO_VERSION: ${{ steps.vars.outputs.VOLTO_VERSION }}
