@@ -1,0 +1,53 @@
+{
+  "name": "volto-demo",
+  "version": "1.0.0-alpha.0",
+  "description": "A new add-on for Volto",
+  "main": "src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "author": "Plone Community",
+  "homepage": "https://github.com/collective/volto-demo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:collective/volto-demo.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "i18n": "rm -rf build/messages && NODE_ENV=production i18n --addon",
+    "dry-release": "release-it --dry-run",
+    "release": "release-it",
+    "release-major-alpha": "release-it major --preRelease=alpha",
+    "release-alpha": "release-it --preRelease=alpha"
+  },
+  "addons": [
+    "volto-form-block",
+    "@eeacms/volto-accordion-block",
+    "@kitconcept/volto-button-block",
+    "@kitconcept/volto-heading-block",
+    "@kitconcept/volto-highlight-block",
+    "@kitconcept/volto-introduction-block",
+    "@kitconcept/volto-separator-block",
+    "@kitconcept/volto-slider-block",
+    "@kitconcept/volto-light-theme"
+  ],
+  "dependencies": {
+    "@kitconcept/volto-light-theme": "^5.0.1",
+    "@plone/components": "2.0.0-alpha.13",
+    "volto-form-block": "3.8.3"
+  },
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@plone/scripts": "^3.6.1",
+    "release-it": "^17.1.1"
+  }
+}
