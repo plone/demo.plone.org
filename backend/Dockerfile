@@ -29,9 +29,9 @@ EOT
 FROM plone/server-prod-config:${PLONE_VERSION}
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-      org.label-schema.name="plone6demo-backend" \
-      org.label-schema.description="Project Title backend image." \
-      org.label-schema.vendor="Plone Foundation"
+    org.label-schema.name="demo-backend" \
+    org.label-schema.description="Plone 6 Demo Site backend image." \
+    org.label-schema.vendor="Plone Foundation"
 
 # Copy /app from builder
 COPY --from=builder /app /app

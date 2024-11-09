@@ -1,5 +1,4 @@
 # syntax=docker/dockerfile:1
-ARG SEED=1000
 ARG PLONE_VERSION=6.1.0b1
 FROM plone/server-builder:${PLONE_VERSION} AS builder
 
@@ -26,19 +25,19 @@ RUN <<EOT
     rm -Rf src/
 EOT
 
-FROM plone/server-prod-config:${PLONE_VERSION}
+FROM plone/server-acceptance:${PLONE_VERSION}
 
 LABEL maintainer="Plone Foundation <collective@plone.org>" \
-    org.label-schema.name="demo-backend-volto" \
-    org.label-schema.description="Plone 6 Demo Plain Volto Site backend image." \
-    org.label-schema.vendor="Plone Foundation"
+      org.label-schema.name="plone6demo-acceptance" \
+      org.label-schema.description="Project Title backend acceptance image." \
+      org.label-schema.vendor="Plone Foundation"
+
+ENV CONFIGURE_PACKAGES="plone.restapi,plone.volto,plone.volto.cors,plone6.demo"
+ENV APPLY_PROFILES="plone6.demo:default"
 
 # Copy /app from builder
 COPY --from=builder /app /app
 
 RUN <<EOT
-    set -e
     ln -s /data /app/var
-    cat ${SEED} > /app/__created__.txt
-    SEED=${SEED} ./docker-entrypoint.sh create-site
 EOT

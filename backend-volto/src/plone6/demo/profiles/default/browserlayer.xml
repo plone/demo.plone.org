@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layers>
+  <layer interface="plone6.demo.interfaces.IBrowserLayer"
+         name="plone6.demo"
+  />
+</layers>

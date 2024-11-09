@@ -1,8 +1,0 @@
-{
-  "site_id": "Plone",
-  "title": "Welcome to Plone 6",
-  "description": "Site created with a new Plone Distribution",
-  "default_language": "en",
-  "portal_timezone": "Europe/Berlin",
-  "setup_content": true
-}
