@@ -2,7 +2,6 @@ from AccessControl.SecurityManagement import newSecurityManager
 from plone6.demo.interfaces import IBrowserLayer
 from Products.CMFPlone.factory import _DEFAULT_PROFILE
 from Products.CMFPlone.factory import addPloneSite
-from Products.GenericSetup.tool import SetupTool
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
