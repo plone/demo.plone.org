@@ -27,6 +27,9 @@ def asbool(s):
 
 
 DELETE_EXISTING = asbool(os.getenv("DELETE_EXISTING"))
+EXAMPLE_CONTENT = asbool(
+    os.getenv("EXAMPLE_CONTENT", "1")
+)  # Create example content by default
 
 app = makerequest(globals()["app"])
 
@@ -60,7 +63,11 @@ if site_id not in app.objectIds():
     transaction.commit()
 
     portal_setup: SetupTool = site.portal_setup
-    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:initial")
+    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:default")
     transaction.commit()
+
+    if EXAMPLE_CONTENT:
+        portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:initial")
+        transaction.commit()
 
     app._p_jar.sync()
