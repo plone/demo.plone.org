@@ -18,7 +18,7 @@
       description="Initial content for our website."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/initial"
-      pre_handler=".setuphandlers.populate_portal"
+      pre_handler=".setuphandlers.initial.create_example_content"
       />
 
   <genericsetup:registerProfile

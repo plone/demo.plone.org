@@ -1,0 +1,52 @@
+{
+  "groups": [
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Administrators",
+      "groups": [],
+      "principals": [],
+      "roles": [
+        "Manager"
+      ],
+      "title": "Administrators"
+    },
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Reviewers",
+      "groups": [],
+      "principals": [],
+      "roles": [
+        "Reviewer"
+      ],
+      "title": "Reviewers"
+    },
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Site Administrators",
+      "groups": [],
+      "principals": [],
+      "roles": [
+        "Site Administrator"
+      ],
+      "title": "Site Administrators"
+    }
+  ],
+  "members": [
+    {
+      "description": "",
+      "email": "collective@plone.org",
+      "fullname": "Plone 6 Demo Site",
+      "groups": [],
+      "home_page": "",
+      "location": "World",
+      "password": "{SSHA}vXo9YrR9dvuoekkbAT/7XZQ5dN5BOg9sPNg1",
+      "roles": [
+        "Member"
+      ],
+      "username": "plone-6-demo-site"
+    }
+  ]
+}

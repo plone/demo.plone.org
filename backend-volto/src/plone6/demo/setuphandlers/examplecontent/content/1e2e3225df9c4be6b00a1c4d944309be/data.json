@@ -1,0 +1,52 @@
+{
+  "@id": "/images/plone-foundation.png",
+  "@type": "Image",
+  "UID": "1e2e3225df9c4be6b00a1c4d944309be",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2024-11-11T19:44:04+00:00",
+  "creators": [
+    "plone-6-demo-site"
+  ],
+  "description": "",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "exportimport.versions": {},
+  "id": "plone-foundation.png",
+  "image": {
+    "blob_path": "1e2e3225df9c4be6b00a1c4d944309be/image/None",
+    "content-type": "image/png",
+    "filename": null,
+    "height": 439,
+    "size": 50737,
+    "width": 2000
+  },
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "image_view",
+  "lock": {},
+  "modified": "2024-11-11T19:44:04+00:00",
+  "parent": {
+    "@id": "/images",
+    "@type": "Document",
+    "UID": "a646ca7995ae4a89ac7bbb80d3477fb6",
+    "description": "Image bank.",
+    "image_field": null,
+    "image_scales": {},
+    "review_state": "published",
+    "title": "Images",
+    "type_title": "Page"
+  },
+  "review_state": null,
+  "rights": "",
+  "subjects": [],
+  "title": "Plone Foundation",
+  "type_title": "Image",
+  "version": "current",
+  "workflow_history": {},
+  "working_copy": null,
+  "working_copy_of": null
+}

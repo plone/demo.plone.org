@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rolemap>
+  <!-- This is needed for the System Block to work in the demo -->
   <permissions>
-
+    <permission acquire="True"
+                name="Plone Site Setup: Overview"
+    >
+      <role name="Anonymous" />
+      <role name="Member" />
+      <role name="Site Administrator" />
+      <role name="Manager" />
+    </permission>
   </permissions>
 </rolemap>
