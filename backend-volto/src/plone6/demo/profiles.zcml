@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plone6.demo"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone 6 Demo Site: Install"
+      description="Package to configure a new Project Title site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="initial"
+      title="Plone 6 Demo Site: Initial content"
+      description="Initial content for our website."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/initial"
+      pre_handler=".setuphandlers.populate_portal"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Plone 6 Demo Site: Uninstall"
+      description="Uninstall Plone 6 Demo Site setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <!-- Hide Uninstall Profile-->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="plone6.demo"
+      />
+
+
+  <include package=".upgrades" />
+
+</configure>

@@ -1,7 +1,8 @@
 from AccessControl.SecurityManagement import newSecurityManager
-from plone6demo.interfaces import IPLONE6DEMOLayer
+from plone6.demo.interfaces import IBrowserLayer
 from Products.CMFPlone.factory import _DEFAULT_PROFILE
 from Products.CMFPlone.factory import addPloneSite
+from Products.GenericSetup.tool import SetupTool
 from Testing.makerequest import makerequest
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
@@ -27,13 +28,11 @@ def asbool(s):
 
 DELETE_EXISTING = asbool(os.getenv("DELETE_EXISTING"))
 
-app = makerequest(app)  # noQA
+app = makerequest(globals()["app"])
 
 request = app.REQUEST
 
-ifaces = [
-    IPLONE6DEMOLayer,
-] + list(directlyProvidedBy(request))
+ifaces = [IBrowserLayer] + list(directlyProvidedBy(request))
 
 directlyProvides(request, *ifaces)
 
@@ -45,10 +44,10 @@ site_id = "Plone"
 payload = {
     "title": "Plone 6 Demo Site",
     "profile_id": _DEFAULT_PROFILE,
-    "extension_ids": ["plone6demo:default", "plone6demo:initial", "plone.volto:demo"],
+    "distribution_name": "default",
     "setup_content": False,
     "default_language": "en",
-    "portal_timezone": "America/Sao_Paulo",
+    "portal_timezone": "UTC",
 }
 
 if site_id in app.objectIds() and DELETE_EXISTING:
@@ -59,4 +58,9 @@ if site_id in app.objectIds() and DELETE_EXISTING:
 if site_id not in app.objectIds():
     site = addPloneSite(app, site_id, **payload)
     transaction.commit()
+
+    portal_setup: SetupTool = site.portal_setup
+    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:initial")
+    transaction.commit()
+
     app._p_jar.sync()
