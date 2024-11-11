@@ -4,6 +4,6 @@
            prefix="plone"
            purge="false"
   >
-    <value key="site_title">Project Title</value>
+    <value key="site_title">Plone 6 Demo Site</value>
   </records>
 </registry>

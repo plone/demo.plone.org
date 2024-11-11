@@ -6,16 +6,16 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Project Title: Install"
-      description="Package to configure a new Project Title site"
+      title="Plone 6 Demo Site: Install"
+      description="Package to configure a new Plone 6 Demo Site"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
       />
 
   <genericsetup:registerProfile
       name="uninstall"
-      title="Project Title: Uninstall"
-      description="Uninstall Project Title setup."
+      title="Plone 6 Demo Site: Uninstall"
+      description="Uninstall Plone 6 Demo Site setup."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/uninstall"
       />

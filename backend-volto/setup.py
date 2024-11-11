@@ -15,11 +15,10 @@ long_description = f"""
 setup(
     name="plone6.demo",
     version="1.0.0a0",
-    description="A new project using Plone 6.",
+    description="Plone 6 Volto demo site configuration package.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
-        "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: Addon",
@@ -36,7 +35,7 @@ setup(
     keywords="Python Plone CMS",
     author="Plone Foundation",
     author_email="collective@plone.org",
-    url="https://github.com/collective/plone6.demo",
+    url="https://github.com/plone/demo.plone.org",
     project_urls={
         "PyPI": "https://pypi.org/project/plone6.demo",
         "Source": "https://github.com/collective/plone6.demo",
