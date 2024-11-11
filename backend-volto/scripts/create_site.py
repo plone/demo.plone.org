@@ -45,7 +45,6 @@ payload = {
     "title": "Plone 6 Demo Site",
     "profile_id": _DEFAULT_PROFILE,
     "distribution_name": "default",
-    "extension_ids": ["plone6.demo:default", "plone6.demo:initial", "plone.volto:demo"],
     "setup_content": False,
     "default_language": "en",
     "portal_timezone": "UTC",
@@ -61,7 +60,7 @@ if site_id not in app.objectIds():
     transaction.commit()
 
     portal_setup: SetupTool = site.portal_setup
-    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:default")
+    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:initial")
     transaction.commit()
 
     app._p_jar.sync()

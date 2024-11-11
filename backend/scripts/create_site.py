@@ -59,8 +59,4 @@ if site_id not in app.objectIds():
     site = addPloneSite(app, site_id, **payload)
     transaction.commit()
 
-    portal_setup: SetupTool = site.portal_setup
-    portal_setup.runAllImportStepsFromProfile("profile-plone6.demo:default")
-    transaction.commit()
-
     app._p_jar.sync()
