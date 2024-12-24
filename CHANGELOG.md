@@ -1,3 +1,8 @@
+# 2024-12-24
+
+- Merry Christmas!
+- Update to Plone 6.1b2 and Volto 18.4.0 @mauritsvanrees @sneridagh
+
 # 2024-09-07
 
 - Update instructions. [ksuess]
