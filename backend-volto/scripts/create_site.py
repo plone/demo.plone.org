@@ -47,7 +47,7 @@ site_id = "Plone"
 payload = {
     "title": "Plone 6 Demo Site",
     "profile_id": _DEFAULT_PROFILE,
-    "distribution_name": "default",
+    "distribution_name": "volto",
     "setup_content": False,
     "default_language": "en",
     "portal_timezone": "UTC",
