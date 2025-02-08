@@ -1,3 +1,7 @@
+# 2025-02-07
+
+- Update to Plone 6.1.0 @mauritsvanrees @davisagli
+
 # 2024-12-24
 
 - Merry Christmas!
