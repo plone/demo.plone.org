@@ -1,6 +1,6 @@
 # 2025-02-07
 
-- Update to Plone 6.1.0 @mauritsvanrees @davisagli
+- Update to Plone 6.1.0 and Volto 18.8.1 @mauritsvanrees @davisagli
 
 # 2024-12-24
 
