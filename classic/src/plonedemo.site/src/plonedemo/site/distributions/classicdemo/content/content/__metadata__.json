@@ -1,0 +1,679 @@
+{
+  "__version__": "1.0.0",
+  "_blob_files_": [
+    "0ec640ff06e4401792c31018655050db/image/paris.jpg",
+    "ecaab7fb8d2c4183b8bd57080d06f7ec/image/turner.jpg",
+    "b05e1a877d9f497780933c423abf667f/file/penguin.mp4",
+    "4423a1b21c06425886e315c4d0e3a676/image/turner.jpg",
+    "d5a10ad499c34d699049d8027c25e4ca/image/paris.jpg",
+    "ec74047c5f0e47af804f410e8df38b4f/file/penguin.mp4",
+    "971633f15d6f47fa8b2f06a5668a1df8/file/penguin.mp4",
+    "8b9931d15212461685e4f23483aed815/image/paris.jpg",
+    "1be0093b8c624ade89eba7329f8d6947/image/turner.jpg",
+    "9336d0516e3f400b94c68d9f26e901a6/image/turner.jpg",
+    "197d80f18c104e388deee717d782d6ce/file/penguin.mp4",
+    "f552f34782cb49f69c9df6d3bfc53332/image/paris.jpg"
+  ],
+  "_data_files_": [
+    "plone_site_root/data.json",
+    "1f58fedb9e2f49d688e920c912b85013/data.json",
+    "1d0d324e341f4cb4859acf541780a4c9/data.json",
+    "79f01c49712d47c0977f8c35b949af7a/data.json",
+    "97dd7d61838e46eebb5ac7e62239b2af/data.json",
+    "78dd69b22bfd4486806c1bb89d2acd06/data.json",
+    "dd01c82bbbb64b8ab37469843ecd1d03/data.json",
+    "0ec640ff06e4401792c31018655050db/data.json",
+    "182dcc5b98c94818b9f4c1c8e488c7ff/data.json",
+    "ecaab7fb8d2c4183b8bd57080d06f7ec/data.json",
+    "fb91bddde7eb46efbed20e9c10fb4929/data.json",
+    "76f47b0fbb6d49dd921cd0c6a4015fff/data.json",
+    "cd6271401a744e649e99afd5bb786bef/data.json",
+    "b05e1a877d9f497780933c423abf667f/data.json",
+    "4a843a854ce0465299c6acf1ee606462/data.json",
+    "0ec57c1f5b104a59b034553ec00908ec/data.json",
+    "e082374ad260493a86c2c415569c3ad4/data.json",
+    "9afb95a79cfa4c0684715027244e61e0/data.json",
+    "bfdc104dadc844cdb4a9412165dad82e/data.json",
+    "a07f9e78ee864e689d72fde066adbac3/data.json",
+    "cdeb51770c5a4525abaa0493bb5780bb/data.json",
+    "998eb483577d4680973a69780841e8e1/data.json",
+    "2ce50f00faf74ffb8e3db907e02f83fc/data.json",
+    "4423a1b21c06425886e315c4d0e3a676/data.json",
+    "5c380e40de1f424b92e9a220467f078c/data.json",
+    "cfb30b644a9c4886b4950a7e708e0cbb/data.json",
+    "d5a10ad499c34d699049d8027c25e4ca/data.json",
+    "ec74047c5f0e47af804f410e8df38b4f/data.json",
+    "e40c713df9f1414b8c7fc0e190006a51/data.json",
+    "d066fc6505ca4ace9df8402aa8cad8df/data.json",
+    "353551eee36e491e89bc097f17f05e59/data.json",
+    "971633f15d6f47fa8b2f06a5668a1df8/data.json",
+    "8b9931d15212461685e4f23483aed815/data.json",
+    "ae9d4c02a78b487fb74be8fde688e773/data.json",
+    "fb46a1a5e28248c9befe9b5a696d52b4/data.json",
+    "aa6c61a2c130419ea55d57d2d4383dc8/data.json",
+    "bd5ff3d542bc42f79d2eab0b99c1ec9d/data.json",
+    "593cf5489fce493a95b59bb4f3ef9ee1/data.json",
+    "0a600821c535433c974b2e706fabd704/data.json",
+    "1be0093b8c624ade89eba7329f8d6947/data.json",
+    "13f909b522a94443823e187ea9ebab0b/data.json",
+    "fc2b43f7bbe04bec886ecd8dd287ca5e/data.json",
+    "3f22e55c6c1c4fb385c9fb82ac8a44e8/data.json",
+    "1300ff76fc49485f99d40949ade199a5/data.json",
+    "85fbc18f5dba40d5bf456cd935fcfcfa/data.json",
+    "9336d0516e3f400b94c68d9f26e901a6/data.json",
+    "0f11e9bdcaa54d08a81c9a80295c555a/data.json",
+    "73e80bd9adb14cd399cbd5266b0deea6/data.json",
+    "2c56691daadb47d893afbfd73d828923/data.json",
+    "f71e1ae3257d4ef2b296507f4874b069/data.json",
+    "4ec428770dec41f0874ff729a0e88003/data.json",
+    "04ac7450c2654f6ab08ffdfda51c05e1/data.json",
+    "7fe145a7f1e64f908af37370f4435f85/data.json",
+    "197d80f18c104e388deee717d782d6ce/data.json",
+    "f552f34782cb49f69c9df6d3bfc53332/data.json",
+    "ef5e5df2eeb440c7bd750f224757b58f/data.json",
+    "c223e1d3484a4304baff3ece7fbcc926/data.json"
+  ],
+  "default_page": {
+    "0ec57c1f5b104a59b034553ec00908ec": {
+      "default_page": "frontpage",
+      "default_page_uuid": "e40c713df9f1414b8c7fc0e190006a51"
+    },
+    "1300ff76fc49485f99d40949ade199a5": {
+      "default_page": "frontpage",
+      "default_page_uuid": "ef5e5df2eeb440c7bd750f224757b58f"
+    },
+    "1f58fedb9e2f49d688e920c912b85013": {
+      "default_page": "frontpage",
+      "default_page_uuid": "4a843a854ce0465299c6acf1ee606462"
+    },
+    "d066fc6505ca4ace9df8402aa8cad8df": {
+      "default_page": "frontpage",
+      "default_page_uuid": "fc2b43f7bbe04bec886ecd8dd287ca5e"
+    }
+  },
+  "local_permissions": {
+    "04ac7450c2654f6ab08ffdfda51c05e1": {},
+    "0a600821c535433c974b2e706fabd704": {},
+    "0ec57c1f5b104a59b034553ec00908ec": {},
+    "0ec640ff06e4401792c31018655050db": {},
+    "0f11e9bdcaa54d08a81c9a80295c555a": {},
+    "1300ff76fc49485f99d40949ade199a5": {},
+    "13f909b522a94443823e187ea9ebab0b": {},
+    "182dcc5b98c94818b9f4c1c8e488c7ff": {},
+    "197d80f18c104e388deee717d782d6ce": {},
+    "1be0093b8c624ade89eba7329f8d6947": {},
+    "1d0d324e341f4cb4859acf541780a4c9": {},
+    "1f58fedb9e2f49d688e920c912b85013": {},
+    "2c56691daadb47d893afbfd73d828923": {},
+    "2ce50f00faf74ffb8e3db907e02f83fc": {},
+    "353551eee36e491e89bc097f17f05e59": {},
+    "3f22e55c6c1c4fb385c9fb82ac8a44e8": {},
+    "4423a1b21c06425886e315c4d0e3a676": {},
+    "4a843a854ce0465299c6acf1ee606462": {},
+    "4ec428770dec41f0874ff729a0e88003": {},
+    "593cf5489fce493a95b59bb4f3ef9ee1": {},
+    "5c380e40de1f424b92e9a220467f078c": {},
+    "73e80bd9adb14cd399cbd5266b0deea6": {},
+    "76f47b0fbb6d49dd921cd0c6a4015fff": {},
+    "78dd69b22bfd4486806c1bb89d2acd06": {},
+    "79f01c49712d47c0977f8c35b949af7a": {},
+    "7fe145a7f1e64f908af37370f4435f85": {},
+    "85fbc18f5dba40d5bf456cd935fcfcfa": {},
+    "8b9931d15212461685e4f23483aed815": {},
+    "9336d0516e3f400b94c68d9f26e901a6": {},
+    "971633f15d6f47fa8b2f06a5668a1df8": {},
+    "97dd7d61838e46eebb5ac7e62239b2af": {},
+    "998eb483577d4680973a69780841e8e1": {},
+    "9afb95a79cfa4c0684715027244e61e0": {},
+    "a07f9e78ee864e689d72fde066adbac3": {},
+    "aa6c61a2c130419ea55d57d2d4383dc8": {},
+    "ae9d4c02a78b487fb74be8fde688e773": {},
+    "b05e1a877d9f497780933c423abf667f": {},
+    "bd5ff3d542bc42f79d2eab0b99c1ec9d": {},
+    "bfdc104dadc844cdb4a9412165dad82e": {},
+    "c223e1d3484a4304baff3ece7fbcc926": {},
+    "cd6271401a744e649e99afd5bb786bef": {},
+    "cdeb51770c5a4525abaa0493bb5780bb": {},
+    "cfb30b644a9c4886b4950a7e708e0cbb": {},
+    "d066fc6505ca4ace9df8402aa8cad8df": {},
+    "d5a10ad499c34d699049d8027c25e4ca": {},
+    "dd01c82bbbb64b8ab37469843ecd1d03": {},
+    "e082374ad260493a86c2c415569c3ad4": {},
+    "e40c713df9f1414b8c7fc0e190006a51": {},
+    "ec74047c5f0e47af804f410e8df38b4f": {},
+    "ecaab7fb8d2c4183b8bd57080d06f7ec": {},
+    "ef5e5df2eeb440c7bd750f224757b58f": {},
+    "f552f34782cb49f69c9df6d3bfc53332": {},
+    "f71e1ae3257d4ef2b296507f4874b069": {},
+    "fb46a1a5e28248c9befe9b5a696d52b4": {},
+    "fb91bddde7eb46efbed20e9c10fb4929": {},
+    "fc2b43f7bbe04bec886ecd8dd287ca5e": {},
+    "plone_site_root": {
+      "Add portal member": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner"
+        ]
+      },
+      "Content rules: Manage rules": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Delete own comments": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Reviewer",
+          "Owner"
+        ]
+      },
+      "Reply to item": {
+        "acquire": false,
+        "roles": [
+          "Authenticated"
+        ]
+      },
+      "Set own password": {
+        "acquire": false,
+        "roles": [
+          "Authenticated",
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Set own properties": {
+        "acquire": false,
+        "roles": [
+          "Authenticated",
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Show Toolbar": {
+        "acquire": false,
+        "roles": [
+          "Authenticated"
+        ]
+      },
+      "plone.resource: Export ZIP file": {
+        "acquire": false,
+        "roles": [
+          "Manager"
+        ]
+      },
+      "plone.resourceeditor: Manage Sources": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator"
+        ]
+      }
+    }
+  },
+  "local_roles": {
+    "04ac7450c2654f6ab08ffdfda51c05e1": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "0a600821c535433c974b2e706fabd704": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "0ec57c1f5b104a59b034553ec00908ec": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "0ec640ff06e4401792c31018655050db": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "0f11e9bdcaa54d08a81c9a80295c555a": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "1300ff76fc49485f99d40949ade199a5": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "13f909b522a94443823e187ea9ebab0b": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "182dcc5b98c94818b9f4c1c8e488c7ff": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "197d80f18c104e388deee717d782d6ce": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "1be0093b8c624ade89eba7329f8d6947": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "1d0d324e341f4cb4859acf541780a4c9": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "1f58fedb9e2f49d688e920c912b85013": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "2c56691daadb47d893afbfd73d828923": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "2ce50f00faf74ffb8e3db907e02f83fc": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "353551eee36e491e89bc097f17f05e59": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "3f22e55c6c1c4fb385c9fb82ac8a44e8": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "4423a1b21c06425886e315c4d0e3a676": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "4a843a854ce0465299c6acf1ee606462": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "4ec428770dec41f0874ff729a0e88003": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "593cf5489fce493a95b59bb4f3ef9ee1": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "5c380e40de1f424b92e9a220467f078c": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "73e80bd9adb14cd399cbd5266b0deea6": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "76f47b0fbb6d49dd921cd0c6a4015fff": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "78dd69b22bfd4486806c1bb89d2acd06": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "79f01c49712d47c0977f8c35b949af7a": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "7fe145a7f1e64f908af37370f4435f85": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "85fbc18f5dba40d5bf456cd935fcfcfa": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "8b9931d15212461685e4f23483aed815": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "9336d0516e3f400b94c68d9f26e901a6": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "971633f15d6f47fa8b2f06a5668a1df8": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "97dd7d61838e46eebb5ac7e62239b2af": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "998eb483577d4680973a69780841e8e1": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "9afb95a79cfa4c0684715027244e61e0": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "a07f9e78ee864e689d72fde066adbac3": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "aa6c61a2c130419ea55d57d2d4383dc8": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ae9d4c02a78b487fb74be8fde688e773": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "b05e1a877d9f497780933c423abf667f": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "bd5ff3d542bc42f79d2eab0b99c1ec9d": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "bfdc104dadc844cdb4a9412165dad82e": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "c223e1d3484a4304baff3ece7fbcc926": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "cd6271401a744e649e99afd5bb786bef": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "cdeb51770c5a4525abaa0493bb5780bb": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "cfb30b644a9c4886b4950a7e708e0cbb": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "d066fc6505ca4ace9df8402aa8cad8df": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "d5a10ad499c34d699049d8027c25e4ca": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "dd01c82bbbb64b8ab37469843ecd1d03": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "e082374ad260493a86c2c415569c3ad4": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "e40c713df9f1414b8c7fc0e190006a51": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ec74047c5f0e47af804f410e8df38b4f": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ecaab7fb8d2c4183b8bd57080d06f7ec": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ef5e5df2eeb440c7bd750f224757b58f": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "f552f34782cb49f69c9df6d3bfc53332": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "f71e1ae3257d4ef2b296507f4874b069": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "fb46a1a5e28248c9befe9b5a696d52b4": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "fb91bddde7eb46efbed20e9c10fb4929": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "fc2b43f7bbe04bec886ecd8dd287ca5e": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "plone_site_root": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    }
+  },
+  "ordering": {
+    "04ac7450c2654f6ab08ffdfda51c05e1": 4,
+    "0a600821c535433c974b2e706fabd704": 7,
+    "0ec57c1f5b104a59b034553ec00908ec": 41,
+    "0ec640ff06e4401792c31018655050db": 5,
+    "0f11e9bdcaa54d08a81c9a80295c555a": 7,
+    "1300ff76fc49485f99d40949ade199a5": 44,
+    "13f909b522a94443823e187ea9ebab0b": 0,
+    "182dcc5b98c94818b9f4c1c8e488c7ff": 4,
+    "197d80f18c104e388deee717d782d6ce": 6,
+    "1be0093b8c624ade89eba7329f8d6947": 2,
+    "1d0d324e341f4cb4859acf541780a4c9": 0,
+    "1f58fedb9e2f49d688e920c912b85013": 42,
+    "2c56691daadb47d893afbfd73d828923": 1,
+    "2ce50f00faf74ffb8e3db907e02f83fc": 4,
+    "353551eee36e491e89bc097f17f05e59": 2,
+    "3f22e55c6c1c4fb385c9fb82ac8a44e8": 0,
+    "4423a1b21c06425886e315c4d0e3a676": 2,
+    "4a843a854ce0465299c6acf1ee606462": 1,
+    "4ec428770dec41f0874ff729a0e88003": 0,
+    "593cf5489fce493a95b59bb4f3ef9ee1": 0,
+    "5c380e40de1f424b92e9a220467f078c": 0,
+    "73e80bd9adb14cd399cbd5266b0deea6": 8,
+    "76f47b0fbb6d49dd921cd0c6a4015fff": 8,
+    "78dd69b22bfd4486806c1bb89d2acd06": 3,
+    "79f01c49712d47c0977f8c35b949af7a": 2,
+    "7fe145a7f1e64f908af37370f4435f85": 0,
+    "85fbc18f5dba40d5bf456cd935fcfcfa": 2,
+    "8b9931d15212461685e4f23483aed815": 4,
+    "9336d0516e3f400b94c68d9f26e901a6": 2,
+    "971633f15d6f47fa8b2f06a5668a1df8": 6,
+    "97dd7d61838e46eebb5ac7e62239b2af": 1,
+    "998eb483577d4680973a69780841e8e1": 8,
+    "9afb95a79cfa4c0684715027244e61e0": 2,
+    "a07f9e78ee864e689d72fde066adbac3": 3,
+    "aa6c61a2c130419ea55d57d2d4383dc8": 8,
+    "ae9d4c02a78b487fb74be8fde688e773": 5,
+    "b05e1a877d9f497780933c423abf667f": 6,
+    "bd5ff3d542bc42f79d2eab0b99c1ec9d": 3,
+    "bfdc104dadc844cdb4a9412165dad82e": 7,
+    "c223e1d3484a4304baff3ece7fbcc926": 0,
+    "cd6271401a744e649e99afd5bb786bef": 7,
+    "cdeb51770c5a4525abaa0493bb5780bb": 0,
+    "cfb30b644a9c4886b4950a7e708e0cbb": 1,
+    "d066fc6505ca4ace9df8402aa8cad8df": 43,
+    "d5a10ad499c34d699049d8027c25e4ca": 5,
+    "dd01c82bbbb64b8ab37469843ecd1d03": 0,
+    "e082374ad260493a86c2c415569c3ad4": 0,
+    "e40c713df9f1414b8c7fc0e190006a51": 1,
+    "ec74047c5f0e47af804f410e8df38b4f": 6,
+    "ecaab7fb8d2c4183b8bd57080d06f7ec": 2,
+    "ef5e5df2eeb440c7bd750f224757b58f": 1,
+    "f552f34782cb49f69c9df6d3bfc53332": 5,
+    "f71e1ae3257d4ef2b296507f4874b069": 3,
+    "fb46a1a5e28248c9befe9b5a696d52b4": 1,
+    "fb91bddde7eb46efbed20e9c10fb4929": 0,
+    "fc2b43f7bbe04bec886ecd8dd287ca5e": 1
+  },
+  "relations": []
+}

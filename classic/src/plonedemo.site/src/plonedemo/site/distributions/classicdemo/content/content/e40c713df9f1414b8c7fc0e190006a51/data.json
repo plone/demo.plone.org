@@ -1,0 +1,72 @@
+{
+  "@id": "/en/frontpage",
+  "@type": "Document",
+  "UID": "e40c713df9f1414b8c7fc0e190006a51",
+  "allow_discussion": null,
+  "blocks": {},
+  "blocks_layout": {
+    "items": []
+  },
+  "changeNote": "",
+  "contributors": [],
+  "created": "2024-03-08T08:53:33+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "The ultimate Open Source Enterprise CMS",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "frontpage",
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "document_view",
+  "lock": {
+    "created": "2025-02-09T07:04:47+00:00",
+    "creator": "manager",
+    "creator_name": "Manager",
+    "creator_url": "http://nohost/Plone/author/manager",
+    "locked": true,
+    "name": "plone.locking.stealable",
+    "stealable": true,
+    "time": 1739084687.1027951,
+    "timeout": 600,
+    "token": "0.5964326400047701-0.18739492963675897-00105A989226:1739084687.103"
+  },
+  "modified": "2024-03-08T08:53:33+00:00",
+  "review_state": "published",
+  "rights": "",
+  "subjects": [],
+  "table_of_contents": null,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Edit this site and test Plone now!</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Welcome to Plone",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2024-03-08T08:53:33+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2024-03-08T08:53:33+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}
