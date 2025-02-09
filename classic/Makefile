@@ -19,7 +19,7 @@ YELLOW=`tput setaf 3`
 DISTRIBUTIONS="classicdemo"
 ALLOWED_DISTRIBUTIONS="classicdemo"
 
-PLONE_VERSION=6.0.14
+PLONE_VERSION=6.1.0
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
@@ -164,6 +164,10 @@ create-site: ## Create a new site using default distribution and default answers
 .PHONY: start
 start: ## Start a Plone instance on localhost:8080
 	PYTHONWARNINGS=ignore ./bin/runwsgi instance/etc/zope.ini
+
+.PHONY: fg
+fg: ## Start a Plone instance on localhost:8080
+	PYTHONWARNINGS=ignore ./bin/runwsgi -d instance/etc/zope.ini
 
 .PHONY: debug
 debug: instance/etc/zope.ini ## Run debug console
