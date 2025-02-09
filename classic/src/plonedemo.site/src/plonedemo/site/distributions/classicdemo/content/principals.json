@@ -1,0 +1,90 @@
+{
+  "groups": [
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Administrators",
+      "groups": [],
+      "principals": [
+        "manager"
+      ],
+      "roles": [
+        "Manager"
+      ],
+      "title": "Administrators"
+    },
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Reviewers",
+      "groups": [],
+      "principals": [
+        "editorinchief"
+      ],
+      "roles": [
+        "Reviewer"
+      ],
+      "title": "Reviewers"
+    },
+    {
+      "description": "",
+      "email": "",
+      "groupid": "Site Administrators",
+      "groups": [],
+      "principals": [],
+      "roles": [
+        "Site Administrator"
+      ],
+      "title": "Site Administrators"
+    }
+  ],
+  "members": [
+    {
+      "description": "",
+      "email": "demo@plone.de",
+      "fullname": "Editor",
+      "groups": [],
+      "home_page": "",
+      "location": "",
+      "password": "{SSHA}Ii6+kMHEgyVBu3VFXxY+lYHB+X3ZnHZXo4Bs",
+      "roles": [
+        "Contributor",
+        "Editor",
+        "Member",
+        "Reader"
+      ],
+      "username": "editor"
+    },
+    {
+      "description": "",
+      "email": "demo@plone.de",
+      "fullname": "Editor-in-chief",
+      "groups": [
+        "Reviewers"
+      ],
+      "home_page": "",
+      "location": "",
+      "password": "{SSHA}YBMBj1RqHRYAC5keNzFDykDALQj1cPDBjaF2",
+      "roles": [
+        "Contributor",
+        "Editor",
+        "Member",
+        "Reader"
+      ],
+      "username": "editorinchief"
+    },
+    {
+      "description": "",
+      "email": "demo@plone.de",
+      "fullname": "Manager",
+      "groups": [
+        "Administrators"
+      ],
+      "home_page": "",
+      "location": "",
+      "password": "{SSHA}1rin6pe/0d43orKxk+/kjtYvDYz3ZnAXRs2q",
+      "roles": [],
+      "username": "manager"
+    }
+  ]
+}

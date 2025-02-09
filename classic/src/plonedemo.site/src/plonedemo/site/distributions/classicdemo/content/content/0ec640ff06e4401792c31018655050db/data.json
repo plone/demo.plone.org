@@ -1,0 +1,40 @@
+{
+  "@id": "/de/demo/a-image.jpg",
+  "@type": "Image",
+  "UID": "0ec640ff06e4401792c31018655050db",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2018-07-20T13:49:01+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": null,
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "a-image.jpg",
+  "image": {
+    "blob_path": "0ec640ff06e4401792c31018655050db/image/paris.jpg",
+    "content-type": "image/jpeg",
+    "filename": "paris.jpg",
+    "height": 755,
+    "size": 431326,
+    "width": 1664
+  },
+  "is_folderish": false,
+  "language": "de",
+  "layout": "image_view",
+  "lock": {},
+  "modified": "2025-02-09T07:06:29+00:00",
+  "review_state": null,
+  "rights": null,
+  "subjects": [],
+  "title": "Ein Bild",
+  "type_title": "Image",
+  "version": "current",
+  "workflow_history": {},
+  "working_copy": null,
+  "working_copy_of": null
+}

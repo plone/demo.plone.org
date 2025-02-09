@@ -1,0 +1,85 @@
+{
+  "@id": "/de/demo/ein-formular",
+  "@type": "EasyForm",
+  "CSRFProtection": true,
+  "UID": "76f47b0fbb6d49dd921cd0c6a4015fff",
+  "actions_model": "<model xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\" xmlns:marshal=\"http://namespaces.plone.org/supermodel/marshal\" xmlns:form=\"http://namespaces.plone.org/supermodel/form\" xmlns:security=\"http://namespaces.plone.org/supermodel/security\" xmlns:indexer=\"http://namespaces.plone.org/supermodel/indexer\" xmlns:lingua=\"http://namespaces.plone.org/supermodel/lingua\" xmlns:users=\"http://namespaces.plone.org/supermodel/users\" xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\" xmlns=\"http://namespaces.plone.org/supermodel/schema\" i18n:domain=\"collective.easyform\">\n  <schema>\n    <field name=\"mailer\" type=\"collective.easyform.actions.Mailer\">\n      <description i18n:translate=\"\">E-Mails Form Input</description>\n      <replyto_field>replyto</replyto_field>\n      <required>False</required>\n      <subject_field>topic</subject_field>\n      <title i18n:translate=\"\">Mailer</title>\n    </field>\n    <field name=\"data\" type=\"collective.easyform.actions.SaveData\">\n      <title>Data</title>\n    </field>\n  </schema>\n</model>",
+  "afterValidationOverride": null,
+  "allow_discussion": false,
+  "autofocus": true,
+  "contributors": [],
+  "created": "2024-03-08T09:19:37+00:00",
+  "creators": [
+    "admin"
+  ],
+  "default_fieldset_label": null,
+  "description": "",
+  "effective": "2024-03-08T10:19:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "fields_model": "<model xmlns:i18n=\"http://xml.zope.org/namespaces/i18n\" xmlns:marshal=\"http://namespaces.plone.org/supermodel/marshal\" xmlns:form=\"http://namespaces.plone.org/supermodel/form\" xmlns:security=\"http://namespaces.plone.org/supermodel/security\" xmlns:indexer=\"http://namespaces.plone.org/supermodel/indexer\" xmlns:lingua=\"http://namespaces.plone.org/supermodel/lingua\" xmlns:users=\"http://namespaces.plone.org/supermodel/users\" xmlns:easyform=\"http://namespaces.plone.org/supermodel/easyform\" xmlns=\"http://namespaces.plone.org/supermodel/schema\" i18n:domain=\"collective.easyform\">\n  <schema>\n    <field name=\"replyto\" type=\"zope.schema.TextLine\" easyform:TDefault=\"python:member and member.getProperty('email', '') or ''\" easyform:serverSide=\"False\" easyform:validators=\"isValidEmail\" easyform:THidden=\"False\">\n      <description/>\n      <title i18n:translate=\"Your E-Mail Address\">Ihre Email</title>\n    </field>\n    <field name=\"comments\" type=\"zope.schema.Text\" easyform:serverSide=\"False\" easyform:THidden=\"False\">\n      <description/>\n      <required>False</required>\n      <title i18n:translate=\"Comments\">Nachricht</title>\n    </field>\n    <field name=\"auswahlfeld\" type=\"zope.schema.Choice\" easyform:serverSide=\"False\" easyform:THidden=\"False\">\n      <description/>\n      <required>False</required>\n      <title>Auswahlfeld</title>\n      <values>\n        <element>Black</element>\n        <element>White</element>\n        <element>Green</element>\n        <element>Red</element>\n        <element>Can I take my friend to bed?</element>\n        <element>Pink</element>\n        <element>Brown</element>\n        <element>Yellow</element>\n        <element>Orange</element>\n        <element>And Blue</element>\n        <element>I love you</element>\n      </values>\n    </field>\n    <field name=\"datenschutz\" type=\"zope.schema.Bool\" easyform:serverSide=\"False\" easyform:validators=\"isChecked\" easyform:THidden=\"False\">\n      <default>False</default>\n      <description>Ich akzeptiere hiermit die Datenschutzerkl&#228;rung.</description>\n      <title>Datenschutz</title>\n      <form:widget type=\"plone.app.z3cform.widgets.singlecheckbox.SingleCheckBoxBoolFieldWidget\"/>\n    </field>\n  </schema>\n</model>",
+  "forceSSL": false,
+  "formActionOverride": null,
+  "formEpilogue": null,
+  "formPrologue": {
+    "content-type": "text/html",
+    "data": "<p>Ein einfaches Testformular</p>",
+    "encoding": "utf-8"
+  },
+  "form_tabbing": true,
+  "headerInjection": null,
+  "id": "ein-formular",
+  "includeEmpties": true,
+  "is_folderish": false,
+  "language": "de",
+  "layout": "view",
+  "lock": {},
+  "method": "post",
+  "modified": "2025-02-09T07:06:29+00:00",
+  "nameAttribute": null,
+  "onDisplayOverride": null,
+  "resetLabel": "Zur\u00fccksetzen",
+  "review_state": "published",
+  "rights": null,
+  "savedDataStorage": {
+    "data": {}
+  },
+  "showAll": true,
+  "showFields": [],
+  "subjects": [],
+  "submitLabel": "Absenden",
+  "submitLabelOverride": null,
+  "thanksEpilogue": null,
+  "thanksPageOverride": null,
+  "thanksPageOverrideAction": "redirect_to",
+  "thanksPrologue": null,
+  "thanksdescription": "Danke f\u00fcr Ihren Beitrag.",
+  "thankstitle": "Vielen Dank",
+  "title": "Ein Formular",
+  "type_title": "EasyForm",
+  "unload_protection": true,
+  "useCancelButton": false,
+  "version": "current",
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2024-03-08T09:19:37+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2024-03-08T09:19:41+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

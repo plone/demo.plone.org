@@ -1,0 +1,40 @@
+{
+  "@id": "/es/demo/q6.jpg",
+  "@type": "Image",
+  "UID": "8b9931d15212461685e4f23483aed815",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2018-08-27T11:23:16+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": null,
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "q6.jpg",
+  "image": {
+    "blob_path": "8b9931d15212461685e4f23483aed815/image/paris.jpg",
+    "content-type": "image/jpeg",
+    "filename": "paris.jpg",
+    "height": 755,
+    "size": 431326,
+    "width": 1664
+  },
+  "is_folderish": false,
+  "language": "es",
+  "layout": "image_view",
+  "lock": {},
+  "modified": "2024-03-08T08:53:34+00:00",
+  "review_state": null,
+  "rights": null,
+  "subjects": [],
+  "title": "Una imagen",
+  "type_title": "Image",
+  "version": "current",
+  "workflow_history": {},
+  "working_copy": null,
+  "working_copy_of": null
+}

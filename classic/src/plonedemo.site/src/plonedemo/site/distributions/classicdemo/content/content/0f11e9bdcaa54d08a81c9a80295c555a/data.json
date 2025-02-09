@@ -1,0 +1,78 @@
+{
+  "@id": "/eu/demo/bilduma-bat",
+  "@type": "Collection",
+  "UID": "0f11e9bdcaa54d08a81c9a80295c555a",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2022-04-02T14:25:37+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customViewFields": [
+    "Title",
+    "Creator",
+    "Type",
+    "ModificationDate"
+  ],
+  "description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+  "effective": "2022-04-02T16:25:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "bilduma-bat",
+  "is_folderish": false,
+  "item_count": 30,
+  "items_total": 4,
+  "language": "eu",
+  "layout": "tabular_view",
+  "limit": 1000,
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2024-03-08T08:53:34+00:00",
+  "query": [
+    {
+      "i": "portal_type",
+      "o": "plone.app.querystring.operation.selection.any",
+      "v": [
+        "News Item",
+        "Document"
+      ]
+    }
+  ],
+  "review_state": "published",
+  "rights": null,
+  "sort_on": "modified",
+  "sort_reversed": true,
+  "subjects": [],
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>\r\n<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Bilduma bat",
+  "type_title": "Collection",
+  "version": "current",
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2022-04-02T14:25:37+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2022-04-02T14:25:40+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

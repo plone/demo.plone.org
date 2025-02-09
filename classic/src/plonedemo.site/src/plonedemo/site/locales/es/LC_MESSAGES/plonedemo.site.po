@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2022-12-13 11:18+0000\n"
+"POT-Creation-Date: 2025-02-09 07:22+0000\n"
 "PO-Revision-Date: 2017-06-21 16:59+0200\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: \n"
@@ -15,6 +15,10 @@ msgstr ""
 "Domain: DOMAIN\n"
 "Language: es\n"
 "X-Generator: Poedit 2.0.6\n"
+
+#: ../configure.zcml:54
+msgid "A Plone 6 Classic Site with demo content"
+msgstr ""
 
 #: ../browser/templates/frontpage_viewlet.pt:35
 msgid "About Plone"
@@ -44,7 +48,7 @@ msgstr "Editor-en-jefe"
 msgid "Forum"
 msgstr ""
 
-#: ../configure.zcml:20
+#: ../configure.zcml:22
 msgid "Installs the plonedemo.site add-on."
 msgstr "Installs the plonedemo.site add-on."
 
@@ -80,25 +84,25 @@ msgstr ""
 msgid "Plone &mdash; The ultimate Open Source Enterprise CMS"
 msgstr "Plone &mdash; El Sistema de Gestión de Contenido de Fuentes Abiertas"
 
-#: ../browser/templates/frontpage_viewlet.pt:26
-msgid "Plone 5.2"
-msgstr ""
-
 #: ../browser/templates/frontpage_viewlet.pt:24
 msgid "Plone 6"
 msgstr ""
 
 #: ../browser/templates/frontpage_viewlet.pt:25
-msgid "Plone 6 Classic UI"
+msgid "Plone 6 Classic UI (this site)"
+msgstr ""
+
+#: ../browser/templates/frontpage_viewlet.pt:26
+msgid "Plone 6 Volto without Add-ons"
+msgstr ""
+
+#: ../configure.zcml:54
+msgid "Plone Classic Demo Site"
 msgstr ""
 
 #: ../browser/templates/versions_viewlet.pt:12
 msgid "Technical Details:"
 msgstr "Detalles técnicos:"
-
-#: ../setuphandlers.py:23
-msgid "The ultimate Open Source Enterprise CMS"
-msgstr "El Sistema de Gestión de Contenido de Fuentes Abiertas"
 
 #: ../browser/templates/frontpage_viewlet.pt:21
 msgid "This is a demo-site where you can test Plone ${plone_version}. The site will be reset every ${reset_hours} hours."
@@ -116,17 +120,13 @@ msgstr "Última vez en la que se restableció este sitio:"
 msgid "Training"
 msgstr ""
 
-#: ../configure.zcml:29
+#: ../configure.zcml:30
 msgid "Uninstalls the plonedemo.site add-on."
 msgstr "<a href=\"https://github.com/collective/demo.plone.de/issues\">submit a issue</a> on github."
 
 #: ../browser/templates/frontpage_viewlet.pt:33
 msgid "Want to know more?"
 msgstr "¿Quieres saber más?"
-
-#: ../setuphandlers.py:22
-msgid "Welcome to Plone"
-msgstr "Bienvenido a Plone"
 
 #. Default: "Create, edit and submit content."
 #: ../browser/overrides/Products.CMFPlone.browser.login.templates.login.pt:42
@@ -146,10 +146,10 @@ msgstr "Crear, modificar y publicar contenido"
 msgid "description_manager"
 msgstr "Gestionar contenido, usuarios, complementos y configuración"
 
-#: ../configure.zcml:20
+#: ../configure.zcml:22
 msgid "plonedemo.site"
 msgstr "plonedemo.site"
 
-#: ../configure.zcml:29
+#: ../configure.zcml:30
 msgid "plonedemo.site - uninstall"
 msgstr "plonedemo.site - uninstall"

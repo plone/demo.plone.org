@@ -1,0 +1,78 @@
+{
+  "@id": "/de/demo/eine-kollektion",
+  "@type": "Collection",
+  "UID": "cd6271401a744e649e99afd5bb786bef",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2022-04-02T14:14:32+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customViewFields": [
+    "Title",
+    "Creator",
+    "Type",
+    "ModificationDate"
+  ],
+  "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.",
+  "effective": "2022-04-02T16:15:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "eine-kollektion",
+  "is_folderish": false,
+  "item_count": 30,
+  "items_total": 4,
+  "language": "de",
+  "layout": "tabular_view",
+  "limit": 1000,
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2025-02-09T07:06:29+00:00",
+  "query": [
+    {
+      "i": "portal_type",
+      "o": "plone.app.querystring.operation.selection.any",
+      "v": [
+        "News Item",
+        "Document"
+      ]
+    }
+  ],
+  "review_state": "published",
+  "rights": null,
+  "sort_on": "modified",
+  "sort_reversed": true,
+  "subjects": [],
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod.</p>\r\n<p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Eine Kollektion",
+  "type_title": "Collection",
+  "version": "current",
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2022-04-02T14:14:32+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2022-04-02T14:15:29+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

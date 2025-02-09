@@ -1,0 +1,64 @@
+{
+  "@id": "/de/frontpage",
+  "@type": "Document",
+  "UID": "4a843a854ce0465299c6acf1ee606462",
+  "allow_discussion": null,
+  "blocks": {},
+  "blocks_layout": {
+    "items": []
+  },
+  "changeNote": "",
+  "contributors": [],
+  "created": "2024-03-08T08:53:34+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "Das ultimative Open Source Enterprise CMS",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "frontpage",
+  "is_folderish": false,
+  "language": "de",
+  "layout": "document_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2025-02-09T07:04:39+00:00",
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "table_of_contents": false,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Bearbeiten Sie diese Seite und testen Sie Plone jetzt!</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Willkommen bei Plone",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2024-03-08T08:53:34+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2024-03-08T08:53:34+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}
