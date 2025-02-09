@@ -86,6 +86,7 @@
     "0d0c0506-f9bb-48d8-af0a-1352d81b45de": {
       "@type": "slate",
       "plaintext": "Find out more about Plone",
+      "styles": {},
       "value": [
         {
           "children": [
@@ -483,7 +484,7 @@
     },
     "9567ae6d-191c-43f1-91cc-4288bbb98f88": {
       "@type": "slate",
-      "plaintext": " Plone 6 (this site)   Plone 6 Classic UI ",
+      "plaintext": " Plone 6 (this site)   Plone 6 Classic UI   Plone 6 Volto without Add-ons ",
       "styles": {},
       "value": [
         {
@@ -523,6 +524,28 @@
                   ],
                   "data": {
                     "url": "https://classic.demo.plone.org/"
+                  },
+                  "type": "link"
+                },
+                {
+                  "text": ""
+                }
+              ],
+              "type": "li"
+            },
+            {
+              "children": [
+                {
+                  "text": ""
+                },
+                {
+                  "children": [
+                    {
+                      "text": "Plone 6 Volto without Add-ons"
+                    }
+                  ],
+                  "data": {
+                    "url": "https://volto.demo.plone.org/"
                   },
                   "type": "link"
                 },
@@ -853,7 +876,6 @@
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "Plone",
   "is_folderish": true,
   "items_total": 5,
@@ -862,12 +884,13 @@
     "locked": false,
     "stealable": true
   },
-  "parent": {},
   "review_state": null,
   "rights": "",
   "subjects": [],
   "table_of_contents": null,
   "title": "Welcome to Plone 6",
   "type_title": "Plone Site",
-  "workflow_history": {}
+  "workflow_history": {},
+  "working_copy": null,
+  "working_copy_of": null
 }

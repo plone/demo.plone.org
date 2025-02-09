@@ -1,3 +1,8 @@
+# 2025-02-09
+
+- Add Links to volto.demo.plone.org. @pbauer
+- Use uv in classic demo @pbauer
+
 # 2025-02-07
 
 - Update to Plone 6.1.0 and Volto 18.8.1 @mauritsvanrees @davisagli
