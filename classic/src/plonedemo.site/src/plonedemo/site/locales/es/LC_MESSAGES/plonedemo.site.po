@@ -93,7 +93,7 @@ msgid "Plone 6 Classic UI (this site)"
 msgstr ""
 
 #: ../browser/templates/frontpage_viewlet.pt:26
-msgid "Plone 6 Volto without Add-ons"
+msgid "Plone 6 Volto without add-ons"
 msgstr ""
 
 #: ../configure.zcml:54

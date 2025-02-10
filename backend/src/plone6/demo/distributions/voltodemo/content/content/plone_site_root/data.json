@@ -484,7 +484,7 @@
     },
     "9567ae6d-191c-43f1-91cc-4288bbb98f88": {
       "@type": "slate",
-      "plaintext": " Plone 6 (this site)   Plone 6 Classic UI   Plone 6 Volto without Add-ons ",
+      "plaintext": " Plone 6 (this site)   Plone 6 Classic UI   Plone 6 Volto without add-ons ",
       "styles": {},
       "value": [
         {
@@ -541,7 +541,7 @@
                 {
                   "children": [
                     {
-                      "text": "Plone 6 Volto without Add-ons"
+                      "text": "Plone 6 Volto without add-ons"
                     }
                   ],
                   "data": {

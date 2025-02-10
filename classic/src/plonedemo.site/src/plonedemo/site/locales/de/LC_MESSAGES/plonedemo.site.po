@@ -91,8 +91,8 @@ msgid "Plone 6 Classic UI (this site)"
 msgstr "Plone 6 Classic UI (diese Seite)"
 
 #: ../browser/templates/frontpage_viewlet.pt:26
-msgid "Plone 6 Volto without Add-ons"
-msgstr "Plone 6 Volto ohne Add-ons"
+msgid "Plone 6 Volto without add-ons"
+msgstr "Plone 6 Volto ohne Erweiterungen"
 
 #: ../configure.zcml:54
 msgid "Plone Classic Demo Site"
