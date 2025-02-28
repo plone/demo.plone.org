@@ -1,3 +1,7 @@
+# 2025-02-28
+
+- Pin `plone.staticresources==2.2.3` @petschki
+  
 # 2025-02-09
 
 - Add Links to volto.demo.plone.org. @pbauer
