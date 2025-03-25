@@ -8,7 +8,7 @@ on:
 env:
   node-version: 22.x
   python: "3.12"
-  plone: "6.1.0"
+  plone: "6.1.1"
 
 jobs:
   config:
