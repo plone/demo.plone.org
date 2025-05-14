@@ -2,6 +2,8 @@
   "@id": "/Plone",
   "@type": "Plone Site",
   "UID": "plone_site_root",
+  "accent_color": null,
+  "accent_foreground_color": null,
   "allow_discussion": null,
   "blocks": {
     "03511c33-6c36-4135-a60a-0be82ccc7e8f": {
@@ -22,7 +24,13 @@
     "0ab1a8f7-2d26-4933-800c-2f10474afe63": {
       "@type": "separator",
       "styles": {
-        "align": "full"
+        "align:noprefix": {
+          "--block-alignment": "var(--align-left)"
+        },
+        "blockWidth:noprefix": {
+          "--block-width": "var(--default-container-width)"
+        },
+        "shortLine": false
       }
     },
     "0c91e9dd-842e-4764-a4f1-8a62c85b731a": {
@@ -303,9 +311,7 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": [
-                "admin"
-              ],
+              "listCreators": ["admin"],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-07T11:30:08+00:00",
@@ -377,9 +383,7 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": [
-                "admin"
-              ],
+              "listCreators": ["admin"],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-08T12:05:46+00:00",
@@ -450,9 +454,7 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": [
-                "admin"
-              ],
+              "listCreators": ["admin"],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-08T12:05:46+00:00",
@@ -469,7 +471,8 @@
           "title": "Volto is the react frontend for Plone 6"
         }
       ],
-      "styles": {}
+      "styles": {},
+      "theme": "default"
     },
     "31561f88-873a-4277-8703-ba1183e58bf1": {
       "@type": "system"
@@ -480,6 +483,11 @@
       "alt": "",
       "image_field": "image",
       "size": "l",
+      "styles": {
+        "blockWidth:noprefix": {
+          "--block-width": "var(--narrow-container-width)"
+        }
+      },
       "url": "resolveuid/a5bf990b119747c4b2855fedc1ea0185"
     },
     "9567ae6d-191c-43f1-91cc-4288bbb98f88": {
@@ -866,17 +874,47 @@
       "31561f88-873a-4277-8703-ba1183e58bf1"
     ]
   },
+  "complementary_logo": null,
   "contributors": [],
-  "creators": [
-    "admin"
-  ],
+  "creators": ["admin"],
   "description": "Site created with a new Plone Distribution",
   "effective": null,
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
+  "facebook_app_id": "",
+  "facebook_username": "",
+  "footer_links": [
+    {
+      "@id": "86233f32-9e92-4ca8-9bc6-eaa4b2e662b4",
+      "href": [
+        {
+          "@id": "/contact-form",
+          "title": "/contact-form"
+        }
+      ],
+      "title": "Contact"
+    },
+    {
+      "@id": "2f8e67ff-7e15-4b20-b32e-e9d24bba3a54",
+      "href": [
+        {
+          "@id": "resolveuid/plone_site_root/sitemap",
+          "title": "/sitemap"
+        }
+      ],
+      "title": "Site Map"
+    }
+  ],
+  "footer_logos": [],
+  "footer_logos_container_width": "default",
+  "footer_logos_size": "s",
+  "has_fat_menu": true,
+  "has_intranet_header": false,
+  "header_actions": [],
   "id": "Plone",
+  "intranet_flag": null,
   "is_folderish": true,
   "items_total": 5,
   "language": "##DEFAULT##",
@@ -884,13 +922,109 @@
     "locked": false,
     "stealable": true
   },
+  "logo": null,
+  "preview_caption_link": null,
+  "primary_foreground_color": null,
   "review_state": null,
   "rights": "",
+  "secondary_color": null,
+  "secondary_foreground_color": null,
+  "share_social_data": true,
+  "social_links": [
+    {
+      "@id": "1ba71dd6-e3ed-4a1a-814d-dc9228bb485a",
+      "href": [
+        {
+          "@id": "https://github.com/plone",
+          "title": "github.com/plone"
+        }
+      ],
+      "id": "github",
+      "title": "GitHub"
+    },
+    {
+      "@id": "6ee6dd94-4f92-4708-86f8-c4f7cccf04c1",
+      "href": [
+        {
+          "@id": "https://plone.org",
+          "title": "plone.org"
+        }
+      ],
+      "id": "website",
+      "title": "plone.org"
+    },
+    {
+      "@id": "f74fe0ab-fb86-47e6-9aca-91016133254f",
+      "href": [
+        {
+          "@id": "https://discord.gg/zFY3EBbjaj",
+          "title": "discord.gg/zFY3EBbjaj"
+        }
+      ],
+      "id": "discord",
+      "title": "Discord"
+    },
+    {
+      "@id": "8d9a57ac-a0d8-41bb-985e-cdab8e5e1741",
+      "href": [
+        {
+          "@id": "https://www.flickr.com/photos/plone-foundation/",
+          "title": "www.flickr.com/photos/plone-foundation/"
+        }
+      ],
+      "id": "flickr",
+      "title": "Flickr"
+    },
+    {
+      "@id": "2a5dcf02-f1d0-4c1f-b865-8ce5f13466cb",
+      "href": [
+        {
+          "@id": "https://plone.social/@plone",
+          "title": "plone.social/@plone"
+        }
+      ],
+      "id": "mastodon",
+      "title": "Mastodon"
+    },
+    {
+      "@id": "2badd75b-b7f0-4f4d-973c-9144086287e3",
+      "href": [
+        {
+          "@id": "https://x.com/plone",
+          "title": "x.com/plone"
+        }
+      ],
+      "id": "x",
+      "title": "X"
+    },
+    {
+      "@id": "fdeaecac-5312-4c56-afcb-350e54da3fa2",
+      "href": [
+        {
+          "@id": "https://www.youtube.com/@plonecms",
+          "title": "www.youtube.com/@plonecms"
+        }
+      ],
+      "id": "youtube",
+      "title": "YouTube"
+    },
+    {
+      "@id": "b7d7da7a-48e9-4851-b9aa-7d84e27970e5",
+      "href": [
+        {
+          "@id": "https://bsky.app/profile/plone.org",
+          "title": "bsky.app/profile/plone.org"
+        }
+      ],
+      "id": "bluesky",
+      "title": "BlueSky"
+    }
+  ],
   "subjects": [],
-  "table_of_contents": null,
   "title": "Welcome to Plone 6",
   "type_title": "Plone Site",
   "workflow_history": {},
   "working_copy": null,
-  "working_copy_of": null
+  "working_copy_of": null,
+  "x_username": "plone"
 }

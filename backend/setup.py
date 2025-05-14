@@ -1,9 +1,8 @@
 """Installer for the plone6.demo package."""
 
 from pathlib import Path
-from setuptools import find_packages
-from setuptools import setup
 
+from setuptools import find_packages, setup
 
 long_description = f"""
 {Path("README.md").read_text()}\n
@@ -56,6 +55,7 @@ setup(
         "plone.restapi",
         "plone.volto",
         "collective.volto.formsupport",
+        "kitconcept.voltolighttheme",
     ],
     extras_require={
         "test": [
