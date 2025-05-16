@@ -56,6 +56,7 @@ setup(
         "plone.restapi",
         "plone.volto",
         "collective.volto.formsupport",
+        "kitconcept.voltolighttheme",
     ],
     extras_require={
         "test": [

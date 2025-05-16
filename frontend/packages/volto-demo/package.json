@@ -35,19 +35,20 @@
     "@kitconcept/volto-introduction-block",
     "@kitconcept/volto-separator-block",
     "@kitconcept/volto-slider-block",
+    "@plonegovbr/volto-social-media",
     "@kitconcept/volto-light-theme"
   ],
   "dependencies": {
-    "@kitconcept/volto-light-theme": "^5.0.1",
-    "@plone/components": "2.0.0-alpha.13",
-    "volto-form-block": "3.8.3"
+    "@kitconcept/volto-light-theme": "6.0.0",
+    "@plone/components": "workspace:*",
+    "volto-form-block": "^3.13.0"
   },
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@plone/scripts": "^3.6.1",
+    "@plone/scripts": "^3.10.1",
     "release-it": "^17.1.1"
   }
 }
