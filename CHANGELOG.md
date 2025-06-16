@@ -1,3 +1,7 @@
+# 2025-06-16
+
+- Bring back the login `portal_action` in main Volto demo site. @sneridagh
+
 # 2025-05-19
 
 - Pin `plone.staticresources==2.2.6` and `plonetheme.barceloneta==3.2.4` @petschki
