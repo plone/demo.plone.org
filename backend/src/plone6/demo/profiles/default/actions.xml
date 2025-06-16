@@ -30,12 +30,6 @@
       <property name="visible">False</property>
     </object>
     <object meta_type="CMF Action"
-            name="login"
-            i18n:domain="plone"
-    >
-      <property name="visible">False</property>
-    </object>
-    <object meta_type="CMF Action"
             name="join"
             i18n:domain="plone"
     >
