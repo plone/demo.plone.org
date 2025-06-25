@@ -55,7 +55,7 @@ setup(
         "plone.api",
         "plone.restapi",
         "plone.volto",
-        "collective.volto.formsupport",
+        "collective.volto.formsupport[honeypot]",
         "kitconcept.voltolighttheme",
     ],
     extras_require={

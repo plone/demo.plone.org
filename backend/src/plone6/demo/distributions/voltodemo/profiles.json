@@ -4,6 +4,7 @@
     "plone.app.caching:default",
     "plonetheme.barceloneta:default",
     "collective.volto.formsupport:default",
+    "collective.honeypot:default",
     "plone.volto:default",
     "plone6.demo:default"
   ]
