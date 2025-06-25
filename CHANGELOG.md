@@ -1,3 +1,7 @@
+# 2025-06-25
+
+- Add collective.honeypot to Volto demo. @davisagli
+
 # 2025-06-16
 
 - Bring back the login `portal_action` in main Volto demo site. @sneridagh
