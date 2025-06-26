@@ -22,7 +22,7 @@ on:
 env:
   node-version: 22.x
   python: "3.12"
-  plone: "6.1.1"
+  plone: "6.1.2"
 
 jobs:
   backend-black:

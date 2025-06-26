@@ -1,3 +1,7 @@
+# 2025-06-26
+
+- Update to Plone 6.1.2 and Volto 18.23.0 @davisagli
+
 # 2025-06-25
 
 - Add collective.honeypot to Volto demo. @davisagli
@@ -35,7 +39,6 @@
 # 2024-09-07
 
 - Update instructions. [ksuess]
-
 
 # 2024-05-17
 
