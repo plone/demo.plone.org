@@ -2,7 +2,7 @@
   "@id": "/images",
   "@type": "Document",
   "UID": "342acac105fe4a43ae0a19d49d752e0b",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "183bf050-57b7-4841-b9c8-f9b5a15fe086": {
       "@type": "listing",
@@ -36,18 +36,18 @@
       "2d181d1f-1fac-420a-b410-4f4d5379f8ea"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2024-03-08T12:05:38+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2024-03-08T15:35:00",
+  "effective": "2024-03-08T15:35:00+00:00",
   "exclude_from_nav": true,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "images",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -56,23 +56,17 @@
     "locked": false,
     "stealable": true
   },
-  "modified": "2024-11-09T08:10:11+00:00",
-  "parent": {
-    "@id": "/",
-    "@type": "Plone Site",
-    "UID": "plone_site_root",
-    "description": "Site created with a new Plone Distribution",
-    "title": "Welcome to Plone 6",
-    "type_title": "Plone Site"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "modified": "2025-06-27T00:14:57+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Images",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

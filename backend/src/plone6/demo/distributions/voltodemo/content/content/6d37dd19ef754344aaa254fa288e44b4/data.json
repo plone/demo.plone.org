@@ -2,7 +2,7 @@
   "@id": "/block/video-block",
   "@type": "Document",
   "UID": "6d37dd19ef754344aaa254fa288e44b4",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "0d092cea-0518-428c-8aaa-c90a7cff183f": {
       "@type": "slate",
@@ -221,18 +221,18 @@
       "49a61581-70ce-4810-84c2-1d91ac421197"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:22+00:00",
   "creators": [
     "admin"
   ],
   "description": "\nThe video block can contain videos from YouTube.",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "video-block",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -242,29 +242,16 @@
     "stealable": true
   },
   "modified": "2023-09-22T15:16:09+00:00",
-  "parent": {
-    "@id": "/block",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
-    "description": "",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Blocks",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Video",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

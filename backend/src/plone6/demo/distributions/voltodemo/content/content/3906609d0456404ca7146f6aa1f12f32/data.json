@@ -2,7 +2,7 @@
   "@id": "/block/toc-block",
   "@type": "Document",
   "UID": "3906609d0456404ca7146f6aa1f12f32",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "09460f92-723d-402d-a0a5-76a15f2678ad": {
       "@type": "slate",
@@ -352,18 +352,18 @@
       "3e036171-0a20-47d0-a06a-a7f493b65186"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:21+00:00",
   "creators": [
     "admin"
   ],
   "description": "The table of contents block automatically generates a table of contents with links to the corresponding positions on the page from the headings used.",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "toc-block",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -372,37 +372,17 @@
     "locked": false,
     "stealable": true
   },
-  "modified": "2024-11-09T08:10:12+00:00",
-  "parent": {
-    "@id": "/block",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
-    "description": "",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Blocks",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": {
-    "blob_path": "3906609d0456404ca7146f6aa1f12f32/preview_image/black-starry-night.jpg",
-    "content-type": "image/jpeg",
-    "filename": "black-starry-night.jpg",
-    "height": 1708,
-    "size": 693013,
-    "width": 2400
-  },
+  "modified": "2025-06-27T00:18:03+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Table of Contents",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

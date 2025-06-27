@@ -2,7 +2,7 @@
   "@id": "/vertical-spacing",
   "@type": "Document",
   "UID": "c40a2be214b645338a7ef2e711e2f5c6",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "981e5308-f092-4bab-96aa-b162be613ebd": {
       "@type": "slate",
@@ -35,18 +35,18 @@
       "981e5308-f092-4bab-96aa-b162be613ebd"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:22+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "vertical-spacing",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -56,22 +56,16 @@
     "stealable": true
   },
   "modified": "2024-11-09T08:10:11+00:00",
-  "parent": {
-    "@id": "/",
-    "@type": "Plone Site",
-    "UID": "plone_site_root",
-    "description": "Site created with a new Plone Distribution",
-    "title": "Welcome to Plone 6",
-    "type_title": "Plone Site"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Vertical Spacing",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

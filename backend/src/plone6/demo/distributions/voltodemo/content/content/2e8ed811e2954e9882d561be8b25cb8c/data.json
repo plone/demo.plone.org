@@ -2,7 +2,7 @@
   "@id": "/content-types/copy_of_page",
   "@type": "Document",
   "UID": "2e8ed811e2954e9882d561be8b25cb8c",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "1923851d-b62e-45b7-8425-aa047aaa6e76": {
       "@type": "slate",
@@ -75,18 +75,18 @@
       "1923851d-b62e-45b7-8425-aa047aaa6e76"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2024-03-07T16:01:59+00:00",
   "creators": [
     "admin"
   ],
   "description": "Cultivar sweet irish and irish flavour cinnamon foam crema percolator caffeine aftertaste mountain.",
-  "effective": "2024-03-07T17:09:00",
+  "effective": "2024-03-07T17:09:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "copy_of_page",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -96,29 +96,16 @@
     "stealable": true
   },
   "modified": "2024-03-08T15:09:03+00:00",
-  "parent": {
-    "@id": "/content-types",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "e8178744e30a418b9a5768997bb29a19",
-    "description": "This section has a sample of content types available in this site.",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Content Types",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Another Page",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

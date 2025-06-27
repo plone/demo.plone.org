@@ -2,7 +2,7 @@
   "@id": "/vertical-spacing/highlight-and-grid",
   "@type": "Document",
   "UID": "d7c7e8ed1ffb4b2fa20525f4f434ba27",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "16e0d40e-9da7-4523-9cb0-43cf2bfc5fc4": {
       "@type": "gridBlock",
@@ -323,18 +323,18 @@
       "4974677f-f93a-41ba-9136-73c7b487754f"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:23+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "highlight-and-grid",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -344,27 +344,16 @@
     "stealable": true
   },
   "modified": "2024-11-09T08:10:12+00:00",
-  "parent": {
-    "@id": "/vertical-spacing",
-    "@type": "Document",
-    "Subject": [],
-    "UID": "c40a2be214b645338a7ef2e711e2f5c6",
-    "description": "",
-    "effective": "2023-07-06T16:35:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Vertical Spacing",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Highlight and Grid",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

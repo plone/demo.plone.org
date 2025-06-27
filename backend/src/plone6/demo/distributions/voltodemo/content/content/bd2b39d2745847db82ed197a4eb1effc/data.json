@@ -2,11 +2,11 @@
   "@id": "/block/teaser-block",
   "@type": "Document",
   "UID": "bd2b39d2745847db82ed197a4eb1effc",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "03fd3352-0845-4c70-9d01-805996bd127b": {
       "@type": "teaser",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
       "head_title": "Head title",
       "href": [
         {
@@ -15,15 +15,17 @@
           "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
           "Title": "Page",
           "getRemoteUrl": null,
-          "hasPreviewImage": true,
+          "hasPreviewImage": null,
           "head_title": null,
-          "image_field": "preview_image",
+          "image_field": "preview_image_link",
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
         "align": "left"
       },
+      "theme": "default",
       "title": "Headline H2"
     },
     "530939e1-8579-4d37-a111-716475c00cac": {
@@ -37,15 +39,17 @@
           "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
           "Title": "Page",
           "getRemoteUrl": null,
-          "hasPreviewImage": true,
+          "hasPreviewImage": null,
           "head_title": null,
-          "image_field": "preview_image",
+          "image_field": "preview_image_link",
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
         "align": "right"
       },
+      "theme": "default",
       "title": "Headline H2"
     },
     "61f0e286-0527-43a7-b8fe-29f1be40a8c3": {
@@ -65,9 +69,11 @@
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
         "align": "center"
       },
+      "theme": "default",
       "title": "Headline H2"
     },
     "620f0540-8c3d-422d-a1c6-47037b5dbfbc": {
@@ -80,16 +86,17 @@
           "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
           "Title": "Page",
           "getRemoteUrl": null,
-          "hasPreviewImage": true,
+          "hasPreviewImage": null,
           "head_title": null,
-          "image_field": "preview_image",
+          "image_field": "preview_image_link",
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
-        "align": "right",
-        "backgroundColor": "grey"
+        "align": "right"
       },
+      "theme": "grey",
       "title": "Headline H2"
     },
     "95648579-7116-401f-a448-e48938c88246": {
@@ -108,10 +115,11 @@
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
-        "align": "center",
-        "backgroundColor": "grey"
+        "align": "center"
       },
+      "theme": "grey",
       "title": "Headline H2"
     },
     "b798dde4-6a5d-4cef-9e25-fd532e1ea9a7": {
@@ -124,16 +132,17 @@
           "Description": "The Page content type can be used to display content on a single page of the website. Pages can be structured using text, images and blocks.",
           "Title": "Page",
           "getRemoteUrl": null,
-          "hasPreviewImage": true,
+          "hasPreviewImage": null,
           "head_title": null,
-          "image_field": "preview_image",
+          "image_field": "preview_image_link",
           "title": "Page"
         }
       ],
+      "overwrite": true,
       "styles": {
-        "align": "left",
-        "backgroundColor": "grey"
+        "align": "left"
       },
+      "theme": "grey",
       "title": "Headline H2"
     },
     "b986b92c-e180-42d3-b755-4728854e5a50": {
@@ -151,18 +160,18 @@
       "620f0540-8c3d-422d-a1c6-47037b5dbfbc"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:20+00:00",
   "creators": [
     "admin"
   ],
   "description": "The teaser block allows you to add an element that teases existing website content with an image, a title and a description.",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "teaser-block",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -171,37 +180,17 @@
     "locked": false,
     "stealable": true
   },
-  "modified": "2024-03-09T09:35:06+00:00",
-  "parent": {
-    "@id": "/block",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
-    "description": "",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Blocks",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": {
-    "blob_path": "bd2b39d2745847db82ed197a4eb1effc/preview_image/black-starry-night.jpg",
-    "content-type": "image/jpeg",
-    "filename": "black-starry-night.jpg",
-    "height": 1708,
-    "size": 693013,
-    "width": 2400
-  },
+  "modified": "2025-06-27T00:20:37+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Teaser",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

@@ -311,7 +311,9 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": ["admin"],
+              "listCreators": [
+                "admin"
+              ],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-07T11:30:08+00:00",
@@ -383,7 +385,9 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": ["admin"],
+              "listCreators": [
+                "admin"
+              ],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-08T12:05:46+00:00",
@@ -454,7 +458,9 @@
               "in_response_to": null,
               "is_folderish": false,
               "last_comment_date": null,
-              "listCreators": ["admin"],
+              "listCreators": [
+                "admin"
+              ],
               "location": null,
               "mime_type": "image/jpeg",
               "modified": "2024-03-08T12:05:46+00:00",
@@ -876,7 +882,9 @@
   },
   "complementary_logo": null,
   "contributors": [],
-  "creators": ["admin"],
+  "creators": [
+    "admin"
+  ],
   "description": "Site created with a new Plone Distribution",
   "effective": null,
   "exclude_from_nav": false,
@@ -885,6 +893,7 @@
   "exportimport.conversation": [],
   "facebook_app_id": "",
   "facebook_username": "",
+  "footer_colophon_text": null,
   "footer_links": [
     {
       "@id": "86233f32-9e92-4ca8-9bc6-eaa4b2e662b4",
