@@ -2,7 +2,7 @@
   "@id": "/block/form",
   "@type": "Document",
   "UID": "13de82575e16493fbc54514e548a9f3c",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "00e8d49b-5b99-4d2f-83b3-7d69bc80b893": {
       "@type": "title"
@@ -77,18 +77,18 @@
       "eb25b89c-d64a-4566-8e6e-71fd0f371964"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2024-03-07T17:47:56+00:00",
   "creators": [
     "admin"
   ],
   "description": "A form block can be used to create forms",
-  "effective": "2024-03-08T12:40:00",
+  "effective": "2024-03-08T12:40:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "form",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -98,29 +98,16 @@
     "stealable": true
   },
   "modified": "2024-03-12T10:18:30+00:00",
-  "parent": {
-    "@id": "/block",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
-    "description": "",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Blocks",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Form",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

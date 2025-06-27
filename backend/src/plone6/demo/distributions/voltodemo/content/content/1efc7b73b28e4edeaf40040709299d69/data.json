@@ -2,7 +2,7 @@
   "@id": "/vertical-spacing/teasers-and-text",
   "@type": "Document",
   "UID": "1efc7b73b28e4edeaf40040709299d69",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "427934d4-5170-40af-b849-44b55c44f697": {
       "@type": "teaser",
@@ -194,18 +194,18 @@
       "b986af79-52ce-4787-a632-d08fc3b8f39f"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:23+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "teasers-and-text",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -215,27 +215,16 @@
     "stealable": true
   },
   "modified": "2024-11-09T08:10:12+00:00",
-  "parent": {
-    "@id": "/vertical-spacing",
-    "@type": "Document",
-    "Subject": [],
-    "UID": "c40a2be214b645338a7ef2e711e2f5c6",
-    "description": "",
-    "effective": "2023-07-06T16:35:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Vertical Spacing",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Teasers and Text",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

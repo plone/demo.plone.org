@@ -2,19 +2,18 @@
   "@id": "/content-types/example-image.jpg",
   "@type": "Image",
   "UID": "6cca02c5580d4f7c865af74835ceab9d",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "contributors": [],
   "created": "2024-03-07T16:06:03+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2024-03-08T12:40:00",
+  "effective": "2024-03-08T12:40:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "example-image.jpg",
   "image": {
     "blob_path": "6cca02c5580d4f7c865af74835ceab9d/image/danielle-barnes-kGNaS3lYCso-unsplash.jpg",
@@ -29,21 +28,6 @@
   "layout": "image_view",
   "lock": {},
   "modified": "2024-11-09T08:10:12+00:00",
-  "parent": {
-    "@id": "/content-types",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "e8178744e30a418b9a5768997bb29a19",
-    "description": "This section has a sample of content types available in this site.",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Content Types",
-    "type_title": "Page"
-  },
   "review_state": null,
   "rights": "",
   "subjects": [],

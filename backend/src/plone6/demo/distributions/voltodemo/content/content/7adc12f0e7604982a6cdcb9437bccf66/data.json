@@ -34,8 +34,7 @@
       "6e6979eb-af21-466f-b2de-3148144ac950"
     ]
   },
-  "changeActor": "admin",
-  "changeNote": null,
+  "changeNote": "",
   "contact_email": "m.mustermann@plone.com",
   "contact_name": "Max Mustermann",
   "contact_phone": "+49 1234 567-890",
@@ -45,82 +44,13 @@
     "admin"
   ],
   "description": "The event content type can be used to display an event on the website.",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "end": "2023-12-31T12:00:00+00:00",
   "event_url": "http://www.musterevents.com",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {
-    "0": {
-      "@id": "/content-types/event",
-      "@type": "Event",
-      "UID": "f56e6c81f05146d0a90a0d2cce13d750",
-      "allow_discussion": false,
-      "attendees": [],
-      "blocks": {},
-      "blocks_layout": {
-        "items": []
-      },
-      "changeNote": "",
-      "contact_email": null,
-      "contact_name": null,
-      "contact_phone": null,
-      "contributors": [],
-      "created": "2024-11-09T08:10:11+00:00",
-      "creators": [
-        "admin"
-      ],
-      "description": "",
-      "effective": null,
-      "end": "2024-11-09T09:00:00+00:00",
-      "event_url": null,
-      "exclude_from_nav": false,
-      "expires": null,
-      "id": "event",
-      "is_folderish": true,
-      "language": "",
-      "layout": "event_view",
-      "location": null,
-      "lock": {
-        "locked": false,
-        "stealable": true
-      },
-      "modified": "2024-11-09T08:10:11+00:00",
-      "open_end": false,
-      "parent": {
-        "@id": "/content-types",
-        "@type": "Document",
-        "Subject": [
-          "main folder"
-        ],
-        "description": "This section has a sample of content types available in this site.",
-        "effective": "2023-09-22T14:09:00+00:00",
-        "image_field": null,
-        "image_scales": {},
-        "review_state": "published",
-        "title": "Content Types",
-        "type_title": "Page"
-      },
-      "preview_caption": null,
-      "preview_image": null,
-      "recurrence": null,
-      "relatedItems": [],
-      "review_state": "published",
-      "rights": "",
-      "start": "2024-11-09T08:00:00+00:00",
-      "subjects": [],
-      "sync_uid": null,
-      "title": "",
-      "type_title": "Event",
-      "version": 0,
-      "versioning_enabled": true,
-      "whole_day": false,
-      "working_copy": null,
-      "working_copy_of": null
-    }
-  },
   "id": "event",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -130,32 +60,10 @@
     "locked": false,
     "stealable": true
   },
-  "modified": "2024-02-14T11:02:26+00:00",
+  "modified": "2025-06-27T00:15:15+00:00",
+  "nav_title": null,
   "open_end": false,
-  "parent": {
-    "@id": "/content-types",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "e8178744e30a418b9a5768997bb29a19",
-    "description": "This section has a sample of content types available in this site.",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Content Types",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": {
-    "blob_path": "7adc12f0e7604982a6cdcb9437bccf66/preview_image/event.svg",
-    "content-type": "image/svg+xml",
-    "filename": "event.svg",
-    "height": 36,
-    "size": 703,
-    "width": 36
-  },
+  "preview_caption_link": null,
   "recurrence": null,
   "review_state": "published",
   "rights": "",

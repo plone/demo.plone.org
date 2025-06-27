@@ -71,8 +71,7 @@
       "1a9dbeac-4f8e-4a75-9859-fd8012bd2c1a"
     ]
   },
-  "changeActor": "admin",
-  "changeNote": null,
+  "changeNote": "",
   "contact_email": null,
   "contact_name": null,
   "contact_phone": null,
@@ -82,82 +81,13 @@
     "admin"
   ],
   "description": "Events can have recurrence :)",
-  "effective": "2024-03-07T17:09:00",
+  "effective": "2024-03-07T17:09:00+00:00",
   "end": "2024-02-29T19:00:00+00:00",
   "event_url": null,
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {
-    "0": {
-      "@id": "/content-types/copy_of_event",
-      "@type": "Event",
-      "UID": "0925a98839a4432b9e4db66bf057669a",
-      "allow_discussion": false,
-      "attendees": [],
-      "blocks": {},
-      "blocks_layout": {
-        "items": []
-      },
-      "changeNote": "",
-      "contact_email": null,
-      "contact_name": null,
-      "contact_phone": null,
-      "contributors": [],
-      "created": "2024-11-09T08:10:11+00:00",
-      "creators": [
-        "admin"
-      ],
-      "description": "",
-      "effective": null,
-      "end": "2024-11-09T09:00:00+00:00",
-      "event_url": null,
-      "exclude_from_nav": false,
-      "expires": null,
-      "id": "copy_of_event",
-      "is_folderish": true,
-      "language": "",
-      "layout": "event_view",
-      "location": null,
-      "lock": {
-        "locked": false,
-        "stealable": true
-      },
-      "modified": "2024-11-09T08:10:11+00:00",
-      "open_end": false,
-      "parent": {
-        "@id": "/content-types",
-        "@type": "Document",
-        "Subject": [
-          "main folder"
-        ],
-        "description": "This section has a sample of content types available in this site.",
-        "effective": "2023-09-22T14:09:00+00:00",
-        "image_field": null,
-        "image_scales": {},
-        "review_state": "published",
-        "title": "Content Types",
-        "type_title": "Page"
-      },
-      "preview_caption": null,
-      "preview_image": null,
-      "recurrence": null,
-      "relatedItems": [],
-      "review_state": "published",
-      "rights": "",
-      "start": "2024-11-09T08:00:00+00:00",
-      "subjects": [],
-      "sync_uid": null,
-      "title": "",
-      "type_title": "Event",
-      "version": 0,
-      "versioning_enabled": true,
-      "whole_day": false,
-      "working_copy": null,
-      "working_copy_of": null
-    }
-  },
   "id": "copy_of_event",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -168,24 +98,9 @@
     "stealable": true
   },
   "modified": "2024-03-08T15:13:36+00:00",
+  "nav_title": null,
   "open_end": false,
-  "parent": {
-    "@id": "/content-types",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "e8178744e30a418b9a5768997bb29a19",
-    "description": "This section has a sample of content types available in this site.",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Content Types",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "preview_caption_link": null,
   "recurrence": "DTSTART:20240228T230000Z\nRRULE:FREQ=MONTHLY;INTERVAL=1;COUNT=12;WKST=MO;BYDAY=-1TH",
   "review_state": "published",
   "rights": "",

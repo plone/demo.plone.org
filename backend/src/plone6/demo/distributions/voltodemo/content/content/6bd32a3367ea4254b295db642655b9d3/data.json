@@ -2,7 +2,7 @@
   "@id": "/block/listing-block",
   "@type": "Document",
   "UID": "6bd32a3367ea4254b295db642655b9d3",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "24280e07-e962-4414-8ee5-cdaf58ca5f35": {
       "@type": "listing",
@@ -23,7 +23,7 @@
           },
           {
             "i": "Subject",
-            "o": "plone.app.querystring.operation.selection.none",
+            "o": "plone.app.querystring.operation.selection.any",
             "v": [
               "main folder"
             ]
@@ -32,9 +32,8 @@
         "sort_on": "getId",
         "sort_order": "ascending"
       },
-      "styles": {
-        "backgroundColor": "transparent"
-      },
+      "styles": {},
+      "theme": "default",
       "variation": "default"
     },
     "2a597dde-dd2b-4c66-816c-09e243a188f5": {
@@ -64,9 +63,8 @@
         "sort_on": "getId",
         "sort_order": "ascending"
       },
-      "styles": {
-        "backgroundColor": "transparent"
-      },
+      "styles": {},
+      "theme": "default",
       "variation": "grid"
     },
     "43068b6d-d8e9-4acc-912b-eabcdc650939": {
@@ -99,9 +97,8 @@
         "sort_on": "getId",
         "sort_order": "ascending"
       },
-      "styles": {
-        "backgroundColor": "grey"
-      },
+      "styles": {},
+      "theme": "grey",
       "variation": "summary"
     },
     "c2eaacd0-4e96-4344-a0ac-26ed644fc503": {
@@ -135,18 +132,18 @@
       "c2eaacd0-4e96-4344-a0ac-26ed644fc503"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:19+00:00",
   "creators": [
     "admin"
   ],
   "description": "The listing block allows the display of various listings of content. Editors can configure a number of criteria for listing content (e.g. all news from 2022 with the keyword 'research').",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "listing-block",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -155,30 +152,17 @@
     "locked": false,
     "stealable": true
   },
-  "modified": "2023-09-22T14:56:41+00:00",
-  "parent": {
-    "@id": "/block",
-    "@type": "Document",
-    "Subject": [
-      "main folder"
-    ],
-    "UID": "425695d2b7cb47e69374d6f211f17e38",
-    "description": "",
-    "effective": "2023-09-22T14:09:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Blocks",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "modified": "2025-06-27T00:21:42+00:00",
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Listing",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

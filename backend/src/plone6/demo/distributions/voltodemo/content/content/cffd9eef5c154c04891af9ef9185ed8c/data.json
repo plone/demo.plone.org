@@ -2,7 +2,7 @@
   "@id": "/vertical-spacing/heading-and-introduction",
   "@type": "Document",
   "UID": "cffd9eef5c154c04891af9ef9185ed8c",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "06a477a3-0d16-4e74-9466-2fd56743e234": {
       "@type": "slate",
@@ -201,18 +201,18 @@
       "aeed53e0-e68f-42cd-9ef5-416829054442"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:23+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "heading-and-introduction",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -222,27 +222,16 @@
     "stealable": true
   },
   "modified": "2023-09-22T14:07:46+00:00",
-  "parent": {
-    "@id": "/vertical-spacing",
-    "@type": "Document",
-    "Subject": [],
-    "UID": "c40a2be214b645338a7ef2e711e2f5c6",
-    "description": "",
-    "effective": "2023-07-06T16:35:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Vertical Spacing",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Heading and Introduction",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {

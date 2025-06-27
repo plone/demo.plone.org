@@ -2,7 +2,7 @@
   "@id": "/vertical-spacing/text",
   "@type": "Document",
   "UID": "7950cae06c994276930f6d13151308c5",
-  "allow_discussion": false,
+  "allow_discussion": null,
   "blocks": {
     "0f997d9d-681c-426f-a372-2bbf8f8d7a73": {
       "@type": "slate",
@@ -112,18 +112,18 @@
       "507601af-b12e-4abf-98b6-756caa18c6df"
     ]
   },
+  "changeNote": "",
   "contributors": [],
   "created": "2023-07-06T21:35:23+00:00",
   "creators": [
     "admin"
   ],
   "description": "",
-  "effective": "2023-07-06T18:35:00",
+  "effective": "2023-07-06T17:35:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
   "exportimport.conversation": [],
-  "exportimport.versions": {},
   "id": "text",
   "is_folderish": true,
   "language": "##DEFAULT##",
@@ -133,27 +133,16 @@
     "stealable": true
   },
   "modified": "2023-09-22T14:07:46+00:00",
-  "parent": {
-    "@id": "/vertical-spacing",
-    "@type": "Document",
-    "Subject": [],
-    "UID": "c40a2be214b645338a7ef2e711e2f5c6",
-    "description": "",
-    "effective": "2023-07-06T16:35:00+00:00",
-    "image_field": null,
-    "image_scales": {},
-    "review_state": "published",
-    "title": "Vertical Spacing",
-    "type_title": "Page"
-  },
-  "preview_caption": null,
-  "preview_image": null,
+  "nav_title": null,
+  "preview_caption_link": null,
   "review_state": "published",
   "rights": "",
   "subjects": [],
+  "table_of_contents": null,
   "title": "Text",
   "type_title": "Page",
   "version": "current",
+  "versioning_enabled": true,
   "workflow_history": {
     "simple_publication_workflow": [
       {
