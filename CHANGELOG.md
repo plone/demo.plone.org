@@ -1,3 +1,8 @@
+# 2025-07-14
+
+- Update to volto-light-theme 7.0.0-alpha.14 to fix login @pbauer
+- Add kitconcept.voltolighttheme == 7.0.0a14 for behaviors @pbauer
+
 # 2025-06-26
 
 - Update to Plone 6.1.2 and Volto 18.23.0 @davisagli
