@@ -1,3 +1,7 @@
+# 2025-07-22
+
+- Pin `plone.staticresources==2.3.1` @petschki
+
 # 2025-07-14
 
 - Update to volto-light-theme 7.0.0-alpha.14 to fix login @pbauer
