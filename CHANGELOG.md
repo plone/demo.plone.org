@@ -1,3 +1,7 @@
+# 2025-09-04
+
+- Pin `plone.staticresources==2.3.2` @petschki
+
 # 2025-07-22
 
 - Pin `plone.staticresources==2.3.1` @petschki
