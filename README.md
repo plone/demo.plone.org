@@ -4,9 +4,11 @@
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![CI for Backend and Frontend](https://github.com/plone/demo.plone.org/actions/workflows/ci.yml/badge.svg)](https://github.com/plone/demo.plone.org/actions/workflows/ci.yml)
 
-This runs the sites https://demo.plone.org and https://classic.demo.plone.org
+This repository builds and deploys the following demo sites.
 
-The Volto demo uses the folders `/backend` and `/frontend`, the ClassicUI demo uses the folder `/classic`
+-   https://demo.plone.org - Plone with Volto frontend. It uses the folders `/backend` and `/frontend`.
+-   https://volto.demo.plone.org - Plone with Volto frontend and Volto Light Theme. It uses the folders `/backend-volto` and `/frontend-volto`.
+-   https://classic.demo.plone.org - Plone with Classic UI frontend. It uses the folder `/classic`.
 
 ## Quick start
 
