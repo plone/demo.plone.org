@@ -6,8 +6,8 @@
 
 This repository builds and deploys the following demo sites.
 
--   https://demo.plone.org - Plone with Volto frontend. It uses the folders `/backend` and `/frontend`.
--   https://volto.demo.plone.org - Plone with Volto frontend and Volto Light Theme. It uses the folders `/backend-volto` and `/frontend-volto`.
+-   https://demo.plone.org - Plone with Volto frontend and Volto Light Theme. It uses the folders `/backend` and `/frontend`.
+-   https://volto.demo.plone.org - Plone with Volto frontend. It uses the folders `/backend-volto` and `/frontend-volto`.
 -   https://classic.demo.plone.org - Plone with Classic UI frontend. It uses the folder `/classic`.
 
 ## Quick start
