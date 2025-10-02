@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG SEED=1000
-ARG PLONE_VERSION=6.1.2
+ARG PLONE_VERSION=6.1.3
 FROM plone/plone-backend:${PLONE_VERSION}
 ENV zope_i18n_compile_mo_files=true
 
