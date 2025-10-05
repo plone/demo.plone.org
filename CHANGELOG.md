@@ -1,3 +1,7 @@
+# 2025-10-05
+
+- Update to Plone 6.1.3, Volto 18.27.3, and Volto Light Theme 7.2.0. @mauritsvanrees @sneridagh @davisagli
+
 # 2025-07-22
 
 - Pin `plone.staticresources==2.3.1` @petschki
