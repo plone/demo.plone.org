@@ -1,0 +1,60 @@
+{
+  "name": "seven-demo-dev",
+  "version": "1.0.0",
+  "description": "A new add-on for Seven",
+  "author": "Plone Community",
+  "homepage": "https://github.com/collective/seven-demo",
+  "license": "MIT",
+  "keywords": [
+    "volto-addon",
+    "volto",
+    "plone",
+    "react"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven dev",
+    "start": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven dev",
+    "start:prod": "pnpm --filter seven start:prod",
+    "build": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven build",
+    "build:deps": "pnpm --filter @plone/registry --filter @plone/components build",
+    "i18n": "pnpm --filter seven-demo i18n && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n",
+    "test": "pnpm --filter seven-demo exec vitest --passWithNoTests",
+    "lint": "REGISTRYCONFIG=$(pwd)/registry.config.ts eslint --max-warnings=0 'packages/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "REGISTRYCONFIG=$(pwd)/registry.config.ts eslint --fix 'packages/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier --check 'packages/**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write 'packages/**/*.{js,jsx,ts,tsx}' ",
+    "stylelint": "stylelint 'packages/**/*.{css,scss,less}' --allow-empty-input",
+    "stylelint:fix": "stylelint 'packages/**/*.{css,scss,less}' --fix --allow-empty-input",
+    "dry-release": "pnpm --filter seven-demo dry-release",
+    "release": "pnpm --filter seven-demo release",
+    "release-major-alpha": "pnpm --filter seven-demo release-major-alpha",
+    "release-alpha": "pnpm --filter seven-demo release-alpha",
+    "storybook": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
+    "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
+  },
+  "dependencies": {
+    "@plone/registry": "workspace:*",
+    "seven": "workspace:*",
+    "seven-demo": "workspace:*"
+  },
+  "devDependencies": {
+    "mrs-developer": "^2.2.0"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "pnpm": {
+    "overrides": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0",
+      "rollup": "^4.40.0"
+    },
+    "onlyBuiltDependencies": [
+      "@swc/core",
+      "@tailwindcss/oxide",
+      "cypress",
+      "esbuild",
+      "lightningcss-cli",
+      "unrs-resolver"
+    ]
+  }
+}
