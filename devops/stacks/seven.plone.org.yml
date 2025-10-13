@@ -1,0 +1,101 @@
+---
+version: '3.8'
+
+services:
+
+  seven:
+    image: ghcr.io/plone/demo-seven:${STACK_PARAM:-latest}
+    environment:
+      PLONE_API_PATH: http://seven-plone-org_backend:8080/Plone
+      PLONE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
+      DEBUG: axios
+    networks:
+      - demo-seven
+      - public
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: start-first
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.svc-demo-seven-frontend.loadbalancer.server.port=3000
+        # Routers
+        ## /
+        - traefik.http.routers.rt-demo-seven-frontend.rule=Host(`seven.plone.org`)
+        - traefik.http.routers.rt-demo-seven-frontend.entrypoints=https
+        - traefik.http.routers.rt-demo-seven-frontend.tls=true
+        - traefik.http.routers.rt-demo-seven-frontend.tls.certresolver=le
+        - traefik.http.routers.rt-demo-seven-frontend.service=svc-demo-seven-frontend
+        - traefik.http.routers.rt-demo-seven-frontend.middlewares=gzip
+        - traefik.http.routers.rt-demo-seven-frontend.priority=100
+
+
+  backend:
+    # we reuse the plain volto backend image for seven.plone.org
+    image: ghcr.io/plone/demo-backend-volto:latest
+    networks:
+      - public
+      - demo-seven
+    deploy:
+      # Just one, as we do not have a shared database
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-seven-backend.loadbalancer.server.port=8080
+        # Middleware
+        - "traefik.http.middlewares.demo-seven-backend-vhm.replacepathregex.regex=^/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.demo-seven-backend-vhm.replacepathregex.replacement=/VirtualHostBase/https/seven.plone.org/Plone/++api++/VirtualHostRoot/$$1"
+        # Router
+        - traefik.http.routers.demo-seven-backend.rule=Host(`seven.plone.org`) && (PathPrefix(`/++api++`))
+        - traefik.http.routers.demo-seven-backend.entrypoints=https
+        - traefik.http.routers.demo-seven-backend.tls=true
+        - traefik.http.routers.demo-seven-backend.service=demo-seven-backend
+        - traefik.http.routers.demo-seven-backend.middlewares=gzip,demo-seven-backend-vhm
+
+  edit:
+    # we reuse the plain volto 18 frontend image for edit
+    image: ghcr.io/plone/demo-frontend-volto:latest
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
+    networks:
+      - public
+      - demo-seven
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-seven-edit.loadbalancer.server.port=3000
+        # Router
+        - traefik.http.routers.demo-seven-edit.rule=Host(`edit-seven.plone.org`)
+        - traefik.http.routers.demo-seven-edit.entrypoints=https
+        - traefik.http.routers.demo-seven-edit.tls=true
+        - traefik.http.routers.demo-seven-edit.tls.certresolver=le
+        - traefik.http.routers.demo-seven-edit.service=demo-seven-edit
+        - traefik.http.routers.demo-seven-edit.middlewares=gzip
+
+
+networks:
+  public:
+    external: true
+    name: public
+
+  demo-seven:
+    internal: true
+    driver: overlay
