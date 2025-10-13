@@ -126,8 +126,7 @@ jobs:
       - config
       - frontend
       - deploy
-    #  - backend
-      steps:
+    steps:
       - name: Write report
         run: |
           echo '# Workflow Report' >> $GITHUB_STEP_SUMMARY
