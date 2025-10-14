@@ -114,8 +114,8 @@ jobs:
           stack_file: devops/stacks/seven.plone.org.yml
           stack_name: seven-plone-org.yml
           stack_param: latest
-          env_file: |
-            DB_PASSWORD="not used"
+          # env_file: |
+          #   DB_PASSWORD="not used"
           deploy_timeout: 480
 
   report:
