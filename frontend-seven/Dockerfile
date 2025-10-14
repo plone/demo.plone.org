@@ -28,9 +28,12 @@ LABEL maintainer="Plone Community <collective@plone.org>" \
 
 COPY --from=builder /app/ /app/
 
-RUN <<EOT
-    set -e
-    corepack enable pnpm
-    corepack use pnpm@10.10.0
-    corepack prepare pnpm@10.10.0 --activate
-EOT
+# RUN <<EOT
+#     set -e
+#     corepack enable pnpm
+#     corepack use pnpm@10.10.0
+#     corepack prepare pnpm@10.10.0 --activate
+# EOT
+
+ENTRYPOINT [ "pnpm" ]
+CMD ["start:prod"]
