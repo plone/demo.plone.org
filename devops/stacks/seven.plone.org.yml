@@ -26,7 +26,7 @@ services:
         - traefik.http.services.svc-demo-seven-frontend.loadbalancer.server.port=3000
         # Routers
         ## /
-        - traefik.http.routers.rt-demo-seven-frontend.rule=Host(`seven.plone.org`)
+        - traefik.http.routers.rt-demo-seven-frontend.rule=Host(`seven.demo.plone.org`)
         - traefik.http.routers.rt-demo-seven-frontend.entrypoints=https
         - traefik.http.routers.rt-demo-seven-frontend.tls=true
         - traefik.http.routers.rt-demo-seven-frontend.tls.certresolver=le
