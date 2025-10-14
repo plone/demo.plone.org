@@ -10,7 +10,7 @@ services:
       PLONE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
       DEBUG: axios
     networks:
-      - demo-seven
+      - demoseven
       - public
     deploy:
       replicas: 1
@@ -40,7 +40,7 @@ services:
     image: ghcr.io/plone/demo-backend-volto:latest
     networks:
       - public
-      - demo-seven
+      - demoseven
     deploy:
       # Just one, as we do not have a shared database
       replicas: 1
@@ -70,7 +70,7 @@ services:
       RAZZLE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
     networks:
       - public
-      - demo-seven
+      - demoseven
     deploy:
       replicas: 1
       placement:
@@ -96,6 +96,6 @@ networks:
     external: true
     name: public
 
-  demo-seven:
+  demoseven:
     internal: true
     driver: overlay

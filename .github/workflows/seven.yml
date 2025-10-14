@@ -112,7 +112,7 @@ jobs:
           remote_user: ${{ vars.DEPLOY_USER }}
           remote_private_key: ${{ secrets.DEPLOY_SSH }}
           stack_file: devops/stacks/seven.plone.org.yml
-          stack_name: seven-plone-org.yml
+          stack_name: seven-plone-org
           stack_param: latest
           # env_file: |
           #   DB_PASSWORD="not used"
