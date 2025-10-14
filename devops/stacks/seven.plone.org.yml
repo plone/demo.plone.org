@@ -4,7 +4,7 @@ version: '3.8'
 services:
 
   seven:
-    image: ghcr.io/plone/demo-seven:${STACK_PARAM:-latest}
+    image: ghcr.io/plone/demo-seven-frontend:${STACK_PARAM:-latest}
     environment:
       PLONE_API_PATH: http://seven-plone-org_backend:8080/Plone
       PLONE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
