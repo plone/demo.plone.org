@@ -83,7 +83,7 @@ services:
         # Service
         - traefik.http.services.demo-seven-edit.loadbalancer.server.port=3000
         # Router
-        - traefik.http.routers.demo-seven-edit.rule=Host(`edit-seven.plone.org`)
+        - traefik.http.routers.demo-seven-edit.rule=Host(`edit-seven.demo.plone.org`)
         - traefik.http.routers.demo-seven-edit.entrypoints=https
         - traefik.http.routers.demo-seven-edit.tls=true
         - traefik.http.routers.demo-seven-edit.tls.certresolver=le
