@@ -1,0 +1,41 @@
+---
+version: "3.8"
+
+services:
+  frontend:
+    image: ghcr.io/plone/demo-next-frontend:${STACK_PARAM:-latest}
+    environment:
+      RAZZLE_INTERNAL_API_PATH: http://demo-plone-org_backend:8080/Plone
+      RAZZLE_SUBPATH_PREFIX: /next
+    networks:
+      - demoplone
+      - public
+    deploy:
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 5s
+        order: start-first
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.svc-demo-next-frontend.loadbalancer.server.port=3000
+        # Routers
+        ## /
+        - traefik.http.routers.rt-demo-next-frontend.rule=Host(`demo.plone.org`) && PathPrefix(`/next`)
+        - traefik.http.routers.rt-demo-next-frontend.entrypoints=https
+        - traefik.http.routers.rt-demo-next-frontend.tls=true
+        - traefik.http.routers.rt-demo-next-frontend.tls.certresolver=le
+        - traefik.http.routers.rt-demo-next-frontend.service=svc-demo-next-frontend
+        - traefik.http.routers.rt-demo-next-frontend.middlewares=gzip
+        - traefik.http.routers.rt-demo-next-frontend.priority=100
+
+networks:
+  public:
+    external: true
+    name: public
+  demoplone:
+    internal: true
+    driver: overlay
