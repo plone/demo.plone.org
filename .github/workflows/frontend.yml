@@ -24,6 +24,9 @@ on:
       build-dir:
         type: string
         default: frontend
+      subpath-prefix:
+        type: string
+        default: ""
 
 defaults:
   run:
@@ -97,7 +100,6 @@ jobs:
       packages: write
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -109,8 +111,7 @@ jobs:
             ${{ inputs.image-name-prefix }}-${{ inputs.image-name-suffix }}
           labels: |
             org.label-schema.docker.cmd=docker run -d -p 8080:8080 ${{ inputs.image-name-prefix }}-${{ inputs.image-name-suffix }}:${{ inputs.base-tag }}
-          flavor:
-            latest=false
+          flavor: latest=false
           tags: |
             type=ref,event=branch
             type=sha
@@ -141,3 +142,4 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
             VOLTO_VERSION=${{ inputs.volto-version }}
+            RAZZLE_SUBPATH_PREFIX=${{ inputs.subpath-prefix }}
