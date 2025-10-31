@@ -39,8 +39,7 @@
     "@kitconcept/volto-light-theme"
   ],
   "dependencies": {
-    "@kitconcept/volto-light-theme": "7.2.0",
-    "@plone/components": "workspace:*",
+    "@kitconcept/volto-light-theme": "7.5.0",
     "volto-form-block": "^3.13.0"
   },
   "peerDependencies": {
