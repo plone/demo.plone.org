@@ -1,3 +1,7 @@
+# 2026-02-09
+
+- Update to Plone 6.1.4, Volto 18.32.1, and Volto Light Theme 7.7.0. @mauritsvanrees @davisagli
+
 # 2025-10-30
 
 - Update frontend Dockerfiles to make sure packages are properly locked. @davisagli
