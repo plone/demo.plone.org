@@ -77,15 +77,15 @@ jobs:
   frontend:
     uses: ./.github/workflows/frontend.yml
     needs:
-        - config
+      - config
     with:
-        base-tag: ${{ needs.config.outputs.BASE_TAG }}
-        image-name-prefix: ${{ needs.config.outputs.IMAGE_NAME_PREFIX }}
-        image-name-suffix: frontend
-        node-version: ${{ needs.config.outputs.NODE_VERSION }}
-        volto-version: ${{ needs.config.outputs.VOLTO_VERSION }}
-        build-dir: frontend-seven/
-        docker-file: Dockerfile
+      base-tag: ${{ needs.config.outputs.BASE_TAG }}
+      image-name-prefix: ${{ needs.config.outputs.IMAGE_NAME_PREFIX }}
+      image-name-suffix: frontend
+      node-version: ${{ needs.config.outputs.NODE_VERSION }}
+      volto-version: ${{ needs.config.outputs.VOLTO_VERSION }}
+      build-dir: frontend-seven/
+      docker-file: Dockerfile
     # if: ${{ needs.config.outputs.frontend == 'true' }}
     permissions:
       contents: read
@@ -102,7 +102,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to cluster
-        uses: kitconcept/docker-stack-deploy@v1.2.0
+        uses: kitconcept/docker-stack-deploy@v1.4.0
         with:
           registry: "ghcr.io"
           username: ${{ github.actor }}
