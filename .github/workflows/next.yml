@@ -86,6 +86,7 @@ jobs:
       volto-version: ${{ needs.config.outputs.VOLTO_VERSION }}
       build-dir: frontend-next/
       docker-file: Dockerfile
+      subpath-prefix: /next
     # if: ${{ needs.config.outputs.frontend == 'true' }}
     permissions:
       contents: read
