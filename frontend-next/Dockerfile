@@ -1,5 +1,6 @@
 # syntax=docker/dockerfile:1
 ARG VOLTO_VERSION=latest
+ARG RAZZLE_SUBPATH_PREFIX
 FROM plone/frontend-builder:${VOLTO_VERSION} AS builder
 
 COPY --chown=node packages/frontend-next /app/packages/frontend-next
@@ -9,6 +10,7 @@ COPY --chown=node mrs.developer.json /app/
 COPY --chown=node pnpm-workspace.yaml /app/
 COPY --chown=node pnpm-lock.yaml /app/pnpm-lock.yaml
 
+ENV RAZZLE_SUBPATH_PREFIX=$RAZZLE_SUBPATH_PREFIX
 RUN --mount=type=cache,id=pnpm,target=/app/.pnpm-store,uid=1000 <<EOT
     set -e
     python3 -c "import json; orig_data = json.load(open('package.json.temp')); orig_deps = orig_data['dependencies']; data = json.load(open('package.json')); data['dependencies'].update(orig_deps); json.dump(data, open('package.json', 'w'), indent=2)"
