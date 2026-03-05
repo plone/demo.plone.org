@@ -1,3 +1,7 @@
+# 2026-03-04
+
+- Add Volto 19 demo on demo.plone.org/next. @davisagli
+
 # 2026-02-09
 
 - Update to Plone 6.1.4, Volto 18.32.1, and Volto Light Theme 7.7.0. @mauritsvanrees @davisagli
