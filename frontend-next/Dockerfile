@@ -1,6 +1,5 @@
 # syntax=docker/dockerfile:1
 ARG VOLTO_VERSION=latest
-ARG RAZZLE_SUBPATH_PREFIX
 FROM plone/frontend-builder:${VOLTO_VERSION} AS builder
 
 COPY --chown=node packages/frontend-next /app/packages/frontend-next
@@ -10,6 +9,7 @@ COPY --chown=node mrs.developer.json /app/
 COPY --chown=node pnpm-workspace.yaml /app/
 COPY --chown=node pnpm-lock.yaml /app/pnpm-lock.yaml
 
+ARG RAZZLE_SUBPATH_PREFIX
 ENV RAZZLE_SUBPATH_PREFIX=$RAZZLE_SUBPATH_PREFIX
 RUN --mount=type=cache,id=pnpm,target=/app/.pnpm-store,uid=1000 <<EOT
     set -e
