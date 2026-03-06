@@ -30,7 +30,6 @@ services:
         - traefik.http.routers.rt-demo-next-frontend.tls.certresolver=le
         - traefik.http.routers.rt-demo-next-frontend.service=svc-demo-next-frontend
         - traefik.http.routers.rt-demo-next-frontend.middlewares=gzip
-        - traefik.http.routers.rt-demo-next-frontend.priority=100
 
   backend:
     image: ghcr.io/plone/demo-next-backend:latest
@@ -53,7 +52,7 @@ services:
         - "traefik.http.middlewares.demo-next-backend-vhm.replacepathregex.regex=^/next/\\+\\+api\\+\\+($$|/.*)"
         - "traefik.http.middlewares.demo-next-backend-vhm.replacepathregex.replacement=/VirtualHostBase/https/demo.plone.org/Plone/++api++/VirtualHostRoot/_vh_next$$1"
         # Router
-        - traefik.http.routers.demo-next-backend.rule=Host(`demo.plone.org`) && (PathPrefix(`/next/++api++`))
+        - traefik.http.routers.demo-next-backend.rule=Host(`demo.plone.org`) && PathPrefix(`/next/++api++`)
         - traefik.http.routers.demo-next-backend.entrypoints=https
         - traefik.http.routers.demo-next-backend.tls=true
         - traefik.http.routers.demo-next-backend.service=demo-next-backend
