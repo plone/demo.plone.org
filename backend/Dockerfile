@@ -14,6 +14,7 @@ COPY . src
 RUN <<EOT
     set -e
     bin/pip install mxdev uv
+    echo '-c https://dist.plone.org/release/${PLONE_VERSION}/constraints.txt\nkitconcept.voltolighttheme == 7.7.0' > src/constraints.txt
     mv src/requirements-docker.txt src/requirements.txt
     sed -i 's/-e .\[test\]/./g' src/mx.ini
     cd /app/src
