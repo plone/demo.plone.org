@@ -19,70 +19,66 @@ on:
         required: true
         type: string
       build-dir:
-        required: true
         type: string
         default: backend
       docker-file:
         type: string
         default: Dockerfile
 
-
 defaults:
   run:
     working-directory: backend
 
 jobs:
-
   lint:
     runs-on: ubuntu-latest
     if: ${{ false }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Checkout
-          uses: actions/checkout@v4
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+          enable-cache: true
 
-        - name: Install the latest version of uv
-          uses: astral-sh/setup-uv@v5
-          with:
-            python-version: ${{ inputs.python-version }}
-            enable-cache: true
+      - name: Check formatting
+        if: ${{ success() || failure() }}
+        id: ruff-format
+        run: uvx ruff@latest format --diff
 
-        - name: Check formatting
-          if: ${{ success() || failure() }}
-          id: ruff-format
-          run: uvx ruff@latest format --diff
+      - name: Check lint
+        if: ${{ success() || failure() }}
+        id: ruff-lint
+        run: uvx ruff@latest check --diff
 
-        - name: Check lint
-          if: ${{ success() || failure() }}
-          id: ruff-lint
-          run: uvx ruff@latest check --diff
+      - name: Check XML / ZCML
+        if: ${{ success() || failure() }}
+        id: zpretty
+        run: uvx zpretty@latest --check src
 
-        - name: Check XML / ZCML
-          if: ${{ success() || failure() }}
-          id: zpretty
-          run: uvx zpretty@latest --check src
+      - name: Check Package Metadata
+        if: ${{ success() || failure() }}
+        id: pyroma
+        run: uvx pyroma@latest -d .
 
-        - name: Check Package Metadata
-          if: ${{ success() || failure() }}
-          id: pyroma
-          run: uvx pyroma@latest -d .
+      - name: Check Python Versions
+        if: ${{ success() || failure() }}
+        id: py-versions
+        run: uvx check-python-versions@latest .
 
-        - name: Check Python Versions
-          if: ${{ success() || failure() }}
-          id: py-versions
-          run: uvx check-python-versions@latest .
-
-        - name: Report
-          if: ${{ success() || failure() }}
-          run: |
-            echo '# Code Analysis' >> $GITHUB_STEP_SUMMARY
-            echo '| Test | Status |' >> $GITHUB_STEP_SUMMARY
-            echo '| --- | --- |' >> $GITHUB_STEP_SUMMARY
-            echo '| Format | ${{ steps.ruff-format.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
-            echo '| Lint | ${{ steps.ruff-lint.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
-            echo '| XML / ZCML | ${{ steps.zpretty.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
-            echo '| Package Metadata | ${{ steps.pyroma.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
-            echo '| Python Versions | ${{ steps.py-versions.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
+      - name: Report
+        if: ${{ success() || failure() }}
+        run: |
+          echo '# Code Analysis' >> $GITHUB_STEP_SUMMARY
+          echo '| Test | Status |' >> $GITHUB_STEP_SUMMARY
+          echo '| --- | --- |' >> $GITHUB_STEP_SUMMARY
+          echo '| Format | ${{ steps.ruff-format.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
+          echo '| Lint | ${{ steps.ruff-lint.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
+          echo '| XML / ZCML | ${{ steps.zpretty.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
+          echo '| Package Metadata | ${{ steps.pyroma.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
+          echo '| Python Versions | ${{ steps.py-versions.conclusion == 'failure' && '❌' || ' ✅' }} |' >> $GITHUB_STEP_SUMMARY
 
   test:
     runs-on: ubuntu-latest
@@ -91,30 +87,29 @@ jobs:
       PYTHON_VERSION: ${{ inputs.python-version }}
       PLONE_VERSION: ${{ inputs.plone-version }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Checkout
-          uses: actions/checkout@v4
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+          enable-cache: false
 
-        - name: Install the latest version of uv
-          uses: astral-sh/setup-uv@v5
-          with:
-            python-version: ${{ inputs.python-version }}
-            enable-cache: false
+      - name: Restore uv cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.UV_CACHE_DIR }}
+          key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
+            uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}
 
-        - name: Restore uv cache
-          uses: actions/cache@v4
-          with:
-            path: ${{ env.UV_CACHE_DIR }}
-            key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
-            restore-keys: |
-              uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
-              uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}
+      - name: Install Plone and package
+        run: make install
 
-        - name: Install Plone and package
-          run: make install
-
-        - name: Run tests
-          run: make test
+      - name: Run tests
+        run: make test
 
   coverage:
     runs-on: ubuntu-latest
@@ -122,34 +117,34 @@ jobs:
     needs:
       - test
     steps:
-        - name: Checkout
-          uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-        - name: Install the latest version of uv
-          uses: astral-sh/setup-uv@v5
-          with:
-            python-version: ${{ inputs.python-version }}
-            enable-cache: false
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+          enable-cache: false
 
-        - name: Restore uv cache
-          uses: actions/cache@v4
-          with:
-            path: /tmp/.uv-cache
-            key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
-            restore-keys: |
-              uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
-              uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}
+      - name: Restore uv cache
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.uv-cache
+          key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}-${{ hashFiles('pyproject.toml') }}
+            uv-${{ runner.os }}-${{ inputs.python-version }}-${{ inputs.plone-version }}
 
-        - name: Install Plone and package
-          run: make install
+      - name: Install Plone and package
+        run: make install
 
-        - name: Run tests
-          run: make test-coverage
+      - name: Run tests
+        run: make test-coverage
 
-        - name: Report Coverage
-          run: |
-            echo "# Coverage Report" >> $GITHUB_STEP_SUMMARY
-            echo "$(uv run coverage report --format markdown)" >> $GITHUB_STEP_SUMMARY
+      - name: Report Coverage
+        run: |
+          echo "# Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "$(uv run coverage report --format markdown)" >> $GITHUB_STEP_SUMMARY
 
   release:
     runs-on: ubuntu-latest
@@ -161,7 +156,6 @@ jobs:
       packages: write
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -173,8 +167,7 @@ jobs:
             ${{ inputs.image-name-prefix }}-${{ inputs.image-name-suffix }}
           labels: |
             org.label-schema.docker.cmd=docker run -d -p 8080:8080 ${{ inputs.image-name-prefix }}-${{ inputs.image-name-suffix }}:${{ inputs.base-tag }}
-          flavor:
-            latest=false
+          flavor: latest=false
           tags: |
             type=ref,event=branch
             type=sha
