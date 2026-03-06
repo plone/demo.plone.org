@@ -36,43 +36,43 @@ jobs:
         id: vars
         run: |
           echo "BASE_TAG=sha-$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-          echo "PLONE_VERSION=$(cat backend/version.txt)" >> $GITHUB_OUTPUT
+          echo "PLONE_VERSION=$(cat frontend-next/version.txt)" >> $GITHUB_OUTPUT
           python3 -c 'import json; data = json.load(open("./frontend-next/mrs.developer.json")); print("VOLTO_VERSION=" + (data["core"].get("tag") or "latest"))' >> $GITHUB_OUTPUT
 
-      # - uses: dorny/paths-filter@v3
-      #   id: filter
-      #   with:
-      #     base: scaffold_update
-      #     filters: |
-      #       backend:
-      #         - 'backend-volto/**'
-      #         - '.github/workflows/backend.yml'
-      #       frontend:
-      #         - 'frontend-next/**'
-      #         - '.github/workflows/frontend.yml'
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          base: scaffold_update
+          filters: |
+            backend:
+              - 'backend/**'
+              - '.github/workflows/backend.yml'
+            frontend:
+              - 'frontend-next/**'
+              - '.github/workflows/frontend.yml'
 
       - name: Test vars
         run: |
           echo 'BASE_TAG=${{ steps.vars.outputs.BASE_TAG }}'
           echo 'PLONE_VERSION=${{ steps.vars.outputs.PLONE_VERSION }}'
           echo 'VOLTO_VERSION=${{ steps.vars.outputs.VOLTO_VERSION }}'
-          # echo 'backend: ${{ steps.filter.outputs.backend }}'
+          echo 'backend: ${{ steps.filter.outputs.backend }}'
           echo 'frontend: ${{ steps.filter.outputs.frontend }}'
 
-  # backend:
-  #   uses: ./.github/workflows/backend.yml
-  #   needs:
-  #       - config
-  #   with:
-  #       base-tag: ${{ needs.config.outputs.BASE_TAG }}
-  #       image-name-prefix: ${{ needs.config.outputs.IMAGE_NAME_PREFIX }}
-  #       image-name-suffix: backend
-  #       python-version: ${{ needs.config.outputs.PYTHON_VERSION }}
-  #       plone-version: ${{ needs.config.outputs.PLONE_VERSION }}
-  #   if: ${{ needs.config.outputs.backend == 'true' }}
-  #   permissions:
-  #     contents: read
-  #     packages: write
+  backend:
+    uses: ./.github/workflows/backend.yml
+    needs:
+      - config
+    with:
+      base-tag: ${{ needs.config.outputs.BASE_TAG }}
+      image-name-prefix: ${{ needs.config.outputs.IMAGE_NAME_PREFIX }}
+      image-name-suffix: backend
+      python-version: ${{ needs.config.outputs.PYTHON_VERSION }}
+      plone-version: ${{ needs.config.outputs.PLONE_VERSION }}
+    if: ${{ needs.config.outputs.backend == 'true' }}
+    permissions:
+      contents: read
+      packages: write
 
   frontend:
     uses: ./.github/workflows/frontend.yml
@@ -87,17 +87,15 @@ jobs:
       build-dir: frontend-next/
       docker-file: Dockerfile
       subpath-prefix: /next
-    # if: ${{ needs.config.outputs.frontend == 'true' }}
+    if: ${{ needs.config.outputs.frontend == 'true' }}
     permissions:
       contents: read
       packages: write
 
   deploy:
     runs-on: ubuntu-latest
-    # this is overcomplicated for now, but allows us to re'add a custom backend again later
-    #if: ${{ always() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && !contains(needs.*.result, 'failure') }}
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: [config, frontend]
+    if: ${{ always() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && !contains(needs.*.result, 'failure') }}
+    needs: [config, backend, frontend]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
