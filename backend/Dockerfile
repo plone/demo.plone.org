@@ -2,6 +2,7 @@
 ARG SEED=1000
 ARG PLONE_VERSION=6.1.4
 FROM plone/server-builder:${PLONE_VERSION} AS builder
+ARG PLONE_VERSION
 
 WORKDIR /app
 
@@ -14,7 +15,7 @@ COPY . src
 RUN <<EOT
     set -e
     bin/pip install mxdev uv
-    echo '-c https://dist.plone.org/release/${PLONE_VERSION}/constraints.txt\nkitconcept.voltolighttheme == 7.7.0' > src/constraints.txt
+    echo "-c https://dist.plone.org/release/${PLONE_VERSION}/constraints.txt\nkitconcept.voltolighttheme == 7.7.0" > src/constraints.txt
     mv src/requirements-docker.txt src/requirements.txt
     sed -i 's/-e .\[test\]/./g' src/mx.ini
     cd /app/src
