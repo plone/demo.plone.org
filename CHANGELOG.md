@@ -1,6 +1,6 @@
 # 2026-03-05
 
-- Add a Plone 6.2a1 backend for demo.plone.org/next. @davisagli
+- Add a Plone 6.2.0a1 backend for demo.plone.org/next. @davisagli
 
 # 2026-03-04
 

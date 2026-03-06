@@ -49,6 +49,7 @@ jobs:
               - 'backend/**'
               - '.github/workflows/backend.yml'
               - '.github/workflows/next.yml'
+              - 'frontend-next/version.txt'
             frontend:
               - 'frontend-next/**'
               - '.github/workflows/frontend.yml'
