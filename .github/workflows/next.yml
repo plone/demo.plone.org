@@ -5,7 +5,9 @@ on:
     branches:
       - main
     paths:
+      - "backend/**"
       - "frontend-next/**"
+      - ".github/workflows/backend.yml"
       - ".github/workflows/frontend.yml"
       - ".github/workflows/next.yml"
       - "devops/stacks/demo.plone.org_next.yml"
