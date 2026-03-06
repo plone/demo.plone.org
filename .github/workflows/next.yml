@@ -44,14 +44,15 @@ jobs:
       - uses: dorny/paths-filter@v3
         id: filter
         with:
-          base: main
           filters: |
             backend:
               - 'backend/**'
               - '.github/workflows/backend.yml'
+              - '.github/workflows/next.yml'
             frontend:
               - 'frontend-next/**'
               - '.github/workflows/frontend.yml'
+              - '.github/workflows/next.yml'
 
       - name: Test vars
         run: |
