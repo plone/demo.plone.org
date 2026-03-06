@@ -44,7 +44,7 @@ jobs:
       - uses: dorny/paths-filter@v3
         id: filter
         with:
-          base: scaffold_update
+          base: main
           filters: |
             backend:
               - 'backend/**'
