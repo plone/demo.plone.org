@@ -1,3 +1,7 @@
+# 2026-03-05
+
+- Add a Plone 6.2a1 backend for demo.plone.org/next. @davisagli
+
 # 2026-03-04
 
 - Add Volto 19 demo on demo.plone.org/next. @davisagli

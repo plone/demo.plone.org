@@ -5,10 +5,10 @@ services:
   frontend:
     image: ghcr.io/plone/demo-next-frontend:${STACK_PARAM:-latest}
     environment:
-      RAZZLE_INTERNAL_API_PATH: http://demo-plone-org_backend:8080/Plone
+      RAZZLE_INTERNAL_API_PATH: http://${STACK_NAME}_backend:8080/Plone
       RAZZLE_SUBPATH_PREFIX: /next
     networks:
-      - demoplone
+      - demonext
       - public
     deploy:
       replicas: 1
@@ -32,10 +32,37 @@ services:
         - traefik.http.routers.rt-demo-next-frontend.middlewares=gzip
         - traefik.http.routers.rt-demo-next-frontend.priority=100
 
+  backend:
+    image: ghcr.io/plone/demo-next-backend:latest
+    networks:
+      - public
+      - demonext
+    deploy:
+      # Just one, as we do not have a shared database
+      replicas: 1
+      placement:
+        constraints:
+          - node.labels.type == app
+      labels:
+        - traefik.enable=true
+        - traefik.docker.network=public
+        - traefik.constraint-label=public
+        # Service
+        - traefik.http.services.demo-next-backend.loadbalancer.server.port=8080
+        # Middleware
+        - "traefik.http.middlewares.demo-next-backend-vhm.replacepathregex.regex=^/next/\\+\\+api\\+\\+($$|/.*)"
+        - "traefik.http.middlewares.demo-next-backend-vhm.replacepathregex.replacement=/VirtualHostBase/https/demo.plone.org/Plone/++api++/VirtualHostRoot/_vh_next$$1"
+        # Router
+        - traefik.http.routers.demo-next-backend.rule=Host(`demo.plone.org`) && (PathPrefix(`/next/++api++`))
+        - traefik.http.routers.demo-next-backend.entrypoints=https
+        - traefik.http.routers.demo-next-backend.tls=true
+        - traefik.http.routers.demo-next-backend.service=demo-next-backend
+        - traefik.http.routers.demo-next-backend.middlewares=gzip,demo-next-backend-vhm
+
 networks:
   public:
     external: true
     name: public
-  demoplone:
+  demonext:
     internal: true
     driver: overlay
