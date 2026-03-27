@@ -1,3 +1,7 @@
+# 2026-03-27
+
+- Update demo.plone.org/next to Plone 6.2.0rc1. @mauritsvanrees
+
 # 2026-03-05
 
 - Add a Plone 6.2.0a1 backend for demo.plone.org/next. @davisagli
