@@ -41,7 +41,7 @@
   "devDependencies": {
     "mrs-developer": "^2.2.0"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.20.0",
   "pnpm": {
     "overrides": {
       "react": "^19.0.0",
