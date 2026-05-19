@@ -1,3 +1,7 @@
+# 2026-05-19
+
+- Update demo.plone.org/next to Plone 6.2.0. @mauritsvanrees
+
 # 2026-05-08
 
 - Update demo.plone.org/next to Plone 6.2.0rc2. @mauritsvanrees
