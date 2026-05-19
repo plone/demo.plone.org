@@ -1,3 +1,7 @@
+# 2026-05-19
+
+- Update demo.plone.org/next to Plone 6.2.0, Volto 19.0.0, and Volto Light Theme 8.0.0-alpha.28. @mauritsvanrees, @davisagli
+
 # 2026-05-08
 
 - Update demo.plone.org/next to Plone 6.2.0rc2. @mauritsvanrees
