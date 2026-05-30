@@ -20,13 +20,13 @@ RESET=`tput sgr0`
 YELLOW=`tput setaf 3`
 
 GIT_FOLDER=$(CURRENT_DIR)/.git
-PRE_COMMIT=pipx run --spec 'pre-commit==3.7.1' pre-commit
 
 PLONE_VERSION=6
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
+API_PATH ?= http://127.0.0.1:55001/plone
 
-ADDON_NAME='volto-demo'
+ADDON_NAME='frontend'
 
 .PHONY: help
 help: ## Show this help
@@ -34,10 +34,14 @@ help: ## Show this help
 
 # Dev Helpers
 
+.PHONY: clean
+clean: ## Clean environment
+	@echo "$(RED)==> Cleaning Volto core and node_modules$(RESET)"
+	rm -rf core node_modules
+
 .PHONY: install
 install: ## Installs the add-on in a development environment
 	@echo "$(GREEN)Install$(RESET)"
-	# if [ -d $(GIT_FOLDER) ]; then $(PRE_COMMIT) install; else echo "$(RED) Not installing pre-commit$(RESET)";fi
 	pnpm dlx mrs-developer missdev --no-config --fetch-https
 	pnpm i
 	make build-deps
@@ -91,11 +95,11 @@ release-dry-run: ## Dry-run the release of the add-on on npmjs.org
 test: ## Run unit tests
 	pnpm test
 
-.PHONY: test-ci
+.PHONY: ci-test
 ci-test: ## Run unit tests in CI
 	# Unit Tests need the i18n to be built
-	VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n
-	CI=1 RAZZLE_JEST_CONFIG=$(CURRENT_DIR)/jest-addon.config.js pnpm --filter @plone/volto test -- --passWithNoTests
+	VOLTOCONFIG=$(CURRENT_DIR)/volto.config.js pnpm --filter @plone/volto i18n
+	CI=1 pnpm run test --passWithNoTests
 
 .PHONY: backend-docker-start
 backend-docker-start:	## Starts a Docker-based backend for development
@@ -121,7 +125,7 @@ acceptance-frontend-dev-start: ## Start acceptance frontend in development mode
 
 .PHONY: acceptance-frontend-prod-start
 acceptance-frontend-prod-start: ## Start acceptance frontend in production mode
-	RAZZLE_API_PATH=http://127.0.0.1:55001/plone pnpm build && pnpm start:prod
+	RAZZLE_API_PATH=$(API_PATH) pnpm build && pnpm start:prod
 
 .PHONY: acceptance-backend-start
 acceptance-backend-start: ## Start backend acceptance server
@@ -137,8 +141,4 @@ acceptance-test: ## Start Cypress in interactive mode
 
 .PHONY: ci-acceptance-test
 ci-acceptance-test: ## Run cypress tests in headless mode for CI
-	pnpm --filter @plone/volto exec cypress run --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}'
-
-.PHONY: build-image
-build-image:  ## Build Docker Image
-	@DOCKER_BUILDKIT=1 docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg VOLTO_VERSION=$(VOLTO_VERSION)
+	pnpm --filter @plone/volto exec cypress run --config-file $(CURRENT_DIR)/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}' --env API_PATH="$(API_PATH)"
