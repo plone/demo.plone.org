@@ -1,6 +1,7 @@
 from plone import api
-from zope.annotation.interfaces import IAnnotations
 from plone.exportimport.importers.content import ContentImporter
+from zope.annotation.interfaces import IAnnotations
+
 
 ANNOTATIONS_KEY = "exportimport.annotations"
 

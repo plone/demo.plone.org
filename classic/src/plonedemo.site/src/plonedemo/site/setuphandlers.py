@@ -14,11 +14,13 @@ class HiddenProfiles:
 def pre_install(answers):
     try:
         from collective.tiles.carousel.interfaces import ICollectiveTilesCarouselLayer
+
         request = getRequest()
         alsoProvides(request, ICollectiveTilesCarouselLayer)
     except ImportError:
         pass
     return answers
+
 
 def post_install(distribution, site, answers):
     """Post install script for distribution."""

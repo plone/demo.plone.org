@@ -14,6 +14,7 @@ def global_dict_hook(item, obj, config):
     item = export_annotations(item, obj)
     return item
 
+
 def export_annotations(item, obj):
     results = {}
     annotations = IAnnotations(obj)

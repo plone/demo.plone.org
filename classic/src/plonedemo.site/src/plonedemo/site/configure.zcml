@@ -50,8 +50,8 @@
       description="A Plone 6 Classic Site with demo content"
       directory="distributions/classicdemo"
       headless="False"
-      pre_handler=".setuphandlers.pre_install"
       post_handler=".setuphandlers.post_install"
+      pre_handler=".setuphandlers.pre_install"
       />
 
 </configure>
