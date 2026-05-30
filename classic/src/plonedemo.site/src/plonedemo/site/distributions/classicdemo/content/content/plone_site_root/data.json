@@ -17,6 +17,7 @@
   "is_folderish": true,
   "items_total": 4,
   "language": "##DEFAULT##",
+  "layout": "language-switcher",
   "lock": {
     "locked": false,
     "stealable": true
