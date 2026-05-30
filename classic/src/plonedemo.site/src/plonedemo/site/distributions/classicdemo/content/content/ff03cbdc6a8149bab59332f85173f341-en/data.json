@@ -1,0 +1,40 @@
+{
+  "@id": "/en/assets/penguin1.jpg",
+  "@type": "Image",
+  "UID": "ff03cbdc6a8149bab59332f85173f341-en",
+  "allow_discussion": null,
+  "contributors": [],
+  "created": "2026-05-30T09:50:45+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "penguin1.jpg",
+  "image": {
+    "blob_path": "ff03cbdc6a8149bab59332f85173f341-en/image/penguin1.jpg",
+    "content-type": "image/jpeg",
+    "filename": "penguin1.jpg",
+    "height": 1286,
+    "size": 524642,
+    "width": 1800
+  },
+  "is_folderish": false,
+  "language": null,
+  "layout": "image_view",
+  "lock": {},
+  "modified": "2026-05-30T09:50:45+00:00",
+  "review_state": null,
+  "rights": "",
+  "subjects": [],
+  "title": "penguin1.jpg",
+  "type_title": "Image",
+  "version": "current",
+  "workflow_history": {},
+  "working_copy": null,
+  "working_copy_of": null
+}

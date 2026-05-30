@@ -18,8 +18,11 @@
   "is_folderish": true,
   "language": "de",
   "layout": "folder_listing",
-  "lock": {},
-  "modified": "2025-02-09T07:05:13+00:00",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2026-05-30T10:49:49+00:00",
   "review_state": "published",
   "rights": null,
   "subjects": [],

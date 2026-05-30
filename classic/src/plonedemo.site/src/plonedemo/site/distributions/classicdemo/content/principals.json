@@ -46,6 +46,7 @@
       "groups": [],
       "home_page": "",
       "location": "",
+      "login_name": "editor",
       "password": "{SSHA}Ii6+kMHEgyVBu3VFXxY+lYHB+X3ZnHZXo4Bs",
       "roles": [
         "Contributor",
@@ -64,6 +65,7 @@
       ],
       "home_page": "",
       "location": "",
+      "login_name": "editorinchief",
       "password": "{SSHA}YBMBj1RqHRYAC5keNzFDykDALQj1cPDBjaF2",
       "roles": [
         "Contributor",
@@ -82,6 +84,7 @@
       ],
       "home_page": "",
       "location": "",
+      "login_name": "manager",
       "password": "{SSHA}1rin6pe/0d43orKxk+/kjtYvDYz3ZnAXRs2q",
       "roles": [],
       "username": "manager"

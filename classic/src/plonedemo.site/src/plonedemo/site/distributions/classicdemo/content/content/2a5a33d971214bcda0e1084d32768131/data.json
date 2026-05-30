@@ -1,0 +1,73 @@
+{
+  "@id": "/en/demo/a-folder/important-news-2",
+  "@type": "News Item",
+  "UID": "2a5a33d971214bcda0e1084d32768131",
+  "allow_discussion": null,
+  "changeNote": "",
+  "content": null,
+  "contentLayout": null,
+  "contributors": [],
+  "created": "2026-05-30T09:59:00+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customContentLayout": null,
+  "description": "Cortado est black percolator medium siphon wings instant strong.",
+  "effective": "2026-05-30T09:59:00+00:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "important-news-2",
+  "image": {
+    "blob_path": "2a5a33d971214bcda0e1084d32768131/image/bla\u0308tter_klein.jpg",
+    "content-type": "image/jpeg",
+    "filename": "bla\u0308tter_klein.jpg",
+    "height": 800,
+    "size": 242863,
+    "width": 1280
+  },
+  "image_caption": null,
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "newsitem_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2026-05-30T10:44:16+00:00",
+  "pageSiteLayout": null,
+  "review_state": "published",
+  "rights": null,
+  "sectionSiteLayout": null,
+  "subjects": [],
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Fair saucer grounds black steamed ristretto acerbic spoon variety espresso extraction caffeine organic. Go coffee plunger shot fair skinny viennese shot arabica caffeine and doppio cream. Robusta bar half rich as at skinny panna fair con a. Caffeine origin to crema seasonal flavour con iced qui. Cinnamon id black beans mug plunger shot ut milk gal\u00e3o flavour aged.</p>\r\n<p>Cortado acerbic extra grinder luwak skinny luwak decaffeinated half as decaffeinated americano skinny cortado. Breve chicory iced half so dripper and panna. Aftertaste a aroma luwak skinny milk half qui mocha crema caramelization latte grinder cappuccino. Press caramelization rich dark flavour carajillo and press steamed mocha affogato organic sit french. Extra decaffeinated lungo robusta mazagran cortado carajillo caf\u00e9 macchiato cinnamon caffeine go chicory.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Important News 2",
+  "type_title": "News Item",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2026-05-30T09:59:00+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2026-05-30T09:59:04+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

@@ -8,13 +8,16 @@
     "items": []
   },
   "changeNote": "",
+  "content": null,
+  "contentLayout": null,
   "contributors": [],
   "created": "2018-07-19T16:15:11+00:00",
   "creators": [
     "admin"
   ],
+  "customContentLayout": null,
   "description": "Aenean dictum auctor elit, in volutpat ipsum venenatis at. Quisque lobortis augue et enim venenatis interdum. In egestas, est at condimentum ultrices, tortor enim malesuada nulla; vel sagittis nullam.",
-  "effective": "2018-07-19T18:15:00",
+  "effective": "2018-07-19T18:15:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
@@ -28,8 +31,10 @@
     "stealable": true
   },
   "modified": "2025-02-09T07:06:29+00:00",
+  "pageSiteLayout": null,
   "review_state": "published",
   "rights": null,
+  "sectionSiteLayout": null,
   "subjects": [],
   "table_of_contents": false,
   "text": {

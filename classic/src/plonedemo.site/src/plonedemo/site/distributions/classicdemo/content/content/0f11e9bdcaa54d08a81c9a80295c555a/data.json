@@ -15,7 +15,7 @@
     "ModificationDate"
   ],
   "description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.",
-  "effective": "2022-04-02T16:25:00",
+  "effective": "2022-04-02T16:25:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
@@ -23,7 +23,7 @@
   "id": "bilduma-bat",
   "is_folderish": false,
   "item_count": 30,
-  "items_total": 4,
+  "items_total": 5,
   "language": "eu",
   "layout": "tabular_view",
   "limit": 1000,

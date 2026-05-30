@@ -1,5 +1,69 @@
 [
   {
+    "@id": "http://nohost/Plone/en/mosaic-example",
+    "UID": "349c0cbd0e32463ca6fb4fe411fb0c53",
+    "blocked_status": [
+      {
+        "category": "context",
+        "manager": "plone.leftcolumn",
+        "status": "block"
+      },
+      {
+        "category": "context",
+        "manager": "plone.rightcolumn",
+        "status": "block"
+      }
+    ]
+  },
+  {
+    "@id": "http://nohost/Plone/de/mosaic-example",
+    "UID": "75e62043d43f4ad881e3be8f2f52df88",
+    "blocked_status": [
+      {
+        "category": "context",
+        "manager": "plone.leftcolumn",
+        "status": "block"
+      },
+      {
+        "category": "context",
+        "manager": "plone.rightcolumn",
+        "status": "block"
+      }
+    ]
+  },
+  {
+    "@id": "http://nohost/Plone/es/mosaic-example",
+    "UID": "800f9ef9793f4b1c903503628854c592",
+    "blocked_status": [
+      {
+        "category": "context",
+        "manager": "plone.leftcolumn",
+        "status": "block"
+      },
+      {
+        "category": "context",
+        "manager": "plone.rightcolumn",
+        "status": "block"
+      }
+    ]
+  },
+  {
+    "@id": "http://nohost/Plone/eu/mosaic-example",
+    "UID": "7b9abe6d25924bd1b0483a2ba738b734",
+    "blocked_status": [
+      {
+        "category": "context",
+        "manager": "plone.leftcolumn",
+        "status": "block"
+      },
+      {
+        "category": "context",
+        "manager": "plone.rightcolumn",
+        "status": "block"
+      }
+    ]
+  },
+  {
     "@id": "http://nohost/Plone",
     "UID": "plone_site_root",
     "portlets": {
