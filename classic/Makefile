@@ -19,7 +19,7 @@ YELLOW=`tput setaf 3`
 DISTRIBUTIONS="classicdemo"
 ALLOWED_DISTRIBUTIONS="classicdemo"
 
-PLONE_VERSION=6.1.4
+PLONE_VERSION=6.2.0
 
 BACKEND_FOLDER=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 

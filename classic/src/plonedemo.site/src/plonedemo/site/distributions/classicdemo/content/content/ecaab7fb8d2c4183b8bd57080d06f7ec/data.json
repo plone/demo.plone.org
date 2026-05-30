@@ -4,13 +4,16 @@
   "UID": "ecaab7fb8d2c4183b8bd57080d06f7ec",
   "allow_discussion": null,
   "changeNote": "",
+  "content": null,
+  "contentLayout": null,
   "contributors": [],
   "created": "2018-07-19T16:18:17+00:00",
   "creators": [
     "admin"
   ],
+  "customContentLayout": null,
   "description": "Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.",
-  "effective": "2018-07-19T18:19:00",
+  "effective": "2018-07-19T18:19:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
@@ -33,8 +36,10 @@
     "stealable": true
   },
   "modified": "2025-02-09T07:06:29+00:00",
+  "pageSiteLayout": null,
   "review_state": "published",
   "rights": null,
+  "sectionSiteLayout": null,
   "subjects": [],
   "text": {
     "content-type": "text/html",

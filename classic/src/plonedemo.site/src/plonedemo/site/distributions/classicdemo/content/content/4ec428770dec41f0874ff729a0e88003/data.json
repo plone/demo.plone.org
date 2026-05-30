@@ -8,13 +8,16 @@
     "items": []
   },
   "changeNote": "",
+  "content": null,
+  "contentLayout": null,
   "contributors": [],
   "created": "2018-08-27T11:28:59+00:00",
   "creators": [
     "admin"
   ],
+  "customContentLayout": null,
   "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
-  "effective": "2018-08-27T13:29:00",
+  "effective": "2018-08-27T13:29:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},
@@ -28,8 +31,10 @@
     "stealable": true
   },
   "modified": "2024-03-08T08:53:34+00:00",
+  "pageSiteLayout": null,
   "review_state": "published",
   "rights": null,
+  "sectionSiteLayout": null,
   "subjects": [],
   "table_of_contents": false,
   "text": {

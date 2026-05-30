@@ -22,14 +22,14 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.2",
         "Framework :: Plone :: Distribution",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -46,11 +46,10 @@ setup(
     install_requires=[
         "Plone",
         "setuptools",
-        "plone.restapi",
         "z3c.jbot",
-        "six",
-        "plone.distribution>=1.0.0b4",
         "collective.easyform",
+        "plone.app.mosaic",
+        "collective.tiles.carousel",
     ],
     extras_require={
         "test": [

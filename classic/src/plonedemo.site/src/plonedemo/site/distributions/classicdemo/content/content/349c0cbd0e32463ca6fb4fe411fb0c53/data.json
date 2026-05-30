@@ -1,0 +1,101 @@
+{
+  "@id": "/en/mosaic-example",
+  "@type": "Document",
+  "UID": "349c0cbd0e32463ca6fb4fe411fb0c53",
+  "allow_discussion": null,
+  "blocks": {},
+  "blocks_layout": {
+    "items": []
+  },
+  "changeNote": "",
+  "content": "<!DOCTYPE html>\n<html lang=\"en\" data-layout=\"./@@page-site-layout\">\n<body data-panel=\"content\">\n<div data-tile=\"@@plone.app.standardtiles.existingcontent/917d97c35925453d8a9c537bcf057b98\" data-tiledata='{\"content_uid\": \"55ed05edf2554af2b9953cd25c57abe8\", \"show_title\": true, \"show_description\": true, \"show_text\": true, \"show_image\": true, \"image_scale\": \"preview\", \"show_comments\": false, \"tile_class\": null, \"view_template\": \"default_layout\"}'></div><div data-tile=\"@@plone.app.standardtiles.existingcontent/5db47e8ff8594ac2ab863e87e9b12e67\" data-tiledata='{\"content_uid\": \"2a5a33d971214bcda0e1084d32768131\", \"show_title\": true, \"show_description\": true, \"show_text\": true, \"show_image\": true, \"image_scale\": \"preview\", \"show_comments\": false, \"tile_class\": null, \"view_template\": \"default_layout\"}'></div><div data-tile=\"@@plone.app.standardtiles.existingcontent/e2fab03bc2794567a9425887db014d96\" data-tiledata='{\"content_uid\": \"b455a72b95754f7cacc3e2b140d78d79\", \"show_title\": true, \"show_description\": true, \"show_text\": true, \"show_image\": true, \"image_scale\": \"teaser\", \"show_comments\": false, \"tile_class\": null, \"view_template\": \"default_layout\"}'></div><div data-tile=\"@@plone.app.standardtiles.html/1e109df4-d66b-43b0-9073-fe50a6a01e4b\"><div><h2>Welcome to the world of Plone</h2></div></div><div data-tile=\"@@plone.app.standardtiles.contentlisting/16aec29c1ff54fddb42f811a6e8b3c38\" data-tiledata='{\"title\": \"News of the World\", \"description\": \"\", \"use_context_query\": false, \"query\": [{\"i\": \"portal_type\", \"o\": \"plone.app.querystring.operation.selection.any\", \"v\": [\"EasyForm\", \"Event\", \"News Item\", \"Document\"]}], \"ignore_request_params\": false, \"event_listing\": false, \"sort_on\": \"effective\", \"sort_reversed\": true, \"limit\": 15, \"item_count\": 4, \"tile_class\": null, \"view_template\": \"listing_view\"}'></div><div data-tile=\"@@plone.app.standardtiles.html/56fcc713-24d8-4db9-806b-819bb8e898cb\"></div><div data-tile=\"@@plone.app.standardtiles.html/0aa94afe-c9fc-4f58-8dfb-769fd574ce51\"><div><h1>Kielbasa short buffalo ribs</h1>\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus./ppDonec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p></div></div></body>\n</html>",
+  "contentLayout": null,
+  "contributors": [],
+  "created": "2026-05-30T10:27:36+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customContentLayout": "<!DOCTYPE html><html data-layout=\"./@@page-site-layout\"><body><div data-panel=\"content\" data-max-colums=\"6\"><div class=\"mosaic-grid-row\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-IDublinCore-title-tile\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.field?field=IDublinCore-title\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div><div class=\"mosaic-grid-row\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-IDublinCore-description-tile\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.field?field=IDublinCore-description\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div><div class=\"mosaic-grid-row\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-collective.tiles.carousel-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@collective.tiles.carousel/79045d4322b343b2ab0f93aba13c393f\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div><div class=\"mosaic-grid-row\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.html-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.html/1e109df4-d66b-43b0-9073-fe50a6a01e4b\"></div>\r\n</div>\r\n</div>\r\n<div class=\"movable removable mosaic-tile mosaic-IRichTextBehavior-text-tile\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.field?field=IRichTextBehavior-text\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.contentlisting-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.contentlisting/16aec29c1ff54fddb42f811a6e8b3c38\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div><div class=\"mosaic-grid-row mosaic-grid-row-fluid-background mosaic-grid-row-dark\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.html-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.html/0aa94afe-c9fc-4f58-8dfb-769fd574ce51\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div><div class=\"mosaic-grid-row\">\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.existingcontent-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.existingcontent/917d97c35925453d8a9c537bcf057b98\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.existingcontent-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.existingcontent/5db47e8ff8594ac2ab863e87e9b12e67\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"mosaic-grid-cell col\">\r\n<div class=\"movable removable mosaic-tile mosaic-plone.app.standardtiles.existingcontent-tile copyable\">\r\n<div class=\"mosaic-tile-content\">\r\n<div data-tile=\"./@@plone.app.standardtiles.existingcontent/e2fab03bc2794567a9425887db014d96\"></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div></div></body></html>",
+  "description": "A example with a mosaic layout",
+  "effective": "2026-05-30T10:29:00+00:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.annotations": {
+    "plone.tiles.data.79045d4322b343b2ab0f93aba13c393f": {
+      "carousel_items": [],
+      "carousel_speed": 0,
+      "controls": true,
+      "crop": true,
+      "crossfade": true,
+      "darkvariant": false,
+      "description": "",
+      "image_class": "img-fluid mx-auto d-block w-100",
+      "image_scale": "carousel",
+      "indicators": true,
+      "items_per_slide": 1,
+      "limit": 12,
+      "link_slides": "disabled",
+      "query": [
+        {
+          "i": "portal_type",
+          "o": "plone.app.querystring.operation.selection.any",
+          "v": [
+            "Image"
+          ]
+        }
+      ],
+      "show_description": false,
+      "show_title": false,
+      "slide_template": "slide_view",
+      "sort_on": null,
+      "sort_reversed": false,
+      "title": ""
+    }
+  },
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "mosaic-example",
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "layout_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2026-05-30T12:01:42+00:00",
+  "pageSiteLayout": null,
+  "review_state": "published",
+  "rights": null,
+  "sectionSiteLayout": null,
+  "subjects": [],
+  "table_of_contents": false,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Cow edam everyone edam frais macaroni croque bavarian. Cut triangles mascarpone cottage melted everybody on say emmental out red. Cheesy ricotta on everyone de port biscuits croque cheesecake. Blue caerphilly chalk big mascarpone say cream cheddar jack on bocconcini fondue hard. Danish feet melted blue feet jack ricotta cheddar ricotta.</p>\r\n<p>And frais comes red mozzarella strings danish roquefort everybody red melted everyone lancashire. Emmental loves edam out de manchego salut out s de queso salut wine paneer. Feta jack croque halloumi normandie jack wine croque jack. St monterey salut macaroni paneer halloumi lancashire emmental feta mozzarella smelly cheesy. Salut monterey parmesan babybel halloumi cottage caerphilly fontina everybody.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Mosaic Example",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2026-05-30T10:37:43+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2026-05-30T10:45:12+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

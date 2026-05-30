@@ -5,5 +5,7 @@
     <dependency>profile-plone.app.multilingual:default</dependency>
     <dependency>profile-plone.restapi:blocks</dependency>
     <dependency>profile-collective.easyform:default</dependency>
+    <dependency>profile-plone.app.mosaic:default</dependency>
+    <dependency>profile-collective.tiles.carousel:default</dependency>
   </dependencies>
 </metadata>

@@ -1,6 +1,21 @@
 {
   "__version__": "1.0.0",
   "_blob_files_": [
+    "5d66250e79bb42288359bf647ccaef93-en/image/penguin2.jpg",
+    "5d66250e79bb42288359bf647ccaef93-de/image/penguin2.jpg",
+    "5d66250e79bb42288359bf647ccaef93-es/image/penguin2.jpg",
+    "5d66250e79bb42288359bf647ccaef93-eu/image/penguin2.jpg",
+    "ff03cbdc6a8149bab59332f85173f341-en/image/penguin1.jpg",
+    "ff03cbdc6a8149bab59332f85173f341-de/image/penguin1.jpg",
+    "ff03cbdc6a8149bab59332f85173f341-es/image/penguin1.jpg",
+    "ff03cbdc6a8149bab59332f85173f341-eu/image/penguin1.jpg",
+    "ae4109df354648b39b088e912ac0a315-en/image/penguin4.jpg",
+    "ae4109df354648b39b088e912ac0a315-de/image/penguin4.jpg",
+    "ae4109df354648b39b088e912ac0a315-es/image/penguin4.jpg",
+    "ae4109df354648b39b088e912ac0a315-eu/image/penguin4.jpg",
+    "55ed05edf2554af2b9953cd25c57abe8/image/strand.jpg",
+    "2a5a33d971214bcda0e1084d32768131/image/bla\u0308tter_klein.jpg",
+    "b455a72b95754f7cacc3e2b140d78d79/image/sergio-martinez-rhNJJ4eD2zk-unsplash.jpg",
     "0ec640ff06e4401792c31018655050db/image/paris.jpg",
     "ecaab7fb8d2c4183b8bd57080d06f7ec/image/turner.jpg",
     "b05e1a877d9f497780933c423abf667f/file/penguin.mp4",
@@ -18,6 +33,9 @@
     "plone_site_root/data.json",
     "1f58fedb9e2f49d688e920c912b85013/data.json",
     "1d0d324e341f4cb4859acf541780a4c9/data.json",
+    "ff03cbdc6a8149bab59332f85173f341-de/data.json",
+    "5d66250e79bb42288359bf647ccaef93-de/data.json",
+    "ae4109df354648b39b088e912ac0a315-de/data.json",
     "79f01c49712d47c0977f8c35b949af7a/data.json",
     "97dd7d61838e46eebb5ac7e62239b2af/data.json",
     "78dd69b22bfd4486806c1bb89d2acd06/data.json",
@@ -30,12 +48,19 @@
     "cd6271401a744e649e99afd5bb786bef/data.json",
     "b05e1a877d9f497780933c423abf667f/data.json",
     "4a843a854ce0465299c6acf1ee606462/data.json",
+    "75e62043d43f4ad881e3be8f2f52df88/data.json",
     "0ec57c1f5b104a59b034553ec00908ec/data.json",
     "e082374ad260493a86c2c415569c3ad4/data.json",
+    "ff03cbdc6a8149bab59332f85173f341-en/data.json",
+    "5d66250e79bb42288359bf647ccaef93-en/data.json",
+    "ae4109df354648b39b088e912ac0a315-en/data.json",
     "9afb95a79cfa4c0684715027244e61e0/data.json",
     "bfdc104dadc844cdb4a9412165dad82e/data.json",
     "a07f9e78ee864e689d72fde066adbac3/data.json",
     "cdeb51770c5a4525abaa0493bb5780bb/data.json",
+    "2a5a33d971214bcda0e1084d32768131/data.json",
+    "55ed05edf2554af2b9953cd25c57abe8/data.json",
+    "b455a72b95754f7cacc3e2b140d78d79/data.json",
     "998eb483577d4680973a69780841e8e1/data.json",
     "2ce50f00faf74ffb8e3db907e02f83fc/data.json",
     "4423a1b21c06425886e315c4d0e3a676/data.json",
@@ -44,6 +69,7 @@
     "d5a10ad499c34d699049d8027c25e4ca/data.json",
     "ec74047c5f0e47af804f410e8df38b4f/data.json",
     "e40c713df9f1414b8c7fc0e190006a51/data.json",
+    "349c0cbd0e32463ca6fb4fe411fb0c53/data.json",
     "d066fc6505ca4ace9df8402aa8cad8df/data.json",
     "353551eee36e491e89bc097f17f05e59/data.json",
     "971633f15d6f47fa8b2f06a5668a1df8/data.json",
@@ -57,7 +83,11 @@
     "1be0093b8c624ade89eba7329f8d6947/data.json",
     "13f909b522a94443823e187ea9ebab0b/data.json",
     "fc2b43f7bbe04bec886ecd8dd287ca5e/data.json",
+    "800f9ef9793f4b1c903503628854c592/data.json",
     "3f22e55c6c1c4fb385c9fb82ac8a44e8/data.json",
+    "ff03cbdc6a8149bab59332f85173f341-es/data.json",
+    "5d66250e79bb42288359bf647ccaef93-es/data.json",
+    "ae4109df354648b39b088e912ac0a315-es/data.json",
     "1300ff76fc49485f99d40949ade199a5/data.json",
     "85fbc18f5dba40d5bf456cd935fcfcfa/data.json",
     "9336d0516e3f400b94c68d9f26e901a6/data.json",
@@ -71,7 +101,11 @@
     "197d80f18c104e388deee717d782d6ce/data.json",
     "f552f34782cb49f69c9df6d3bfc53332/data.json",
     "ef5e5df2eeb440c7bd750f224757b58f/data.json",
-    "c223e1d3484a4304baff3ece7fbcc926/data.json"
+    "c223e1d3484a4304baff3ece7fbcc926/data.json",
+    "ff03cbdc6a8149bab59332f85173f341-eu/data.json",
+    "5d66250e79bb42288359bf647ccaef93-eu/data.json",
+    "ae4109df354648b39b088e912ac0a315-eu/data.json",
+    "7b9abe6d25924bd1b0483a2ba738b734/data.json"
   ],
   "default_page": {
     "0ec57c1f5b104a59b034553ec00908ec": {
@@ -104,20 +138,30 @@
     "1be0093b8c624ade89eba7329f8d6947": {},
     "1d0d324e341f4cb4859acf541780a4c9": {},
     "1f58fedb9e2f49d688e920c912b85013": {},
+    "2a5a33d971214bcda0e1084d32768131": {},
     "2c56691daadb47d893afbfd73d828923": {},
     "2ce50f00faf74ffb8e3db907e02f83fc": {},
+    "349c0cbd0e32463ca6fb4fe411fb0c53": {},
     "353551eee36e491e89bc097f17f05e59": {},
     "3f22e55c6c1c4fb385c9fb82ac8a44e8": {},
     "4423a1b21c06425886e315c4d0e3a676": {},
     "4a843a854ce0465299c6acf1ee606462": {},
     "4ec428770dec41f0874ff729a0e88003": {},
+    "55ed05edf2554af2b9953cd25c57abe8": {},
     "593cf5489fce493a95b59bb4f3ef9ee1": {},
     "5c380e40de1f424b92e9a220467f078c": {},
+    "5d66250e79bb42288359bf647ccaef93-de": {},
+    "5d66250e79bb42288359bf647ccaef93-en": {},
+    "5d66250e79bb42288359bf647ccaef93-es": {},
+    "5d66250e79bb42288359bf647ccaef93-eu": {},
     "73e80bd9adb14cd399cbd5266b0deea6": {},
+    "75e62043d43f4ad881e3be8f2f52df88": {},
     "76f47b0fbb6d49dd921cd0c6a4015fff": {},
     "78dd69b22bfd4486806c1bb89d2acd06": {},
     "79f01c49712d47c0977f8c35b949af7a": {},
+    "7b9abe6d25924bd1b0483a2ba738b734": {},
     "7fe145a7f1e64f908af37370f4435f85": {},
+    "800f9ef9793f4b1c903503628854c592": {},
     "85fbc18f5dba40d5bf456cd935fcfcfa": {},
     "8b9931d15212461685e4f23483aed815": {},
     "9336d0516e3f400b94c68d9f26e901a6": {},
@@ -127,8 +171,13 @@
     "9afb95a79cfa4c0684715027244e61e0": {},
     "a07f9e78ee864e689d72fde066adbac3": {},
     "aa6c61a2c130419ea55d57d2d4383dc8": {},
+    "ae4109df354648b39b088e912ac0a315-de": {},
+    "ae4109df354648b39b088e912ac0a315-en": {},
+    "ae4109df354648b39b088e912ac0a315-es": {},
+    "ae4109df354648b39b088e912ac0a315-eu": {},
     "ae9d4c02a78b487fb74be8fde688e773": {},
     "b05e1a877d9f497780933c423abf667f": {},
+    "b455a72b95754f7cacc3e2b140d78d79": {},
     "bd5ff3d542bc42f79d2eab0b99c1ec9d": {},
     "bfdc104dadc844cdb4a9412165dad82e": {},
     "c223e1d3484a4304baff3ece7fbcc926": {},
@@ -148,6 +197,10 @@
     "fb46a1a5e28248c9befe9b5a696d52b4": {},
     "fb91bddde7eb46efbed20e9c10fb4929": {},
     "fc2b43f7bbe04bec886ecd8dd287ca5e": {},
+    "ff03cbdc6a8149bab59332f85173f341-de": {},
+    "ff03cbdc6a8149bab59332f85173f341-en": {},
+    "ff03cbdc6a8149bab59332f85173f341-es": {},
+    "ff03cbdc6a8149bab59332f85173f341-eu": {},
     "plone_site_root": {
       "Add portal member": {
         "acquire": false,
@@ -171,6 +224,31 @@
           "Site Administrator",
           "Reviewer",
           "Owner"
+        ]
+      },
+      "Plone: Customize Content Layouts": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor"
+        ]
+      },
+      "Plone: Manage Content Layouts": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Plone: Manage Site Layouts": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor"
         ]
       },
       "Reply to item": {
@@ -301,6 +379,13 @@
         ]
       }
     },
+    "2a5a33d971214bcda0e1084d32768131": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "2c56691daadb47d893afbfd73d828923": {
       "local_roles": {
         "admin": [
@@ -309,6 +394,13 @@
       }
     },
     "2ce50f00faf74ffb8e3db907e02f83fc": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "349c0cbd0e32463ca6fb4fe411fb0c53": {
       "local_roles": {
         "admin": [
           "Owner"
@@ -350,6 +442,13 @@
         ]
       }
     },
+    "55ed05edf2554af2b9953cd25c57abe8": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "593cf5489fce493a95b59bb4f3ef9ee1": {
       "local_roles": {
         "admin": [
@@ -364,7 +463,42 @@
         ]
       }
     },
+    "5d66250e79bb42288359bf647ccaef93-de": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "5d66250e79bb42288359bf647ccaef93-en": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "5d66250e79bb42288359bf647ccaef93-es": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "5d66250e79bb42288359bf647ccaef93-eu": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "73e80bd9adb14cd399cbd5266b0deea6": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "75e62043d43f4ad881e3be8f2f52df88": {
       "local_roles": {
         "admin": [
           "Owner"
@@ -392,7 +526,21 @@
         ]
       }
     },
+    "7b9abe6d25924bd1b0483a2ba738b734": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "7fe145a7f1e64f908af37370f4435f85": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "800f9ef9793f4b1c903503628854c592": {
       "local_roles": {
         "admin": [
           "Owner"
@@ -462,6 +610,34 @@
         ]
       }
     },
+    "ae4109df354648b39b088e912ac0a315-de": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ae4109df354648b39b088e912ac0a315-en": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ae4109df354648b39b088e912ac0a315-es": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ae4109df354648b39b088e912ac0a315-eu": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "ae9d4c02a78b487fb74be8fde688e773": {
       "local_roles": {
         "admin": [
@@ -470,6 +646,13 @@
       }
     },
     "b05e1a877d9f497780933c423abf667f": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "b455a72b95754f7cacc3e2b140d78d79": {
       "local_roles": {
         "admin": [
           "Owner"
@@ -609,6 +792,34 @@
         ]
       }
     },
+    "ff03cbdc6a8149bab59332f85173f341-de": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ff03cbdc6a8149bab59332f85173f341-en": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ff03cbdc6a8149bab59332f85173f341-es": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "ff03cbdc6a8149bab59332f85173f341-eu": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
     "plone_site_root": {
       "local_roles": {
         "admin": [
@@ -630,20 +841,30 @@
     "1be0093b8c624ade89eba7329f8d6947": 2,
     "1d0d324e341f4cb4859acf541780a4c9": 0,
     "1f58fedb9e2f49d688e920c912b85013": 42,
+    "2a5a33d971214bcda0e1084d32768131": 2,
     "2c56691daadb47d893afbfd73d828923": 1,
     "2ce50f00faf74ffb8e3db907e02f83fc": 4,
+    "349c0cbd0e32463ca6fb4fe411fb0c53": 3,
     "353551eee36e491e89bc097f17f05e59": 2,
     "3f22e55c6c1c4fb385c9fb82ac8a44e8": 0,
     "4423a1b21c06425886e315c4d0e3a676": 2,
     "4a843a854ce0465299c6acf1ee606462": 1,
     "4ec428770dec41f0874ff729a0e88003": 0,
+    "55ed05edf2554af2b9953cd25c57abe8": 1,
     "593cf5489fce493a95b59bb4f3ef9ee1": 0,
     "5c380e40de1f424b92e9a220467f078c": 0,
+    "5d66250e79bb42288359bf647ccaef93-de": 1,
+    "5d66250e79bb42288359bf647ccaef93-en": 1,
+    "5d66250e79bb42288359bf647ccaef93-es": 1,
+    "5d66250e79bb42288359bf647ccaef93-eu": 1,
     "73e80bd9adb14cd399cbd5266b0deea6": 8,
+    "75e62043d43f4ad881e3be8f2f52df88": 3,
     "76f47b0fbb6d49dd921cd0c6a4015fff": 8,
     "78dd69b22bfd4486806c1bb89d2acd06": 3,
     "79f01c49712d47c0977f8c35b949af7a": 2,
+    "7b9abe6d25924bd1b0483a2ba738b734": 3,
     "7fe145a7f1e64f908af37370f4435f85": 0,
+    "800f9ef9793f4b1c903503628854c592": 3,
     "85fbc18f5dba40d5bf456cd935fcfcfa": 2,
     "8b9931d15212461685e4f23483aed815": 4,
     "9336d0516e3f400b94c68d9f26e901a6": 2,
@@ -653,8 +874,13 @@
     "9afb95a79cfa4c0684715027244e61e0": 2,
     "a07f9e78ee864e689d72fde066adbac3": 3,
     "aa6c61a2c130419ea55d57d2d4383dc8": 8,
+    "ae4109df354648b39b088e912ac0a315-de": 2,
+    "ae4109df354648b39b088e912ac0a315-en": 2,
+    "ae4109df354648b39b088e912ac0a315-es": 2,
+    "ae4109df354648b39b088e912ac0a315-eu": 2,
     "ae9d4c02a78b487fb74be8fde688e773": 5,
     "b05e1a877d9f497780933c423abf667f": 6,
+    "b455a72b95754f7cacc3e2b140d78d79": 3,
     "bd5ff3d542bc42f79d2eab0b99c1ec9d": 3,
     "bfdc104dadc844cdb4a9412165dad82e": 7,
     "c223e1d3484a4304baff3ece7fbcc926": 0,
@@ -673,7 +899,11 @@
     "f71e1ae3257d4ef2b296507f4874b069": 3,
     "fb46a1a5e28248c9befe9b5a696d52b4": 1,
     "fb91bddde7eb46efbed20e9c10fb4929": 0,
-    "fc2b43f7bbe04bec886ecd8dd287ca5e": 1
+    "fc2b43f7bbe04bec886ecd8dd287ca5e": 1,
+    "ff03cbdc6a8149bab59332f85173f341-de": 0,
+    "ff03cbdc6a8149bab59332f85173f341-en": 0,
+    "ff03cbdc6a8149bab59332f85173f341-es": 0,
+    "ff03cbdc6a8149bab59332f85173f341-eu": 0
   },
   "relations": []
 }

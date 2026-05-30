@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plonedemo.site"
+    >
+
+  <adapter
+      factory=".importer.CustomContentImporter"
+      provides="plone.exportimport.interfaces.INamedImporter"
+      for="plone.base.interfaces.siteroot.IPloneSiteRoot"
+      name="plone.importer.content"
+      />
+
+  <adapter
+      factory=".exporter.CustomContentExporter"
+      provides="plone.exportimport.interfaces.INamedExporter"
+      for="plone.base.interfaces.siteroot.IPloneSiteRoot"
+      name="plone.exporter.content"
+      />
+
+</configure>

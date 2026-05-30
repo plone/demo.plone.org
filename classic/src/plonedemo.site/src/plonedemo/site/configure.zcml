@@ -51,6 +51,7 @@
       directory="distributions/classicdemo"
       headless="False"
       post_handler=".setuphandlers.post_install"
+      pre_handler=".setuphandlers.pre_install"
       />
 
 </configure>

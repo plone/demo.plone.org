@@ -27,13 +27,19 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "addons": [],
-  "dependencies": {},
+  "dependencies": {
+        "@plone/components": "workspace:*"
+  },
   "peerDependencies": {
+    "@plone/registry": "workspace:*",
+    "@plone/types": "workspace:*",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@plone/scripts": "^3.6.1",
-    "release-it": "^17.1.1"
+    "@plone/scripts": "workspace:*",
+    "@testing-library/react": "^16.2.0",
+    "release-it": "^17.1.1",
+    "vitest": "^3.1.2"
   }
 }

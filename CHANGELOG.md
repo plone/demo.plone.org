@@ -1,3 +1,8 @@
+# 2026-05-30
+
+- Update other demos to Plone 6.2 and Volto 19. @pbauer
+- Add a mosaic page to the classic demo. @pbauer
+
 # 2026-05-19
 
 - Update demo.plone.org/next to Plone 6.2.0, Volto 19.0.0, and Volto Light Theme 8.0.0-alpha.28. @mauritsvanrees, @davisagli

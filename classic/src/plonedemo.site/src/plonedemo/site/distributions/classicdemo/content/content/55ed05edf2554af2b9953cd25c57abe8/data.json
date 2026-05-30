@@ -1,0 +1,73 @@
+{
+  "@id": "/en/demo/a-folder/news-item-1",
+  "@type": "News Item",
+  "UID": "55ed05edf2554af2b9953cd25c57abe8",
+  "allow_discussion": null,
+  "changeNote": "",
+  "content": null,
+  "contentLayout": null,
+  "contributors": [],
+  "created": "2026-05-30T09:58:19+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customContentLayout": null,
+  "description": "Slices fontina cheddar pepper frais salut mozzarella squirty dolcelatte paneer chalk.",
+  "effective": "2026-05-30T09:58:23+00:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "news-item-1",
+  "image": {
+    "blob_path": "55ed05edf2554af2b9953cd25c57abe8/image/strand.jpg",
+    "content-type": "image/jpeg",
+    "filename": "strand.jpg",
+    "height": 533,
+    "size": 282000,
+    "width": 800
+  },
+  "image_caption": null,
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "newsitem_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2026-05-30T09:58:23+00:00",
+  "pageSiteLayout": null,
+  "review_state": "published",
+  "rights": null,
+  "sectionSiteLayout": null,
+  "subjects": [],
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Bergkase bavarian jack lancashire salut melted stinking cheddar fromage cheddar lancashire pepper. Cream smelly airedale boursin st pecorino squirty say on. Loves mascarpone lancashire big brie stinking smelly feta leicester swiss say. Bocconcini jarlsberg monterey and salut triangles emmental feet salut normandie toast feta wine blue. Out and taleggio bocconcini bavarian toast triangles caerphilly leicester cream halloumi boursin fontina s frais.</p>\r\n<p>Triangles feet everybody fontina chalk cauliflower stinking and grin swiss smelly melted monterey brie. Cauliflower bishop cheeseburger out biscuits triangles loves lancashire halloumi cottage camembert say goat salut the. Agur cauliflower salut happy bergkase grin mascarpone pepper st moved castello cream the moved leicester. Fromage de everyone brie monsieur bavarian leicester boursin happy queso de halloumi leicester and airedale. Taleggio de cheesecake bergkase swiss cow dolcelatte caerphilly.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "News Item 1",
+  "type_title": "News Item",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2026-05-30T09:58:19+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2026-05-30T09:58:23+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

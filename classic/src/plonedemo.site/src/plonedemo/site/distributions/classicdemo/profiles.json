@@ -5,6 +5,8 @@
     "plonetheme.barceloneta:default",
     "plone.app.multilingual:default",
     "collective.easyform:default",
+    "plone.app.mosaic:default",
+    "collective.tiles.carousel:default",
     "plonedemo.site:default"
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "@id": "/en/demo/a-folder/news-item-3",
+  "@type": "News Item",
+  "UID": "b455a72b95754f7cacc3e2b140d78d79",
+  "allow_discussion": null,
+  "changeNote": "",
+  "content": null,
+  "contentLayout": null,
+  "contributors": [],
+  "created": "2026-05-30T09:59:24+00:00",
+  "creators": [
+    "admin"
+  ],
+  "customContentLayout": null,
+  "description": "Hamburger prosciutto tip ribeye chicken tri tenderloin beef leberkas kielbasa belly ribeye andouille.",
+  "effective": "2026-05-30T09:59:00+00:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "news-item-3",
+  "image": {
+    "blob_path": "b455a72b95754f7cacc3e2b140d78d79/image/sergio-martinez-rhNJJ4eD2zk-unsplash.jpg",
+    "content-type": "image/jpeg",
+    "filename": "sergio-martinez-rhNJJ4eD2zk-unsplash.jpg",
+    "height": 3456,
+    "size": 2231807,
+    "width": 5184
+  },
+  "image_caption": null,
+  "is_folderish": false,
+  "language": "##DEFAULT##",
+  "layout": "newsitem_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2026-05-30T10:00:13+00:00",
+  "pageSiteLayout": null,
+  "review_state": "published",
+  "rights": null,
+  "sectionSiteLayout": null,
+  "subjects": [],
+  "text": {
+    "content-type": "text/html",
+    "data": "<p>Cow andouille cow buffalo jowl drumstick chicken turducken chop ham. Alcatra boudin salami shankle bacon alcatra buffalo tongue jerky cow shankle. Tri bacon tenderloin venison boudin salami t turducken strip. Picanha sausage loin chop t chicken pancetta prosciutto jowl swine tail boudin burgdoggen hock. Kevin frankfurter pig sirloin ribs turducken steak belly ball doner picanha kielbasa rump.</p>\r\n<p>Tri mignon steak shoulder jowl landjaeger chop frankfurter alcatra brisket. Hock ribeye shankle flank hock doner brisket ball. Flank pork loin drumstick hamburger bresaola ball chicken bacon tri chicken kevin tip venison. Porchetta pork spare burgdoggen ham hamburger tail shoulder turkey chicken tail landjaeger. Ham sirloin belly chicken porchetta rump pastrami meatball round fatback jowl meatloaf steak chicken boudin.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "News Item 3",
+  "type_title": "News Item",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2026-05-30T09:59:24+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2026-05-30T09:59:47+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

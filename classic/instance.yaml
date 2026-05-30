@@ -3,5 +3,6 @@ default_context:
     initial_user_password: 'admin'
 
     zcml_package_includes: 'plonedemo.site'
+    zcml_package_overrides: 'plonedemo.site'
 
     db_storage: direct

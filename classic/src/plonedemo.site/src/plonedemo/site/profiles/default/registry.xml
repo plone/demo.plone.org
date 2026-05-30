@@ -63,4 +63,10 @@
     <value key="last_compilation" />
   </records>
 
+  <record name="plone.allowed_sizes">
+    <value purge="False">
+      <element>carousel 1600:350</element>
+    </value>
+  </record>
+
 </registry>

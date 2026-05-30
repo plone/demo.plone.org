@@ -14,7 +14,7 @@
   ],
   "default_fieldset_label": null,
   "description": "",
-  "effective": "2024-03-08T12:34:00",
+  "effective": "2024-03-08T12:34:00+00:00",
   "exclude_from_nav": false,
   "expires": null,
   "exportimport.constrains": {},

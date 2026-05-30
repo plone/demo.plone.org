@@ -8,11 +8,14 @@
     "items": []
   },
   "changeNote": "",
+  "content": null,
+  "contentLayout": null,
   "contributors": [],
   "created": "2024-03-08T08:53:34+00:00",
   "creators": [
     "admin"
   ],
+  "customContentLayout": null,
   "description": "Das ultimative Open Source Enterprise CMS",
   "effective": null,
   "exclude_from_nav": false,
@@ -28,8 +31,10 @@
     "stealable": true
   },
   "modified": "2025-02-09T07:04:39+00:00",
+  "pageSiteLayout": null,
   "review_state": "published",
   "rights": null,
+  "sectionSiteLayout": null,
   "subjects": [],
   "table_of_contents": false,
   "text": {
