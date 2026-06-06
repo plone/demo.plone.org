@@ -1,9 +1,9 @@
 {
-  "name": "seven-demo-dev",
+  "name": "aurora-demo-dev",
   "version": "1.0.0",
-  "description": "A new add-on for Seven",
+  "description": "A new add-on for Plone Aurora",
   "author": "Plone Community",
-  "homepage": "https://github.com/collective/seven-demo",
+  "homepage": "https://github.com/plone/demo.plone.org",
   "license": "MIT",
   "keywords": [
     "volto-addon",
@@ -13,30 +13,30 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven dev",
-    "start": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven dev",
-    "start:prod": "pnpm --filter seven start:prod",
-    "build": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter seven build",
+    "dev": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter @plone/aurora dev",
+    "start": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter @plone/aurora dev",
+    "start:prod": "pnpm --filter @plone/aurora start:prod",
+    "build": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter @plone/aurora build",
     "build:deps": "pnpm --filter @plone/registry --filter @plone/components build",
-    "i18n": "pnpm --filter seven-demo i18n && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n",
-    "test": "pnpm --filter seven-demo exec vitest --passWithNoTests",
+    "i18n": "pnpm --filter plone-aurora-demo i18n && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n",
+    "test": "pnpm --filter plone-aurora-demo exec vitest --passWithNoTests",
     "lint": "REGISTRYCONFIG=$(pwd)/registry.config.ts eslint --max-warnings=0 'packages/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "REGISTRYCONFIG=$(pwd)/registry.config.ts eslint --fix 'packages/**/*.{js,jsx,ts,tsx}'",
     "prettier": "prettier --check 'packages/**/*.{js,jsx,ts,tsx}'",
     "prettier:fix": "prettier --write 'packages/**/*.{js,jsx,ts,tsx}' ",
     "stylelint": "stylelint 'packages/**/*.{css,scss,less}' --allow-empty-input",
     "stylelint:fix": "stylelint 'packages/**/*.{css,scss,less}' --fix --allow-empty-input",
-    "dry-release": "pnpm --filter seven-demo dry-release",
-    "release": "pnpm --filter seven-demo release",
-    "release-major-alpha": "pnpm --filter seven-demo release-major-alpha",
-    "release-alpha": "pnpm --filter seven-demo release-alpha",
+    "dry-release": "pnpm --filter plone-aurora-demo dry-release",
+    "release": "pnpm --filter plone-aurora-demo release",
+    "release-major-alpha": "pnpm --filter plone-aurora-demo release-major-alpha",
+    "release-alpha": "pnpm --filter plone-aurora-demo release-alpha",
     "storybook": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
     "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
   "dependencies": {
     "@plone/registry": "workspace:*",
-    "seven": "workspace:*",
-    "seven-demo": "workspace:*"
+    "@plone/aurora": "workspace:*",
+    "plone-aurora-demo": "workspace:*"
   },
   "devDependencies": {
     "mrs-developer": "^2.2.0"

@@ -5,14 +5,14 @@ on:
     branches:
       - main
     paths:
-      - "frontend-seven/**"
+      - "frontend-aurora/**"
       - ".github/workflows/frontend.yml"
       - ".github/workflows/seven.yml"
       - "devops/stacks/seven.plone.org.yml"
   workflow_dispatch:
 
 env:
-  IMAGE_NAME_PREFIX: ghcr.io/plone/demo-seven
+  IMAGE_NAME_PREFIX: ghcr.io/plone/demo-aurora
   NODE_VERSION: "24.x"
   PYTHON_VERSION: "3.12"
 
@@ -48,7 +48,7 @@ jobs:
       #         - 'backend-volto/**'
       #         - '.github/workflows/backend.yml'
       #       frontend:
-      #         - 'frontend-seven/**'
+      #         - 'frontend-aurora/**'
       #         - '.github/workflows/frontend.yml'
 
       - name: Test vars
@@ -84,7 +84,7 @@ jobs:
       image-name-suffix: frontend
       node-version: ${{ needs.config.outputs.NODE_VERSION }}
       volto-version: ${{ needs.config.outputs.VOLTO_VERSION }}
-      build-dir: frontend-seven/
+      build-dir: frontend-aurora/
       docker-file: Dockerfile
     # if: ${{ needs.config.outputs.frontend == 'true' }}
     permissions:

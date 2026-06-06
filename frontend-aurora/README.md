@@ -1,11 +1,11 @@
-# Seven demo site (seven-demo)
+# Plone Aurora demo site (plone-aurora-demo)
 
-A new add-on for Seven
+A new add-on for Plone Aurora, demonstrating how to create a Volto add-on and integrate it into the demo.plone.org site.
 
-[![npm](https://img.shields.io/npm/v/seven-demo)](https://www.npmjs.com/package/seven-demo)
-[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/seven-demo/)
-[![Code analysis checks](https://github.com/collective/seven-demo/actions/workflows/code.yml/badge.svg)](https://github.com/collective/seven-demo/actions/workflows/code.yml)
-[![Unit tests](https://github.com/collective/seven-demo/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/seven-demo/actions/workflows/unit.yml)
+[![npm](https://img.shields.io/npm/v/plone-aurora-demo)](https://www.npmjs.com/package/plone-aurora-demo)
+[![](https://img.shields.io/badge/-Storybook-ff4785?logo=Storybook&logoColor=white&style=flat-square)](https://collective.github.io/plone-aurora-demo/)
+[![Code analysis checks](https://github.com/collective/plone-aurora-demo/actions/workflows/code.yml/badge.svg)](https://github.com/collective/plone-aurora-demo/actions/workflows/code.yml)
+[![Unit tests](https://github.com/collective/plone-aurora-demo/actions/workflows/unit.yml/badge.svg)](https://github.com/collective/plone-aurora-demo/actions/workflows/unit.yml)
 
 ## Features
 
@@ -22,19 +22,19 @@ Create a new Volto project (you can skip this step if you already have one):
 
 ```
 npm install -g yo @plone/generator-volto
-yo @plone/volto my-volto-project --addon seven-demo
+yo @plone/volto my-volto-project --addon plone-aurora-demo
 cd my-volto-project
 ```
 
-Add `seven-demo` to your package.json:
+Add `plone-aurora-demo` to your package.json:
 
 ```JSON
 "addons": [
-    "seven-demo"
+    "plone-aurora-demo"
 ],
 
 "dependencies": {
-    "seven-demo": "*"
+    "plone-aurora-demo": "*"
 }
 ```
 
@@ -52,24 +52,24 @@ yarn start
 
 ### Volto 18 and later
 
-Add `seven-demo` to your `package.json`:
+Add `plone-aurora-demo` to your `package.json`:
 
 ```json
 "dependencies": {
-    "seven-demo": "*"
+    "plone-aurora-demo": "*"
 }
 ```
 
-Add `seven-demo` to your `volto.config.js`:
+Add `plone-aurora-demo` to your `volto.config.js`:
 
 ```javascript
-const addons = ['seven-demo'];
+const addons = ['plone-aurora-demo'];
 ```
 
 If this package provides a Volto theme, and you want to activate it, then add the following to your `volto.config.js`:
 
 ```javascript
-const theme = 'seven-demo';
+const theme = 'plone-aurora-demo';
 ```
 
 ## Test installation

@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  NODE_VERSION: 22.x
-  ADDON_NAME: seven-demo
+  NODE_VERSION: 24.x
+  ADDON_NAME: plone-aurora-demo
 
 jobs:
   build:
