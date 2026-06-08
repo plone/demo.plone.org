@@ -1,7 +1,7 @@
 {
-  "name": "seven-demo",
+  "name": "plone-aurora-demo",
   "version": "1.0.0",
-  "description": "A new add-on for Seven",
+  "description": "A new add-on for Aurora",
   "main": "index.ts",
   "license": "MIT",
   "keywords": [
