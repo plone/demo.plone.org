@@ -4,7 +4,7 @@ version: '3.8'
 services:
 
   seven:
-    image: ghcr.io/plone/demo-seven-frontend:${STACK_PARAM:-latest}
+    image: ghcr.io/plone/demo-aurora-frontend:${STACK_PARAM:-latest}
     environment:
       PLONE_API_PATH: http://seven-plone-org_backend:8080/Plone
       PLONE_INTERNAL_API_PATH: http://seven-plone-org_backend:8080/Plone
@@ -23,17 +23,27 @@ services:
         - traefik.docker.network=public
         - traefik.constraint-label=public
         # Service
-        - traefik.http.services.svc-demo-seven-frontend.loadbalancer.server.port=3000
+        - traefik.http.services.svc-demo-aurora-frontend.loadbalancer.server.port=3000
         # Routers
         ## /
-        - traefik.http.routers.rt-demo-seven-frontend.rule=Host(`seven.demo.plone.org`)
-        - traefik.http.routers.rt-demo-seven-frontend.entrypoints=https
-        - traefik.http.routers.rt-demo-seven-frontend.tls=true
-        - traefik.http.routers.rt-demo-seven-frontend.tls.certresolver=le
-        - traefik.http.routers.rt-demo-seven-frontend.service=svc-demo-seven-frontend
-        - traefik.http.routers.rt-demo-seven-frontend.middlewares=gzip
-        - traefik.http.routers.rt-demo-seven-frontend.priority=100
+        - traefik.http.routers.rt-demo-aurora-frontend.rule=Host(`aurora.demo.plone.org`)
+        - traefik.http.routers.rt-demo-aurora-frontend.entrypoints=https
+        - traefik.http.routers.rt-demo-aurora-frontend.tls=true
+        - traefik.http.routers.rt-demo-aurora-frontend.tls.certresolver=le
+        - traefik.http.routers.rt-demo-aurora-frontend.service=svc-demo-aurora-frontend
+        - traefik.http.routers.rt-demo-aurora-frontend.middlewares=gzip
+        - traefik.http.routers.rt-demo-aurora-frontend.priority=100
 
+        ## Redirect from seven.demo.plone.org to aurora.demo.plone.org
+        - "traefik.http.middlewares.mw-redirect-seven-to-aurora.redirectregex.regex=^https://seven.demo.plone.org(.*)"
+        - "traefik.http.middlewares.mw-redirect-seven-to-aurora.redirectregex.replacement=https://aurora.demo.plone.org$$1"
+        - "traefik.http.middlewares.mw-redirect-seven-to-aurora.redirectregex.permanent=true"
+        - traefik.http.routers.rt-frontend-seven.rule=Host(`seven.demo.plone.org`)
+        - traefik.http.routers.rt-frontend-seven.entrypoints=https
+        - traefik.http.routers.rt-frontend-seven.tls=true
+        - traefik.http.routers.rt-frontend-seven.tls.certresolver=le
+        - traefik.http.routers.rt-frontend-seven.middlewares=mw-redirect-seven-to-aurora
+        - traefik.http.routers.rt-frontend-seven.priority=1
 
   backend:
     # we reuse the plain volto backend image for seven.plone.org
