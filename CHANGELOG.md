@@ -1,6 +1,7 @@
-# Unreleased
+# 2026-07-05
 
 - Update to Plone 6.2.1.  @mauritsvanrees
+- Update Volto to 19.3.0 and Volto Light Theme to 8.0.0-alpha.31. @ericof
 
 # 2026-05-30
 

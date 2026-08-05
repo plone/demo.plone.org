@@ -511,9 +511,6 @@ importers:
       jwt-decode:
         specifier: 2.2.0
         version: 2.2.0
-      linkify-it:
-        specifier: 3.0.2
-        version: 3.0.2
       locale:
         specifier: 0.1.0
         version: 0.1.0
@@ -601,9 +598,6 @@ importers:
       react-intl-redux:
         specifier: 2.3.0
         version: 2.3.0(@babel/runtime@7.29.7)(prop-types@15.7.2)(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react@18.2.0)
-      react-medium-image-zoom:
-        specifier: 3.0.15
-        version: 3.0.15(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-popper:
         specifier: ^2.3.0
         version: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1368,20 +1362,20 @@ importers:
         specifier: ^3.0.0-alpha.1
         version: 3.0.0-alpha.1(classnames@2.5.1)(embla-carousel@8.5.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-dsgvo-banner':
-        specifier: ^3.0.1
-        version: 3.0.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^4.0.0-alpha.2
+        version: 4.0.0-alpha.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-heading-block':
         specifier: ^2.5.0
         version: 2.5.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-highlight-block':
-        specifier: ^4.5.1
-        version: 4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^5.0.0-alpha.2
+        version: 5.0.0-alpha.2(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-introduction-block':
         specifier: ^1.4.1
         version: 1.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-light-theme':
-        specifier: 8.0.0-alpha.28
-        version: 8.0.0-alpha.28(classnames@2.5.1)(embla-carousel@8.5.2)(lodash@4.18.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.29))(@types/react@18.3.29)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)
+        specifier: 8.0.0-alpha.31
+        version: 8.0.0-alpha.31(classnames@2.5.1)(embla-carousel@8.5.2)(lodash@4.18.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.29))(@types/react@18.3.29)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)
       '@kitconcept/volto-logos-block':
         specifier: ^4.0.0-alpha.1
         version: 4.0.0-alpha.1(classnames@2.5.1)(embla-carousel@8.5.2)(lodash@4.18.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.29))(@types/react@18.3.29)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)
@@ -2447,11 +2441,6 @@ packages:
   '@discoveryjs/json-ext@0.5.7':
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
-
-  '@dnd-kit/accessibility@3.1.0':
-    resolution: {integrity: sha512-ea7IkhKvlJUv9iSHJOnxinBcoOI3ppGnnL+VDJ75O45Nss6HtZd8IdN8touXPDtASfeI2T2LImb8VOZcL47wjQ==}
-    peerDependencies:
-      react: '>=16.8.0'
 
   '@dnd-kit/accessibility@3.1.1':
     resolution: {integrity: sha512-2P+YgaXF+gRsIihwwY1gCsQSYnu9Zyj2py8kY5fFvUM1qm2WA2u639R6YNVfU4GWr+ZM5mqEsfHZZLoRONbemw==}
@@ -3628,8 +3617,8 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0
 
-  '@kitconcept/volto-dsgvo-banner@3.0.1':
-    resolution: {integrity: sha512-h2kV5sQUwc/h/wo1/y25cI8SoTnshq4kiegOkqEgCj48FQKINkStozAmG8R+WzrGCoh6irwqHKYWwJ8IB1mOhA==}
+  '@kitconcept/volto-dsgvo-banner@4.0.0-alpha.2':
+    resolution: {integrity: sha512-mtjpNjLHqGSZLcrMDixKeFTK8do4sHjtFujs6mxSkeHljMg3nkQ0ODPrjl3WkP7TnPlTJo5T2tARVRja69JWig==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
@@ -3640,11 +3629,13 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0
 
-  '@kitconcept/volto-highlight-block@4.5.1':
-    resolution: {integrity: sha512-xDVGdUTFyCuR7uHb9/eyZ94NbreHABU8zwsZapiGuquKQDP61rEkCcNdU66O0fw7dpj5x1r9YeXoVFWmfX0UaA==}
+  '@kitconcept/volto-highlight-block@5.0.0-alpha.2':
+    resolution: {integrity: sha512-IJoSyQ7UF4YrnxIHSye0FtGtQ1oxCOPOJUD2aTLnoQ2uHKLkCs9TiOhUurmc03HsyRWCTTBG7oCMAjetRg8OHw==}
     peerDependencies:
+      classnames: 2.5.1
       react: ^18.2.0
       react-dom: ^18.2.0
+      react-intl: ^3.12.1
 
   '@kitconcept/volto-introduction-block@1.4.1':
     resolution: {integrity: sha512-wybUNSNfdVufKkd883sSOXQnDu5SxoDFzIyf7yHRipoUwRyOyynAjLZ1v4Ci1+eaW9o2XZU9wuIFp91dIdDmqg==}
@@ -3663,8 +3654,8 @@ packages:
       react-redux: ^8.1.2
       react-router-dom: ^5.2.0
 
-  '@kitconcept/volto-light-theme@8.0.0-alpha.28':
-    resolution: {integrity: sha512-uyzmxW/IvTazohrIsM6+XaLanO7nHigct1gcKmhUdlkOgP/Zmx0OqzXHTX9dNMJTsRoyf0oP2kIICYtDsl6xDQ==}
+  '@kitconcept/volto-light-theme@8.0.0-alpha.31':
+    resolution: {integrity: sha512-m2QZ2yS9MYEQ9g4CX6i4dIoNgpXw5aRtQeKZCoo5C4scodlBjHzeA5f1w43CxIzDgb19DLpL5gcwf7TCo7CZ3A==}
     peerDependencies:
       classnames: ^2.5.1
       lodash: 4.17.21
@@ -4054,6 +4045,15 @@ packages:
 
   '@plone/components@4.1.0':
     resolution: {integrity: sha512-RtnDLA16Kv38slukHyNP3F/RX9aFKlJ+27x87xY0+jUXw6ElZD/IqM/DdgG6fWkdjrqc5ZJVeJvm/cIRr3SwDQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+
+  '@plone/components@4.2.1':
+    resolution: {integrity: sha512-AtV1khC1geGZEhIilP0Rmd0UoaAWHKZtVUQjY/b8QtRF5c6boxlpYfP9Jn6IFO2lFVvjgePVFspXv+HYc2a/4g==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -9679,9 +9679,6 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  linkify-it@3.0.2:
-    resolution: {integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==}
-
   listr2@9.0.5:
     resolution: {integrity: sha512-ME4Fb83LgEgwNw96RKNvKV4VTLuXfoKudAmm2lP8Kk87KaMK0/Xrx/aAkMWmT8mDb+3MlFDspfbCs7adjRxA2g==}
     engines: {node: '>=20.0.0'}
@@ -11241,13 +11238,6 @@ packages:
   react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
 
-  react-medium-image-zoom@3.0.15:
-    resolution: {integrity: sha512-OJc6XXmSFr0ApniFdCL1TliP6BG9eQabkcahWA9CbHha3y2IJXo1aAsQs7Irc2Wcek/N9QCeAY4wTitoMg5iLg==}
-    peerDependencies:
-      prop-types: ^15.5.8
-      react: ^16.0.0
-      react-dom: ^16.0.0
-
   react-moment-proptypes@1.8.1:
     resolution: {integrity: sha512-Er940DxWoObfIqPrZNfwXKugjxMIuk1LAuEzn23gytzV6hKS/sw108wibi9QubfMN4h+nrlje8eUCSbQRJo2fQ==}
     peerDependencies:
@@ -12729,9 +12719,6 @@ packages:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
-
-  uc.micro@1.0.6:
-    resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
 
   ufo@1.6.4:
     resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
@@ -14744,11 +14731,6 @@ snapshots:
 
   '@discoveryjs/json-ext@0.5.7': {}
 
-  '@dnd-kit/accessibility@3.1.0(react@18.2.0)':
-    dependencies:
-      react: 18.2.0
-      tslib: 2.8.0
-
   '@dnd-kit/accessibility@3.1.1(react@18.2.0)':
     dependencies:
       react: 18.2.0
@@ -14756,11 +14738,11 @@ snapshots:
 
   '@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@dnd-kit/accessibility': 3.1.0(react@18.2.0)
+      '@dnd-kit/accessibility': 3.1.1(react@18.2.0)
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   '@dnd-kit/core@6.3.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -14789,7 +14771,7 @@ snapshots:
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       react: 18.2.0
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   '@dnd-kit/utilities@3.2.2(react@18.2.0)':
     dependencies:
@@ -15226,7 +15208,7 @@ snapshots:
   '@formatjs/icu-skeleton-parser@1.8.5':
     dependencies:
       '@formatjs/ecma402-abstract': 2.2.1
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   '@formatjs/intl-displaynames@1.2.10':
     dependencies:
@@ -15238,7 +15220,7 @@ snapshots:
 
   '@formatjs/intl-localematcher@0.5.6':
     dependencies:
-      tslib: 2.8.0
+      tslib: 2.8.1
 
   '@formatjs/intl-relativetimeformat@4.5.16':
     dependencies:
@@ -15700,7 +15682,7 @@ snapshots:
       - classnames
       - embla-carousel
 
-  '@kitconcept/volto-dsgvo-banner@3.0.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@kitconcept/volto-dsgvo-banner@4.0.0-alpha.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@datapunt/matomo-tracker-js': 0.5.1
       react: 18.2.0
@@ -15713,10 +15695,12 @@ snapshots:
       react-contenteditable: 3.3.6(react@18.2.0)
       react-dom: 18.2.0(react@18.2.0)
 
-  '@kitconcept/volto-highlight-block@4.5.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@kitconcept/volto-highlight-block@5.0.0-alpha.2(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react@18.2.0)':
     dependencies:
+      classnames: 2.5.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+      react-intl: 3.12.1(react@18.2.0)
 
   '@kitconcept/volto-introduction-block@1.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
@@ -15746,13 +15730,13 @@ snapshots:
     transitivePeerDependencies:
       - embla-carousel
 
-  '@kitconcept/volto-light-theme@8.0.0-alpha.28(classnames@2.5.1)(embla-carousel@8.5.2)(lodash@4.18.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.29))(@types/react@18.3.29)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)':
+  '@kitconcept/volto-light-theme@8.0.0-alpha.31(classnames@2.5.1)(embla-carousel@8.5.2)(lodash@4.18.1)(react-dom@18.2.0(react@18.2.0))(react-intl@3.12.1(react@18.2.0))(react-redux@8.1.2(@types/react-dom@18.3.7(@types/react@18.3.29))(@types/react@18.3.29)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1))(react-router-dom@5.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)
       '@dnd-kit/utilities': 3.2.2(react@18.2.0)
       '@kitconcept/volto-bm3-compat': 1.0.0-alpha.1(classnames@2.5.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@plone/components': 4.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@plone/components': 4.2.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       classnames: 2.5.1
       embla-carousel-autoplay: 8.5.2(embla-carousel@8.5.2)
       embla-carousel-react: 8.5.2(react@18.2.0)
@@ -15891,7 +15875,7 @@ snapshots:
       '@rushstack/ts-command-line': 4.19.1(@types/node@24.12.4)
       lodash: 4.17.21
       minimatch: 3.0.8
-      resolve: 1.22.8
+      resolve: 1.22.12
       semver: 7.5.4
       source-map: 0.6.1
       typescript: 5.4.2
@@ -16261,6 +16245,23 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
 
   '@plone/components@4.1.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@internationalized/date': 3.12.2
+      '@react-aria/utils': 3.34.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@react-spectrum/utils': 3.13.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      clsx: 2.1.1
+      react: 18.2.0
+      react-aria: 3.49.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-aria-components: 1.18.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      react-stately: 3.47.0(react@18.2.0)
+      tailwind-merge: 3.6.0
+      tailwind-variants: 3.2.2(tailwind-merge@3.6.0)(tailwindcss@4.3.0)
+      tailwindcss: 4.3.0
+      tailwindcss-animate: 1.0.7(tailwindcss@4.3.0)
+    optionalDependencies:
+      react-dom: 18.2.0(react@18.2.0)
+
+  '@plone/components@4.2.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
       '@internationalized/date': 3.12.2
       '@react-aria/utils': 3.34.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -17543,7 +17544,7 @@ snapshots:
       fs-extra: 7.0.1
       import-lazy: 4.0.0
       jju: 1.4.0
-      resolve: 1.22.8
+      resolve: 1.22.12
       semver: 7.5.4
       z-schema: 5.0.5
     optionalDependencies:
@@ -17552,7 +17553,7 @@ snapshots:
 
   '@rushstack/rig-package@0.5.2':
     dependencies:
-      resolve: 1.22.8
+      resolve: 1.22.12
       strip-json-comments: 3.1.1
     optional: true
 
@@ -23078,10 +23079,6 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
-  linkify-it@3.0.2:
-    dependencies:
-      uc.micro: 1.0.6
-
   listr2@9.0.5:
     dependencies:
       cli-truncate: 5.2.0
@@ -24831,12 +24828,6 @@ snapshots:
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-medium-image-zoom@3.0.15(prop-types@15.7.2)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      prop-types: 15.7.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-
   react-moment-proptypes@1.8.1(moment@2.29.4):
     dependencies:
       moment: 2.29.4
@@ -25378,7 +25369,7 @@ snapshots:
 
   resolve@1.19.0:
     dependencies:
-      is-core-module: 2.15.1
+      is-core-module: 2.16.2
       path-parse: 1.0.7
     optional: true
 
@@ -26690,8 +26681,6 @@ snapshots:
   typescript@5.7.3: {}
 
   typescript@5.9.3: {}
-
-  uc.micro@1.0.6: {}
 
   ufo@1.6.4: {}
 
