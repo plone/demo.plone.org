@@ -1,3 +1,7 @@
+# Unreleased
+
+- Update to Plone 6.2.1.  @mauritsvanrees
+
 # 2026-05-30
 
 - Update other demos to Plone 6.2 and Volto 19. @pbauer
