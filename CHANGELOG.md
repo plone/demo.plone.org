@@ -1,3 +1,7 @@
+# 2026-09-11
+
+- Update to Plone 6.2.2.  @mauritsvanrees
+
 # 2026-07-05
 
 - Update to Plone 6.2.1.  @mauritsvanrees
