@@ -1,10 +1,15 @@
+# 2026-10-25
+
+- Update to Plone 6.2.2.1. @davisagli
+- Update to Volto 19.5.1. @davisagli
+
 # 2026-09-11
 
-- Update to Plone 6.2.2.  @mauritsvanrees
+- Update to Plone 6.2.2. @mauritsvanrees
 
 # 2026-07-05
 
-- Update to Plone 6.2.1.  @mauritsvanrees
+- Update to Plone 6.2.1. @mauritsvanrees
 - Update Volto to 19.3.0 and Volto Light Theme to 8.0.0-alpha.31. @ericof
 
 # 2026-05-30
