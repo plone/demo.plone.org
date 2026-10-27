@@ -4,6 +4,7 @@
     "package": "@plone/aurora",
     "url": "git@github.com:plone/aurora.git",
     "https": "https://github.com/plone/aurora.git",
+    "tag": "1.0.0-alpha.7",
     "filterBlobs": true
   }
 }

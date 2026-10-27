@@ -17,7 +17,7 @@
     "start": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter @plone/aurora dev",
     "start:prod": "pnpm --filter @plone/aurora start:prod",
     "build": "REGISTRYCONFIG=$(pwd)/registry.config.ts pnpm --filter @plone/aurora build",
-    "build:deps": "pnpm --filter @plone/registry --filter @plone/components build",
+    "build:deps": "pnpm --filter @plone/registry --filter @plone/icons --filter @plone/quanta --filter @plone/components build",
     "i18n": "pnpm --filter plone-aurora-demo i18n && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n",
     "test": "pnpm --filter plone-aurora-demo exec vitest --passWithNoTests",
     "lint": "REGISTRYCONFIG=$(pwd)/registry.config.ts eslint --max-warnings=0 'packages/**/*.{js,jsx,ts,tsx}'",
@@ -31,7 +31,9 @@
     "release-major-alpha": "pnpm --filter plone-aurora-demo release-major-alpha",
     "release-alpha": "pnpm --filter plone-aurora-demo release-alpha",
     "storybook": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
-    "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
+    "storybook-build": "VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook",
+    "test:acceptance": "playwright test",
+    "test:acceptance:ui": "playwright test --ui"
   },
   "dependencies": {
     "@plone/registry": "workspace:*",
@@ -41,20 +43,5 @@
   "devDependencies": {
     "mrs-developer": "^2.2.0"
   },
-  "packageManager": "pnpm@10.20.0",
-  "pnpm": {
-    "overrides": {
-      "react": "^19.0.0",
-      "react-dom": "^19.0.0",
-      "rollup": "^4.40.0"
-    },
-    "onlyBuiltDependencies": [
-      "@swc/core",
-      "@tailwindcss/oxide",
-      "cypress",
-      "esbuild",
-      "lightningcss-cli",
-      "unrs-resolver"
-    ]
-  }
+  "packageManager": "pnpm@11.20.0"
 }

@@ -1,0 +1,12 @@
+{
+  "__template__": "aurora_addon",
+  "title": "Plone Aurora demo site",
+  "frontend_addon_name": "plone-aurora-demo",
+  "project_slug": "plone-aurora-demo",
+  "description": "A new add-on for Plone Aurora, demonstrating how to create a Volto add-on and integrate it into the demo.plone.org site.",
+  "author": "Plone Community",
+  "email": "collective@plone.org",
+  "github_organization": "collective",
+  "npm_package_name": "plone-aurora-demo",
+  "aurora_version": "1.0.0-alpha.7"
+}

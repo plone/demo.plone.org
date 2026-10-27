@@ -11,10 +11,10 @@
     "react"
   ],
   "author": "Plone Community",
-  "homepage": "https://github.com/collective/seven-demo#readme",
+  "homepage": "https://github.com/plone/demo.plone.org#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:collective/seven-demo.git"
+    "url": "git@github.com:plone/demo.plone.org.git"
   },
   "publishConfig": {
     "access": "public"
@@ -26,15 +26,22 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@plone/components": "workspace:*",
+    "@plone/icons": "workspace:*"
+  },
   "peerDependencies": {
+    "i18next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.60.0",
     "@plone/registry": "workspace:*",
     "@plone/scripts": "workspace:*",
     "@plone/types": "workspace:*",
+    "playwright": "^1.60.0",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "release-it": "^19.0.5",
