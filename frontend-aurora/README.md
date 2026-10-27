@@ -89,6 +89,14 @@ For this reason, it only works with pnpm and Volto 18 (currently in alpha).
 -   [Make](https://6.docs.plone.org/install/create-project.html#make)
 -   [Docker](https://6.docs.plone.org/install/create-project.html#docker)
 
+### Regenerate from the Cookieplone scaffold
+
+This project keeps its Cookieplone answers in `.cookieplone.json`. To apply the latest Aurora add-on scaffold, run this from the project directory:
+
+```shell
+uvx cookieplone -f --answers-file .cookieplone.json
+```
+
 
 ### Make convenience commands
 
@@ -114,8 +122,9 @@ acceptance-frontend-dev-start    Start acceptance frontend in development mode
 acceptance-frontend-prod-start   Start acceptance frontend in production mode
 acceptance-backend-start         Start backend acceptance server
 ci-acceptance-backend-start      Start backend acceptance server in headless mode for CI
-acceptance-test                  Start Cypress in interactive mode
-ci-acceptance-test               Run cypress tests in headless mode for CI
+install-acceptance               Install Playwright browsers
+acceptance-test                  Start Playwright in interactive mode
+ci-acceptance-test               Run Playwright tests in headless mode for CI
 ```
 
 ### Development environment set up
@@ -172,7 +181,7 @@ Run unit tests.
 make test
 ```
 
-### Run Cypress tests
+### Run Playwright acceptance tests
 
 Run each of these steps in separate terminal sessions.
 
@@ -188,7 +197,13 @@ In the second session, start the backend acceptance server.
 make acceptance-backend-start
 ```
 
-In the third session, start the Cypress interactive test runner.
+The first time, install the Playwright browser:
+
+```shell
+make install-acceptance
+```
+
+In the third session, start the Playwright interactive test runner.
 
 ```shell
 make acceptance-test
@@ -200,5 +215,6 @@ The project is licensed under the MIT license.
 
 ## Credits and Acknowledgements 🙏
 
-Crafted with care by **Generated using [Cookieplone (0.9.8)](https://github.com/plone/cookieplone) and [cookieplone-templates (dca0ca6)](https://github.com/plone/cookieplone-templates/commit/dca0ca6fb7263cbbd3626c2fe76c654814c8c3e7) on 2025-09-20 19:33:56.346891**. A special thanks to all contributors and supporters!
+Crafted with care and updated against [Cookieplone (2.0)](https://github.com/plone/cookieplone) and [cookieplone-templates (cccf30f)](https://github.com/plone/cookieplone-templates/commit/cccf30f64531530f662d9b8fb326ea1eb465b380) on 2026-10-27. A special thanks to all contributors and supporters!
 .
+

@@ -24,6 +24,7 @@ GIT_FOLDER=$(CURRENT_DIR)/.git
 PLONE_VERSION=6
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
+AURORA_VERSION=1.0.0-alpha.7
 
 IMAGE_NAME=plone-aurora-demo
 IMAGE_TAG=latest
@@ -54,6 +55,12 @@ build: ## Build a production bundle for distribution of the project with the add
 core/packages/registry/dist: $(shell find core/packages/registry/src -type f)
 	pnpm --filter @plone/registry build
 
+core/packages/icons/dist: $(shell find core/packages/icons/src -type f)
+	pnpm --filter @plone/icons build
+
+core/packages/quanta/dist: $(shell find core/packages/quanta/src -type f)
+	pnpm --filter @plone/quanta build
+
 core/packages/components/dist: $(shell find core/packages/components/src -type f)
 	pnpm --filter @plone/components build
 
@@ -67,7 +74,7 @@ core/packages/react-router/dist: $(shell find core/packages/react-router/src -ty
 	pnpm --filter @plone/react-router build
 
 .PHONY: build-deps
-build-deps: core/packages/registry/dist core/packages/components/dist core/packages/client/dist core/packages/react-router/dist core/packages/helpers/dist ## Build dependencies
+build-deps: core/packages/registry/dist core/packages/icons/dist core/packages/quanta/dist core/packages/components/dist core/packages/client/dist core/packages/react-router/dist core/packages/helpers/dist ## Build dependencies
 
 .PHONY: i18n
 i18n: ## Sync i18n
@@ -141,14 +148,18 @@ acceptance-backend-start: ## Start backend acceptance server
 ci-acceptance-backend-start: ## Start backend acceptance server in headless mode for CI
 	docker run -i --rm -p 55001:55001 $(DOCKER_IMAGE_ACCEPTANCE)
 
+.PHONY: install-acceptance
+install-acceptance: ## Install the Playwright browsers used by the acceptance tests
+	pnpm exec playwright install --with-deps chromium
+
 .PHONY: acceptance-test
-acceptance-test: ## Start Cypress in interactive mode
-	pnpm --filter @plone/tooling exec cypress open --config-file $(CURRENT_DIR)/core/packages/tooling/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}'
+acceptance-test: ## Start the acceptance tests in interactive (UI) mode
+	pnpm exec playwright test --ui
 
 .PHONY: ci-acceptance-test
-ci-acceptance-test: ## Run cypress tests in headless mode for CI
-	pnpm --filter @plone/tooling exec cypress run --config-file $(CURRENT_DIR)/core/packages/tooling/cypress.config.js --config specPattern=$(CURRENT_DIR)'/cypress/tests/**/*.{js,jsx,ts,tsx}'
+ci-acceptance-test: ## Run the acceptance tests in headless mode
+	pnpm exec playwright test --reporter=list,html
 
 .PHONY: build-image
 build-image:  ## Build Docker Image
-	@DOCKER_BUILDKIT=1 BUILDKIT_PROGRESS=plain docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg VOLTO_VERSION=$(VOLTO_VERSION)
+	@DOCKER_BUILDKIT=1 BUILDKIT_PROGRESS=plain docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg AURORA_VERSION=$(AURORA_VERSION)
