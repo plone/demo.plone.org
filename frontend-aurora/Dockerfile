@@ -13,8 +13,6 @@ COPY --chown=node pnpm-lock.yaml /app/pnpm-lock.yaml
 RUN --mount=type=cache,id=pnpm,target=/app/.pnpm-store,uid=1000 <<EOT
     set -e
     export CI=true
-    # The builder image ships the default scaffolded add-on, which is not in our lockfile
-    rm -rf /app/packages/plone-aurora
     pnpm install && make build-deps
     pnpm build
     CI=1 pnpm install --prod
