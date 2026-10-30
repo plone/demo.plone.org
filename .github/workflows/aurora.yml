@@ -1,4 +1,4 @@
-name: Seven build and deploy demo
+name: Aurora build and deploy demo
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     paths:
       - "frontend-aurora/**"
       - ".github/workflows/frontend.yml"
-      - ".github/workflows/seven.yml"
+      - ".github/workflows/aurora.yml"
       - "devops/stacks/seven.plone.org.yml"
   workflow_dispatch:
 
@@ -114,8 +114,8 @@ jobs:
           stack_file: devops/stacks/seven.plone.org.yml
           stack_name: seven-plone-org
           stack_param: latest
-          # env_file: |
-          #   DB_PASSWORD="not used"
+          env_file: |
+            COOKIE_SECRET=${{ secrets.COOKIE_SECRET }}
           deploy_timeout: 480
 
   report:
