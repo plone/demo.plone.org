@@ -122,9 +122,9 @@ acceptance-frontend-dev-start    Start acceptance frontend in development mode
 acceptance-frontend-prod-start   Start acceptance frontend in production mode
 acceptance-backend-start         Start backend acceptance server
 ci-acceptance-backend-start      Start backend acceptance server in headless mode for CI
-install-acceptance               Install Playwright browsers
-acceptance-test                  Start Playwright in interactive mode
-ci-acceptance-test               Run Playwright tests in headless mode for CI
+install-acceptance               Install the Playwright browsers used by the acceptance tests
+acceptance-test                  Start the acceptance tests in interactive (UI) mode
+ci-acceptance-test               Run the acceptance tests in headless mode for CI
 ```
 
 ### Development environment set up
@@ -215,6 +215,6 @@ The project is licensed under the MIT license.
 
 ## Credits and Acknowledgements 🙏
 
-Crafted with care and updated against [Cookieplone (2.0)](https://github.com/plone/cookieplone) and [cookieplone-templates (cccf30f)](https://github.com/plone/cookieplone-templates/commit/cccf30f64531530f662d9b8fb326ea1eb465b380) on 2026-10-27. A special thanks to all contributors and supporters!
+Crafted with care and updated against [Cookieplone (2.0)](https://github.com/plone/cookieplone) and [cookieplone-templates (b12538c)](https://github.com/plone/cookieplone-templates/commit/b12538cd442a86d1869caf641aea4c36f6902481) on 2026-10-29. A special thanks to all contributors and supporters!
 .
 

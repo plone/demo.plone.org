@@ -43,5 +43,5 @@
   "devDependencies": {
     "mrs-developer": "^2.2.0"
   },
-  "packageManager": "pnpm@11.20.0"
+  "packageManager": "pnpm@12.14.0"
 }

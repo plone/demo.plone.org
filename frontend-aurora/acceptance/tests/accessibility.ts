@@ -14,19 +14,35 @@ export async function expectNoAccessibilityViolations(
   options: AccessibilityCheckOptions = {},
 ) {
   const builder = new AxeBuilder({ page });
-  for (const selector of options.include ?? []) builder.include(selector);
-  for (const selector of options.exclude ?? []) builder.exclude(selector);
-  if (options.axeOptions) builder.options(options.axeOptions);
-  if (options.disabledRules?.length) builder.disableRules(options.disabledRules);
+
+  for (const selector of options.include ?? []) {
+    builder.include(selector);
+  }
+
+  for (const selector of options.exclude ?? []) {
+    builder.exclude(selector);
+  }
+
+  if (options.axeOptions) {
+    builder.options(options.axeOptions);
+  }
+
+  if (options.disabledRules?.length) {
+    builder.disableRules(options.disabledRules);
+  }
 
   const { violations } = await builder.analyze();
-  expect(
-    violations.map(({ id, impact, description, help, nodes }) => ({
-      id,
-      impact,
-      description,
-      help,
-      nodes: nodes.map(({ target, failureSummary }) => ({ target, failureSummary })),
+
+  const violationSummary = violations.map((violation) => ({
+    id: violation.id,
+    impact: violation.impact,
+    description: violation.description,
+    help: violation.help,
+    nodes: violation.nodes.map((node) => ({
+      target: node.target,
+      failureSummary: node.failureSummary,
     })),
-  ).toEqual([]);
+  }));
+
+  expect(violationSummary).toEqual([]);
 }

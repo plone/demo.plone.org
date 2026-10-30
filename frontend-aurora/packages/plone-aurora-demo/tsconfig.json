@@ -13,9 +13,17 @@
     "lib": ["es2022", "dom", "dom.iterable"],
     "jsx": "react-jsx",
     "paths": {
-      "plone-aurora-demo/*": ["./src/*"]
+      "plone-aurora-demo/*": ["./*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "build", "public", "coverage", "**/*.test.{js,jsx,ts,tsx}", "**/*.spec.{js,jsx,ts,tsx}", "**/*.stories.{js,jsx,ts,tsx}"]
+  "exclude": [
+    "node_modules",
+    "build",
+    "public",
+    "coverage",
+    "**/*.test.{js,jsx,ts,tsx}",
+    "**/*.spec.{js,jsx,ts,tsx}",
+    "**/*.stories.{js,jsx,ts,tsx}"
+  ]
 }
