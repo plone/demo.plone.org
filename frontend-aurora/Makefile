@@ -24,7 +24,7 @@ GIT_FOLDER=$(CURRENT_DIR)/.git
 PLONE_VERSION=6
 DOCKER_IMAGE=plone/server-dev:${PLONE_VERSION}
 DOCKER_IMAGE_ACCEPTANCE=plone/server-acceptance:${PLONE_VERSION}
-AURORA_VERSION=1.0.0-alpha.19
+AURORA_VERSION=1.0.0-alpha.20
 
 IMAGE_NAME=plone-aurora-demo
 IMAGE_TAG=latest
@@ -112,7 +112,7 @@ test: ## Run unit tests
 ci-test: ## Run unit tests in CI
 	# Unit Tests need the i18n to be built
 	VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto i18n
-	CI=1 RAZZLE_JEST_CONFIG=$(CURRENT_DIR)/jest-addon.config.js pnpm --filter @plone/volto test -- --passWithNoTests
+	CI=1 RAZZLE_JEST_CONFIG=$(CURRENT_DIR)/jest-addon.config.js pnpm run --filter @plone/volto test --passWithNoTests
 
 .PHONY: backend-docker-start
 backend-docker-start:	## Starts a Docker-based backend for development
@@ -148,6 +148,7 @@ acceptance-backend-start: ## Start backend acceptance server
 ci-acceptance-backend-start: ## Start backend acceptance server in headless mode for CI
 	docker run -i --rm -p 55001:55001 $(DOCKER_IMAGE_ACCEPTANCE)
 
+## Acceptance tests (Playwright)
 .PHONY: install-acceptance
 install-acceptance: ## Install the Playwright browsers used by the acceptance tests
 	pnpm exec playwright install --with-deps chromium
@@ -157,7 +158,7 @@ acceptance-test: ## Start the acceptance tests in interactive (UI) mode
 	pnpm exec playwright test --ui
 
 .PHONY: ci-acceptance-test
-ci-acceptance-test: ## Run the acceptance tests in headless mode
+ci-acceptance-test: ## Run the acceptance tests in headless mode for CI
 	pnpm exec playwright test --reporter=list,html
 
 .PHONY: build-image

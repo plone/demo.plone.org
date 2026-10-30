@@ -8,6 +8,12 @@ packages:
   - '!core/packages/volto*'
   - '!core/packages/coresandbox'
 
+publicHoistPattern:
+  - '*eslint*'
+  - '*prettier*'
+  - '*stylelint*'
+  - '*playwright*'
+
 overrides:
   react: ^19.2.0
   react-dom: ^19.2.0

@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: Enable corepack
+      - name: Install and enable Corepack
         run: |
           npm install --global corepack@latest
           corepack enable
