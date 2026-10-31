@@ -1021,9 +1021,6 @@ importers:
 
   core/packages/helpers:
     dependencies:
-      '@plone/registry':
-        specifier: workspace:*
-        version: link:../registry
       jotai:
         specifier: ^2.12.5
         version: 2.20.3(@babel/core@7.29.7(supports-color@7.2.0))(@babel/template@7.29.7)(@types/react@19.3.0)(react@19.3.1)
@@ -1040,6 +1037,9 @@ importers:
         specifier: ^19.2.0
         version: 19.3.1(react@19.3.1)
     devDependencies:
+      '@plone/registry':
+        specifier: workspace:*
+        version: link:../registry
       '@plone/types':
         specifier: workspace:*
         version: link:../types
@@ -1925,7 +1925,7 @@ importers:
         version: 2.3.2(supports-color@7.2.0)
       wait-on:
         specifier: ^8.0.0
-        version: 8.0.5(supports-color@7.2.0)
+        version: 8.0.5(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
     devDependencies:
       release-it:
         specifier: 'catalog:'
@@ -2077,7 +2077,7 @@ importers:
         version: 8.3.5(@types/node@26.6.6)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1)
       wait-on:
         specifier: ^8.0.0
-        version: 8.0.5(supports-color@7.2.0)
+        version: 8.0.5(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
 
   core/packages/tsconfig: {}
 
@@ -13054,6 +13054,16 @@ snapshots:
       - debug
       - supports-color
 
+  axios@1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0):
+    dependencies:
+      follow-redirects: 1.16.2(debug@4.4.3(supports-color@7.2.0))
+      form-data: 4.0.6
+      https-proxy-agent: 5.0.1(supports-color@7.2.0)
+      proxy-from-env: 2.1.0
+    transitivePeerDependencies:
+      - debug
+      - supports-color
+
   axobject-query@4.1.0: {}
 
   babel-dead-code-elimination@1.0.12(supports-color@7.2.0):
@@ -14353,6 +14363,10 @@ snapshots:
   follow-redirects@1.16.2(debug@4.3.4(supports-color@7.2.0)):
     optionalDependencies:
       debug: 4.3.4(supports-color@7.2.0)
+
+  follow-redirects@1.16.2(debug@4.4.3(supports-color@7.2.0)):
+    optionalDependencies:
+      debug: 4.4.3(supports-color@7.2.0)
 
   for-each@0.3.5:
     dependencies:
@@ -17945,9 +17959,9 @@ snapshots:
     dependencies:
       xml-name-validator: 5.0.0
 
-  wait-on@8.0.5(supports-color@7.2.0):
+  wait-on@8.0.5(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
-      axios: 1.20.0(debug@4.3.4(supports-color@7.2.0))(supports-color@7.2.0)
+      axios: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)
       joi: 18.3.0
       lodash: 4.18.1
       minimist: 1.2.8

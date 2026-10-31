@@ -1,6 +1,12 @@
 # syntax=docker/dockerfile:1
-ARG AURORA_VERSION=1.0.0-alpha.20
+ARG AURORA_VERSION=1.0.0-alpha.21
 FROM plone/aurora-builder:${AURORA_VERSION} AS builder
+
+# The proxy terminates TLS, so React Router sees actions as `http` while the
+# browser sends an `https` origin. The hosts listed here are accepted as action
+# origins. React Router reads them when building, not when the server runs.
+ARG REACT_ROUTER_ALLOWED_ACTION_ORIGINS=aurora.demo.plone.org
+ENV REACT_ROUTER_ALLOWED_ACTION_ORIGINS=${REACT_ROUTER_ALLOWED_ACTION_ORIGINS}
 
 COPY --chown=node packages/plone-aurora-demo /app/packages/plone-aurora-demo
 COPY --chown=node registry.config.ts /app/
