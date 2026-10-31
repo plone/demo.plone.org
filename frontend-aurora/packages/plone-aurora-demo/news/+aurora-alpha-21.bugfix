@@ -1,1 +1,0 @@
-Update Aurora to 1.0.0-alpha.21 and allow `aurora.demo.plone.org` as an action origin when building the image, so logging in works behind the TLS proxy. @sneridagh
