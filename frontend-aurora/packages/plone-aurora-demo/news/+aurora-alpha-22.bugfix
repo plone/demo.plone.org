@@ -1,0 +1,1 @@
+Update Aurora to 1.0.0-alpha.22, whose production server trusts the proxy in front of it, so logging in works behind the TLS proxy. @sneridagh

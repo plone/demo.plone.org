@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-ARG AURORA_VERSION=1.0.0-alpha.20
+ARG AURORA_VERSION=1.0.0-alpha.22
 FROM plone/aurora-builder:${AURORA_VERSION} AS builder
 
 COPY --chown=node packages/plone-aurora-demo /app/packages/plone-aurora-demo
