@@ -1,3 +1,7 @@
+# 2026-10-31
+
+- Update to Volto 19.6.1. @sneridagh
+
 # 2026-10-25
 
 - Update to Plone 6.2.2.1. @davisagli
