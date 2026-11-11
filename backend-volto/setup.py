@@ -1,7 +1,6 @@
 """Installer for the plone6.demo package."""
 
 from pathlib import Path
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -42,14 +41,10 @@ setup(
         "Tracker": "https://github.com/collective/plone6.demo/issues",
     },
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["plone6"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     python_requires=">=3.8",
     install_requires=[
-        "setuptools",
         "Plone",
         "plone.api",
         "plone.restapi",
