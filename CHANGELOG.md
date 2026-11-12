@@ -1,3 +1,8 @@
+# 2026-11-11
+
+- Remove use of `pkg_resources`.  @mauritsvanrees
+- Update to Plone 6.2.3. @mauritsvanrees
+
 # 2026-10-31
 
 - Update to Volto 19.6.1. @sneridagh

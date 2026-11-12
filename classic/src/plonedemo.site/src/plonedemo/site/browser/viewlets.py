@@ -2,7 +2,7 @@ from plone import api
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.viewlets.common import ViewletBase
 
-import pkg_resources
+import importlib.metadata
 import sys
 
 
@@ -21,9 +21,9 @@ class FrontpageViewlet(ViewletBase):
 
     def get_plone_version(self):
         try:
-            version = pkg_resources.get_distribution("Plone").version
-        except pkg_resources.DistributionNotFound:
-            version = pkg_resources.get_distribution("Products.CMFPlone").version
+            version = importlib.metadata.version("Plone")
+        except importlib.metadata.PackageNotFoundError:
+            version = importlib.metadata.version("Products.CMFPlone")
         # Drop the trailing .0 in Products.CMFPlone versions
         # to get 5.2 instead of 5.2.0. Keep 5.0 and 6.0 intact.
         if len(version) > 3 and version.endswith(".0"):

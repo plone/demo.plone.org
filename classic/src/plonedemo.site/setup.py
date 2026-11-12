@@ -1,6 +1,5 @@
 """Installer for the plonedemo.site package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -38,14 +37,10 @@ setup(
     author_email="bauer@starzel.de",
     url="https://github.com/collective/demo.plone.org",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["plonedemo"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
         "Plone",
-        "setuptools",
         "z3c.jbot",
         "collective.easyform",
         "plone.app.mosaic",
